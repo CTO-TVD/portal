@@ -116,6 +116,9 @@
                     ],
                     "remoteMessageGroupSearch": [
                         "full"
+                    ],
+                    "uacALA": [
+                        "none"
                     ]
                 },
                 "values": {
@@ -211,6 +214,9 @@
                     ],
                     "remoteMessageGroupSearch": [
                         "full"
+                    ],
+                    "uacALA": [
+                        "none"
                     ]
                 },
                 "values": {
@@ -309,6 +315,9 @@
                     ],
                     "remoteMessageGroupSearch": [
                         "full"
+                    ],
+                    "uacALA": [
+                        "none"
                     ]
                 },
                 "values": {

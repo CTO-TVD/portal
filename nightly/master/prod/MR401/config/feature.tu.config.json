@@ -77,7 +77,8 @@
                     "netflixSearchDet": ["none"],
                     "demoarea": ["full"],
                     "voiceKeySupport": ["none"],
-                    "remoteMessageGroupSearch": ["full"]
+                    "remoteMessageGroupSearch": ["full"],
+                    "uacALA" : ["none"]
                 },
 
               	"values": {
@@ -130,7 +131,8 @@
                     "netflixSearchDet": ["none"],
                     "demoarea": ["full"],
                     "voiceKeySupport": ["none"],
-                    "remoteMessageGroupSearch": ["full"]
+                    "remoteMessageGroupSearch": ["full"],
+                    "uacALA" : ["none"]
                 },
 
                 "values": {
@@ -184,7 +186,8 @@
                     "netflixSearchDet": ["none"],
                     "demoarea": ["full"],
                     "voiceKeySupport": ["full"],
-                    "remoteMessageGroupSearch": ["full"]
+                    "remoteMessageGroupSearch": ["full"],
+                    "uacALA" : ["none"]
                 },
 
               	"values": {
