@@ -36,6 +36,7 @@
   "userStoreKeyFtuPassedDate": "appcore.ftuPassedDate",
   "userStoreKeyPowerManagementMode": "appcore.setting.device.powermanagement.mode.value",
   "userStoreKeyPwrMgmtSelectionIsDefault": "appcore.setting.device.powermanagement.mode.isDefault",
+  "userStoreKeyRadioAppChoice": "appradio.migration.radio.app.choice",
   "powerManagementModeDefaultValue": "powerSave",
   "defaultAudioLanguage": "ger",
   "defaultSubtitleLanguage": "ger",
