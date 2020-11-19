@@ -4977,6 +4977,12 @@
 		"cmsId": "KID00860-RTLUHD",
 		"images": [
 			{
+				"serviceProviderImageType": "14",
+				"url": "http://programm-manager.telekom.de/media/ca08b533fb565dd0611c20294da69b2690541147.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
 				"serviceProviderImageType": "99",
 				"url": "http://programm-manager.telekom.de/media/3d3ec388fcda74b9e7f992e7cd8569d7e46aab4e.jpeg",
 				"height": "1080",
@@ -4987,12 +4993,6 @@
 				"url": "http://programm-manager.telekom.de/media/c975c083cb744c8050e36a32da9bdfb343c2878a.png",
 				"height": "48",
 				"width": "120"
-			},
-			{
-				"serviceProviderImageType": "14",
-				"url": "http://programm-manager.telekom.de/media/ca08b533fb565dd0611c20294da69b2690541147.png",
-				"height": "1080",
-				"width": "1920"
 			}
 		],
 		"isFavorited": true,
@@ -5040,6 +5040,12 @@
 		"cmsId": "KID00857-Travelxp4K",
 		"images": [
 			{
+				"serviceProviderImageType": "14",
+				"url": "http://programm-manager.telekom.de/media/3593464d7c550cac3a44f5d51c6a240bf8c270b3.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
 				"serviceProviderImageType": "15",
 				"url": "http://programm-manager.telekom.de/media/7d5935874e9d857e421cf63fe61237f6337b9eff.png",
 				"height": "48",
@@ -5048,12 +5054,6 @@
 			{
 				"serviceProviderImageType": "99",
 				"url": "http://programm-manager.telekom.de/media/fa9e315dc62adc7f66aacb1b646e4a0317cd70a0.jpeg",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
-				"serviceProviderImageType": "14",
-				"url": "http://programm-manager.telekom.de/media/3593464d7c550cac3a44f5d51c6a240bf8c270b3.png",
 				"height": "1080",
 				"width": "1920"
 			}
@@ -9012,12 +9012,6 @@
 		"cmsId": "KID00765-TelekomBasketball4",
 		"images": [
 			{
-				"serviceProviderImageType": "99",
-				"url": "http://programm-manager.telekom.de/media/717d6a35b85b0583efd14fee840645f3edcef323.jpeg",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
 				"serviceProviderImageType": "14",
 				"url": "http://programm-manager.telekom.de/media/bef4c74101aa68819c60f53b4405f170819e9861.png",
 				"height": "1080",
@@ -9028,6 +9022,12 @@
 				"url": "http://programm-manager.telekom.de/media/e5fcea04af5a680d5520e758c005b7be9ca5d924.png",
 				"height": "48",
 				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://programm-manager.telekom.de/media/717d6a35b85b0583efd14fee840645f3edcef323.jpeg",
+				"height": "1080",
+				"width": "1920"
 			}
 		],
 		"isFavorited": true,
@@ -14015,16 +14015,16 @@
 		"cmsId": "KID00890-FriesischerRundfunk",
 		"images": [
 			{
-				"serviceProviderImageType": "15",
-				"url": "http://programm-manager.telekom.de/media/445b9afac0a02f061e3ed21c2fcc3a187ad0112b.png",
-				"height": "48",
-				"width": "120"
-			},
-			{
 				"serviceProviderImageType": "14",
 				"url": "http://programm-manager.telekom.de/media/66d06ffd36524af6bc6c4e1922fdb8607ebd1d55.png",
 				"height": "1080",
 				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://programm-manager.telekom.de/media/445b9afac0a02f061e3ed21c2fcc3a187ad0112b.png",
+				"height": "48",
+				"width": "120"
 			}
 		],
 		"isFavorited": true,
@@ -15326,16 +15326,16 @@
 		"cmsId": "KID00845-ChemnitzFernsehen",
 		"images": [
 			{
-				"serviceProviderImageType": "15",
-				"url": "http://programm-manager.telekom.de/media/5375f324b7ffcb882061a48771888ef0f6c74e73.png",
-				"height": "48",
-				"width": "120"
-			},
-			{
 				"serviceProviderImageType": "14",
 				"url": "http://programm-manager.telekom.de/media/29f93afa6409e144b1f37de8ab4a215e1a58b736.png",
 				"height": "1080",
 				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://programm-manager.telekom.de/media/5375f324b7ffcb882061a48771888ef0f6c74e73.png",
+				"height": "48",
+				"width": "120"
 			}
 		],
 		"isFavorited": true,
@@ -18215,12 +18215,6 @@
 		"cmsId": "KID00878-SkyCinemaSpecial",
 		"images": [
 			{
-				"serviceProviderImageType": "99",
-				"url": "http://programm-manager.telekom.de/media/3d8c5211fd359a82ce467a3e14e4d13a2dd197f6.jpeg",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
 				"serviceProviderImageType": "14",
 				"url": "http://programm-manager.telekom.de/media/b4935d33ecfe29e85ae1786abc650159acbd9ec2.png",
 				"height": "1080",
@@ -18231,6 +18225,12 @@
 				"url": "http://programm-manager.telekom.de/media/2c4c6b314f2e5280c36b01434468d73c7d8c6ab7.png",
 				"height": "48",
 				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://programm-manager.telekom.de/media/3d8c5211fd359a82ce467a3e14e4d13a2dd197f6.jpeg",
+				"height": "1080",
+				"width": "1920"
 			}
 		],
 		"isFavorited": true,
@@ -19685,16 +19685,16 @@
 		"cmsId": "skysport-04",
 		"images": [
 			{
-				"serviceProviderImageType": "15",
-				"url": "http://programm-manager.telekom.de/media/33e321e0ea47007d4fe5840b462f324425c04b77.png",
-				"height": "48",
-				"width": "120"
-			},
-			{
 				"serviceProviderImageType": "14",
 				"url": "http://programm-manager.telekom.de/media/c6a8dbde2b6d4afa5961586d6317f0cc86ddc6e9.png",
 				"height": "1080",
 				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://programm-manager.telekom.de/media/33e321e0ea47007d4fe5840b462f324425c04b77.png",
+				"height": "48",
+				"width": "120"
 			},
 			{
 				"serviceProviderImageType": "99",
@@ -21853,13 +21853,13 @@
 		"images": [
 			{
 				"serviceProviderImageType": "1",
-				"url": "http://appepmfk10006.prod.sngtv.t-online.de:33220/EPG/jsp/images/universal/film/poster/fileEntity/20170423/000101/0001010050264924/443004ec-df07-4a02-b849-e90b0987b0e6.png",
+				"url": "http://appepmfk10001.prod.sngtv.t-online.de:33220/EPG/jsp/images/universal/film/poster/fileEntity/20170423/000101/0001010050264924/443004ec-df07-4a02-b849-e90b0987b0e6.png",
 				"height": "0",
 				"width": "0"
 			},
 			{
 				"serviceProviderImageType": "7",
-				"url": "http://appepmfk10006.prod.sngtv.t-online.de:33220/EPG/jsp/images/universal/film/poster/fileEntity/20170424/000101/0001010050264924/e16babf4-d595-4775-a183-1ed0486a5b02.jpg",
+				"url": "http://appepmfk10001.prod.sngtv.t-online.de:33220/EPG/jsp/images/universal/film/poster/fileEntity/20170424/000101/0001010050264924/e16babf4-d595-4775-a183-1ed0486a5b02.jpg",
 				"height": "0",
 				"width": "0"
 			},
