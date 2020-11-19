@@ -25,6 +25,7 @@
     },
     "continueWatchingLaneAppBlackList": [
         "APP00266-MagentaSportBeta-Test",
-        "APP00269-Konferenz-Alarm"
+        "APP00269-Konferenz-Alarm",
+        "APP00285-MagentaHaus"
     ]
 }

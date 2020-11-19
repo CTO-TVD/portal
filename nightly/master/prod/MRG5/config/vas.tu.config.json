@@ -24,6 +24,7 @@
         "PhonostarRadio": "phonostar"
     },
     "continueWatchingLaneAppBlackList": [
-        "app10"
+        "app10",
+        "magentahaus"
     ]
 }
