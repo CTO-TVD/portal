@@ -1707,16 +1707,16 @@
 		"cmsId": "ndr",
 		"images": [
 			{
-				"serviceProviderImageType": "14",
-				"url": "http://programm-manager.telekom.de/media/f96f503dad4f3249a2cce3bc0c02d6c02e4bd6e7.png",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
 				"serviceProviderImageType": "15",
 				"url": "http://programm-manager.telekom.de/media/e51cf4bf577954c861c57396359f56fb3f5e7805.png",
 				"height": "48",
 				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://programm-manager.telekom.de/media/f96f503dad4f3249a2cce3bc0c02d6c02e4bd6e7.png",
+				"height": "1080",
+				"width": "1920"
 			}
 		],
 		"isFavorited": true,
@@ -14300,16 +14300,16 @@
 		"cmsId": "wdr-aachen",
 		"images": [
 			{
-				"serviceProviderImageType": "14",
-				"url": "http://programm-manager.telekom.de/media/072c4047903e55e4f77af70338389682cc30974a.png",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
 				"serviceProviderImageType": "15",
 				"url": "http://programm-manager.telekom.de/media/8784546120200060bc84357fcafd0994d648ee40.png",
 				"height": "48",
 				"width": "98"
+			},
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://programm-manager.telekom.de/media/072c4047903e55e4f77af70338389682cc30974a.png",
+				"height": "1080",
+				"width": "1920"
 			}
 		],
 		"isFavorited": true,
@@ -18482,6 +18482,12 @@
 		"cmsId": "KID00740-KinoweltTVSky",
 		"images": [
 			{
+				"serviceProviderImageType": "99",
+				"url": "http://programm-manager.telekom.de/media/3d8c5211fd359a82ce467a3e14e4d13a2dd197f6.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
 				"serviceProviderImageType": "14",
 				"url": "http://programm-manager.telekom.de/media/ebdbf39814820b3b2fa697c7c5f18c2d2d42bfde.png",
 				"height": "1080",
@@ -18492,12 +18498,6 @@
 				"url": "http://programm-manager.telekom.de/media/8f80fdd4f8fe6853800aeec106062fc2ee1d5ab4.png",
 				"height": "48",
 				"width": "120"
-			},
-			{
-				"serviceProviderImageType": "99",
-				"url": "http://programm-manager.telekom.de/media/3d8c5211fd359a82ce467a3e14e4d13a2dd197f6.jpeg",
-				"height": "1080",
-				"width": "1920"
 			}
 		],
 		"isFavorited": true,
@@ -18701,6 +18701,12 @@
 		"cmsId": "skybuli-03",
 		"images": [
 			{
+				"serviceProviderImageType": "99",
+				"url": "http://programm-manager.telekom.de/media/9da3636f2374375d66d2ba6ad30f08f5853b3228.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
 				"serviceProviderImageType": "14",
 				"url": "http://programm-manager.telekom.de/media/b7604a3db1310d4a4fb83fffb15debe55d41dbf7.png",
 				"height": "1080",
@@ -18711,12 +18717,6 @@
 				"url": "http://programm-manager.telekom.de/media/059d08de74e6183963d844496ffa1d96b7e264ef.png",
 				"height": "48",
 				"width": "120"
-			},
-			{
-				"serviceProviderImageType": "99",
-				"url": "http://programm-manager.telekom.de/media/9da3636f2374375d66d2ba6ad30f08f5853b3228.jpeg",
-				"height": "1080",
-				"width": "1920"
 			}
 		],
 		"isFavorited": true,
@@ -21691,12 +21691,6 @@
 		"cmsId": "NetflixFC",
 		"images": [
 			{
-				"serviceProviderImageType": "21",
-				"url": "http://programm-manager.telekom.de/media/90b3d88ae18b793c79874f588351b22cebb6c280.png",
-				"height": "48",
-				"width": "179"
-			},
-			{
 				"serviceProviderImageType": "7",
 				"url": "http://programm-manager.telekom.de/media/6676127b1b7be9d12d2f4763372de9e8c8d18a43.jpeg",
 				"height": "720",
@@ -21710,6 +21704,12 @@
 			},
 			{
 				"serviceProviderImageType": "4",
+				"url": "http://programm-manager.telekom.de/media/90b3d88ae18b793c79874f588351b22cebb6c280.png",
+				"height": "48",
+				"width": "179"
+			},
+			{
+				"serviceProviderImageType": "21",
 				"url": "http://programm-manager.telekom.de/media/90b3d88ae18b793c79874f588351b22cebb6c280.png",
 				"height": "48",
 				"width": "179"
@@ -21853,13 +21853,13 @@
 		"images": [
 			{
 				"serviceProviderImageType": "1",
-				"url": "http://appepmfk20008.prod.sngtv.t-online.de:33220/EPG/jsp/images/universal/film/poster/fileEntity/20170423/000101/0001010050264924/443004ec-df07-4a02-b849-e90b0987b0e6.png",
+				"url": "http://appepmfk20005.prod.sngtv.t-online.de:33220/EPG/jsp/images/universal/film/poster/fileEntity/20170423/000101/0001010050264924/443004ec-df07-4a02-b849-e90b0987b0e6.png",
 				"height": "0",
 				"width": "0"
 			},
 			{
 				"serviceProviderImageType": "7",
-				"url": "http://appepmfk20008.prod.sngtv.t-online.de:33220/EPG/jsp/images/universal/film/poster/fileEntity/20170424/000101/0001010050264924/e16babf4-d595-4775-a183-1ed0486a5b02.jpg",
+				"url": "http://appepmfk20005.prod.sngtv.t-online.de:33220/EPG/jsp/images/universal/film/poster/fileEntity/20170424/000101/0001010050264924/e16babf4-d595-4775-a183-1ed0486a5b02.jpg",
 				"height": "0",
 				"width": "0"
 			},
