@@ -71,10 +71,8 @@
                     "longpress": ["none"],
                     "useshortcuts": ["full"],
                     "searchNetflix": ["none"],
-                    "netflixDet": ["full"],
                     "vodDeleteLicence": ["full"],
                     "vodBingeWatchImprovement": ["full"],
-                    "netflixSearchDet": ["none"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
                     "uacALA" : ["none"]
@@ -131,10 +129,8 @@
                     "longpress": ["none"],
                     "useshortcuts": ["full"],
                     "searchNetflix": ["none"],
-                    "netflixDet": ["full"],
                     "vodDeleteLicence": ["full"],
                     "vodBingeWatchImprovement": ["full"],
-                    "netflixSearchDet": ["none"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
                     "uacALA" : ["none"]
@@ -192,10 +188,8 @@
                     "searchNetflix": ["none"],
                     "extendedpowermanagement": ["none"],
                     "fullremote": ["none"],
-                    "netflixDet": ["full"],
                     "vodDeleteLicence": ["full"],
                     "vodBingeWatchImprovement": ["full"],
-                    "netflixSearchDet": ["none"],
                     "voiceKeySupport": ["full"],
                     "remoteMessageGroupSearch": ["full"],
                     "uacALA" : ["none"]

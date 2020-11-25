@@ -1,10 +1,4 @@
 {
-    // The Categories API endpoint is located at
-    "categoriesEndpoint": "https://api-global.netflix.com/preapp/tiles",
-
-    // The Discovery API endpoint is located at
-    "discoveryEndpoint": "https://api-global.netflix.com/preapp/tiles ",
-
     // The Device Experience Tools API endpoint is located at
     "detEndpoint": "https://deutsche-telekom-1.prod.partner.netflix.net/preapp/tiles",
 
