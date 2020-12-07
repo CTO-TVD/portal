@@ -12839,16 +12839,16 @@
 		"cmsId": "sat.1-bayern",
 		"images": [
 			{
-				"serviceProviderImageType": "15",
-				"url": "http://programm-manager.telekom.de/media/efd5a2c8992cd87d3fcc83b5b2399d12971bf89f.png",
-				"height": "48",
-				"width": "48"
-			},
-			{
 				"serviceProviderImageType": "14",
 				"url": "http://programm-manager.telekom.de/media/d36b5ed6e8b046be225671f62b42f6362c55ee22.png",
 				"height": "1080",
 				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://programm-manager.telekom.de/media/efd5a2c8992cd87d3fcc83b5b2399d12971bf89f.png",
+				"height": "48",
+				"width": "48"
 			}
 		],
 		"isFavorited": true,
@@ -15461,16 +15461,16 @@
 		"cmsId": "KID00897-LAUSITZWELLE",
 		"images": [
 			{
-				"serviceProviderImageType": "14",
-				"url": "http://programm-manager.telekom.de/media/cc27aae59dc6434bd5536e8cc191993fb287224a.png",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
 				"serviceProviderImageType": "15",
 				"url": "http://programm-manager.telekom.de/media/78e36d8e1f4dfec7a7a0c3ac0c7c07cd89a340d1.png",
 				"height": "48",
 				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://programm-manager.telekom.de/media/cc27aae59dc6434bd5536e8cc191993fb287224a.png",
+				"height": "1080",
+				"width": "1920"
 			}
 		],
 		"isFavorited": true,
@@ -16271,12 +16271,6 @@
 		"cmsId": "tnt-serie-sky",
 		"images": [
 			{
-				"serviceProviderImageType": "99",
-				"url": "http://programm-manager.telekom.de/media/65fe7adad96f89597cce6d9371f41c5aab69be59.jpeg",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
 				"serviceProviderImageType": "14",
 				"url": "http://programm-manager.telekom.de/media/a4bb2b7f33cb2f4c8a3f771733b7f1e754ab0406.png",
 				"height": "1080",
@@ -16287,6 +16281,12 @@
 				"url": "http://programm-manager.telekom.de/media/117d872e397121d7cc19f5d6bb15c38fafde1d3f.png",
 				"height": "48",
 				"width": "48"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://programm-manager.telekom.de/media/65fe7adad96f89597cce6d9371f41c5aab69be59.jpeg",
+				"height": "1080",
+				"width": "1920"
 			}
 		],
 		"isFavorited": true,
@@ -21931,13 +21931,13 @@
 		"images": [
 			{
 				"serviceProviderImageType": "1",
-				"url": "http://appepmfk10003.prod.sngtv.t-online.de:33220/EPG/jsp/images/universal/film/poster/fileEntity/20170423/000101/0001010050264924/443004ec-df07-4a02-b849-e90b0987b0e6.png",
+				"url": "http://appepmfk20005.prod.sngtv.t-online.de:33220/EPG/jsp/images/universal/film/poster/fileEntity/20170423/000101/0001010050264924/443004ec-df07-4a02-b849-e90b0987b0e6.png",
 				"height": "0",
 				"width": "0"
 			},
 			{
 				"serviceProviderImageType": "7",
-				"url": "http://appepmfk10003.prod.sngtv.t-online.de:33220/EPG/jsp/images/universal/film/poster/fileEntity/20170424/000101/0001010050264924/e16babf4-d595-4775-a183-1ed0486a5b02.jpg",
+				"url": "http://appepmfk20005.prod.sngtv.t-online.de:33220/EPG/jsp/images/universal/film/poster/fileEntity/20170424/000101/0001010050264924/e16babf4-d595-4775-a183-1ed0486a5b02.jpg",
 				"height": "0",
 				"width": "0"
 			},
