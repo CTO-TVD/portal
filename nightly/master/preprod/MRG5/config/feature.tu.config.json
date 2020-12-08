@@ -76,7 +76,7 @@
                     "demoarea": ["full"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
-                    "uacALA" : ["none"]
+                    "uacALA" : ["full"]
                 },
 
               	"values": {
@@ -128,7 +128,7 @@
                     "demoarea": ["full"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
-                    "uacALA" : ["none"]
+                    "uacALA" : ["full"]
                 },
 
                 "values": {
@@ -181,7 +181,7 @@
                     "demoarea": ["full"],
                     "voiceKeySupport": ["full"],
                     "remoteMessageGroupSearch": ["full"],
-                    "uacALA" : ["none"]
+                    "uacALA" : ["full"]
                 },
 
               	"values": {
