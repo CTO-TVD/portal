@@ -30,9 +30,9 @@
             },
             {
                 "type": "urlSource",
-                "query": "hostname",
+                "query": "path",
                 "rule": {
-                    "expression": "github.io",
+                    "expression": "/EPG/NIGHTLY/",
                     "assignment": "nightly_prod"
                 }
             }
@@ -71,6 +71,9 @@
                     "moreTvMySubscriptionsPackages": [
                         "none"
                     ],
+                    "moreTvUX20": [
+                        "none"
+                    ],
                     "avscontent": [
                         "full"
                     ],
@@ -80,6 +83,7 @@
                     "satellite": [
                         "none"
                     ],
+                    "satellitesubscriber": [],
                     "netpvr": [
                         "none"
                     ],
@@ -92,34 +96,22 @@
                     "useshortcuts": [
                         "full"
                     ],
-                    "wholesale": [
-                        "none"
-                    ],
                     "searchNetflix": [
                         "full"
                     ],
-                    "groupedSearch": [
+                    "vodDeleteLicence": [
                         "full"
                     ],
-                    "pipInLane": [
-                        "full"
-                    ],
-                    "netflixDet": [
-                        "none"
-                    ],
-                    "netflixSearchDet": [
-                        "none"
-                    ],
-                    "remotekeyPassForApp": [
-                        "full"
-                    ],
-                    "voiceRCSKey": [
-                        "none"
-                    ],
-                    "voiceHistory": [
+                    "vodBingeWatchImprovement": [
                         "full"
                     ],
                     "voiceKeySupport": [
+                        "none"
+                    ],
+                    "remoteMessageGroupSearch": [
+                        "full"
+                    ],
+                    "uacALA": [
                         "none"
                     ]
                 },
@@ -171,13 +163,19 @@
                     "moreTvMySubscriptionsPackages": [
                         "none"
                     ],
+                    "moreTvUX20": [
+                        "none"
+                    ],
                     "avscontent": [
                         "full"
                     ],
                     "startuppage": [
                         "none"
                     ],
-                    "satellite": [],
+                    "satellite": [
+                        "full"
+                    ],
+                    "satellitesubscriber": [],
                     "netpvr": [
                         "none"
                     ],
@@ -190,34 +188,22 @@
                     "useshortcuts": [
                         "full"
                     ],
-                    "wholesale": [
-                        "none"
-                    ],
                     "searchNetflix": [
                         "full"
                     ],
-                    "groupedSearch": [
+                    "vodDeleteLicence": [
                         "full"
                     ],
-                    "pipInLane": [
-                        "full"
-                    ],
-                    "netflixDet": [
-                        "none"
-                    ],
-                    "netflixSearchDet": [
-                        "none"
-                    ],
-                    "remotekeyPassForApp": [
-                        "full"
-                    ],
-                    "voiceRCSKey": [
-                        "none"
-                    ],
-                    "voiceHistory": [
+                    "vodBingeWatchImprovement": [
                         "full"
                     ],
                     "voiceKeySupport": [
+                        "none"
+                    ],
+                    "remoteMessageGroupSearch": [
+                        "full"
+                    ],
+                    "uacALA": [
                         "none"
                     ]
                 },
@@ -241,7 +227,7 @@
                 "assignment": {
                     "sathybrid": {
                         "rights": {
-                            "satellite": [
+                            "satellitesubscriber": [
                                 "full"
                             ]
                         }
@@ -266,6 +252,9 @@
                     "moreTvMySubscriptionsPackages": [
                         "none"
                     ],
+                    "moreTvUX20": [
+                        "none"
+                    ],
                     "avscontent": [
                         "full"
                     ],
@@ -275,25 +264,20 @@
                     "satellite": [
                         "none"
                     ],
+                    "satellitesubscriber": [],
                     "netpvr": [
                         "none"
                     ],
                     "extendedui": [
                         "none"
                     ],
+                    "longpress": [
+                        "full"
+                    ],
                     "useshortcuts": [
                         "full"
                     ],
-                    "wholesale": [
-                        "none"
-                    ],
                     "searchNetflix": [
-                        "full"
-                    ],
-                    "groupedSearch": [
-                        "full"
-                    ],
-                    "pipInLane": [
                         "full"
                     ],
                     "extendedpowermanagement": [
@@ -302,23 +286,20 @@
                     "fullremote": [
                         "none"
                     ],
-                    "netflixDet": [
-                        "none"
-                    ],
-                    "netflixSearchDet": [
-                        "none"
-                    ],
-                    "remotekeyPassForApp": [
+                    "vodDeleteLicence": [
                         "full"
                     ],
-                    "voiceRCSKey": [
-                        "full"
-                    ],
-                    "voiceHistory": [
+                    "vodBingeWatchImprovement": [
                         "full"
                     ],
                     "voiceKeySupport": [
                         "full"
+                    ],
+                    "remoteMessageGroupSearch": [
+                        "full"
+                    ],
+                    "uacALA": [
+                        "none"
                     ]
                 },
                 "values": {

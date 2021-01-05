@@ -30,22 +30,6 @@
             },
             {
                 "type": "urlSource",
-                "query": "subscriber_type",
-                "rule": {
-                    "expression": "GUESTIPTV_DT",
-                    "assignment": "guest"
-                }
-            },
-            {
-                "type": "urlSource",
-                "query": "subscriber_type",
-                "rule": {
-                    "expression": "IPTV_COAX",
-                    "assignment": "coax"
-                }
-            },
-            {
-                "type": "urlSource",
                 "query": "hostname",
                 "rule": {
                     "expression": "localhost",
@@ -87,14 +71,11 @@
                     "moreTvMySubscriptionsPackages": [
                         "none"
                     ],
-                    "moreTvDebugNotification": [
-                        "full"
-                    ],
-                    "moreTvShowQrCodes": [
-                        "none"
-                    ],
                     "moreTvMagentaHaus": [
                         "full"
+                    ],
+                    "moreTvUX20": [
+                        "none"
                     ],
                     "avscontent": [
                         "full"
@@ -105,14 +86,12 @@
                     "satellite": [
                         "none"
                     ],
+                    "satellitesubscriber": [],
                     "netpvr": [
                         "none"
                     ],
                     "extendedui": [
                         "full"
-                    ],
-                    "wholesale": [
-                        "none"
                     ],
                     "longpress": [
                         "none"
@@ -123,35 +102,23 @@
                     "searchNetflix": [
                         "full"
                     ],
-                    "groupedSearch": [
-                        "full"
-                    ],
-                    "pipInLane": [
-                        "full"
-                    ],
-                    "netflixDet": [
-                        "full"
-                    ],
                     "vodDeleteLicence": [
                         "full"
                     ],
-                    "netflixSearchDet": [
-                        "none"
+                    "vodBingeWatchImprovement": [
+                        "full"
                     ],
                     "demoarea": [
                         "full"
                     ],
-                    "remotekeyPassForApp": [
-                        "full"
-                    ],
-                    "voiceRCSKey": [
-                        "none"
-                    ],
-                    "voiceHistory": [
-                        "full"
-                    ],
                     "voiceKeySupport": [
                         "none"
+                    ],
+                    "remoteMessageGroupSearch": [
+                        "full"
+                    ],
+                    "uacALA": [
+                        "full"
                     ]
                 },
                 "values": {
@@ -178,20 +145,6 @@
                                 "full"
                             ]
                         }
-                    },
-                    "guest": {
-                        "rights": {
-                            "userLogin": [
-                                "full"
-                            ]
-                        }
-                    },
-                    "coax": {
-                        "rights": {
-                            "userLogout": [
-                                "full"
-                            ]
-                        }
                     }
                 }
             },
@@ -209,14 +162,11 @@
                     "moreTvMySubscriptionsPackages": [
                         "none"
                     ],
-                    "moreTvDebugNotification": [
-                        "full"
-                    ],
-                    "moreTvShowQrCodes": [
-                        "none"
-                    ],
                     "moreTvMagentaHaus": [
                         "full"
+                    ],
+                    "moreTvUX20": [
+                        "none"
                     ],
                     "avscontent": [
                         "full"
@@ -224,15 +174,15 @@
                     "startuppage": [
                         "none"
                     ],
-                    "satellite": [],
+                    "satellite": [
+                        "full"
+                    ],
+                    "satellitesubscriber": [],
                     "netpvr": [
                         "none"
                     ],
                     "extendedui": [
                         "full"
-                    ],
-                    "wholesale": [
-                        "none"
                     ],
                     "longpress": [
                         "none"
@@ -243,35 +193,23 @@
                     "searchNetflix": [
                         "full"
                     ],
-                    "groupedSearch": [
-                        "full"
-                    ],
-                    "pipInLane": [
-                        "full"
-                    ],
-                    "netflixDet": [
-                        "full"
-                    ],
                     "vodDeleteLicence": [
                         "full"
                     ],
-                    "netflixSearchDet": [
-                        "none"
+                    "vodBingeWatchImprovement": [
+                        "full"
                     ],
                     "demoarea": [
                         "full"
                     ],
-                    "remotekeyPassForApp": [
-                        "full"
-                    ],
-                    "voiceRCSKey": [
-                        "none"
-                    ],
-                    "voiceHistory": [
-                        "full"
-                    ],
                     "voiceKeySupport": [
                         "none"
+                    ],
+                    "remoteMessageGroupSearch": [
+                        "full"
+                    ],
+                    "uacALA": [
+                        "full"
                     ]
                 },
                 "values": {
@@ -294,7 +232,7 @@
                 "assignment": {
                     "sathybrid": {
                         "rights": {
-                            "satellite": [
+                            "satellitesubscriber": [
                                 "full"
                             ]
                         }
@@ -312,14 +250,11 @@
                     "moreTvMySubscriptionsPackages": [
                         "none"
                     ],
-                    "moreTvDebugNotification": [
-                        "full"
-                    ],
-                    "moreTvShowQrCodes": [
-                        "none"
-                    ],
                     "moreTvMagentaHaus": [
                         "full"
+                    ],
+                    "moreTvUX20": [
+                        "none"
                     ],
                     "avscontent": [
                         "full"
@@ -330,25 +265,20 @@
                     "satellite": [
                         "none"
                     ],
+                    "satellitesubscriber": [],
                     "netpvr": [
                         "none"
                     ],
                     "extendedui": [
                         "full"
                     ],
-                    "wholesale": [
-                        "none"
+                    "longpress": [
+                        "full"
                     ],
                     "useshortcuts": [
                         "full"
                     ],
                     "searchNetflix": [
-                        "full"
-                    ],
-                    "groupedSearch": [
-                        "full"
-                    ],
-                    "pipInLane": [
                         "full"
                     ],
                     "extendedpowermanagement": [
@@ -357,28 +287,22 @@
                     "fullremote": [
                         "none"
                     ],
-                    "netflixDet": [
-                        "none"
-                    ],
                     "vodDeleteLicence": [
                         "full"
                     ],
-                    "netflixSearchDet": [
-                        "none"
+                    "vodBingeWatchImprovement": [
+                        "full"
                     ],
                     "demoarea": [
                         "full"
                     ],
-                    "remotekeyPassForApp": [
-                        "full"
-                    ],
-                    "voiceRCSKey": [
-                        "full"
-                    ],
-                    "voiceHistory": [
-                        "full"
-                    ],
                     "voiceKeySupport": [
+                        "full"
+                    ],
+                    "remoteMessageGroupSearch": [
+                        "full"
+                    ],
+                    "uacALA": [
                         "full"
                     ]
                 },
