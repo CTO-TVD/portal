@@ -80,9 +80,6 @@
                     "avscontent": [
                         "full"
                     ],
-                    "startuppage": [
-                        "none"
-                    ],
                     "satellite": [
                         "none"
                     ],
@@ -171,9 +168,6 @@
                     "avscontent": [
                         "full"
                     ],
-                    "startuppage": [
-                        "none"
-                    ],
                     "satellite": [
                         "full"
                     ],
@@ -258,9 +252,6 @@
                     ],
                     "avscontent": [
                         "full"
-                    ],
-                    "startuppage": [
-                        "none"
                     ],
                     "satellite": [
                         "none"
