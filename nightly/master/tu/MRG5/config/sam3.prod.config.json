@@ -8,6 +8,10 @@
             "clientID": "10LIVESAM30000004901NGTVAM00000000000000",
             "clientSecret": ""
         },
+        "payment": {
+            "clientID": "10LIVESAM30000004901NGTV0000000000000000",
+            "clientSecret": ""
+        },
         "dcp": {
             "clientID": "10LIVESAM30000004901NGTVAM00000000000000",
             "clientSecret": ""

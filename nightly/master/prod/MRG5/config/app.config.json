@@ -23,6 +23,7 @@
     "buildinfo": "import(./config/build.info.json)",
     "imagescale": "import({ return './config/imagescale.' + config.env + '.config.json'; })",
     "sam3": "import({ return './config/sam3.' + config.env + '.config.json'; })",
+    "gcp": "import({ return './config/gcp.' + config.env + '.config.json'; })",
     "swupdateinfo": "import({ return './config/swupdate.' + config.env + '.config.json'; })",
     "keymap": "auto",
     "vas": "import({ return './config/vas.' + config.env + '.config.json'; })",
