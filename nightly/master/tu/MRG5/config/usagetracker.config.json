@@ -205,6 +205,26 @@
                         "lvl2id": 8 // settings
                 },
                 {
+                        "regex": "^settings-component-new",
+                        "replace": "Settings Page",
+                        "lvl2id": 8 // settings
+                },
+                {
+                        "regex": "^nc_settings-search-component(\\w*)",
+                        "replace": "Settings Search Page",
+                        "lvl2id": 8 // settings
+                },
+                {
+                        "regex": "^nc_settings-search-component::content::content_container::BlockInputNavContainer::nav_characters(\\w*)",
+                        "replace": "Settings Search",
+                        "lvl2id": 8 // settings search
+                },
+                {
+                        "regex": "^nc_settings-search-component::content(\\w*)",
+                        "replace": "Settings Search Result Content",
+                        "lvl2id": 8 // settings search result
+                },
+                {
                         "regex": "^channellocking-list-component",
                         "replace": "Channel locking list",
                         "lvl2id": 8 // settings
