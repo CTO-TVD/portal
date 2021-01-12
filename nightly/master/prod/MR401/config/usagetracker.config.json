@@ -216,7 +216,7 @@
                 },
                 {
                         "regex": "^nc_settings-search-component::content::content_container::BlockInputNavContainer::nav_characters(\\w*)",
-                        "replace": "Settings Search",
+                        "replace": "Settings Search Keyboard",
                         "lvl2id": 8 // settings search
                 },
                 {
