@@ -21,7 +21,8 @@
         "TvNow": "APP00175-TVNOW",
         "SevenTV": "7TV",
         "Arte7": "arte7",
-        "PhonostarRadio": "phonostar"
+        "PhonostarRadio": "phonostar",
+        "Disney": "disneyplus"
     },
     "continueWatchingLaneAppBlackList": [
         "app10",
