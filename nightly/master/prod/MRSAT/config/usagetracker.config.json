@@ -473,6 +473,11 @@
                         "regex": "^timeselector-dialog",
                         "replace": "Time selector dialog",
                         "lvl2id": 2 // TV
+                },
+                {
+                        "regex": "^generic-list-dialog-component",
+                        "replace": "Generic List Dialog",
+                        "lvl2id": 20 // Message
                 }
         ]
 }
