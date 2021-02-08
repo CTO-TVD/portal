@@ -25,7 +25,7 @@
   {"env":"t0","model":"mrg5","build":"stable1","url":"https://appepidat30001.tu0.sngtv.t-online.de:33227/EPG/dt-ui-ngtv-mem-epgi-ui-mrg5-tu-2.87.10226-new/index.html"},
   
   {"env":"t0","model":"mrentry","build":"stable2","url":"https://appepidat30001.tu0.sngtv.t-online.de:33227/EPG/dt-ui-ngtv-mem-epgi-ui-mrentry-tu-2.87.10149-new/index.html"},
-  {"env":"t0","model":"mr401","build":"stable2","url":"https://appepidat30001.tu0.sngtv.t-online.de:33227/EPG/dt-ui-ngtv-mem-epgi-ui-mr401-tu-2.87.10149-new/index.html"},
+  {"env":"t0","model":"mr401","build":"stable2","url":"https://appepidat30001.tu0.sngtv.t-online.de:33227/EPG/dt-ui-ngtv-mem-epgi-ui-mr401-tu-2.85.10036-new/index.html"},
   {"env":"t0","model":"mrsat","build":"stable2","url":"https://appepidat30001.tu0.sngtv.t-online.de:33227/EPG/dt-ui-ngtv-mem-epgi-ui-mrsat-tu-2.87.10149-new/index.html"},
   {"env":"t0","model":"mrg5","build":"stable2","url":"https://appepidat30001.tu0.sngtv.t-online.de:33227/EPG/dt-ui-ngtv-mem-epgi-ui-mrg5-tu-2.87.10149-new/index.html"},
   
