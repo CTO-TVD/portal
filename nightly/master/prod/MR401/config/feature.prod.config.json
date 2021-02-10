@@ -99,6 +99,9 @@
                     "searchNetflix": [
                         "none"
                     ],
+                    "searchYoutube": [
+                        "none"
+                    ],
                     "vodDeleteLicence": [
                         "full"
                     ],
@@ -191,6 +194,9 @@
                     "searchNetflix": [
                         "none"
                     ],
+                    "searchYoutube": [
+                        "none"
+                    ],
                     "vodDeleteLicence": [
                         "full"
                     ],
@@ -278,6 +284,9 @@
                         "full"
                     ],
                     "searchNetflix": [
+                        "none"
+                    ],
+                    "searchYoutube": [
                         "none"
                     ],
                     "extendedpowermanagement": [
