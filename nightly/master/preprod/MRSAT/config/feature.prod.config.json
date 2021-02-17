@@ -75,7 +75,7 @@
                     "vodBingeWatchImprovement": ["full"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
-                    "uacALA" : ["none"]
+                    "uacALA" : ["full"]
                 },
 
               	"values": {
