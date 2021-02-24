@@ -30,6 +30,8 @@
   "userStoreKeyTvMessages": "appcore.tvmessages.stack",
   "userStoreKeyEnableDevicePairing": "appcore.setting.alldevices.pairing.enable",
   "defaultValueEnableDevicePairing": "false",
+  "userStoreKeyYoutubeVisibility": "appcore.setting.device.youtubevisibility.enable",
+  "defaultValueYoutubeVisibility": "true",
   "userStoreKeyYouTubeSearchResultsLocked": "appcore.youTubeSearchResultsLocked",
   "userStoreKeySuppressAskToSetMaster": "appcore.suppressAskToSetMaster",
   "userStoreKeySatWizardLastRuntime": "appcore.satWizardLastRuntime",
