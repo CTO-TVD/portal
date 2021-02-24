@@ -43,6 +43,24 @@
         "isEditableByEndUser": true
     },
     {
+        "isEditableByEndUser": true,
+        "key": "STBNightlyRebootAfterUpTimeInMinutes",
+        "description": "STB NightlyReboot minimum UpTime in minutes",
+        "name": "STB NightlyReboot minimum UpTime in minutes",
+        "isEditableByOperator": true,
+        "domainType": "device",
+        "dataType": "Int"
+    },
+    {
+        "isEditableByEndUser": true,
+        "key": "STBNightlyRebootRetryDurationInMinutes",
+        "description": "STB NightlyReboot Retry Duration",
+        "name": "STB NightlyReboot Retry Duration",
+        "isEditableByOperator": true,
+        "domainType": "device",
+        "dataType": "Int"
+    },
+    {
         "key": "InterstitialPageOnOff",
         "isEditableByOperator": true,
         "defaultValue": "On",

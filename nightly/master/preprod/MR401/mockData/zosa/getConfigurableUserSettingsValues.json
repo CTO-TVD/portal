@@ -16,6 +16,14 @@
         "value": "020000"
     },
     {
+        "key": "STBNightlyRebootAfterUpTimeInMinutes",
+        "value": "2880"
+    },
+    {
+        "key": "STBNightlyRebootRetryDurationInMinutes",
+        "value": "60"
+    },
+    {
         "key": "InterstitialPageOnOff",
         "value": "On"
     },
