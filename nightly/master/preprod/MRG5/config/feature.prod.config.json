@@ -70,7 +70,7 @@
                     "longpress": ["none"],
                     "useshortcuts": ["full"],
                     "searchNetflix": ["none"],
-                    "searchYoutube": ["full"],
+                    "searchYoutube": ["none"],
                     "vodDeleteLicence": ["full"],
                     "vodBingeWatchImprovement": ["full"],
                     "voiceKeySupport": ["none"],
