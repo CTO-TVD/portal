@@ -229,7 +229,8 @@
         "a-61": {
             "dialogID": "GLOBAL_ERROR_DIALOG_DIAGNOSTIC",
             "dialogTitle": "appCore.ERROR_DIALOG_TITLE_F104031",
-            "dialogMessage": "appCore.ERROR_DIALOG_MESSAGE_F104031"
+            "dialogMessage": "appCore.ERROR_DIALOG_MESSAGE_F104031",
+            "dialogWidth": "1400"
         },
         "a-62": {
             "internalError": false,
