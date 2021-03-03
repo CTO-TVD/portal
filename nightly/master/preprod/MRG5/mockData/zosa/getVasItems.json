@@ -3775,7 +3775,7 @@
 		"minViewingAge": 12,
 		"title": "Disney+",
 		"parentalRating": 12,
-		"url": "http://stage.entertain.tvnow.de",
+		"url": "",
 		"description": null,
 		"images": [
 			{
@@ -3800,13 +3800,9 @@
 			{
 				"key": "TURN_VIDEO_OFF",
 				"value": "true"
-			},
-			{
-				"key": "TOKEN_IDENTIFIER",
-				"value": "rtl_hd"
 			}
 		],
-		"shortDescription": "RTL-Mediathek",
+		"shortDescription": "Disney",
 		"availabilityEndTime": 2114380799000,
 		"parentalRatingLabel": "12+",
 		"isAdult": false,
