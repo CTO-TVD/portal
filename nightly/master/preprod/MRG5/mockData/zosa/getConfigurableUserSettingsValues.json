@@ -5,7 +5,7 @@
     },
     {
         "key": "STBNightlyRebootEndTime",
-        "value": "030000"
+        "value": "164000"
     },
     {
         "key": "STBNightlyReboot",
@@ -13,15 +13,15 @@
     },
     {
         "key": "STBNightlyRebootStartTime",
-        "value": "020000"
+        "value": "144000"
     },
     {
         "key": "STBNightlyRebootAfterUpTimeInMinutes",
-        "value": "2880"
+        "value": "1440"
     },
     {
         "key": "STBNightlyRebootRetryDurationInMinutes",
-        "value": "60"
+        "value": "120"
     },
     {
         "key": "InterstitialPageOnOff",
