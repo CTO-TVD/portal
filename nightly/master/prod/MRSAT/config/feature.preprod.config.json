@@ -131,7 +131,7 @@
                     "vodBingeWatchImprovement": ["full"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
-                    "uacALA" : ["none"]
+                    "uacALA" : ["full"]
                 },
 
                 "values": {
@@ -189,7 +189,7 @@
                     "vodBingeWatchImprovement": ["full"],
                     "voiceKeySupport": ["full"],
                     "remoteMessageGroupSearch": ["full"],
-                    "uacALA" : ["none"]
+                    "uacALA" : ["full"]
                 },
 
               	"values": {
