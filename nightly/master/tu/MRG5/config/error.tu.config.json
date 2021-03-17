@@ -188,11 +188,11 @@
         },
         "a-51": {
             "internalError": false,
-            "sqmTemplate": "appCore.Error_102001_Suggestion"
+            "sqmTemplate": "appCore.Error_102001_SQM"
         },
         "a-52": {
             "internalError": false,
-            "sqmTemplate": "appCore.Error_102001_Suggestion"
+            "sqmTemplate": "appCore.Error_102001_SQM"
         },
         "a-53": {
             "toastTemplate": "appCore.ERROR_TOAST_0x627"
