@@ -478,6 +478,11 @@
                         "regex": "^generic-list-dialog-component",
                         "replace": "Generic List Dialog",
                         "lvl2id": 20 // Message
+                },
+                {
+                        "regex": "^selectionroot",
+                        "replace": "Demo Portal",
+                        "lvl2id": 20 // Message
                 }
         ]
 }
