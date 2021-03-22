@@ -480,7 +480,7 @@
                         "lvl2id": 20 // Message
                 },
                 {
-                        "regex": "^selectionroot",
+                        "regex": "^demoportal-",
                         "replace": "Demo Portal",
                         "lvl2id": 20 // Message
                 }
