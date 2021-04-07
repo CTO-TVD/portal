@@ -172,12 +172,12 @@
         },
         "a-47": {
             "dialogID": "GLOBAL_ERROR_DIALOG_SIMPLE",
-            "dialogTitle": "appCore.ERROR_DIALOG_TITLE_F103001",
-            "dialogMessage": "appCore.ERROR_DIALOG_MESSAGE_F103001"
+            "dialogTitle": "appCore.ERROR_DIALOG_TITLE_F103002",
+            "dialogMessage": "appCore.ERROR_DIALOG_MESSAGE_F103002"
         },
         "a-48": {
             "internalError": false,
-            "sqmTemplate": "appCore.ERROR_DIALOG_MESSAGE_F103001"
+            "sqmTemplate": "appCore.ERROR_DIALOG_MESSAGE_F103002"
         },
         "a-49": {
             "toastTemplate": "appCore.ERROR_TOAST_0x617749"
