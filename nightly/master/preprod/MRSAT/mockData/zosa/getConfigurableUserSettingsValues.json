@@ -24,10 +24,6 @@
         "value": "120"
     },
     {
-        "key": "InterstitialPageOnOff",
-        "value": "On"
-    },
-    {
         "key": "StartPageOnOff",
         "value": "On"
     },

@@ -61,17 +61,6 @@
         "dataType": "Int"
     },
     {
-        "key": "InterstitialPageOnOff",
-        "isEditableByOperator": true,
-        "defaultValue": "On",
-        "dataType": "string",
-        "name": "InterstitialPageOnOff",
-        "domainType": "device",
-        "description": "Device setting to enable/disable the display of the interstitial page",
-        "isEditableByEndUser": true,
-        "validationRegEx": "^(On|Off)$"
-    },
-    {
         "key": "StartPageOnOff",
         "isEditableByOperator": true,
         "defaultValue": "On",
