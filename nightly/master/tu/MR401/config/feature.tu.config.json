@@ -103,7 +103,7 @@
                         "full"
                     ],
                     "seriesRecordingNewOverlay": [
-                        "full"
+                        "none"
                     ],
                     "vodDeleteLicence": [
                         "full"
@@ -197,7 +197,7 @@
                         "full"
                     ],
                     "seriesRecordingNewOverlay": [
-                        "full"
+                        "none"
                     ],
                     "vodDeleteLicence": [
                         "full"
@@ -288,7 +288,7 @@
                         "full"
                     ],
                     "seriesRecordingNewOverlay": [
-                        "full"
+                        "none"
                     ],
                     "extendedpowermanagement": [
                         "none"
