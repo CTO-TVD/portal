@@ -21,7 +21,8 @@
         "TvNow": "APP00175-TVNOW",
         "SevenTV": "7TV",
         "Arte7": "APP00173-ARTE7",
-        "Disney": "disneyplus"
+        "Disney": "disneyplus",
+        "Bild" : "APP00172-BILD"
     },
     "continueWatchingLaneAppBlackList": []
 }

@@ -22,7 +22,8 @@
         "SevenTV": "7TV",
         "Arte7": "APP00173-ARTE7",
         "PhonostarRadio": "APP00288-phonostarRadio-Appneu",
-        "Disney": "disneyplus"
+        "Disney": "disneyplus",
+        "Bild" : "APP00172-BILD"
     },
     "continueWatchingLaneAppBlackList": [
         "APP00266-MagentaSportBeta-Test",

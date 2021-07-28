@@ -82,7 +82,7 @@
                     ],
                     "satellitesubscriber": [],
                     "mixedpvr": [
-                        "none"
+                        "full"
                     ],
                     "extendedui": [
                         "none"
@@ -177,7 +177,7 @@
                     ],
                     "satellitesubscriber": [],
                     "mixedpvr": [
-                        "none"
+                        "full"
                     ],
                     "extendedui": [
                         "none"
@@ -269,7 +269,7 @@
                     ],
                     "satellitesubscriber": [],
                     "mixedpvr": [
-                        "none"
+                        "full"
                     ],
                     "extendedui": [
                         "none"
