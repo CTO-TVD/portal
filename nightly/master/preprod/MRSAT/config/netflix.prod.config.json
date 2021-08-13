@@ -4,7 +4,7 @@
 
     // Endpoint for Netflix Silent SignIn (SSI)
     // old: https://stb.sdp.telekom.net/v1/NGTVSTBS
-    "storeEsnEndpoint" : "awbs://stb.sdp.telekom.net/v1/NGTVSTBS",
+    "storeEsnEndpoint" : "https://stb.sdp.telekom.net/v1/NGTVSTBS",
 
     // Endpoint for Netflix Silent SignIn (SSI)
     "getEsnInfoEndpoint" : "https://stb.sdp.telekom.net/v1/getEsn",
