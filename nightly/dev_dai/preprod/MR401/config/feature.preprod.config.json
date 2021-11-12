@@ -1,0 +1,350 @@
+{
+    "assignment": [
+        "mr401"
+    ],
+    "featureStructure": {
+        "assignmentSource": [
+            {
+                "type": "urlSource",
+                "query": "subscriber_type",
+                "rule": {
+                    "expression": "BASISTV",
+                    "assignment": "basistv"
+                }
+            },
+            {
+                "type": "urlSource",
+                "query": "subscriber_type",
+                "rule": {
+                    "expression": "IPTV",
+                    "assignment": "iptv"
+                }
+            },
+            {
+                "type": "urlSource",
+                "query": "subscriber_type",
+                "rule": {
+                    "expression": "SATHYBRID",
+                    "assignment": "sathybrid"
+                }
+            },
+            {
+                "type": "urlSource",
+                "query": "path",
+                "rule": {
+                    "expression": "/EPG/NIGHTLY/",
+                    "assignment": "nightly_prod"
+                }
+            }
+        ],
+        "definition": {
+            "rights": {
+                "full": [
+                    "viewItems",
+                    "addItems",
+                    "deleteItems",
+                    "editItems"
+                ],
+                "read": [
+                    "viewItems"
+                ],
+                "edit": [
+                    "viewItems",
+                    "addItems",
+                    "deleteItems",
+                    "editItems"
+                ]
+            }
+        },
+        "assignment": {
+            "mr401": {
+                "rights": {
+                    "app": [
+                        "full"
+                    ],
+                    "usb": [
+                        "none"
+                    ],
+                    "bluetooth": [
+                        "none"
+                    ],
+                    "moreTvMySubscriptionsPackages": [
+                        "none"
+                    ],
+                    "moreTvUX20": [
+                        "none"
+                    ],
+                    "avscontent": [
+                        "full"
+                    ],
+                    "satellite": [
+                        "none"
+                    ],
+                    "satellitesubscriber": [],
+                    "mixedpvr": [
+                        "full"
+                    ],
+                    "extendedui": [
+                        "none"
+                    ],
+                    "longpress": [
+                        "none"
+                    ],
+                    "useshortcuts": [
+                        "full"
+                    ],
+                    "searchNetflix": [
+                        "full"
+                    ],
+                    "searchYoutube": [
+                        "full"
+                    ],
+                    "seriesRecordingNewOverlay": [
+                        "full"
+                    ],
+                    "vodDeleteLicence": [
+                        "full"
+                    ],
+                    "vodBingeWatchImprovement": [
+                        "full"
+                    ],
+                    "voiceKeySupport": [
+                        "none"
+                    ],
+                    "remoteMessageGroupSearch": [
+                        "full"
+                    ],
+                    "uacALA": [
+                        "full"
+                    ]
+                },
+                "values": {
+                    "partnerMapId": {
+                        "value": "entertaintvA"
+                    },
+                    "appMapId": {
+                        "value": "APPS_ZENTERIO"
+                    },
+                    "mainMenuId": {
+                        "value": 10344
+                    },
+                    "appname720": {
+                        "value": "ui20"
+                    },
+                    "appname1080": {
+                        "value": "ui20"
+                    }
+                },
+                "assignment": {
+                    "sathybrid": {
+                        "rights": {
+                            "satellitesubscriber": [
+                                "full"
+                            ]
+                        }
+                    },
+                    "nightly_prod": {
+                        "rights": {
+                            "demoarea": [
+                                "full"
+                            ]
+                        }
+                    }
+                }
+            },
+            "mrsat": {
+                "rights": {
+                    "app": [
+                        "full"
+                    ],
+                    "usb": [
+                        "none"
+                    ],
+                    "bluetooth": [
+                        "none"
+                    ],
+                    "moreTvMySubscriptionsPackages": [
+                        "none"
+                    ],
+                    "moreTvUX20": [
+                        "none"
+                    ],
+                    "avscontent": [
+                        "full"
+                    ],
+                    "satellite": [
+                        "full"
+                    ],
+                    "satellitesubscriber": [],
+                    "mixedpvr": [
+                        "full"
+                    ],
+                    "extendedui": [
+                        "none"
+                    ],
+                    "longpress": [
+                        "none"
+                    ],
+                    "useshortcuts": [
+                        "full"
+                    ],
+                    "searchNetflix": [
+                        "full"
+                    ],
+                    "searchYoutube": [
+                        "full"
+                    ],
+                    "seriesRecordingNewOverlay": [
+                        "full"
+                    ],
+                    "vodDeleteLicence": [
+                        "full"
+                    ],
+                    "vodBingeWatchImprovement": [
+                        "full"
+                    ],
+                    "voiceKeySupport": [
+                        "none"
+                    ],
+                    "remoteMessageGroupSearch": [
+                        "full"
+                    ],
+                    "uacALA": [
+                        "full"
+                    ]
+                },
+                "values": {
+                    "partnerMapId": {
+                        "value": "entertaintvA"
+                    },
+                    "appMapId": {
+                        "value": "APPS_ZENTERIO"
+                    },
+                    "mainMenuId": {
+                        "value": 10208
+                    },
+                    "appname720": {
+                        "value": "vod-sd"
+                    },
+                    "appname1080": {
+                        "value": "vod-hd"
+                    }
+                },
+                "assignment": {
+                    "sathybrid": {
+                        "rights": {
+                            "satellitesubscriber": [
+                                "full"
+                            ]
+                        }
+                    },
+                    "nightly_prod": {
+                        "rights": {
+                            "demoarea": [
+                                "full"
+                            ]
+                        }
+                    }
+                }
+            },
+            "mrg5": {
+                "rights": {
+                    "app": [
+                        "full"
+                    ],
+                    "usb": [
+                        "none"
+                    ],
+                    "moreTvMySubscriptionsPackages": [
+                        "none"
+                    ],
+                    "moreTvUX20": [
+                        "none"
+                    ],
+                    "avscontent": [
+                        "full"
+                    ],
+                    "satellite": [
+                        "none"
+                    ],
+                    "satellitesubscriber": [],
+                    "mixedpvr": [
+                        "full"
+                    ],
+                    "extendedui": [
+                        "none"
+                    ],
+                    "longpress": [
+                        "full"
+                    ],
+                    "useshortcuts": [
+                        "full"
+                    ],
+                    "searchNetflix": [
+                        "full"
+                    ],
+                    "searchYoutube": [
+                        "full"
+                    ],
+                    "seriesRecordingNewOverlay": [
+                        "full"
+                    ],
+                    "extendedpowermanagement": [
+                        "none"
+                    ],
+                    "fullremote": [
+                        "none"
+                    ],
+                    "vodDeleteLicence": [
+                        "full"
+                    ],
+                    "vodBingeWatchImprovement": [
+                        "full"
+                    ],
+                    "voiceKeySupport": [
+                        "full"
+                    ],
+                    "remoteMessageGroupSearch": [
+                        "full"
+                    ],
+                    "uacALA": [
+                        "full"
+                    ]
+                },
+                "values": {
+                    "partnerMapId": {
+                        "value": "entertaintvA"
+                    },
+                    "appMapId": {
+                        "value": "APPS_ZENTERIO"
+                    },
+                    "mainMenuId": {
+                        "value": 10344
+                    },
+                    "appname720": {
+                        "value": "ui20"
+                    },
+                    "appname1080": {
+                        "value": "ui20"
+                    }
+                },
+                "assignment": {
+                    "sathybrid": {
+                        "rights": {
+                            "satellitesubscriber": [
+                                "full"
+                            ]
+                        }
+                    },
+                    "nightly_prod": {
+                        "rights": {
+                            "demoarea": [
+                                "full"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

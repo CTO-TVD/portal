@@ -1,0 +1,11 @@
+{
+  // definitions for fonts
+
+  "TeleNeoRegular": "fileblob(src/src-de-telekom-style/font/TeleNeoUI-Regular.woff)",
+  "TeleNeoMedium": "fileblob(src/src-de-telekom-style/font/TeleNeoUI-Medium.woff)",
+  "TeleNeoBold": "fileblob(src/src-de-telekom-style/font/TeleNeoUI-Bold.woff)",
+  "TeleNeoExtraBold": "fileblob(src/src-de-telekom-style/font/TeleNeoUI-ExtraBold.woff)",
+  
+  // definitions for images
+  "spritemap": "fileblob({ return 'src/src-de-telekom-style/' + config.resolution + '/sprite.png'; })"
+}
