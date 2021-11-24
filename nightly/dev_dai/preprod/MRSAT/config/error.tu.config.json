@@ -259,6 +259,9 @@
             "internalError": false,
             "sqmTemplate": "appCore.ERROR_TOAST_0x60C74701"
         },
+        "a-69": {
+            "toastTemplate": "appCore.ERROR_TOAST_0x645"
+        },
         "general": {
             "toastTemplate": "appCore.ERROR_TOAST"
         },
@@ -604,6 +607,13 @@
             "required": [
                 "a-65",
                 "a-66"
+            ]
+        },
+        // CobaltVoiceCommandError - 0x645[0-9A-F]+
+        {
+            "errorCode": "^0x645[0-9A-F]+$",
+            "required": [
+                "a-69"
             ]
         },
         // ZacPlayerError - 0x7028131[0-4]\..*
