@@ -211,7 +211,7 @@ function buildUrl() {
         try {
             url = environment[0].url;
 
-            if (runningOnSTB && (configuration.update != "9999999999" || configuration.screensaver != "120000")) {
+            if (runningOnSTB) {
 
                 url = url.replace("https://cto-tvd.github.io/portal/nightly/", "https://appepidat30001.tu0.sngtv.t-online.de:33227/EPG/NIGHTLY/");
             }
