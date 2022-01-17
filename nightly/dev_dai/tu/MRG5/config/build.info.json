@@ -1,7 +1,7 @@
 {
     "buildAgent": "githubActions",
-    "buildDate": "2022-01-17T11:09:34.770Z",
-    "buildVersion": "10841",
+    "buildDate": "2022-01-17T12:19:03.165Z",
+    "buildVersion": "10842",
     "buildIsNightly": true,
     "branch": "dev_dai",
     "commit": "d58026609ddeea49cb71a391755f9a40c88e620e",
