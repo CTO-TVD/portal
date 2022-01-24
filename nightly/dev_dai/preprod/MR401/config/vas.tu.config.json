@@ -3,7 +3,6 @@
     "internalApps": {
         "urlPattern": "^.*Internal:",
         "localChannelUrlPattern": "^http(s)*://Internal:LocalChannel$",
-        "webRadioUrlPattern": "^http(s)*:\/\/Internal:WebRadio$",
         "whiteLabelUrlPattern": "^http(s)*:\/\/Internal:WhiteLableAPP",
         "moreTvUrl": "^http(s)*:\/\/Internal:MehrTvAPP"
     },

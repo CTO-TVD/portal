@@ -99,8 +99,8 @@
                     "searchYoutube": [
                         "full"
                     ],
-                    "seriesRecordingNewOverlay": [
-                        "full"
+                    "consentManagement": [
+                        "none"
                     ],
                     "vodDeleteLicence": [
                         "full"
@@ -194,8 +194,8 @@
                     "searchYoutube": [
                         "full"
                     ],
-                    "seriesRecordingNewOverlay": [
-                        "full"
+                    "consentManagement": [
+                        "none"
                     ],
                     "vodDeleteLicence": [
                         "full"
@@ -286,8 +286,8 @@
                     "searchYoutube": [
                         "full"
                     ],
-                    "seriesRecordingNewOverlay": [
-                        "full"
+                    "consentManagement": [
+                        "none"
                     ],
                     "extendedpowermanagement": [
                         "none"
