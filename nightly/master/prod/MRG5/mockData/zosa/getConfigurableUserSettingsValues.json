@@ -94,5 +94,9 @@
 	{
         "key": "permissionInfoToBroadcastersHistory",
 		"value": ""
+    },
+    {
+        "key": "RegionalConfiguration",
+        "value": ""
     }
 ]
