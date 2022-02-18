@@ -5,7 +5,8 @@
 
         "aws": {
             "transformationRule": "aws",
-            "url": "https://prod.dcp.telekom-dienste.de/auth"
+            "url": "https://prod.dcp.telekom-dienste.de/auth/bootstrap/",
+            "typeId" : "NUI-PRO-4fe8b64c-f62a-431f-91dd-3745d87e10a0"
         },
 
         "dev": {
