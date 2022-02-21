@@ -1,6 +1,6 @@
 {
     // default assignment for the application 
-    "assignment": ["mrg401"],
+    "assignment": ["mr401"],
 
     // definition of the feature structure for the application
     "featureStructure": {
