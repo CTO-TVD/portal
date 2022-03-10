@@ -94,5 +94,9 @@
 	{
         "key": "permissionInfoToBroadcastersHistory",
 		"value": ""
+    },
+    {
+        "key": "RegionalConfiguration",
+        "value": "{\"entries\":[{\"position\":\"3\",\"name\":\"Dritte Programme\",\"categoryid\":\"2000000262\"},{\"position\":\"4\",\"name\":\"Regionalfenster RTL\",\"categoryid\":\"2000000263\"},{\"position\":\"5\"\"name\":\"Regionalfenster SAT.1\",\"categoryid\":\"2000000264\"},{\"position\":\"25\",\"name\":\"Lokalsender\",\"categoryid\":\"2000000265\"}]}"
     }
 ]

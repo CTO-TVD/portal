@@ -1,1 +1,4137 @@
-var OTCMP;(()=>{"use strict";var e={d:(t,o)=>{for(var n in o)e.o(o,n)&&!e.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:o[n]})},o:(e,t)=>Object.prototype.hasOwnProperty.call(e,t),r:e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})}},t={};e.r(t),e.d(t,{startSDK:()=>o,getDataSubjectIdentifier:()=>n,setDataSubjectIdentifier:()=>r,getOTSDKData:()=>s,shouldShowBanner:()=>a,getPurposesList:()=>l,getSavedProfile:()=>c,updatePurposeConsent:()=>u,updatePurposeLegitInterest:()=>i,saveConsent:()=>g,preferenceCenterClose:()=>h,clearOTSDKData:()=>f,getConsentStatus:()=>m,downloadStorageDisclosure:()=>D,getGoogleVendorList:()=>_,getVendorList:()=>b,getVendorDetails:()=>L,getSavedVendorConsents:()=>P,getSavedGoogleVendorConsents:()=>y,getSavedVendorLegitInterest:()=>N,toggleVendorsConsentUi:()=>A,updateVendorConsent:()=>B,updateVendorLegitInterest:()=>x,getBannerData:()=>j,getPreferenceCenterData:()=>M,getVendorPageData:()=>J,setupUI:()=>K,OTSDK_logger:()=>H,filterVendorListBy:()=>Ie,OTBackButtonMode:()=>pe,performAutomaticReconsentOverride:()=>Se});const o=async e=>{try{const n=Date.now(),s=localStorage.getItem("OneTrust_sdk_keys");s&&btoa(JSON.stringify(e))!==s&&f();const a=new Headers;let l=!1;a.append("location",e.storageLocation),a.append("application",e.domainIdentifier),a.append("lang",e.languageCode),a.append("sdkVersion",e.apiVersion),e.hasOwnProperty("countryCodeOverride")&&a.append("OT-Country-Code",e.countryCodeOverride),e.hasOwnProperty("regionCodeOverride")&&a.append("OT-Region-Code",e.regionCodeOverride),e.hasOwnProperty("syncProfileAuth")&&(a.append("syncProfileAuth",e.syncProfileAuth),a.append("fetchType","APP_DATA_AND_SYNC_PROFILE")),e.hasOwnProperty("identifier")&&(r(e.identifier),a.append("identifier",e.identifier)),e.hasOwnProperty("syncProfileAuth")&&a.append("profileSyncETag","");const c={method:"GET",headers:a,redirect:"follow"},u=Date.now(),i=await fetch(e.domaindata_url,c).catch((e=>{throw e}));if(!i.ok)throw H("response.statusText -> "+i.statusText),new Error(i.statusText);const g=await i.json();Ce(1,u,Date.now()),H("response -> "+JSON.stringify(g));const d=g.culture.DomainData.Groups;for(const e in d){const t=d[e];"IAB2_SPL_FEATURE"===t.Type&&(t.HasLegIntOptOut=!1)}const I=g.status.profile.code;if(I&&200===I){const e=g.profile.sync.preferences;for(const t in e){const o=e[t],n=o.id;if(o.updatedAfterSync){const e=Y(n,g);if(e){const t=Q(o.status,g),n="OneTrust_CustomGroupId_"+e;localStorage.setItem(n,t),l=!0}}}if(g.profile.sync.hasOwnProperty("parentToggleState")){const e=g.profile.sync.parentToggleState;for(const[t,o]of Object.entries(e)){const e=Q(o,g),n="OneTrust_CustomGroupId_"+t;localStorage.setItem(n,e)}}if(g.profile.fetch.hasOwnProperty("syncGroups")){const e=g.profile.fetch.syncGroups,n=g.domain.SyncGroupId;if(e.hasOwnProperty(n)){const r=e[n].tcStringV2Decoded.purpose.legitimateInterests.split("");for(var t=0;t<r.length-1;t++){const e="OneTrust_CustomGroupId_LI_IABV2_"+(t+1);var o="inactive";"1"===r[t]&&(o="active"),localStorage.setItem(e,o)}}}}const C=g.culture.DomainData.LastReconsentDate;if(null!=C){const e=localStorage.getItem("OneTrust_lastConsentDate");e&&parseFloat(e)<parseFloat(C)&&le()}const p=localStorage.getItem("OneTrust_lastConsentDate");if(p){const e=g.culture.DomainData.ReconsentFrequencyDays;if(null!=e){const t=new Date(parseFloat(p)),o=(new Date).getTime()-t.getTime();Math.ceil(o/864e5)>e&&le()}}return localStorage.setItem("OneTrust_sdk_data",JSON.stringify(g)),localStorage.setItem("OneTrust_sdk_keys",btoa(JSON.stringify(e))),I&&200===I&&g.profile.sync.shouldShowBannerAsConsentExpired&&le(),await v(),g.culture.MobileData.preferenceCenterData.googleVendors.general.show&&await O(),k(),l&&R(),ce(),Ce(4,n,Date.now()),g}catch(e){throw e}};function n(){let e=localStorage.getItem("OneTrust_datasubjectID");return e||(e=([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g,(e=>(e^crypto.getRandomValues(new Uint8Array(1))[0]&15>>e/4).toString(16))),e=btoa(e),localStorage.setItem("OneTrust_datasubjectID",e),localStorage.setItem("OneTrust_datasubjectID_known","false")),atob(e)}function r(e){localStorage.setItem("OneTrust_datasubjectID",btoa(e)),localStorage.setItem("OneTrust_datasubjectID_known","true")}function s(){const e=localStorage.getItem("OneTrust_sdk_data");return JSON.parse(e)}function a(){try{const e=s();if(!e)throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";return e.culture.DomainData.ShowAlertNotice?function(){const e=s();if(!e)throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";let t=!0;const o=e.culture.DomainData.LastReconsentDate;if(o&&o.toString().trim().length>0){const e=localStorage.getItem("OneTrust_lastConsentDate");e&&(t=!(parseFloat(o)>parseFloat(e)))}return t}()?function(){const e=localStorage.getItem("OneTrust_lastConsentDate");if(e){const t=s().culture.DomainData.ReconsentFrequencyDays;if(null!=t){const o=new Date(parseFloat(e)),n=(new Date).getTime()-o.getTime();if(Math.ceil(n/864e5)>t)return!0}}return!1}()?(H("shouldShowBanner -> true because didReconsentFrequencyDaysExpire === true"),!0):se()&&function(){let e=!1;const t=s().profile.sync.allPurposesUpdatedAfterSync;return t&&(e=t),e}()?(H("shouldShowBanner -> false because allPurposesUpdatedAfterSync === true "),!1):se()&&function(){const e=[];ne().forEach((function(t){e.push(t.CustomGroupId)}));let t=localStorage.getItem("OneTrust_categoriesAvailableLastInteraction");if(t){t=JSON.parse(t);const r=[],s=[];return(o=t,n=e,[...o,...n].filter((e=>!(o.includes(e)&&n.includes(e))))).forEach(((t,o)=>{-1===e.indexOf(t)?s.push(t):r.push(t)})),H("New categories ->"+JSON.stringify(r)),H("Deleted categories  ->"+JSON.stringify(s)),r.length>0}var o,n;return!1}()?(H("shouldShowBanner -> true because we're cross-device and we have new categories since last interaction."),!0):localStorage.getItem("OneTrust_lastConsentDate")?(H("shouldShowBanner -> false because user already taken action locally: OneTrust_lastConsentDate = "+localStorage.getItem("OneTrust_lastConsentDate")),!1):(H("shouldShowBanner -> true - no other rules match."),!0):(H("shouldShowBanner -> true because lastReconsentDatesMatch === false"),!0):(H("shouldShowBanner -> false because culture.DomainData.ShowAlertNotice is false"),!1)}catch(e){throw e}}function l(){try{const e=s();if(!e)throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";const t=[],o=ne();e.culture.DomainData.VendorConsentModel.toLowerCase();let n=[];const r=localStorage.getItem("OneTrust_saveQueue");r&&r.length>0&&(n=JSON.parse(r));for(const e in o){if(!o.hasOwnProperty(e))continue;const r=o[e],s=r.CustomGroupId;let a=r.Status,l="OneTrust_CustomGroupId_"+s,c=localStorage.getItem(l);c&&(a=c),"IABV2_1"===s&&1===oe()&&(a="inactive"),r.Status=a,r.UIState_Status=a;let u=n.filter((function(e){return e.storageKeyName==="OneTrust_CustomGroupId_"+s}));if(u&&u.length>0&&(r.UIState_Status=u[0].newValue),r.HasLegIntOptOut){let e="active";l="OneTrust_CustomGroupId_LI_"+s,c=localStorage.getItem(l),c&&(e=c),r.UIState_LI=e,r.LI=e,u=n.filter((function(e){return e.storageKeyName==="OneTrust_CustomGroupId_LI_"+s})),u&&u.length>0&&(r.UIState_LI=u[0].newValue)}t.push(r)}return t}catch(e){throw e}}function c(){try{const e=s();if(!e)throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";const t={},o=ne(),n="opt-out"===e.culture.DomainData.VendorConsentModel.toLowerCase();let r;for(const e in o){if(r={},!o.hasOwnProperty(e))continue;const s=o[e];if(s.isParent)continue;const a=s.CustomGroupId;let l=s.Status,c="OneTrust_CustomGroupId_"+a,u=localStorage.getItem(c);if(u&&(l=u),"IABV2_1"===a&&1===oe()&&(l="inactive"),r.consent="inactive"!==l,s.HasLegIntOptOut){let e=n?"active":"inactive";c="OneTrust_CustomGroupId_LI_"+a,localStorage.hasOwnProperty(c)&&(e=localStorage.getItem(c)),r.legitInt="inactive"!==e}r.name=s.GroupName,r.type=s.Type,r.purposeId=s.PurposeId,t[a]=r}return t}catch(e){throw e}}function u(e,t){try{if(!s())throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";const n="OneTrust_CustomGroupId_"+e;let r=[];const a=localStorage.getItem("OneTrust_saveQueue");a&&a.length>0&&(r=JSON.parse(a));const c=l();for(const s in c){const a=c[s];if(a.CustomGroupId===e){const s=a.Status;if("active"===s||"inactive"===s.toLowerCase()){for(var o=0;o<r.length;o++)r[o].storageKeyName===n&&(r.splice(o,1),o--);r.push({storageKeyName:n,CustomGroupId:e,newValue:t?"active":"inactive"})}break}}localStorage.setItem("OneTrust_saveQueue",JSON.stringify(r))}catch(e){throw e}}function i(e,t){try{if(!s())throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";const o="OneTrust_CustomGroupId_LI_"+e;let n=[];const r=localStorage.getItem("OneTrust_saveQueue");r&&r.length>0&&(n=JSON.parse(r));const a=l();for(const r in a){const s=a[r];if(s.CustomGroupId===e){if(s.HasLegIntOptOut){for(let e=0;e<n.length;e++)n[e].storageKeyName===o&&(n.splice(e,1),e--);n.push({storageKeyName:o,CustomGroupId:e,newValue:t?"active":"inactive"})}break}}localStorage.setItem("OneTrust_saveQueue",JSON.stringify(n))}catch(e){throw e}}async function g(e){switch(e){case"bannerAllowAll":return d();case"bannerRejectAll":return I();case"bannerClose":return C();case"preferenceCenterAllowAll":return T();case"preferenceCenterRejectAll":return S();case"preferenceCenterConfirm":return(async()=>{let e;try{if(H("onPreferenceCenterConfirmChoices called"),!s())throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";let t=[];const o=localStorage.getItem("OneTrust_saveQueue");o&&o.length>0&&(t=JSON.parse(o));for(const o in t)e=t[o],e&&localStorage.setItem(e.storageKeyName,e.newValue);const n=l(),r=[];for(const t in n){e=n[t];let o="UNKNOWN";const s=e.Status.toString(),a=e.PurposeId;if("active"===s?o="CONFIRMED":"inactive"===s.toLowerCase()?o="OPT_OUT":"always active"===s.toLowerCase()?o="NO_CHOICE":"inactive landingpage"===s.toLowerCase()&&(o="CONFIRMED"),a&&a.toString().trim().length>0&&"UNKNOWN"!==o){const e={};e.Id=a,e.TransactionType=o,r.push(e)}}await V();const a=await ae(r,"Preference Center - Confirm");return localStorage.setItem("OneTrust_saveQueue",JSON.stringify([])),await q(),ce(),a}catch(e){throw e}})();case"bannerBack":return p()}}const d=async()=>{try{if(!s())throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";H("onBannerClickedAcceptAll called"),G(),E();const e=l(),t=[];for(const o in e){const n=e[o];let r="UNKNOWN";const s=n.Status.toString(),a=n.PurposeId,l=n.CustomGroupId;let c="OneTrust_CustomGroupId_"+l;if("active"===s?(r="CONFIRMED",localStorage.setItem(c,s)):"inactive"===s.toLowerCase()?(r="CONFIRMED",localStorage.setItem(c,"active")):"always active"===s.toLowerCase()?(r="NO_CHOICE",localStorage.setItem(c,s)):"inactive landingpage"===s.toLowerCase()&&(r="CONFIRMED",localStorage.setItem(c,s)),a&&a.toString().trim().length>0&&"UNKNOWN"!==r){const e={};e.Id=a,e.TransactionType=r,t.push(e)}n.LI&&(c="OneTrust_CustomGroupId_LI_"+l,localStorage.setItem(c,"active"))}await F(!0);const o=await ae(t,"Banner - Allow All");return await q(),ce(),o}catch(e){throw e}},I=async()=>{try{if(H("onBannerClickedRejectAll called"),!s())throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";G(),E();var e=l(),t=[];for(var o in e){var n=e[o],r="UNKNOWN",a=n.Status.toString(),c=n.PurposeId,u=n.CustomGroupId,i="OneTrust_CustomGroupId_"+u;if("active"===a?(r="OPT_OUT",localStorage.setItem(i,"inactive")):"inactive"===a.toLowerCase()?(r="OPT_OUT",localStorage.setItem(i,a)):"always active"===a.toLowerCase()?(r="NO_CHOICE",localStorage.setItem(i,a)):"inactive landingpage"===a.toLowerCase()&&(r="OPT_OUT",localStorage.setItem(i,a)),c&&c.toString().trim().length>0&&"UNKNOWN"!==r){var g={};g.Id=c,g.TransactionType=r,t.push(g)}n.LI&&(i="OneTrust_CustomGroupId_LI_"+u,localStorage.setItem(i,"inactive"))}await F(!1);const d=await ae(t,"Banner - Reject All");return await q(),ce(),d}catch(e){throw e}},C=async()=>{try{if(H("onBannerClose called"),!s())throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";G(),E();var e=l(),t=[];for(var o in e){var n=e[o],r="UNKNOWN",a=n.Status.toString(),c=n.PurposeId,u=n.CustomGroupId,i="OneTrust_CustomGroupId_"+u;if("active"===a?(r="CONFIRMED",localStorage.setItem(i,a)):"inactive"===a.toLowerCase()?(r="NOTGIVEN",localStorage.setItem(i,a)):"always active"===a.toLowerCase()?(r="NO_CHOICE",localStorage.setItem(i,a)):"inactive landingpage"===a.toLowerCase()&&(r="CONFIRMED",localStorage.setItem(i,a)),c&&c.toString().trim().length>0&&"UNKNOWN"!==r){var g={};g.Id=c,g.TransactionType=r,t.push(g)}if(n.LI){var d="opt-out"===s().culture.DomainData.VendorConsentModel.toLowerCase()?"active":"inactive";i="OneTrust_CustomGroupId_LI_"+u,localStorage.setItem(i,d)}}const I=await ae(t,"Banner - Close");return await q(),ce(),H("ON_HIDE_BANNER"),I}catch(e){throw e}},p=async()=>{try{const e=localStorage.getItem("OneTrust_backButtonMode");return H("onBannerBack called"),null!==e?"DISMISS_BANNER"===e?(await q(),H("Dismiss Banner UI"),{info:"Dismiss the banner UI"}):(H("Dismiss Banner UI & save consent"),await C()):{error:"NO_ACTION"}}catch(e){throw e}},T=async()=>{try{if(!s())throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";G(),E();const e=l(),t=[];for(const o in e){const n=e[o];let r="UNKNOWN";const s=n.Status.toString(),a=n.PurposeId,l=n.CustomGroupId;let c="OneTrust_CustomGroupId_"+l;if("always active"===s.toLowerCase()?(r="NO_CHOICE",localStorage.setItem(c,s)):(r="CONFIRMED",localStorage.setItem(c,"active")),a&&a.toString().trim().length>0&&"UNKNOWN"!==r){const e={};e.Id=a,e.TransactionType=r,t.push(e)}n.LI&&(c="OneTrust_CustomGroupId_LI_"+l,localStorage.setItem(c,"active"))}await F(!0);const o=await ae(t,"Preference Center - Allow All");return await q(),ce(),o}catch(e){throw e}},S=async()=>{try{if(!s())throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";G(),E();var e=l(),t=[];for(var o in e){var n=e[o],r="UNKNOWN",a=n.Status.toString(),c=n.PurposeId,u=n.CustomGroupId,i="OneTrust_CustomGroupId_"+u;if("active"===a?(r="OPT_OUT",localStorage.setItem(i,"inactive")):"inactive"===a.toLowerCase()?(r="OPT_OUT",localStorage.setItem(i,a)):"always active"===a.toLowerCase()?(r="NO_CHOICE",localStorage.setItem(i,a)):"inactive landingpage"===a.toLowerCase()&&(r="CONFIRMED",localStorage.setItem(i,a)),c&&c.toString().trim().length>0&&"UNKNOWN"!==r){var g={};g.Id=c,g.TransactionType=r,t.push(g)}n.LI&&(i="OneTrust_CustomGroupId_LI_"+u,localStorage.setItem(i,"inactive"))}await F(!1);const d=await ae(t,"Preference Center - Reject All");return await q(),ce(),d}catch(e){throw e}},h=async()=>{try{return G(),void E()}catch(e){throw e}};function f(){for(let e=localStorage.length-1;e>=0;e--){const t=localStorage.key(e);(t.startsWith("OneTrust_")||t.startsWith("IABTCF_"))&&localStorage.removeItem(t)}localStorage.removeItem("IABUSPrivacy_String")}function m(e){try{const t=l();for(const o in t){const n=t[o];if(n.CustomGroupId===e)return n.Status.toString()}return"UNKNOWN"}catch(e){throw e}}const O=async()=>{try{const e=s();if(!e)throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";if(!W())return{info:"not IAB2 - vendor list not needed"};if(!e.culture.MobileData.preferenceCenterData.googleVendors.general.show)return void H("downloadGoogleVendorList -> Google vendor is not enabled for this template");const t=e.domain.GoogleData;if(!t)return void H("downloadGoogleVendorList -> MISSING GoogleData NODE FROM getOTSDKData");const o=t.googleVendorListUrl;if(!o)return void H("downloadGoogleVendorList -> MISSING googleVendorListUrl NODE FROM IabV2Data node");const n=new Headers;n.append("Content-Type","application/json"),n.append("cache-control","no-cache");const r={method:"GET",headers:n,redirect:"follow"},a=Date.now(),l=await fetch(o,r).catch((e=>{throw e}));if(!l.ok)throw H("response.statusText -> "+l.statusText),new Error(l.statusText);const c=await l.json();Ce(3,a,Date.now());const u=e.culture.DomainData,i=u.VendorConsentModel,g=u.OverridenGoogleVendors,d="opt-out"===i.toLowerCase(),I=y(),C=c.vendors,p=Object.keys(C);for(let e=0;e<p.length;e++){const t=C[p[e]],o=t.id;t.shouldShowVendor=!0,t.shouldShowConsentToggleForVendor=!0,t.vendorConsentToggleIsOn=d,t.purposes=[],t.legIntPurposes=[],t.specialPurposes=[],t.features=[],t.specialFeatures=[];const n=g[o];n&&(t.shouldShowVendor=n.active),I.hasOwnProperty(o)&&(t.vendorConsentToggleIsOn=I[o]),t.UIState_vendorConsentToggleIsOn=t.vendorConsentToggleIsOn}return localStorage.setItem("OneTrust_Google_VendorList",JSON.stringify(c)),c}catch(e){throw e}},v=async()=>{try{const r=s();if(!r)throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";if(!W())return{info:"not IAB2 - vendor list not needed"};const a=r.domain.IabV2Data;if(!a)throw"MISSING IabV2Data NODE FROM getOTSDKData";const l=a.globalVendorListUrl;if(!l)throw"MISSING globalVendorListUrl NODE FROM IabV2Data node";const c=new Headers;c.append("Content-Type","application/json"),c.append("cache-control","no-cache");const u={method:"GET",headers:c,redirect:"follow"},i=Date.now(),g=await fetch(l,u).catch((e=>{throw e}));if(!g.ok)throw H("response.statusText -> "+g.statusText),new Error(g.statusText);const d=await g.json();Ce(2,i,Date.now());const I=r.culture.DomainData,C=I.OverriddenVendors,p="opt-out"===I.VendorConsentModel.toLowerCase(),T=P(),S=N(),h=function(e){const t={},o=Object.keys(e);for(const n in o){const r=o[n],s=e[r],a=Object.keys(s);for(const e in a){const o=a[e],n=parseInt(s[o]);if(n>=0&&n<=2){const e=o.toString(),s=n.toString();t.hasOwnProperty(e)||(t[e]={0:[],1:[],2:[]}),t[e][s].push(parseInt(r))}}}return t}(I.publisher.restrictions),f=r.domain.SyncGroupId,m=r.profile.fetch;var e=null,t=null;if(m.hasOwnProperty("syncGroups")&&m.syncGroups.hasOwnProperty(f)&&!he()){const o=m.syncGroups[f],n=o.tcStringV2Decoded.vendor.consents,r=o.tcStringV2Decoded.vendor.legitimateInterests;e=n.split(""),t=r.split("")}var o=0;const O=d.vendors,v=Object.keys(O);for(var n=0;n<v.length;n++){const r=O[v[n]],s=r.id;s>o&&(o=s),r.shouldShowVendor=!0,r.shouldShowConsentToggleForVendor=r.purposes.length>0,r.vendorConsentToggleIsOn=p,r.shouldShowLegitimateInterestToggleForVendor=r.legIntPurposes.length>0,r.vendorLegitimateInterestToggleIsOn=!0;const a=C[s];a&&(r.shouldShowVendor=a.active,r.shouldShowConsentToggleForVendor=a.consent,r.shouldShowLegitimateInterestToggleForVendor=a.legInt);const l=s.toString();h.hasOwnProperty(l)&&(h[l][0].forEach((function(e){d.vendors[l].purposes=d.vendors[l].purposes.filter((function(t){return t!==e})),d.vendors[l].legIntPurposes=d.vendors[l].legIntPurposes.filter((function(t){return t!==e}))})),h[l][1].forEach((function(e){d.vendors[l].legIntPurposes.indexOf(e)>=0&&(d.vendors[l].purposes=d.vendors[l].purposes.filter((function(t){return t!==e})),d.vendors[l].legIntPurposes=d.vendors[l].legIntPurposes.filter((function(t){return t!==e})),d.vendors[l].purposes.push(e),d.vendors[l].purposes=d.vendors[l].purposes.sort())})),h[l][2].forEach((function(e){d.vendors[l].purposes.indexOf(e)>=0&&(d.vendors[l].purposes=d.vendors[l].purposes.filter((function(t){return t!==e})),d.vendors[l].legIntPurposes=d.vendors[l].legIntPurposes.filter((function(t){return t!==e})),d.vendors[l].legIntPurposes.push(e),d.vendors[l].legIntPurposes=d.vendors[l].legIntPurposes.sort())}))),r.shouldShowVendor&&T.hasOwnProperty(s)&&(r.vendorConsentToggleIsOn=T[s]),r.shouldShowVendor&&S.hasOwnProperty(s)&&(r.vendorLegitimateInterestToggleIsOn=S[s]),!r.shouldShowConsentToggleForVendor&&r.vendorConsentToggleIsOn&&(r.vendorConsentToggleIsOn=!1),!r.shouldShowLegitimateInterestToggleForVendor&&r.vendorLegitimateInterestToggleIsOn&&(r.vendorLegitimateInterestToggleIsOn=!1),r.shouldShowVendor||(r.vendorConsentToggleIsOn=!1,r.vendorLegitimateInterestToggleIsOn=!1,r.shouldShowConsentToggleForVendor=!1,r.shouldShowLegitimateInterestToggleForVendor=!1);const c=parseInt(s)-1;null!==e&&(0===e.length?r.vendorConsentToggleIsOn=!1:r.vendorConsentToggleIsOn=w(e[c])),null!==t&&(0===t.length?r.vendorLegitimateInterestToggleIsOn=!1:r.vendorLegitimateInterestToggleIsOn=w(t[c])),r.UIState_vendorConsentToggleIsOn=r.vendorConsentToggleIsOn,r.UIState_vendorLegitimateInterestToggleIsOn=r.vendorLegitimateInterestToggleIsOn}return localStorage.setItem("OneTrust_VendorList",JSON.stringify(d)),localStorage.setItem("OneTrust_VendorList_maxVendorID",o),localStorage.setItem("OneTrust_vendorList_Date",((new Date).getTime()/1e3).toString()),d}catch(e){throw e}};function w(e){return"1"===e}const D=async e=>{try{if(!s())throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";if(!W())return{info:"Supported only for IAB2"};const t=new Headers;t.append("Content-Type","application/json");const o={method:"GET",headers:t,redirect:"follow"},n=await fetch(e,o).catch((e=>{throw e})),r=e=>(e&&e.statusText?H("response.statusText -> "+e.statusText):H("response.statusText ->  Error downloading vendor storage disclosure"),{code:"err"});return await(n.status>400||"application/json"!==n.headers.get("Content-Type"))?r():n.json()}catch(e){throw e}};function _(){const e=localStorage.getItem("OneTrust_Google_VendorList");return e?JSON.parse(e):{}}function b(){const e=localStorage.getItem("OneTrust_VendorList");return e?JSON.parse(e):{}}function L(e){return b().vendors[e.toString()]}function P(){const e=localStorage.getItem("OneTrust_vendorConsentUserSelections");return e?JSON.parse(e):{}}function y(){const e=localStorage.getItem("OneTrust_vendorGoogleConsentUserSelections");return e?JSON.parse(e):{}}function N(){const e=localStorage.getItem("OneTrust_vendorLIUserSelections");return e?JSON.parse(e):{}}function A(e,t=null){try{if(!s())throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";const o=b();if(!o||!o.vendors)return;const n=[];if(t)for(let r in t){const s=t[r],a=o.vendors[s];a&&a.shouldShowConsentToggleForVendor&&(a.UIState_vendorConsentToggleIsOn=e,n.push({vendorId:s,newValue:e}))}else for(const t in o.vendors){const r=o.vendors[t];r.shouldShowConsentToggleForVendor&&(r.UIState_vendorConsentToggleIsOn=e,n.push({vendorId:t,newValue:e}))}localStorage.setItem("OneTrust_VendorList",JSON.stringify(o)),localStorage.setItem("OneTrust_saveQueue_vendor",JSON.stringify(n))}catch(e){throw e}}const F=async e=>{try{if(!s())throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";G();var t=b();if(!t||!t.vendors)return;var o=P(),n=N(),r=t.vendors;for(var a in r)(i=r[a]).shouldShowConsentToggleForVendor&&(o[a]=e,i.vendorConsentToggleIsOn=e),i.shouldShowLegitimateInterestToggleForVendor&&(n[a]=e,i.vendorLegitimateInterestToggleIsOn=e),i.UIState_vendorConsentToggleIsOn=i.vendorConsentToggleIsOn,i.UIState_vendorLegitimateInterestToggleIsOn=i.vendorLegitimateInterestToggleIsOn;localStorage.setItem("OneTrust_vendorConsentUserSelections",JSON.stringify(o)),localStorage.setItem("OneTrust_vendorLIUserSelections",JSON.stringify(n)),localStorage.setItem("OneTrust_VendorList",JSON.stringify(t));var l=_();if(l&&l.vendors){var c=y(),u=l.vendors;for(var a in u){var i;(i=u[a]).shouldShowConsentToggleForVendor&&(c[a]=e,i.vendorConsentToggleIsOn=e),i.UIState_vendorConsentToggleIsOn=i.vendorConsentToggleIsOn}localStorage.setItem("OneTrust_vendorGoogleConsentUserSelections",JSON.stringify(c)),localStorage.setItem("OneTrust_Google_VendorList",JSON.stringify(l))}return R(),await U()}catch(e){throw e}};function B(e,t){try{var o=[],n=localStorage.getItem("OneTrust_saveQueue_vendor");n&&n.length>0&&(o=JSON.parse(n));for(var r=0;r<o.length;r++)o[r].vendorId===e&&(o.splice(r,1),r--);o.push({vendorId:e,newValue:t});const s=b();if(null!=s.vendors[e.toString()])s.vendors[e.toString()].UIState_vendorConsentToggleIsOn=t,localStorage.setItem("OneTrust_VendorList",JSON.stringify(s));else{const o=_();o.vendors[e.toString()].UIState_vendorConsentToggleIsOn=t,localStorage.setItem("OneTrust_Google_VendorList",JSON.stringify(o))}localStorage.setItem("OneTrust_saveQueue_vendor",JSON.stringify(o))}catch(e){throw e}}function x(e,t){try{var o=[],n=localStorage.getItem("OneTrust_saveQueue_vendor_li");n&&n.length>0&&(o=JSON.parse(n));for(var r=0;r<o.length;r++)o[r].vendorId===e&&(o.splice(r,1),r--);o.push({vendorId:e,newValue:t});const s=b();s.vendors[e.toString()].UIState_vendorLegitimateInterestToggleIsOn=t,localStorage.setItem("OneTrust_VendorList",JSON.stringify(s)),localStorage.setItem("OneTrust_saveQueue_vendor_li",JSON.stringify(o))}catch(e){throw e}}const V=async()=>{try{if(!s())throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";var e=b();if(!e||!e.vendors)return;var t=e.vendors,o=P(),n=N(),r=_(),a=[],l=localStorage.getItem("OneTrust_saveQueue_vendor");l&&l.length>0&&(a=JSON.parse(l));for(const e in a)(i=a[e])&&(o[g=i.vendorId]=i.newValue,t[g]&&(t[g].vendorConsentToggleIsOn=i.newValue,t[g].UIState_vendorConsentToggleIsOn=i.newValue));if(r&&r.vendors){var c=y(),u=r.vendors;for(const e in a)(i=a[e])&&u[g=i.vendorId]&&(c[g]=i.newValue,u[g].vendorConsentToggleIsOn=i.newValue,u[g].UIState_vendorConsentToggleIsOn=i.newValue)}a=[],(l=localStorage.getItem("OneTrust_saveQueue_vendor_li"))&&l.length>0&&(a=JSON.parse(l));for(const e in a){var i,g;(i=a[e])&&(n[g=i.vendorId]=i.newValue,t[g].vendorLegitimateInterestToggleIsOn=i.newValue,t[g].UIState_vendorLegitimateInterestToggleIsOn=i.newValue)}return localStorage.setItem("OneTrust_VendorList",JSON.stringify(e)),localStorage.setItem("OneTrust_vendorLIUserSelections",JSON.stringify(n)),localStorage.setItem("OneTrust_vendorConsentUserSelections",JSON.stringify(o)),localStorage.setItem("OneTrust_saveQueue_vendor",JSON.stringify([])),localStorage.setItem("OneTrust_saveQueue_vendor_li",JSON.stringify([])),localStorage.setItem("OneTrust_Google_VendorList",JSON.stringify(r)),localStorage.setItem("OneTrust_vendorGoogleConsentUserSelections",JSON.stringify(c)),R(),await U()}catch(e){throw e}};function U(){try{if(!b())throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";var e=b().vendors,t={};for(var o in e){var n=e[o],r=n.shouldShowVendor,s=n.vendorConsentToggleIsOn,a=n.vendorLegitimateInterestToggleIsOn,l=n.shouldShowLegitimateInterestToggleForVendor,c={vendorID:o,shouldShowVendor:r,shouldShowConsentToggleForVendor:n.shouldShowConsentToggleForVendor,vendorConsentToggleIsOn:s,shouldShowLegitimateInterestToggleForVendor:l,vendorLegitimateInterestToggleIsOn:a,UIState_vendorConsentToggleIsOn:n.vendorConsentToggleIsOn,UIState_vendorLegitimateInterestToggleIsOn:n.vendorLegitimateInterestToggleIsOn};t[o]=c}return t}catch(e){throw e}}function E(){localStorage.setItem("OneTrust_saveQueue",JSON.stringify([]))}function G(){localStorage.setItem("OneTrust_saveQueue_vendor",JSON.stringify([])),localStorage.setItem("OneTrust_saveQueue_vendor_li",JSON.stringify([]))}function R(){try{const e=s();if(!e)throw"YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";if(!W())return"";const t=JSON.parse(atob(localStorage.getItem("OneTrust_sdk_keys"))),o=e.domain.IabV2Data;if(!o)throw"MISSING IabV2Data NODE FROM getOTSDKData";if(!o.globalVendorListUrl)throw"MISSING globalVendorListUrl NODE FROM IabV2Data node";if(!b())throw"MISSING localStorage.OneTrust_VendorList";const n=localStorage.getItem("OneTrust_VendorList_maxVendorID");if(!n)throw"MISSING localStorage.OneTrust_VendorList_maxVendorID";const r={},a=o.updatedTime;r.Version=2,r.Created=new Date,null!=a&&(r.Created=new Date(a+"Z")),r.LastUpdated=new Date,r.CmpId=o.cmpId,r.CmpVersion=o.cmpVersion,r.ConsentScreen=o.consentScreen,r.ConsentLanguage=t.languageCode,r.PublisherCC=e.domain.PublisherCC,r.VendorListVersion=b().vendorListVersion,r.TcfPolicyVersion=b().tcfPolicyVersion,r.PurposesConsent=$("IAB2_PURPOSE","Status"),r.PurposesLITransparency=$("IAB2_PURPOSE","LI"),r.SpecialFeatureOptins=$("IAB2_SPL_FEATURE","Status"),r.VendorConsents=function(){const e=[],t=b();if(null==t)return e;const o=t.vendors;if(null==o)return e;for(const t in o){const n=o[t];n.shouldShowVendor&&n.shouldShowConsentToggleForVendor&&n.vendorConsentToggleIsOn&&e.push(parseInt(n.id))}return e}(),r.VendorLegitimateInterest=function(){const e=[],t=b();if(null==t)return e;const o=t.vendors;if(null==o)return e;for(const t in o){const n=o[t];n.shouldShowVendor&&n.shouldShowLegitimateInterestToggleForVendor&&n.vendorLegitimateInterestToggleIsOn&&e.push(parseInt(n.id))}return e}(),r.OOBVendorsAllowed=[],r.DisclosedVendors=[],r.AllowedVendors=[],r.NumCustomPurposes=0,r.CustomPurposesConsent=[],r.CustomPurposesLITransparency=[],r.PurposeOneTreatment=oe(),r.IsServiceSpecific=1,r.UseNonStandardStacks=0,r.gdprApplies=1,r.PublisherRestrictions=e.culture.DomainData.publisher.restrictions,r.maxVendorIDFromVendorList=parseInt(n);const l=function(e){let t=[],o="",n="",r=0;try{localStorage.setItem("IABTCF_gdprApplies",e.gdprApplies),t.push(X(e.Version,6)),t.push(Z(e.Created,36)),t.push(Z(e.LastUpdated,36)),t.push(X(e.CmpId,12)),localStorage.setItem("IABTCF_CmpSdkID",e.CmpId),t.push(X(e.CmpVersion,12)),localStorage.setItem("IABTCF_CmpSdkVersion",e.CmpVersion),t.push(X(e.ConsentScreen,6)),t.push(function(e){const t=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];let o=0,n=null,r=null;try{if(2!==e.toString().trim().length)throw"consent language must be length of two characters";return o=t.indexOf(e.charAt(0).toUpperCase()),n=X(o,6),o=t.indexOf(e.charAt(1).toUpperCase()),r=X(o,6),n.concat(r)}catch(e){throw e}}(e.ConsentLanguage)),t.push(X(e.VendorListVersion,12)),t.push(X(e.TcfPolicyVersion,6)),localStorage.setItem("IABTCF_PolicyVersion",e.TcfPolicyVersion),t.push(X(e.IsServiceSpecific,1)),t.push(X(e.UseNonStandardStacks,1)),localStorage.setItem("IABTCF_UseNonStandardStacks",e.UseNonStandardStacks),t.push(z(e.SpecialFeatureOptins,12)),localStorage.setItem("IABTCF_SpecialFeaturesOptIns",t[t.length-1]),t.push(z(e.PurposesConsent,24)),localStorage.setItem("IABTCF_PurposeConsents",t[t.length-1]),localStorage.setItem("IABTCF_PublisherConsent",t[t.length-1]),t.push(z(e.PurposesLITransparency,24)),localStorage.setItem("IABTCF_PurposeLegitimateInterests",t[t.length-1]),localStorage.setItem("IABTCF_PublisherLegitimateInterests",t[t.length-1]),t.push(X(e.PurposeOneTreatment,1)),localStorage.setItem("IABTCF_PurposeOneTreatment",e.PurposeOneTreatment),t.push(function(e){const t=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];let o=0,n=null,r=null;try{if(2!==e.toString().trim().length)throw"publisher country code must be length of two characters";return o=t.indexOf(e.charAt(0).toUpperCase()),n=X(o,6),o=t.indexOf(e.charAt(1).toUpperCase()),r=X(o,6),n.concat(r)}catch(e){throw e}}(e.PublisherCC)),localStorage.setItem("IABTCF_PublisherCC",e.PublisherCC),r=ee(e.VendorConsents),t.push(X(r,16)),t.push(X(0,1)),t.push(z(e.VendorConsents,r)),localStorage.setItem("IABTCF_VendorConsents",t[t.length-1]),r=ee(e.VendorLegitimateInterest),t.push(X(r,16)),t.push(X(0,1)),t.push(z(e.VendorLegitimateInterest,r)),localStorage.setItem("IABTCF_VendorLegitimateInterests",t[t.length-1]);const s=function(e){const t=[],o=[],n=Object.keys(e);for(const t in n){const r=n[t];let s={};s.purposeID=r,s[0]=[],s[1]=[],s[2]=[];const a=e[r],l=Object.keys(a);for(const e in l){const t=l[e],o=parseInt(a[t]);o>=0&&o<=2&&s[o.toString()].push(t)}o.push(s)}let r;for(r=0;r<o.length;r++){const e=o[r],n=e.purposeID;for(let o=0;o<3;o++){const r=e[o];if(r.length>0){let e={};e.purposeID=n,e.restrictionType=o,e.vendors=r,t.push(e)}}}return t}(e.PublisherRestrictions);t.push(X(s.length,12)),localStorage.setItem("IABTCF_PublisherRestrictions",t[t.length-1]),s.length>0&&function(e,t){if(null!=e&&0!==e.length)for(const o in e){const n=e[o],r=parseInt(n.purposeID);t.push(X(r,6));const s=parseInt(n.restrictionType);t.push(X(s,2));const a=n.vendors;t.push(X(a.length,12));for(const e in a){const o=a[e];t.push(X(0,1)),t.push(X(parseInt(o),16))}}}(s,t);const a=e.maxVendorIDFromVendorList;return function(e,t){localStorage.removeItem("IABTCF_PublisherRestrictions1"),localStorage.removeItem("IABTCF_PublisherRestrictions2"),localStorage.removeItem("IABTCF_PublisherRestrictions3"),localStorage.removeItem("IABTCF_PublisherRestrictions4"),localStorage.removeItem("IABTCF_PublisherRestrictions5"),localStorage.removeItem("IABTCF_PublisherRestrictions6"),localStorage.removeItem("IABTCF_PublisherRestrictions7"),localStorage.removeItem("IABTCF_PublisherRestrictions8"),localStorage.removeItem("IABTCF_PublisherRestrictions9"),localStorage.removeItem("IABTCF_PublisherRestrictions10");const o=Object.keys(e);for(let n=0;n<o.length;n++){const r=o[n],s=[];for(let e=0;e<t;e++)s.push("_");const a=e[r],l=Object.keys(a);for(let e=0;e<l.length;e++){const t=l[e],o=a[t],n=parseInt(t)-1;n>=0&&n<s.length&&(s[n]=o)}const c="IABTCF_PublisherRestrictions"+r,u=s.join("");localStorage.setItem(c,u)}}(e.PublisherRestrictions,a),t.push(X(0,12)),o=t.join(""),n=te(o),H("IAB TCF v2 Core ->"+n),n}catch(e){throw e}}(r)+"."+function(e){const t=[];let o="",n="",r=0;try{return t.push(X(3,3)),t.push(z(e.PurposesConsent,24)),t.push(z(e.PurposesLITransparency,24)),r=e.NumCustomPurposes,t.push(X(r,6)),r>0?(t.push(z(e.CustomPurposesConsent,r)),localStorage.setItem("IABTCF_PublisherCustomPurposesConsents",t[t.length-1]),t.push(z(e.CustomPurposesLITransparency,r)),localStorage.setItem("IABTCF_PublisherCustomPurposesLegitimateInterests",t[t.length-1])):(localStorage.setItem("IABTCF_PublisherCustomPurposesConsents",""),localStorage.setItem("IABTCF_PublisherCustomPurposesLegitimateInterests","")),o=t.join(""),t.push(X(0,o.length)),o=t.join(""),n=te(o),H("PublisherTC ->"+n),n}catch(e){throw e}}(r);return localStorage.setItem("IABTCF_TCString",l),function(e){let t=new Date;t.setTime(t.getTime()+33696e6);const o="expires="+t.toUTCString(),n=new RegExp("^https:","i").test(window.location.protocol)?"Samesite=None; Secure":"Samesite=Lax";document.cookie="eupubconsent-v2="+e+";"+o+";path=/;"+n}(l),H("TC String ->"+l),function(){try{const e=s();if(!e)return;if(!W())return;if(!e.culture.MobileData.preferenceCenterData.googleVendors.general.show)return void H("IABTCF_AddtlConsent ->Google vendor is not enabled for this template");const t=y();let o="1~";for(let e in t)t.hasOwnProperty(e)&&t[e]&&(o=o+"."+e.toString());localStorage.setItem("IABTCF_AddtlConsent",o),H("IABTCF_AddtlConsent ->"+o)}catch(e){H("IABTCF_AddtlConsent ->"+e.toString())}}(),l}catch(e){throw e}}function k(){const e=s().culture.MobileData.ccpaData;if(null==e)return;if(!e.hasOwnProperty("parentCCPACategory"))return;if(!e.hasOwnProperty("ccpaExpNotice"))return;if(!e.hasOwnProperty("computeCCPA"))return;if(!e.computeCCPA)return;if(0===l().length)return;let t="1---",o=m(e.parentCCPACategory);return t="1",t+=!0===e.ccpaExpNotice?"Y":"N",t+="inactive"===o?"Y":"N",t+=!0===e.ccpaLspa?"Y":"N",localStorage.setItem("IABUSPrivacy_String",t),t}function j(){const e=s(),t={};if(!e||0===Object.keys(e).length)return t;const o=e.culture.DomainData,n=e.culture.CommonData,r=e.culture.MobileData;return t.BannerTitle=o.BannerTitle,t.AlertNoticeText=o.AlertNoticeText,t.OptanonLogo=n.OptanonLogo,t.ShowBannerAcceptButton=n.ShowBannerAcceptButton,t.AlertAllowCookiesText=o.AlertAllowCookiesText,t.BannerShowRejectAllButton=o.BannerShowRejectAllButton,t.BannerRejectAllButtonText=o.BannerRejectAllButtonText,t.ShowBannerCookieSettings=n.ShowBannerCookieSettings,t.BContinueColor=n.BContinueColor,t.closeButton=r.bannerData.buttons.closeButton,t.AlertMoreInfoText=o.AlertMoreInfoText,t.styleData=function(){const e=s(),t=(e.culture.DomainData,e.culture.CommonData),o=(e.culture.MobileData,e.culture.OTTData),n=o.bannerData.buttons,r={textColor:"",backgroundColor:"",acceptbuttonColor:"",acceptbuttonTextColor:"",acceptbuttonFocusColor:"",acceptbuttonTextFocusColor:"",rejectbuttonColor:"",rejectbuttonTextColor:"",rejectbuttonFocusColor:"",rejectbuttonTextFocusColor:"",pcbuttonColor:"",pcbuttonTextColor:"",pcbuttonFocusColor:"",pcbuttonTextFocusColor:"",customCSS:t.BannerCustomCSS,vendorLinkColor:""};return r.textColor=null!==o&&null!==o.bannerData&&null!==o.bannerData.general&&null!==o.bannerData.general.textColor&&""!==o.bannerData.general.textColor?o.bannerData.general.textColor:t.TextColor,r.backgroundColor=null!==o&&null!==o.bannerData&&null!==o.bannerData.general&&null!==o.bannerData.general.backgroundColor&&""!==o.bannerData.general.backgroundColor?o.bannerData.general.backgroundColor:t.BackgroundColor,r.acceptbuttonColor=null!==n&&null!==n.acceptAll&&null!==n.acceptAll.color&&""!==n.acceptAll.color?n.acceptAll.color:t.ButtonColor,r.acceptbuttonTextColor=null!==n&&null!==n.acceptAll&&null!==n.acceptAll.textColor&&""!==n.acceptAll.textColor?n.acceptAll.textColor:t.ButtonTextColor,r.acceptbuttonFocusColor=null!==o&&null!==o.bannerData&&null!==o.bannerData.general&&void 0!==o.bannerData.general.buttonFocusColor&&""!==o.bannerData.general.buttonFocusColor?o.bannerData.general.buttonFocusColor:t.ButtonColor,r.acceptbuttonTextFocusColor=null!==o&&null!==o.bannerData&&null!==o.bannerData.general&&void 0!==o.bannerData.general.buttonFocusTextColor&&""!==o.bannerData.general.buttonFocusTextColor?o.bannerData.general.buttonFocusTextColor:t.ButtonTextColor,r.rejectbuttonColor=null!==n&&null!==n.rejectAll&&null!==n.rejectAll.color&&""!==n.rejectAll.color?n.rejectAll.color:t.ButtonColor,r.rejectbuttonTextColor=null!==n&&null!==n.rejectAll&&null!==n.rejectAll.textColor&&""!==n.rejectAll.textColor?n.rejectAll.textColor:t.ButtonTextColor,r.rejectbuttonFocusColor=null!==o&&null!==o.bannerData&&null!==o.bannerData.general&&void 0!==o.bannerData.general.buttonFocusColor&&""!==o.bannerData.general.buttonFocusColor?o.bannerData.general.buttonFocusColor:t.ButtonColor,r.rejectbuttonTextFocusColor=null!==o&&null!==o.bannerData&&null!==o.bannerData.general&&void 0!==o.bannerData.general.buttonFocusTextColor&&""!==o.bannerData.general.buttonFocusTextColor?o.bannerData.general.buttonFocusTextColor:t.ButtonTextColor,r.pcbuttonColor=null!==n&&null!==n.showPreferences&&null!==n.showPreferences.color&&""!==n.showPreferences.color?n.showPreferences.color:t.BannerMPButtonColor,r.pcbuttonTextColor=null!==n&&null!==n.showPreferences&&null!==n.showPreferences.textColor&&""!==n.showPreferences.textColor?n.showPreferences.textColor:t.BannerMPButtonTextColor,r.pcbuttonFocusColor=null!==o&&null!==o.bannerData&&null!==o.bannerData.general&&void 0!==o.bannerData.general.buttonFocusColor&&""!==o.bannerData.general.buttonFocusColor?o.bannerData.general.buttonFocusColor:t.BannerMPButtonTextColor,r.pcbuttonTextFocusColor=null!==o&&null!==o.bannerData&&null!==o.bannerData.general&&void 0!==o.bannerData.general.buttonFocusTextColor&&""!==o.bannerData.general.buttonFocusTextColor?o.bannerData.general.buttonFocusTextColor:t.BannerMPButtonColor,r.vendorLinkColor=null!==o&&null!==o.bannerData&&void 0!==o.bannerData.links&&void 0!==o.bannerData.links.vendorListLink&&null!==o.bannerData.links.vendorListLink.color&&""!==o.bannerData.links.vendorListLink.color?o.bannerData.links.vendorListLink.color:"",r}(),t.BannerDPDTitle=o.BannerDPDTitle,t.BannerDPDDescription=o.BannerDPDDescription,t.BannerIABPartnersLink=o.BannerIABPartnersLink,t.showBannerCloseButton=o.showBannerCloseButton,t.BannerAdditionalDescription=o.BannerAdditionalDescription,t.BannerAdditionalDescPlacement=o.BannerAdditionalDescPlacement,t.BannerSettingsButtonDisplayLink=o.BannerSettingsButtonDisplayLink,t.isIAB=W(),t}function M(){const e={},t=s();if(!t||0===Object.keys(t).length)return e;const o=t.culture.DomainData,n=t.culture.CommonData,r=t.culture.OTTData,a=t.culture.MobileData;return e.OptanonLogo=n.OptanonLogo,e.MainText=o.MainText,e.MainInfoText=o.MainInfoText,e.PreferenceCenterConfirmText=o.PreferenceCenterConfirmText,e.ConfirmText=o.ConfirmText,e.PCenterShowRejectAllButton=o.PCenterShowRejectAllButton,e.PCenterRejectAllButtonText=o.PCenterRejectAllButtonText,e.styleData=Te(),e.VendorListText=o.VendorListText,e.PCIABVendorsText=o.PCIABVendorsText,e.BannerIABPartnersLink=o.BannerIABPartnersLink,e.ShowPreferenceCenterCloseButton=o.ShowPreferenceCenterCloseButton,e.AlwaysActiveText=o.AlwaysActiveText,e.BLegitInterestText=n.BLegitInterestText,e.Groups=l(),e.isIAB=W(),e.LegIntSettings=re(),e.BConsentText=n.BConsentText,e.activeText=r.preferenceCenterData.purposeList.ActiveText,e.inactiveText=r.preferenceCenterData.purposeList.InactiveText,e.subCategoryHeaderText=r.preferenceCenterData.purposeList.SubCategoryHeaderText,e.PCGoogleVendorsText=a.preferenceCenterData.googleVendors.general.text,e.UseGoogleVendors=a.preferenceCenterData.googleVendors.general.show,e.showParentToggle=!1,e.showPartnersIAB=!1,H("Preference center is called"),e}function J(){const e={},t=s();if(!t||0===Object.keys(t).length)return e;const o=t.culture.DomainData,n=t.culture.CommonData,r=t.culture.OTTData;return e.OptanonLogo=n.OptanonLogo,e.styleData=Te(),e.LegIntSettings=re(),e.PCenterVendorsListText=o.PCenterVendorsListText,e.PCenterViewPrivacyPolicyText=o.PCenterViewPrivacyPolicyText,e.PCenterAllowAllConsentText=o.PCenterAllowAllConsentText,e.VendorListNonCookieUsage=o.PCenterVendorListNonCookieUsage,e.VendorListLifespan=o.PCenterVendorListLifespan,e.LifespanTypeText=o.LifespanTypeText,e.VendorListLifespanDay=o.PCenterVendorListLifespanDay,e.VendorListLifespanDays=o.PCenterVendorListLifespanDays,e.VendorListLifespanMonth=o.PCenterVendorListLifespanMonth,e.VendorListLifespanMonths=o.PCenterVendorListLifespanMonths,e.ConsentPurposesText=n.BConsentPurposesText,e.SpecialPurposesText=n.BSpecialPurposesText,e.LIPurposesText=n.BLegitimateInterestPurposesText,e.FeaturesText=n.BFeaturesText,e.SpecialFeaturesText=n.BSpecialFeaturesText,e.BConsentText=n.BConsentText,e.BLegitInterestText=n.BLegitInterestText,e.VendorListDisclosure=o.PCenterVendorListDisclosure,e.VendorListStorageIdentifier=o.PCenterVendorListStorageIdentifier,e.VendorListStorageType=o.PCenterVendorListStorageType,e.VendorListStorageDomain=o.PCenterVendorListStorageDomain,e.VendorListStoragePurposes=o.PCenterVendorListStoragePurposes,e.PreferenceCenterConfirmText=o.PreferenceCenterConfirmText,e.ConfirmText=o.ConfirmText,e.PCenterShowRejectAllButton=o.PCenterShowRejectAllButton,e.PCenterRejectAllButtonText=o.PCenterRejectAllButtonText,e.PCenterClearFiltersText=o.PCenterClearFiltersText,e.showFilter=!1,e.activeText=r.preferenceCenterData.purposeList.ActiveText,e.inactiveText=r.preferenceCenterData.purposeList.InactiveText,e.searchNoResultsFoundText=r.vendorListData.general.searchNoResultsFoundText,e.iabGroups=function(){const e=s().culture.DomainData.Groups,t={purpose:{},sp:{},feature:{},sf:{}};return e.forEach((function(e){const o=((r=e.CustomGroupId).indexOf("ISPV2_")>-1?r=r.replace("ISPV2_",""):r.indexOf("IABV2_")>-1?r=r.replace("IABV2_",""):r.indexOf("IFEV2_")>-1?r=r.replace("IFEV2_",""):r.indexOf("ISFV2_")>-1&&(r=r.replace("ISFV2_","")),r),n=e.GroupName;var r;switch(e.Type){case"IAB2_PURPOSE":t.purpose[o]=n;break;case"IAB2_SPL_PURPOSE":t.sp[o]=n;break;case"IAB2_FEATURE":t.feature[o]=n;break;case"IAB2_SPL_FEATURE":t.sf[o]=n}})),t}(),e.PCGoogleVendorsText=o.PCGoogleVendorsText,H("vendorPage is called"),e}function K(e){const t=s();if(!t||0===Object.keys(t).length)return void H("SDK data is null");const o=a();o&&"banner"===e?(H("showBanner -> "+o),localStorage.setItem("OneTrust_didShowBanner",!0),localStorage.setItem("OneTrust_BannerShownTime",parseInt((new Date).getTime()/1e3)),location.href="OTPublishersSDK/views/banner.html"):o&&"preferencecenter"===e?(H("onShowpreference called"),location.href="OTPublishersSDK/views/PreferenceCenter.html"):H("setupUI - no nav because no matching rules")}function H(e){let t;t=sessionStorage.getItem("sessionLogs")?sessionStorage.getItem("sessionLogs")+"\n["+(new Date).toLocaleTimeString()+"] "+e:"["+(new Date).toLocaleTimeString()+"] "+e,sessionStorage.setItem("sessionLogs",t)}function Y(e,t){const o=t.culture.DomainData.Groups;for(const t in o){const n=o[t],r=n.PurposeId;if(e.toLowerCase()===r.toLowerCase())return n.CustomGroupId}}function Q(e,t){switch(e){case"ACTIVE":return"active";case"ALWAYS_ACTIVE":return"always active";case"NO_CONSENT":return"opt-out"===t.culture.DomainData.VendorConsentModel.toLowerCase()?"active":"inactive";case"PENDING":case"OPT_OUT":case"EXPIRED":case"WITHDRAWN":return"inactive"}}function W(){const e=s();return!!e&&"IAB2"===e.domain.ruleDetails.type}async function q(){let e=(new Date).getTime().toString();localStorage.setItem("OneTrust_lastConsentDate",e),k();const t=[];ne().forEach((function(e){t.push(e.CustomGroupId)})),localStorage.setItem("OneTrust_categoriesAvailableLastInteraction",JSON.stringify(t))}function $(e,t){let o,n,r;const s=[],a=l();if(null==a)return s;for(const l in a)if(n=a[l],n.Type.toUpperCase()===e&&n[t]&&("always active"===n[t].toString()||"active"===n[t].toString())){r=n.CustomGroupId.toString(),o=r.split("_");const e=o[o.length-1].toString().trim();s.push(parseInt(e))}return s}function X(e,t){try{return parseInt(e).toString(2).padLeft(t,"0")}catch(e){throw e}}function Z(e,t){let o=0,n=null;try{return o=parseInt((e.getTime()/100).toString()),n=o.toString(2).padLeft(t,"0"),n}catch(e){throw e}}function z(e,t){const o=[];let n=null,r=null;try{for(let s=0;s<t;s++){n=(s+1).toString(),r="0";for(let t in e)if(String(e[t])===n){r="1";break}o.push(r)}return o.join("")}catch(e){throw e}}function ee(e){let t,o=0;try{for(let n=0;n<e.length;n++)t=parseInt(e[n]),t>o&&(o=t);return o}catch(e){throw e}}function te(e){let t,o=0,n=0,r="",s=0;o=e.length,n=8*parseInt((o/8).toString())-o,r=e.padRight(o+n,"0"),s=parseInt((r.length/8).toString()),t=new Uint8Array(s);for(let e=0;e<s;e++){let o=r.substr(8*e,8),n=parseInt(o,2);n>127&&(n-=256),t[e]=n}let a=btoa(String.fromCharCode.apply(null,t));return a=a.replace(new RegExp("\\+","g"),"-"),a=a.replace(new RegExp("/","g"),"_"),a=a.replace(new RegExp("=","g"),""),a}function oe(){if(!W())return 0;const e=function(e){const t=s().culture.DomainData.Groups;for(const e in t){const o=t[e];if("IABV2_1"===o.CustomGroupId)return o}return null}();return e&&e.ShowInPopup?e.ShowInPopup?0:1:0}function ne(){const e=s().culture.DomainData.Groups,t=[];return e.forEach((function(o){const n=function(e,t){let o=!1;return t.forEach((function(t){t.Parent===e&&(o=!0)})),o}(o.OptanonGroupId,e),r="OneTrust_CustomGroupId_"+o.CustomGroupId,s="OneTrust_CustomGroupId_LI_"+o.CustomGroupId;(o.FirstPartyCookies.length>0||o.IsIabPurpose||n)&&(localStorage.getItem(r)&&(o.Status=localStorage.getItem(r)),localStorage.getItem(s)&&(o.HasLegIntOptOutStatus=localStorage.getItem(s)),o.isParent=n,t.push(o))})),t}function re(){const e=s().culture.DomainData.LegIntSettings;let t=null;return null!=e&&(t=e),t}function se(){const e=localStorage.getItem("OneTrust_sdk_keys");if(e){const t=JSON.parse(atob(e));return t.syncProfileAuth&&t.syncProfileAuth.trim().length>0}return!1}String.prototype.padLeft=function(e,t){return this.padStart(e,t)},String.prototype.padRight=function(e,t){return this.padEnd(e,t)};const ae=async(e,t)=>{const o=s().culture,r=s().domain;if(!o.DomainData.IsConsentLoggingEnabled)return H("Consent Logging NOT Enabled"),{info:"Consent Logging NOT Enabled"};const a=o.CommonData.ConsentIntegration,l=a.ConsentApi,c=a.RequestInformation,u=new Headers;u.append("Content-Type","application/json"),u.append("cache-control","no-cache");let i=!0;JSON.parse(atob(localStorage.getItem("OneTrust_sdk_keys"))).shouldCreateProfile&&"true"===localStorage.getItem("OneTrust_datasubjectID_known")&&(i=!1),H("dataSubject isAnonymous ->"+i.toString());const g=R(),d={requestInformation:c,identifier:n(),test:"test"===s().domain.ScriptType.toLowerCase(),isAnonymous:i,tcStringV2:g,customPayload:{Interaction:1,AddDefaultInteraction:!0},purposes:e,dsDataElements:{},syncGroup:r.SyncGroupId};o.DomainData.AdvancedAnalyticsCategory&&o.DomainData.AdvancedAnalyticsCategory.trim().length>0&&(d.dsDataElements.UserAgent=navigator.userAgent,d.dsDataElements.Country=s().domain.countryCode,d.dsDataElements.InteractionType=t),H("Consent request ->"+JSON.stringify(d));const I={method:"POST",headers:u,redirect:"follow",body:JSON.stringify(d)},C=await fetch(l,I).catch((e=>{throw e}));if(!C.ok)throw H("response.statusText -> "+C.statusText),new Error(C.statusText);return localStorage.setItem("OneTrust_Receipt",JSON.stringify(C)),localStorage.setItem("OneTrust_Receipt_Date",((new Date).getTime()/1e3).toString()),C.json()};function le(){s().culture.DomainData.Groups.forEach((function(e){const t=e.CustomGroupId;if(e.IsIabPurpose){const e="OneTrust_CustomGroupId_"+t,o="OneTrust_CustomGroupId_LI_"+t;localStorage.getItem(e)&&localStorage.removeItem(e),localStorage.getItem(o)&&localStorage.removeItem(o)}})),localStorage.removeItem("OneTrust_VendorList"),localStorage.removeItem("OneTrust_vendorLIUserSelections"),localStorage.removeItem("OneTrust_vendorConsentUserSelections"),localStorage.removeItem("OneTrust_saveQueue_vendor"),localStorage.removeItem("OneTrust_saveQueue_vendor_li"),localStorage.removeItem("OneTrust_Google_VendorList"),localStorage.removeItem("OneTrust_vendorGoogleConsentUserSelections")}function ce(){window.dispatchEvent(new CustomEvent("OneTrustGroupsUpdated",{detail:c()}))}let ue,ie,ge,de;const Ie=async e=>{if(!e||!e.searchTerm||0==e.searchTerm.trim().length)return b().vendors;if(ie!==e.fieldName&&(ie=e.fieldName,ue=null),!ue){ue=[];const t=b().vendors,o=Object.keys(t);for(let n=0;n<o.length;n++){const r=o[n],s=e.fieldName,a=t[r][s].toLowerCase();ue.push({id:r,fieldName:a})}}const t=e.searchTerm.toLowerCase();t.startsWith(ge)||(de=ue),ge=t,de=de.filter((e=>-1!==e.fieldName.indexOf(t)));const o={},n=b().vendors;return de.forEach((function(e){const t=e.id.toString();o[t]=n[t]})),o};function Ce(e,t,o){let n="unknown metricEnum",r=0;try{switch(r=Math.abs((o-t)/1e3),e){case 1:n=`Time taken for OT SDK setup data fetch: ${r} seconds.`;break;case 2:n=`Time taken for IAB vendor list data setup: ${r} seconds.`;break;case 3:n=`Time taken for Google vendor list data setup: ${r} seconds.`;break;case 4:n=`Time taken for OT SDK data setup: ${r} seconds.`}H("logExecutionTime -> "+n.toString())}catch(e){H("logExecutionTime -> "+e.toString())}finally{n=null,r=null}}function pe(e){var t="";"DISMISS_BANNER"!==e&&"DEFAULT_CONSENT_AND_CLOSE_BANNER"!==e||(t=e),localStorage.setItem("OneTrust_backButtonMode",t)}function Te(){const e=s(),t=e.culture.CommonData,o=e.culture.OTTData.preferenceCenterData,n=o.buttons,r={textColor:"",backgroundColor:"",buttonColor:"",buttonTextColor:"",buttonFocusColor:"",buttonTextFocusColor:"",activeColor:"",activeTextColor:"",acceptbuttonColor:"",acceptbuttonTextColor:"",acceptbuttonFocusColor:"",acceptbuttonTextFocusColor:"",rejectbuttonColor:"",rejectbuttonTextColor:"",rejectbuttonFocusColor:"",rejectbuttonTextFocusColor:"",pcbuttonColor:"",pcbuttonTextColor:"",pcbuttonFocusColor:"",pcbuttonTextFocusColor:"",customCSS:t.PCCustomCSS};return r.textColor=null!==o&&null!==o.general&&null!==o.general.textColor&&""!==o.general.textColor?o.general.textColor:t.PcTextColor,r.backgroundColor=null!==o&&null!==o.general&&null!==o.general.backgroundColor&&""!==o.general.backgroundColor?o.general.backgroundColor:t.PcBackgroundColor,r.buttonColor=null!==o&&void 0!==o.menu&&null!==o.menu.color&&""!==o.menu.color?o.menu.color:t.PcTextColor,r.buttonTextColor=null!==o&&void 0!==o.menu&&null!==o.menu.textColor&&""!==o.menu.textColor?o.menu.textColor:t.PcBackgroundColor,r.buttonFocusColor=null!==o&&void 0!==o.menu&&null!==o.menu.focusColor&&""!==o.menu.focusColor?o.menu.focusColor:t.PcButtonColor,r.buttonTextFocusColor=null!==o&&void 0!==o.menu&&null!==o.menu.focusTextColor&&""!==o.menu.focusTextColor?o.menu.focusTextColor:t.PcButtonTextColor,r.activeColor=null!==o&&void 0!==o.menu&&null!==o.menu.activeColor&&""!==o.menu.activeColor?o.menu.activeColor:t.PcButtonTextColor,r.activeTextColor=null!==o&&void 0!==o.menu&&null!==o.menu.activeTextColor&&""!==o.menu.activeTextColor?o.menu.activeTextColor:t.PcButtonColor,r.acceptbuttonColor=null!==n&&null!==n.acceptAll&&null!==n.acceptAll.color&&""!==n.acceptAll.color?n.acceptAll.color:t.PcButtonColor,r.acceptbuttonTextColor=null!==n&&null!==n.acceptAll&&null!==n.acceptAll.textColor&&""!==n.acceptAll.textColor?n.acceptAll.textColor:t.PcButtonTextColor,r.acceptbuttonFocusColor=null!==o&&null!==o.general&&void 0!==o.general.buttonFocusColor&&""!==o.general.buttonFocusColor?o.general.buttonFocusColor:t.PcButtonColor,r.acceptbuttonTextFocusColor=null!==o&&null!==o.general&&void 0!==o.general.buttonFocusTextColor&&""!==o.general.buttonFocusTextColor?o.general.buttonFocusTextColor:t.PcButtonTextColor,r.rejectbuttonColor=null!==n&&null!==n.rejectAll&&null!==n.rejectAll.color&&""!==n.rejectAll.color?n.rejectAll.color:t.PcButtonColor,r.rejectbuttonTextColor=null!==n&&null!==n.rejectAll&&null!==n.rejectAll.textColor&&""!==n.rejectAll.textColor?n.rejectAll.textColor:t.PcButtonTextColor,r.rejectbuttonFocusColor=null!==o&&null!==o.general&&void 0!==o.general.buttonFocusColor&&""!==o.general.buttonFocusColor?o.general.buttonFocusColor:t.PcButtonColor,r.rejectbuttonTextFocusColor=null!==o&&null!==o.general&&void 0!==o.general.buttonFocusTextColor&&""!==o.general.buttonFocusTextColor?o.general.buttonFocusTextColor:t.PcButtonTextColor,r.pcbuttonColor=null!==n&&null!==n.showPreferences&&null!==n.showPreferences.color&&""!==n.showPreferences.color?n.showPreferences.color:t.PcButtonColor,r.pcbuttonTextColor=null!==n&&null!==n.showPreferences&&null!==n.showPreferences.textColor&&""!==n.showPreferences.textColor?n.showPreferences.textColor:t.PcButtonTextColor,r.pcbuttonFocusColor=null!==o&&null!==o.general&&void 0!==o.general.buttonFocusColor&&""!==o.general.buttonFocusColor?o.general.buttonFocusColor:t.PcButtonColor,r.pcbuttonTextFocusColor=null!==o&&null!==o.general&&void 0!==o.general.buttonFocusTextColor&&""!==o.general.buttonFocusTextColor?o.general.buttonFocusTextColor:t.PcButtonTextColor,r}const Se=async()=>{const e=OTCMP.getOTSDKData();if(e){const t=e.culture.DomainData.ReconsentFrequencyDays;H(`performAutomaticReconsentOverride -> Setting last consent date to today minus ${t} days.`);const o=Date.now()-864e5*t;H(`performAutomaticReconsentOverride -> New consent timestamp is now ${o}`),localStorage.setItem("OneTrust_lastConsentDate",o.toString());const n=JSON.parse(atob(localStorage.getItem("OneTrust_sdk_keys")));return await OTCMP.startSDK(n)}H("performAutomaticReconsentOverride -> There is no OneTrust Data!")},he=function(){const e=OTCMP.getOTSDKData();let t=!1;if(e){const o=e.status.profile.code;o&&200===o&&(t=e.profile.sync.shouldShowBannerAsConsentExpired)}return t};OTCMP=t})();
+var OTCMP;
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	// The require scope
+/******/ 	var __webpack_require__ = {};
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "startSDK": () => (/* binding */ startSDK),
+/* harmony export */   "getDataSubjectIdentifier": () => (/* binding */ getDataSubjectIdentifier),
+/* harmony export */   "setDataSubjectIdentifier": () => (/* binding */ setDataSubjectIdentifier),
+/* harmony export */   "getOTSDKData": () => (/* binding */ getOTSDKData),
+/* harmony export */   "shouldShowBanner": () => (/* binding */ shouldShowBanner),
+/* harmony export */   "getPurposesList": () => (/* binding */ getPurposesList),
+/* harmony export */   "getSavedProfile": () => (/* binding */ getSavedProfile),
+/* harmony export */   "updatePurposeConsent": () => (/* binding */ updatePurposeConsent),
+/* harmony export */   "updatePurposeLegitInterest": () => (/* binding */ updatePurposeLegitInterest),
+/* harmony export */   "saveConsent": () => (/* binding */ saveConsent),
+/* harmony export */   "preferenceCenterClose": () => (/* binding */ preferenceCenterClose),
+/* harmony export */   "clearOTSDKData": () => (/* binding */ clearOTSDKData),
+/* harmony export */   "getConsentStatus": () => (/* binding */ getConsentStatus),
+/* harmony export */   "downloadStorageDisclosure": () => (/* binding */ downloadStorageDisclosure),
+/* harmony export */   "getGoogleVendorList": () => (/* binding */ getGoogleVendorList),
+/* harmony export */   "getVendorList": () => (/* binding */ getVendorList),
+/* harmony export */   "getVendorDetails": () => (/* binding */ getVendorDetails),
+/* harmony export */   "getSavedVendorConsents": () => (/* binding */ getSavedVendorConsents),
+/* harmony export */   "getSavedGoogleVendorConsents": () => (/* binding */ getSavedGoogleVendorConsents),
+/* harmony export */   "getSavedVendorLegitInterest": () => (/* binding */ getSavedVendorLegitInterest),
+/* harmony export */   "toggleVendorsConsentUi": () => (/* binding */ toggleVendorsConsentUi),
+/* harmony export */   "updateVendorConsent": () => (/* binding */ updateVendorConsent),
+/* harmony export */   "updateVendorLegitInterest": () => (/* binding */ updateVendorLegitInterest),
+/* harmony export */   "getBannerData": () => (/* binding */ getBannerData),
+/* harmony export */   "getPreferenceCenterData": () => (/* binding */ getPreferenceCenterData),
+/* harmony export */   "getVendorPageData": () => (/* binding */ getVendorPageData),
+/* harmony export */   "setupUI": () => (/* binding */ setupUI),
+/* harmony export */   "OTSDK_logger": () => (/* binding */ OTSDK_logger),
+/* harmony export */   "filterVendorListBy": () => (/* binding */ filterVendorListBy),
+/* harmony export */   "OTBackButtonMode": () => (/* binding */ OTBackButtonMode),
+/* harmony export */   "performAutomaticReconsentOverride": () => (/* binding */ performAutomaticReconsentOverride)
+/* harmony export */ });
+const startSDK = async sdk_keys => {
+    try {
+
+        const performanceMetric4Start = Date.now();
+
+        // if we have different keys from what was last passed in, clear everything from disk.
+        const cached_OneTrust_sdk_keys_encoded = localStorage.getItem("OneTrust_sdk_keys");
+        if (cached_OneTrust_sdk_keys_encoded && btoa(JSON.stringify(sdk_keys)) !== cached_OneTrust_sdk_keys_encoded) {
+            clearOTSDKData();
+        }
+
+
+        const myHeaders = new Headers();
+        let didSyncProfile = false;
+
+        // required parms
+        myHeaders.append("location", sdk_keys["storageLocation"]);
+        myHeaders.append("application", sdk_keys["domainIdentifier"]);
+        myHeaders.append("lang", sdk_keys["languageCode"]);
+        myHeaders.append("sdkVersion", sdk_keys["apiVersion"]);
+
+
+        // optional geo support
+        if (sdk_keys.hasOwnProperty("countryCodeOverride")) {
+            myHeaders.append("OT-Country-Code", sdk_keys["countryCodeOverride"]);
+        }
+        if (sdk_keys.hasOwnProperty("regionCodeOverride")) {
+            myHeaders.append("OT-Region-Code", sdk_keys["regionCodeOverride"])
+        }
+
+        // optional cross device support
+        if (sdk_keys.hasOwnProperty("syncProfileAuth")) {
+            myHeaders.append("syncProfileAuth", sdk_keys["syncProfileAuth"]);
+            myHeaders.append("fetchType", "APP_DATA_AND_SYNC_PROFILE");
+        }
+
+
+        if (sdk_keys.hasOwnProperty("identifier")) {
+            setDataSubjectIdentifier(sdk_keys["identifier"]);
+            myHeaders.append("identifier", sdk_keys["identifier"]);
+        }
+
+
+        if (sdk_keys.hasOwnProperty("syncProfileAuth")) {
+            myHeaders.append("profileSyncETag", geteTag());
+        }
+
+
+        // options
+        const requestOptions = {
+            method: 'GET',
+            headers: myHeaders,
+            redirect: 'follow'
+        };
+
+        // send and wait for response
+        const performanceMetric1Start = Date.now();
+        const response = await fetch(sdk_keys["domaindata_url"], requestOptions)
+            .catch(error => {
+                throw error;
+            });
+
+        // check if response worked (no 404 errors etc...)
+        if (!response.ok) {
+            OTSDK_logger("response.statusText -> " + response.statusText);
+            throw new Error(response.statusText);
+        }
+
+        // convert the response to JSON
+        const data = await response.json(); // get JSON from the response
+        OTSDK_performance_logger(1,performanceMetric1Start, Date.now());
+        OTSDK_logger("response -> " + JSON.stringify(data));
+
+        // TEMP FIX UNTIL JSON IS FIXED.
+        const groups = data["culture"]["DomainData"]["Groups"];
+        for (const recordID in groups) {
+            const record = groups[recordID];
+            const groupType =  record['Type']
+            if (groupType === 'IAB2_SPL_FEATURE') {
+                record['HasLegIntOptOut'] = false;
+            }
+        }
+
+        // ////////////////////////////////////////////////////////////////////////////////
+        // PROFILE SYNC RULES
+        // ////////////////////////////////////////////////////////////////////////////////
+        const profileStatusCode = data["status"]["profile"]["code"];
+        if (profileStatusCode && profileStatusCode === 200) {
+            const records = data["profile"]["sync"]["preferences"];
+            for (const recordID in records) {
+                const record = records[recordID];
+                const purposeID = record["id"];
+                const updatedAfterSync = record["updatedAfterSync"];
+                if (updatedAfterSync) {
+                    const CustomGroupId = getGroupIDFromPurposeID(purposeID, data);
+                    if (CustomGroupId) {
+                        const newValue = translateSyncStatusValue(record["status"], data);
+                        const storageKeyName = "OneTrust_CustomGroupId_" + CustomGroupId;
+                        localStorage.setItem(storageKeyName, newValue);
+                        didSyncProfile = true;
+                    }
+                }
+            }
+
+            if (data["profile"]["sync"].hasOwnProperty("parentToggleState")) {
+                const parentToggleState = data["profile"]["sync"]["parentToggleState"];
+                for (const [key, value] of Object.entries(parentToggleState)) {
+                    const newValue = translateSyncStatusValue(value, data);
+                    const storageKeyName = "OneTrust_CustomGroupId_" + key;
+                    localStorage.setItem(storageKeyName, newValue);
+                }
+            }
+
+            if(data["profile"]["fetch"].hasOwnProperty("syncGroups")) {
+                const syncGroups = data["profile"]["fetch"]["syncGroups"];
+                const syncGroupId = data["domain"]["SyncGroupId"];
+                if(syncGroups.hasOwnProperty(syncGroupId)){
+                    const tcString=syncGroups[syncGroupId]["tcStringV2Decoded"];
+                    const purposeLI = tcString ? syncGroups[syncGroupId]["tcStringV2Decoded"]["purpose"]["legitimateInterests"]:"";
+                    const purposeLIArr = purposeLI.split("");
+                    for(var i=0;i<purposeLIArr.length-1;i++){
+                        const storageKeyName = "OneTrust_CustomGroupId_LI_IABV2_" + (i+1);
+                        var status = "inactive";
+                        if(purposeLIArr[i] === "1"){
+                            status = "active";
+                        }
+                        localStorage.setItem(storageKeyName, status);
+                    }
+                }
+
+            }
+
+        }
+
+
+        // ////////////////////////////////////////////////////////////////////////////////
+        // Rules for Reconsent
+        // ////////////////////////////////////////////////////////////////////////////////
+        const serverlLastReconsentDate = data["culture"]["DomainData"]["LastReconsentDate"];
+        if (serverlLastReconsentDate != null) {
+            const lastLocalConsentDate = localStorage.getItem("OneTrust_lastConsentDate");
+            if (lastLocalConsentDate) {
+                if (parseFloat(lastLocalConsentDate) < parseFloat(serverlLastReconsentDate)) {
+                    //clearOTSDKData();
+                    clearIABLocalPurposes();
+                }
+            }
+        }
+
+
+
+
+        // ////////////////////////////////////////////////////////////////////////////////
+        // Rules for Reconsent Auto Expire Check
+        // ////////////////////////////////////////////////////////////////////////////////
+        const lastLocalConsentDate = localStorage.getItem("OneTrust_lastConsentDate");
+        if (lastLocalConsentDate) {
+
+            const ReconsentFrequencyDays = data["culture"]["DomainData"]["ReconsentFrequencyDays"];
+            if (ReconsentFrequencyDays != null) {
+
+                const date1 = new Date(parseFloat(lastLocalConsentDate));
+                const date2 = new Date();
+                const difference = date2.getTime() - date1.getTime();
+                const daysOld = Math.ceil(difference / (1000 * 3600 * 24));
+
+                if (daysOld > ReconsentFrequencyDays) {
+                    //clearOTSDKData();
+                    clearIABLocalPurposes();
+                }
+
+            }
+        }
+
+
+        // ////////////////////////////////////////////////////////////////////////////////
+        // cache the data
+        // ////////////////////////////////////////////////////////////////////////////////
+        localStorage.setItem("OneTrust_sdk_data", JSON.stringify(data));
+        localStorage.setItem("OneTrust_sdk_keys", btoa(JSON.stringify(sdk_keys)));
+
+        // clear the IAB data if the shouldShowBannerAsConsentExpired is set to true
+        if (profileStatusCode && profileStatusCode === 200) {
+            const shouldShowBannerAsConsentExpired = data["profile"]["sync"]["shouldShowBannerAsConsentExpired"];
+            if(shouldShowBannerAsConsentExpired){
+                clearIABLocalPurposes();
+            }
+        }
+
+        // ////////////////////////////////////////////////////////////////////////////////
+        // download the vendor list if needed
+        // ////////////////////////////////////////////////////////////////////////////////
+        await downloadVendorList();
+
+
+        // ////////////////////////////////////////////////////////////////////////////////
+        // download the google vendor list if needed
+        // ////////////////////////////////////////////////////////////////////////////////
+        const mobileData = data["culture"]["MobileData"]["preferenceCenterData"]["googleVendors"]["general"];
+        if(mobileData.show){
+            await downloadGoogleVendorList();
+        }
+
+
+
+        // ////////////////////////////////////////////////////////////////////////////////
+        // write the ccpa string to disk if needed.
+        // ////////////////////////////////////////////////////////////////////////////////
+        writeCCPAString()
+
+
+        // ////////////////////////////////////////////////////////////////////////////////
+        // write the IAB TC String to disk if needed.
+        // ////////////////////////////////////////////////////////////////////////////////
+        if (didSyncProfile) { writeTCString(); }
+
+        triggerConsentEv(); // Trigger event with initial consent status
+
+        // ////////////////////////////////////////////////////////////////////////////////
+        // returns a promise, which resolves to this data value
+        // ////////////////////////////////////////////////////////////////////////////////
+        OTSDK_performance_logger(4,performanceMetric4Start, Date.now());
+        return data;
+
+
+    } catch (error) {
+        throw error;
+
+    }
+
+}
+
+
+function getDataSubjectIdentifier() {
+    let answer = localStorage.getItem("OneTrust_datasubjectID");
+    if (!answer) {
+        answer = ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c => (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16));
+        answer = btoa(answer);
+        localStorage.setItem("OneTrust_datasubjectID", answer);
+        localStorage.setItem("OneTrust_datasubjectID_known", 'false');
+    }
+    return atob(answer);
+}
+
+
+function setDataSubjectIdentifier(value) {
+    localStorage.setItem("OneTrust_datasubjectID", btoa(value));
+    localStorage.setItem("OneTrust_datasubjectID_known", 'true');
+}
+
+
+function getOTSDKData() {
+    const OneTrust_sdk_data = localStorage.getItem("OneTrust_sdk_data");
+    return JSON.parse(OneTrust_sdk_data);
+}
+
+
+
+/**
+ * @return {boolean}
+ */
+function shouldShowBanner() {
+
+    try {
+        const sdkData = getOTSDKData();
+        // Make Sure We Have Data To Work With
+        if (!sdkData) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+
+        const geoRule = sdkData["culture"]["DomainData"]["ShowAlertNotice"];
+        if (!geoRule) {
+            OTSDK_logger("shouldShowBanner -> false because culture.DomainData.ShowAlertNotice is false");
+            return false;
+        }
+
+        if (!lastReconsentDatesMatch()) {
+            OTSDK_logger("shouldShowBanner -> true because lastReconsentDatesMatch === false");
+            return true;
+        }
+
+
+        if (didReconsentFrequencyDaysExpire()) {
+            OTSDK_logger("shouldShowBanner -> true because didReconsentFrequencyDaysExpire === true");
+            return true;
+        }
+
+
+        if (isCrossDevice() && allPurposesUpdatedAfterSync()) {
+            OTSDK_logger("shouldShowBanner -> false because allPurposesUpdatedAfterSync === true ");
+            return false;
+        }
+
+
+        if (isCrossDevice() && hasNewCategoriesSinceLastLocalInteraction()) {
+            OTSDK_logger("shouldShowBanner -> true because we're cross-device and we have new categories since last interaction.");
+            return true;
+        }
+
+
+        if (localStorage.getItem("OneTrust_lastConsentDate")) {
+            OTSDK_logger("shouldShowBanner -> false because user already taken action locally: OneTrust_lastConsentDate = " + localStorage.getItem("OneTrust_lastConsentDate"));
+            return false;
+        }
+
+        // if we go this far, show the banner
+        OTSDK_logger("shouldShowBanner -> true - no other rules match.");
+        return true;
+
+
+    } catch (error) {
+        throw error;
+
+    }
+
+}
+
+
+
+// export function getPurposesList() {
+//
+//     try {
+//         const sdkData = getOTSDKData();
+//         // Make Sure We Have Data To Work With
+//         if (!sdkData) {
+//             throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+//         }
+//
+//         // return the answer
+//         return sdkData["culture"]["DomainData"]["Groups"];
+//
+//     } catch (error) {
+//         throw error;
+//
+//     }
+// }
+
+
+function getPurposesList() {
+
+    try {
+        const sdkData = getOTSDKData();
+
+        // ///////////////////////////////////////////////////////////////////////////
+        // Make Sure We Have Data To Work With
+        // ///////////////////////////////////////////////////////////////////////////
+        if (!sdkData) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+
+
+        // ///////////////////////////////////////////////////////////////////////////
+        // Loop through groups and get any items saved to disk
+        // ///////////////////////////////////////////////////////////////////////////
+        const answer = [];
+        const validGroups = getValidGroup();
+
+        const vendorConsentModel = sdkData["culture"]["DomainData"]["VendorConsentModel"];
+        const defaultConsentStatus = (vendorConsentModel.toLowerCase() === "opt-out");  // opt-out = ON by default
+
+        // we need to add any un-saved user changes too.
+        let saveQueue = [];
+        const otsdk_saveQueue_str = localStorage.getItem("OneTrust_saveQueue");
+        if (otsdk_saveQueue_str && otsdk_saveQueue_str.length > 0) { saveQueue = JSON.parse(otsdk_saveQueue_str); }
+
+
+        for (const indexID in validGroups) {
+
+            if (!validGroups.hasOwnProperty(indexID)) {
+                continue;
+            }
+
+            const thisItem = validGroups[indexID];
+            const CustomGroupId = thisItem["CustomGroupId"];
+
+            let ConsentStatus = thisItem["Status"];
+            let storageKeyName = "OneTrust_CustomGroupId_" + CustomGroupId;
+            let savedStatus = localStorage.getItem(storageKeyName);
+            if (savedStatus) { ConsentStatus = savedStatus; }
+
+            // MOB-5335
+            // if TCF purpose 1 not disclosed to the user then PurposeOneTreatment == 1...  user can't consent, so make it inactive.
+            if (CustomGroupId === 'IABV2_1' && getPurposeOneTreatment() === 1) {
+                ConsentStatus = "inactive";
+            }
+
+            thisItem["Status"] = ConsentStatus;
+            thisItem["UIState_Status"] = ConsentStatus;
+
+
+            // if we have an item in the save queue, then add that to the payload too.
+            let saveQueueItems = saveQueue.filter(function (item) { return item.storageKeyName === "OneTrust_CustomGroupId_" + CustomGroupId });
+            if (saveQueueItems && saveQueueItems.length > 0) {
+                thisItem["UIState_Status"] = saveQueueItems[0].newValue;
+            }
+
+
+            // if this item is using LI, lets add that to the dict too.
+            if (thisItem.HasLegIntOptOut) {
+                let liConsentStatus = "active"; //defaultConsentStatus ? "active" : "inactive";
+                storageKeyName = "OneTrust_CustomGroupId_LI_" + CustomGroupId;
+                savedStatus = localStorage.getItem(storageKeyName);
+                if (savedStatus) {
+                    liConsentStatus = savedStatus;
+                }
+
+                thisItem["UIState_LI"] = liConsentStatus;
+                thisItem["LI"] = liConsentStatus;
+
+                // if we have an LI item in the save queue, then add that to the payload too.
+                saveQueueItems = saveQueue.filter(function (item) { return item.storageKeyName === "OneTrust_CustomGroupId_LI_" + CustomGroupId });
+                if (saveQueueItems && saveQueueItems.length > 0) {
+                    thisItem["UIState_LI"] = saveQueueItems[0].newValue;
+                }
+
+            }
+
+            answer.push(thisItem);
+
+        }
+
+
+        // return the answer
+        return answer;
+
+    } catch (error) {
+        throw error;
+
+    }
+
+}
+
+
+
+function getSavedProfile() {
+
+    try {
+        const sdkData = getOTSDKData();
+
+        // ///////////////////////////////////////////////////////////////////////////
+        // Make Sure We Have Data To Work With
+        // ///////////////////////////////////////////////////////////////////////////
+        if (!sdkData) { throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION"; }
+
+
+        // ///////////////////////////////////////////////////////////////////////////
+        // Loop through groups and get any items saved to disk
+        // ///////////////////////////////////////////////////////////////////////////
+        const answer = {};
+        const validGroups = getValidGroup();
+
+        const vendorConsentModel = sdkData["culture"]["DomainData"]["VendorConsentModel"];
+        const defaultConsentStatus = (vendorConsentModel.toLowerCase() === "opt-out");  // opt-out = ON by default
+        let answerItem;
+
+
+        for (const indexID in validGroups) {
+
+            answerItem = {};
+
+            if ( !validGroups.hasOwnProperty(indexID) ) { continue; }
+
+            const thisItem = validGroups[indexID];
+
+            if ( thisItem.isParent ) { continue; }
+
+            const CustomGroupId = thisItem["CustomGroupId"];
+            let ConsentStatus = thisItem["Status"];
+
+            let storageKeyName = "OneTrust_CustomGroupId_" + CustomGroupId;
+            let savedStatus = localStorage.getItem(storageKeyName);
+            if (savedStatus) { ConsentStatus = savedStatus; }
+
+            // MOB-5335
+            // if TCF purpose 1 not disclosed to the user then PurposeOneTreatment == 1...  user can't consent, so make it inactive.
+            if (CustomGroupId === 'IABV2_1' && getPurposeOneTreatment() === 1) {
+                ConsentStatus = "inactive";
+            }
+
+
+            answerItem["consent"] = ConsentStatus !== "inactive";
+
+            // if this item is using LI, lets add that to the dict too.
+            if (thisItem.HasLegIntOptOut) {
+
+                let liConsentStatus = defaultConsentStatus ? "active" : "inactive";
+                storageKeyName = "OneTrust_CustomGroupId_LI_" + CustomGroupId;
+
+                if ( localStorage.hasOwnProperty(storageKeyName) ) {
+                    liConsentStatus = localStorage.getItem(storageKeyName);
+                }
+
+                answerItem["legitInt"] = liConsentStatus !== "inactive";
+
+            }
+
+            answerItem["name"] = thisItem["GroupName"];
+            answerItem["type"] = thisItem["Type"];
+            answerItem["purposeId"] = thisItem["PurposeId"];
+
+
+            answer[CustomGroupId] = answerItem;
+
+        }
+
+
+        // return the answer
+        return answer;
+
+    } catch (error) {
+        throw error;
+
+    }
+
+}
+
+
+function updatePurposeConsent(categoryId, boolConsentValue) {
+
+    try {
+
+        // ///////////////////////////////////////////////////////////////////////////
+        // Make Sure We Have Data To Work With
+        // ///////////////////////////////////////////////////////////////////////////
+        if (!getOTSDKData()) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+
+
+        const storageKeyName = "OneTrust_CustomGroupId_" + categoryId;
+
+        let otsdk_saveQueue = [];
+
+        const otsdk_saveQueue_str = localStorage.getItem("OneTrust_saveQueue");
+        if (otsdk_saveQueue_str && otsdk_saveQueue_str.length > 0) {
+            otsdk_saveQueue = JSON.parse(otsdk_saveQueue_str);
+        }
+
+
+        // make sure I can really update this...
+        const records = getPurposesList();
+        for (const recordID in records) {
+            const record = records[recordID];
+            if (record["CustomGroupId"] === categoryId) {
+                const Status = record["Status"];
+                if (Status === "active" || Status.toLowerCase() === "inactive") {
+
+                    // remove any dups
+                    for (var i = 0; i < otsdk_saveQueue.length; i++) {
+                        if (otsdk_saveQueue[i].storageKeyName === storageKeyName) {
+                            otsdk_saveQueue.splice(i, 1);
+                            i--;
+                        }
+                    }
+
+                    // add to the save queue
+                    otsdk_saveQueue.push({
+                        "storageKeyName": storageKeyName,
+                        "CustomGroupId": categoryId,
+                        "newValue": (boolConsentValue ? "active" : "inactive")
+                    })
+
+                }
+                break;
+            }
+        }
+
+        // write the queue to disk
+        localStorage.setItem("OneTrust_saveQueue", JSON.stringify(otsdk_saveQueue));
+
+
+    } catch (error) {
+        throw error;
+
+    }
+}
+
+function updatePurposeLegitInterest(categoryId, boolConsentValue) {
+
+    try {
+
+        // ///////////////////////////////////////////////////////////////////////////
+        // Make Sure We Have Data To Work With
+        // ///////////////////////////////////////////////////////////////////////////
+        if (!getOTSDKData()) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+
+        const storageKeyName = "OneTrust_CustomGroupId_LI_" + categoryId;
+        let otsdk_saveQueue = [];
+
+        const otsdk_saveQueue_str = localStorage.getItem("OneTrust_saveQueue");
+        if (otsdk_saveQueue_str && otsdk_saveQueue_str.length > 0) {
+            otsdk_saveQueue = JSON.parse(otsdk_saveQueue_str);
+        }
+
+        // make sure I can really update this...
+        const records = getPurposesList();
+        for (const recordID in records) {
+            const record = records[recordID];
+            if (record["CustomGroupId"] === categoryId) {
+                if (record.HasLegIntOptOut) {
+
+                    // remove any dups
+                    for (let i = 0; i < otsdk_saveQueue.length; i++) {
+                        if (otsdk_saveQueue[i].storageKeyName === storageKeyName) {
+                            otsdk_saveQueue.splice(i, 1);
+                            i--;
+                        }
+                    }
+
+                    // add to the save queue
+                    otsdk_saveQueue.push({
+                        "storageKeyName": storageKeyName,
+                        "CustomGroupId": categoryId,
+                        "newValue": (boolConsentValue ? "active" : "inactive")
+                    });
+
+                }
+                break;
+            }
+        }
+
+        // write the queue to disk
+        localStorage.setItem("OneTrust_saveQueue", JSON.stringify(otsdk_saveQueue));
+
+
+    } catch (error) {
+        throw error;
+
+    }
+
+}
+
+const preferenceCenterConfirm = async () => {
+
+    let record;
+    try {
+
+        OTSDK_logger("onPreferenceCenterConfirmChoices called");
+
+
+        // ///////////////////////////////////////////////////////////////////////////
+        // Make Sure We Have Data To Work With
+        // ///////////////////////////////////////////////////////////////////////////
+        if (!getOTSDKData()) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+
+
+        // ///////////////////////////////////////////////////////////////////////////
+        // IF WE HAVE SOMETHING IN A QUEUE TO SAVE, SAVE IT TO DISK NOW
+        // ///////////////////////////////////////////////////////////////////////////
+
+        let otsdk_saveQueue = [];
+        const otsdk_saveQueue_str = localStorage.getItem("OneTrust_saveQueue");
+        if (otsdk_saveQueue_str && otsdk_saveQueue_str.length > 0) {
+            otsdk_saveQueue = JSON.parse(otsdk_saveQueue_str);
+        }
+
+        for (const keyName in otsdk_saveQueue) {
+            record = otsdk_saveQueue[keyName];
+            if (record) {
+                localStorage.setItem(record["storageKeyName"], record["newValue"]);
+            }
+        }
+
+
+        // /////////////////////////
+        // PREP DATA
+        // /////////////////////////
+
+        const records = getPurposesList();
+        const sendTheseRecordsToOneTrust = [];
+
+        for (const recordID in records) {
+            record = records[recordID]
+
+            let transactionType = "UNKNOWN";
+            const Status = record["Status"].toString();
+            const PurposeId = record["PurposeId"];
+
+            if (Status === "active") {
+                transactionType = "CONFIRMED";
+            } else if (Status.toLowerCase() === "inactive") {
+                transactionType = "OPT_OUT";
+            } else if (Status.toLowerCase() === "always active") {
+                transactionType = "NO_CHOICE";
+            } else if (Status.toLowerCase() === "inactive landingpage") {
+                transactionType = "CONFIRMED";
+            }
+
+            if (PurposeId) {
+                if (PurposeId.toString().trim().length > 0) {
+                    if (transactionType !== "UNKNOWN") {
+                        const purposeRecord = {};
+                        purposeRecord["Id"] = PurposeId;
+                        purposeRecord["TransactionType"] = transactionType;
+                        sendTheseRecordsToOneTrust.push(purposeRecord);
+                    }
+                }
+            }
+
+        }
+
+
+
+        // /////////////////////////
+        //  save any queued vendor changes too
+        // /////////////////////////
+        await vendorsSaveChanges()
+
+
+        // /////////////////////////
+        // SEND DATA / get response
+        // /////////////////////////
+        const response = await sendDataIfAllowed(sendTheseRecordsToOneTrust, "Preference Center - Confirm");
+
+        // we processed the data, now we can clear the queue.
+        localStorage.setItem("OneTrust_saveQueue", JSON.stringify([]));
+
+        // store @ disk the date we last consented. We'll use this later in ShouldShowBanner() logic.
+        await updateLastConsentDate();
+
+        triggerConsentEv();
+
+        // returns a promise, which resolves to this data value
+        return response;
+
+
+    } catch (error) {
+        throw error;
+
+    }
+
+}
+
+async function saveConsent(action) {
+    switch (action) {
+        case 'bannerAllowAll':
+            return bannerAccept();
+        case 'bannerRejectAll':
+            return bannerRejectAll();
+        case 'bannerClose':
+            return bannerClose();
+        case 'preferenceCenterAllowAll':
+            return preferenceCenterAcceptAll();
+        case 'preferenceCenterRejectAll':
+            return preferenceCenterRejectAll();
+        case 'preferenceCenterConfirm':
+            return preferenceCenterConfirm();
+        case 'bannerBack':
+            return bannerBack();
+    }
+}
+
+const bannerAccept = async () => {
+
+    try {
+
+
+        // Make Sure We Have Data To Work With
+        if (!getOTSDKData()) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+
+        OTSDK_logger("onBannerClickedAcceptAll called");
+
+        // Clear any previously saved items.
+        clearVendorListSaveQueue();
+        clearPreferenceCenterSaveQueue();
+
+
+        // /////////////////////////
+        // PREP DATA
+        // /////////////////////////
+
+        const records = getPurposesList();
+        const sendTheseRecordsToOneTrust = [];
+
+        for (const recordID in records) {
+            const record = records[recordID];
+
+            let transactionType = "UNKNOWN";
+            const Status = record["Status"].toString();
+            const PurposeId = record["PurposeId"];
+            const CustomGroupId = record["CustomGroupId"];
+            let storageKeyName = "OneTrust_CustomGroupId_" + CustomGroupId;
+
+            if (Status === "active") {
+                transactionType = "CONFIRMED";
+                localStorage.setItem(storageKeyName, Status);
+            } else if (Status.toLowerCase() === "inactive") {
+                transactionType = "CONFIRMED";
+                localStorage.setItem(storageKeyName, "active");
+            } else if (Status.toLowerCase() === "always active") {
+                transactionType = "NO_CHOICE";
+                localStorage.setItem(storageKeyName, Status);
+            } else if (Status.toLowerCase() === "inactive landingpage") {
+                transactionType = "CONFIRMED";
+                localStorage.setItem(storageKeyName, Status);
+            }
+
+            // handle consents
+            if (PurposeId) {
+                if (PurposeId.toString().trim().length > 0) {
+                    if (transactionType !== "UNKNOWN") {
+                        const purposeRecord = {};
+                        purposeRecord["Id"] = PurposeId;
+                        purposeRecord["TransactionType"] = transactionType;
+                        sendTheseRecordsToOneTrust.push(purposeRecord);
+                    }
+                }
+            }
+
+            // Handle LI values
+            if (record["LI"]) {
+                storageKeyName = "OneTrust_CustomGroupId_LI_" + CustomGroupId;
+                localStorage.setItem(storageKeyName, "active");
+            }
+
+        }
+
+
+
+        // /////////////////////////
+        //  accept all vendors too
+        // /////////////////////////
+        await toggleVendors(true);
+
+
+        // /////////////////////////
+        // SEND DATA / get response
+        // /////////////////////////
+        const response = await sendDataIfAllowed(sendTheseRecordsToOneTrust, "Banner - Allow All");
+
+        // store @ disk the date we last consented. We'll use this later in ShouldShowBanner() logic.
+        await updateLastConsentDate();
+
+        triggerConsentEv();
+
+        // returns a promise, which resolves to this data value
+        return response;
+
+
+    } catch (error) {
+        throw error;
+
+    }
+
+}
+
+
+const bannerRejectAll = async () => {
+
+    try {
+
+        OTSDK_logger("onBannerClickedRejectAll called");
+
+
+        // Make Sure We Have Data To Work With
+        if (!getOTSDKData()) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+
+
+        // Clear any previously saved items.
+        clearVendorListSaveQueue();
+        clearPreferenceCenterSaveQueue();
+
+
+        // /////////////////////////
+        // PREP DATA
+        // /////////////////////////
+
+        var records = getPurposesList();
+        var sendTheseRecordsToOneTrust = [];
+
+        for (var recordID in records) {
+            var record = records[recordID]
+
+
+            var transactionType = "UNKNOWN";
+            var Status = record["Status"].toString();
+            var PurposeId = record["PurposeId"];
+            var CustomGroupId = record["CustomGroupId"];
+            var storageKeyName = "OneTrust_CustomGroupId_" + CustomGroupId;
+
+            if (Status === "active") {
+                transactionType = "OPT_OUT";
+                localStorage.setItem(storageKeyName, "inactive");
+            } else if (Status.toLowerCase() === "inactive") {
+                transactionType = "OPT_OUT";
+                localStorage.setItem(storageKeyName, Status);
+            } else if (Status.toLowerCase() === "always active") {
+                transactionType = "NO_CHOICE";
+                localStorage.setItem(storageKeyName, Status);
+            } else if (Status.toLowerCase() === "inactive landingpage") {
+                transactionType = "OPT_OUT";
+                localStorage.setItem(storageKeyName, Status);
+            }
+
+            if (PurposeId) {
+                if (PurposeId.toString().trim().length > 0) {
+                    if (transactionType !== "UNKNOWN") {
+                        var purposeRecord = {};
+                        purposeRecord["Id"] = PurposeId;
+                        purposeRecord["TransactionType"] = transactionType;
+                        sendTheseRecordsToOneTrust.push(purposeRecord);
+                    }
+                }
+            }
+
+            // Handle LI values
+            if (record["LI"]) {
+                storageKeyName = "OneTrust_CustomGroupId_LI_" + CustomGroupId;
+                localStorage.setItem(storageKeyName, "inactive");
+            }
+
+        }
+
+
+        // /////////////////////////
+        //  reject all vendors too
+        // /////////////////////////
+        await toggleVendors(false);
+
+
+        // /////////////////////////
+        // SEND DATA / get response
+        // /////////////////////////
+        const response = await sendDataIfAllowed(sendTheseRecordsToOneTrust, "Banner - Reject All");
+
+
+        // store @ disk the date we last consented. We'll use this later in ShouldShowBanner() logic.
+        await updateLastConsentDate();
+
+        triggerConsentEv();
+
+        // returns a promise, which resolves to this data value
+        return response;
+
+
+    } catch (error) {
+        throw error;
+
+    }
+
+}
+
+
+const bannerClose = async () => {
+
+    try {
+
+        OTSDK_logger("onBannerClose called");
+
+        // Make Sure We Have Data To Work With
+        if (!getOTSDKData()) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+
+
+        // Clear any previously saved items.
+        clearVendorListSaveQueue();
+        clearPreferenceCenterSaveQueue();
+
+
+        // /////////////////////////
+        // PREP DATA
+        // /////////////////////////
+
+        var records = getPurposesList();
+        var sendTheseRecordsToOneTrust = [];
+
+        for (var recordID in records) {
+            var record = records[recordID]
+
+
+            var transactionType = "UNKNOWN";
+            var Status = record["Status"].toString();
+            var PurposeId = record["PurposeId"];
+            var CustomGroupId = record["CustomGroupId"];
+            var storageKeyName = "OneTrust_CustomGroupId_" + CustomGroupId;
+
+            if (Status === "active") {
+                transactionType = "CONFIRMED";
+                localStorage.setItem(storageKeyName, Status);
+            } else if (Status.toLowerCase() === "inactive") {
+                transactionType = "NOTGIVEN";
+                localStorage.setItem(storageKeyName, Status);
+            } else if (Status.toLowerCase() === "always active") {
+                transactionType = "NO_CHOICE";
+                localStorage.setItem(storageKeyName, Status);
+            } else if (Status.toLowerCase() === "inactive landingpage") {
+                transactionType = "CONFIRMED";
+                localStorage.setItem(storageKeyName, Status);
+            }
+
+            if (PurposeId) {
+                if (PurposeId.toString().trim().length > 0) {
+                    if (transactionType !== "UNKNOWN") {
+                        var purposeRecord = {};
+                        purposeRecord["Id"] = PurposeId;
+                        purposeRecord["TransactionType"] = transactionType;
+                        sendTheseRecordsToOneTrust.push(purposeRecord);
+                    }
+                }
+            }
+
+
+            // Handle LI values
+            if (record["LI"]) {
+                var vendorConsentModel = getOTSDKData()["culture"]["DomainData"]["VendorConsentModel"];
+                var defaultConsentStatus = (vendorConsentModel.toLowerCase() === "opt-out");  // opt-out = ON by default
+                var liConsentStatus = defaultConsentStatus ? "active" : "inactive";
+                storageKeyName = "OneTrust_CustomGroupId_LI_" + CustomGroupId;
+                localStorage.setItem(storageKeyName, liConsentStatus);
+            }
+
+        }
+
+
+
+        // /////////////////////////
+        // SEND DATA / get response
+        // /////////////////////////
+        const response = await sendDataIfAllowed(sendTheseRecordsToOneTrust, "Banner - Close");
+
+
+        // store @ disk the date we last consented. We'll use this later in ShouldShowBanner() logic.
+        await updateLastConsentDate();
+
+        triggerConsentEv();
+
+        OTSDK_logger("ON_HIDE_BANNER");
+
+        // returns a promise, which resolves to this data value
+        return response;
+
+
+    } catch (error) {
+        throw error;
+
+    }
+
+}
+
+const bannerBack = async () => {
+    try {
+        const bannerBackMode = getBannerBackMode();
+        OTSDK_logger("onBannerBack called");
+        if(bannerBackMode !== null){
+            if(bannerBackMode === "DISMISS_BANNER"){
+                // store @ disk the date we last consented. We'll use this later in ShouldShowBanner() logic.
+                await updateLastConsentDate();
+                OTSDK_logger("Dismiss Banner UI");
+                return {"info": "Dismiss the banner UI"};
+            }
+            else{
+                OTSDK_logger("Dismiss Banner UI & save consent");
+                const response = await bannerClose();
+                return response;
+            }
+        }
+        else{
+            return {"error": "NO_ACTION"};
+        }
+
+
+    } catch (error) {
+        throw error;
+
+    }
+
+}
+
+
+const preferenceCenterAcceptAll = async () => {
+
+    try {
+
+
+        // Make Sure We Have Data To Work With
+        if (!getOTSDKData()) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+
+
+        // Clear any previously saved items.
+        clearVendorListSaveQueue();
+        clearPreferenceCenterSaveQueue();
+
+
+        // /////////////////////////
+        // PREP DATA
+        // /////////////////////////
+
+        const records = getPurposesList();
+        const sendTheseRecordsToOneTrust = [];
+
+        for (const recordID in records) {
+            const record = records[recordID];
+
+            let transactionType = "UNKNOWN";
+            const Status = record["Status"].toString();
+            const PurposeId = record["PurposeId"];
+            const CustomGroupId = record["CustomGroupId"];
+            let storageKeyName = "OneTrust_CustomGroupId_" + CustomGroupId;
+
+            if (Status.toLowerCase() === "always active") {
+                transactionType = "NO_CHOICE";
+                localStorage.setItem(storageKeyName, Status);
+            } else {
+                transactionType = "CONFIRMED";
+                localStorage.setItem(storageKeyName, "active");
+            }
+
+            if (PurposeId) {
+                if (PurposeId.toString().trim().length > 0) {
+                    if (transactionType !== "UNKNOWN") {
+                        const purposeRecord = {};
+                        purposeRecord["Id"] = PurposeId;
+                        purposeRecord["TransactionType"] = transactionType;
+                        sendTheseRecordsToOneTrust.push(purposeRecord);
+                    }
+                }
+            }
+
+            // Handle LI values
+            if (record["LI"]) {
+                storageKeyName = "OneTrust_CustomGroupId_LI_" + CustomGroupId;
+                localStorage.setItem(storageKeyName, "active");
+            }
+
+        }
+
+
+        // /////////////////////////
+        //  accept all vendors too
+        // /////////////////////////
+        await toggleVendors(true);
+
+
+
+        // /////////////////////////
+        // SEND DATA / get response
+        // /////////////////////////
+        const response = await sendDataIfAllowed(sendTheseRecordsToOneTrust, "Preference Center - Allow All");
+
+        // store @ disk the date we last consented. We'll use this later in ShouldShowBanner() logic.
+        await updateLastConsentDate();
+
+        triggerConsentEv();
+
+        // returns a promise, which resolves to this data value
+        return response;
+
+
+    } catch (error) {
+        throw error;
+
+    }
+
+}
+
+
+const preferenceCenterRejectAll = async () => {
+
+    try {
+
+
+        // Make Sure We Have Data To Work With
+        if (!getOTSDKData()) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+
+
+        // Clear any previously saved items.
+        clearVendorListSaveQueue();
+        clearPreferenceCenterSaveQueue();
+
+
+        // /////////////////////////
+        // PREP DATA
+        // /////////////////////////
+
+        var records = getPurposesList();
+        var sendTheseRecordsToOneTrust = [];
+
+        for (var recordID in records) {
+            var record = records[recordID]
+
+            var transactionType = "UNKNOWN";
+            var Status = record["Status"].toString();
+            var PurposeId = record["PurposeId"];
+            var CustomGroupId = record["CustomGroupId"];
+            var storageKeyName = "OneTrust_CustomGroupId_" + CustomGroupId;
+
+            if (Status === "active") {
+                transactionType = "OPT_OUT";
+                localStorage.setItem(storageKeyName, "inactive");
+            } else if (Status.toLowerCase() === "inactive") {
+                transactionType = "OPT_OUT";
+                localStorage.setItem(storageKeyName, Status);
+            } else if (Status.toLowerCase() === "always active") {
+                transactionType = "NO_CHOICE";
+                localStorage.setItem(storageKeyName, Status);
+            } else if (Status.toLowerCase() === "inactive landingpage") {
+                transactionType = "CONFIRMED";
+                localStorage.setItem(storageKeyName, Status);
+            }
+
+            if (PurposeId) {
+                if (PurposeId.toString().trim().length > 0) {
+                    if (transactionType !== "UNKNOWN") {
+                        var purposeRecord = {};
+                        purposeRecord["Id"] = PurposeId;
+                        purposeRecord["TransactionType"] = transactionType;
+                        sendTheseRecordsToOneTrust.push(purposeRecord);
+                    }
+                }
+            }
+
+            // Handle LI values
+            if (record["LI"]) {
+                storageKeyName = "OneTrust_CustomGroupId_LI_" + CustomGroupId;
+                localStorage.setItem(storageKeyName, "inactive");
+            }
+
+        }
+
+        // /////////////////////////
+        //  reject all vendors too
+        // /////////////////////////
+        await toggleVendors(false);
+
+        // /////////////////////////
+        // SEND DATA / get response
+        // /////////////////////////
+        const response = await sendDataIfAllowed(sendTheseRecordsToOneTrust, "Preference Center - Reject All");
+
+        // store @ disk the date we last consented. We'll use this later in ShouldShowBanner() logic.
+        await updateLastConsentDate();
+
+        triggerConsentEv();
+
+        // returns a promise, which resolves to this data value
+        return response;
+
+
+    } catch (error) {
+        throw error;
+
+    }
+
+}
+
+const preferenceCenterClose = async () => {
+
+    try {
+
+        // Clear any previously saved items.
+        clearVendorListSaveQueue();
+        clearPreferenceCenterSaveQueue();
+
+        return;
+
+    } catch (error) {
+        throw error;
+
+    }
+
+}
+
+
+
+
+function clearOTSDKData() {
+    for (let i = localStorage.length - 1; i >= 0; i--) {
+        const keyName = localStorage.key(i);
+        if (keyName.startsWith("OneTrust_") || keyName.startsWith("IABTCF_")) {
+            localStorage.removeItem(keyName);
+        }
+    }
+    localStorage.removeItem("IABUSPrivacy_String");
+}
+
+function getConsentStatus(CustomGroupId) {
+
+    try {
+
+        const consentRecords = getPurposesList();
+
+        for (const recordID in consentRecords) {
+            const record = consentRecords[recordID];
+            if (record.CustomGroupId === CustomGroupId) {
+                return record["Status"].toString();
+            }
+        }
+
+        return "UNKNOWN";
+
+    } catch (error) {
+        throw error
+
+    }
+
+}
+
+const downloadGoogleVendorList = async () => {
+    try {
+        const sdkData = getOTSDKData();
+
+        // Make Sure We Have Data To Work With
+        if (!sdkData) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+        // ///////////////////////////////////////////////
+        // I only need the vendor list if IAB2
+        // ///////////////////////////////////////////////
+        if (!isIAB2()) {
+            return { "info": "not IAB2 - vendor list not needed" };
+        }
+
+        const mobileData = sdkData["culture"]["MobileData"]["preferenceCenterData"]["googleVendors"]["general"];
+        if(!mobileData.show){
+            OTSDK_logger("downloadGoogleVendorList -> Google vendor is not enabled for this template");
+            return;
+        }
+
+        const GoogleData = sdkData["domain"]["GoogleData"];
+        if (!GoogleData) {
+            OTSDK_logger("downloadGoogleVendorList -> MISSING GoogleData NODE FROM getOTSDKData");
+            return;
+        }
+
+        const googleVendorListUrl = GoogleData["googleVendorListUrl"];
+        if (!googleVendorListUrl) {
+            OTSDK_logger("downloadGoogleVendorList -> MISSING googleVendorListUrl NODE FROM IabV2Data node");
+            return;
+        }
+
+        // /////////////////////////
+        // GET DATA
+        // /////////////////////////
+
+        const myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        myHeaders.append("cache-control", "no-cache");
+
+        const requestOptions = {
+            method: 'GET',
+            headers: myHeaders,
+            redirect: 'follow'
+        };
+
+        const performanceMetric3Start = Date.now();
+        const response = await fetch(googleVendorListUrl, requestOptions)
+            .catch(error => {
+                throw error;
+            });
+
+        // check if response worked (no 404 errors etc...)
+        if (!response.ok) {
+            OTSDK_logger("response.statusText -> " + response.statusText);
+            throw new Error(response.statusText);
+        }
+
+        // convert response to JSON object
+        const data = await response.json();
+        OTSDK_performance_logger(3,performanceMetric3Start, Date.now());
+        const domainData = sdkData["culture"]["DomainData"];
+        const vendorConsentModel = domainData["VendorConsentModel"];
+        const overriddenVendors = domainData["OverridenGoogleVendors"];
+        const defaultConsentStatus = (vendorConsentModel.toLowerCase() === "opt-out") ? true : false;  // opt-out = ON by default
+        const vendorConsentUserSelections = getSavedGoogleVendorConsents();
+        const vendorRecords = data["vendors"];
+        const vendorKeys = Object.keys(vendorRecords);
+        for (let i=0; i < vendorKeys.length; i++) {
+            const vendorRecord = vendorRecords[vendorKeys[i]];
+            const vendorID = vendorRecord["id"];
+            // ////////////////////////////////////////
+            // set the defaults
+            vendorRecord["shouldShowVendor"] = true;
+            vendorRecord["shouldShowConsentToggleForVendor"] = true;
+            vendorRecord["vendorConsentToggleIsOn"] = defaultConsentStatus;
+            vendorRecord["purposes"] = [];
+            vendorRecord["legIntPurposes"] = [];
+            vendorRecord["specialPurposes"] = [];
+            vendorRecord["features"] = [];
+            vendorRecord["specialFeatures"] = [];
+            const overriddenVendorRecord = overriddenVendors[vendorID];
+            if (overriddenVendorRecord) {
+
+                // should show vendor override
+                vendorRecord["shouldShowVendor"] = overriddenVendorRecord["active"];
+            }
+
+            // set the vendor consent status
+            if (vendorConsentUserSelections.hasOwnProperty(vendorID)) {
+                vendorRecord["vendorConsentToggleIsOn"] = vendorConsentUserSelections[vendorID];
+            }
+            vendorRecord["UIState_vendorConsentToggleIsOn"] = vendorRecord["vendorConsentToggleIsOn"];
+        }
+
+        // ////////////////////////////////////////
+        // save the results to disk
+        // ////////////////////////////////////////
+        localStorage.setItem("OneTrust_Google_VendorList", JSON.stringify(data));
+
+        // ////////////////////////////////////////
+        // returns a promise, which resolves to this data value
+        // ////////////////////////////////////////
+        return data;
+
+    } catch (error) {
+        throw error;
+
+    }
+};
+
+
+const downloadVendorList = async () => {
+
+    try {
+        const sdkData = getOTSDKData();
+
+        // Make Sure We Have Data To Work With
+        if (!sdkData) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+
+
+        // ///////////////////////////////////////////////
+        // I only need the vendor list if IAB2
+        // ///////////////////////////////////////////////
+        if (!isIAB2()) {
+            return { "info": "not IAB2 - vendor list not needed" };
+        }
+
+
+        // ///////////////////////////////////////////////
+        // make sure I have the data I need
+        // ///////////////////////////////////////////////
+
+        const IabV2Data = sdkData["domain"]["IabV2Data"];
+        if (!IabV2Data) {
+            throw "MISSING IabV2Data NODE FROM getOTSDKData";
+        }
+
+        const globalVendorListUrl = IabV2Data["globalVendorListUrl"];
+        if (!globalVendorListUrl) {
+            throw "MISSING globalVendorListUrl NODE FROM IabV2Data node";
+        }
+
+
+        // /////////////////////////
+        // GET DATA
+        // /////////////////////////
+
+        const myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        myHeaders.append("cache-control", "no-cache");
+
+        const requestOptions = {
+            method: 'GET',
+            headers: myHeaders,
+            redirect: 'follow'
+        };
+
+        const performanceMetric2Start = Date.now();
+        const response = await fetch(globalVendorListUrl, requestOptions)
+            .catch(error => {
+                throw error;
+            });
+
+        // check if response worked (no 404 errors etc...)
+        if (!response.ok) {
+            OTSDK_logger("response.statusText -> " + response.statusText);
+            throw new Error(response.statusText);
+        }
+
+        // convert response to JSON object
+        const data = await response.json();
+        OTSDK_performance_logger(2,performanceMetric2Start, Date.now());
+
+        // /////////////////////////////////////
+        // ENHANCE THE DATA FOR USE IN UI
+        // ////////////////////////////////////////
+        const domainData = sdkData["culture"]["DomainData"];
+        const overriddenVendors = domainData["OverriddenVendors"];
+        const vendorConsentModel = domainData["VendorConsentModel"];
+        const defaultConsentStatus = (vendorConsentModel.toLowerCase() === "opt-out") ? true : false;  // opt-out = ON by default
+
+
+        const vendorConsentUserSelections = getSavedVendorConsents();
+        const vendorLIUserSelections = getSavedVendorLegitInterest();
+
+        const PublisherRestrictions = domainData["publisher"]["restrictions"];
+        const organizedPublisherRestrictions = organizePublisherRestrictionsForQuickLookupByVendor(PublisherRestrictions);
+
+        const syncGroupId = sdkData["domain"]["SyncGroupId"];
+        const dataFetch = sdkData["profile"]["fetch"];
+        var vendorConsentsArr = null;
+        var vendorLIArr = null;
+        if(dataFetch.hasOwnProperty("syncGroups") && dataFetch["syncGroups"].hasOwnProperty(syncGroupId) && !getConsentExpired()){
+            const syncGroups = dataFetch["syncGroups"][syncGroupId];
+            const vendorConsents = syncGroups["tcStringV2Decoded"]["vendor"]["consents"];
+            const vendorLegitimate = syncGroups["tcStringV2Decoded"]["vendor"]["legitimateInterests"];
+            vendorConsentsArr = vendorConsents.split("");
+            vendorLIArr = vendorLegitimate.split("");
+        }
+
+
+        var maxVendorID = 0;
+        const vendorRecords = data["vendors"];
+        const vendorKeys = Object.keys(vendorRecords);
+        for (var i=0;i < vendorKeys.length;i++) {
+
+            const vendorRecord = vendorRecords[vendorKeys[i]];
+            const vendorID = vendorRecord["id"];
+
+            // save this value for later use in building TCF strings.
+            if (vendorID > maxVendorID) {
+                maxVendorID = vendorID;
+            }
+
+            // ////////////////////////////////////////
+            // set the defaults
+            vendorRecord["shouldShowVendor"] = true;
+            vendorRecord["shouldShowConsentToggleForVendor"] = vendorRecord.purposes.length > 0;
+            vendorRecord["vendorConsentToggleIsOn"] = defaultConsentStatus;
+            vendorRecord["shouldShowLegitimateInterestToggleForVendor"] = vendorRecord.legIntPurposes.length > 0;
+            vendorRecord["vendorLegitimateInterestToggleIsOn"] = true;
+
+            // ////////////////////////////////////////
+            // override defaults based on overridden Vendor rules...
+            // ////////////////////////////////////////
+
+            const overriddenVendorRecord = overriddenVendors[vendorID];
+            if (overriddenVendorRecord) {
+
+                // should show vendor override
+                vendorRecord["shouldShowVendor"] = overriddenVendorRecord["active"];
+                // should update the consent and legint from the overriden values
+                vendorRecord["shouldShowConsentToggleForVendor"] = overriddenVendorRecord["consent"];
+                vendorRecord["shouldShowLegitimateInterestToggleForVendor"] = overriddenVendorRecord["legInt"];
+            }
+
+
+            // ////////////////////////////////////////
+            // override defaults based on publisher restrictions rules...
+            // ////////////////////////////////////////
+            // if restriction type = 0 , remove purpose id from LI and Purpose
+            // if restriction type = 1 , move purpose id from LI to Purpose
+            // if restriction type = 2 , move purpose id from Purpose to LI
+            const strVendorID = vendorID.toString();
+            if (organizedPublisherRestrictions.hasOwnProperty(strVendorID)) {
+
+
+                // purposeIDsToRemove
+                organizedPublisherRestrictions[strVendorID]['0'].forEach(function (purposeID) {
+                    data["vendors"][strVendorID]['purposes'] = data["vendors"][strVendorID]['purposes'].filter(function (item) { return item !== purposeID });
+                    data["vendors"][strVendorID]['legIntPurposes'] = data["vendors"][strVendorID]['legIntPurposes'].filter(function (item) { return item !== purposeID });
+                });
+
+                // purposeIDs_move_LI_to_Purpose
+                organizedPublisherRestrictions[strVendorID]['1'].forEach(function (purposeID) {
+                    if (data["vendors"][strVendorID]['legIntPurposes'].indexOf(purposeID) >= 0) {
+                        data["vendors"][strVendorID]['purposes'] = data["vendors"][strVendorID]['purposes'].filter(function (item) { return item !== purposeID });
+                        data["vendors"][strVendorID]['legIntPurposes'] = data["vendors"][strVendorID]['legIntPurposes'].filter(function (item) { return item !== purposeID });
+                        data["vendors"][strVendorID]['purposes'].push(purposeID);
+                        data["vendors"][strVendorID]['purposes'] = data["vendors"][strVendorID]['purposes'].sort();
+                    }
+                });
+
+                // purposeIDs_move_Purpose_to_LI
+                organizedPublisherRestrictions[strVendorID]['2'].forEach(function (purposeID) {
+                    if (data["vendors"][strVendorID]['purposes'].indexOf(purposeID) >= 0) {
+                        data["vendors"][strVendorID]['purposes'] = data["vendors"][strVendorID]['purposes'].filter(function (item) { return item !== purposeID });
+                        data["vendors"][strVendorID]['legIntPurposes'] = data["vendors"][strVendorID]['legIntPurposes'].filter(function (item) { return item !== purposeID });
+                        data["vendors"][strVendorID]['legIntPurposes'].push(purposeID);
+                        data["vendors"][strVendorID]['legIntPurposes'] = data["vendors"][strVendorID]['legIntPurposes'].sort();
+                    }
+                });
+
+            }
+
+
+
+
+            // ////////////////////////////////////////
+            // get the sate for the toggles
+            // ////////////////////////////////////////
+
+            // set the vendor consent status
+            if (vendorRecord.shouldShowVendor && vendorConsentUserSelections.hasOwnProperty(vendorID)) {
+                vendorRecord["vendorConsentToggleIsOn"] = vendorConsentUserSelections[vendorID];
+            }
+
+
+            // set the vendor LI consent status
+            if (vendorRecord.shouldShowVendor && vendorLIUserSelections.hasOwnProperty(vendorID)) {
+                vendorRecord["vendorLegitimateInterestToggleIsOn"] = vendorLIUserSelections[vendorID];
+            }
+
+
+            // if we not to show the toggles, also turn them off.
+            if (!vendorRecord.shouldShowConsentToggleForVendor && vendorRecord.vendorConsentToggleIsOn) {
+                vendorRecord["vendorConsentToggleIsOn"] = false;
+            }
+
+            if (!vendorRecord.shouldShowLegitimateInterestToggleForVendor && vendorRecord.vendorLegitimateInterestToggleIsOn) {
+                vendorRecord["vendorLegitimateInterestToggleIsOn"] = false;
+            }
+
+            // all toggles should be off if we're not to show the vendor
+            if (!vendorRecord["shouldShowVendor"]) {
+                vendorRecord["vendorConsentToggleIsOn"] = false;
+                vendorRecord["vendorLegitimateInterestToggleIsOn"] = false;
+                vendorRecord["shouldShowConsentToggleForVendor"] = false;
+                vendorRecord["shouldShowLegitimateInterestToggleForVendor"] = false;
+            }
+
+            const id = parseInt(vendorID) - 1;
+            if(vendorConsentsArr !== null){
+                if(vendorConsentsArr.length === 0){
+                    vendorRecord["vendorConsentToggleIsOn"] = false;
+                }
+                else{
+                    vendorRecord["vendorConsentToggleIsOn"] = getStatus(vendorConsentsArr[id]);
+                }
+            }
+
+            if(vendorLIArr !== null){
+                if(vendorLIArr.length === 0){
+                    vendorRecord["vendorLegitimateInterestToggleIsOn"] = false;
+                }
+                else{
+                    vendorRecord["vendorLegitimateInterestToggleIsOn"] = getStatus(vendorLIArr[id]);
+                }
+            }
+
+            // MOB-6304
+            vendorRecord["UIState_vendorConsentToggleIsOn"] = vendorRecord["vendorConsentToggleIsOn"];
+            vendorRecord["UIState_vendorLegitimateInterestToggleIsOn"] = vendorRecord["vendorLegitimateInterestToggleIsOn"];
+
+        }
+
+
+
+        // ////////////////////////////////////////
+        // save the results to disk
+        // ////////////////////////////////////////
+        localStorage.setItem("OneTrust_VendorList", JSON.stringify(data));
+        localStorage.setItem("OneTrust_VendorList_maxVendorID", maxVendorID);
+        localStorage.setItem("OneTrust_vendorList_Date", (new Date().getTime() / 1000).toString());
+
+        // ////////////////////////////////////////
+        // returns a promise, which resolves to this data value
+        // ////////////////////////////////////////
+        return data;
+
+
+    } catch (error) {
+        throw error;
+
+    }
+
+}
+
+function getStatus(a){
+    if(a === "1"){
+        return true;
+    }
+    return false;
+}
+
+const downloadStorageDisclosure = async (url) => {
+    try {
+        // Make Sure We Have Data To Work With
+        if (!getOTSDKData()) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+        // ///////////////////////////////////////////////
+        // I only need to call this api if it's IAB2
+        // ///////////////////////////////////////////////
+        if (!isIAB2()) {
+            return { "info": "Supported only for IAB2" };
+        }
+        // /////////////////////////
+        // GET DATA
+        // /////////////////////////
+        const myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        // myHeaders.append("cache-control", "no-cache"); // <-- some server not allowing this.
+
+        const requestOptions = {
+            method: 'GET',
+            headers: myHeaders,
+            redirect: 'follow'
+        };
+        const response = await fetch(url, requestOptions)
+            .catch(error => {
+                throw error;
+            });
+        // // check if response worked (no 404 errors etc...)
+        // console.log('... response', response);
+        
+        // if (!response.ok) {
+        //     OTSDK_logger("response.statusText -> " + response.statusText);
+        //     throw new Error(response.statusText);
+        // }
+    
+        const error = (response) => {
+            if(response && response.statusText){
+              OTSDK_logger("response.statusText -> " + response.statusText);
+              //throw new Error(response.statusText);
+            }else{
+              OTSDK_logger("response.statusText ->  Error downloading vendor storage disclosure");
+              //throw new Error('downloading vendor storage disclosure');
+            }
+            //OTSDK_logger("response.status -> " + response.status);
+            return {'code': 'err'};
+        }
+
+        //console.log(response.headers.get('Content-Type'));
+        // convert response to JSON object
+        const data = await (response.status > 400 || response.headers.get('Content-Type') !== 'application/json') ?  error() : response.json();
+
+        // ////////////////////////////////////////
+        // returns a promise, which resolves to this data value
+        // ////////////////////////////////////////
+        return data;
+    } catch (error) {
+        throw error;
+    }
+}
+
+
+function getGoogleVendorList() {
+    const answer = localStorage.getItem("OneTrust_Google_VendorList");
+    if (!answer) {
+        return {};
+    }
+    return JSON.parse(answer);
+}
+
+function getVendorList() {
+    const answer = localStorage.getItem("OneTrust_VendorList");
+    if (!answer) {
+        return {};
+    }
+    return JSON.parse(answer);
+}
+
+function getVendorDetails(vendorID) {
+    return getVendorList()['vendors'][vendorID.toString()];
+}
+
+function getSavedVendorConsents() {
+    const answer = localStorage.getItem("OneTrust_vendorConsentUserSelections");
+    if (!answer) {
+        return {};
+    }
+    return JSON.parse(answer);
+}
+
+function getSavedGoogleVendorConsents() {
+    const answer = localStorage.getItem("OneTrust_vendorGoogleConsentUserSelections");
+    if (!answer) {
+        return {};
+    }
+    return JSON.parse(answer);
+}
+
+function getSavedVendorLegitInterest() {
+    const answer = localStorage.getItem("OneTrust_vendorLIUserSelections");
+    if (!answer) {
+        return {};
+    }
+    return JSON.parse(answer);
+}
+
+function toggleVendorsConsentUi(isEnabled, vendorIDs = null) {
+    try {
+        // Make Sure We Have Data To Work With
+        if (!getOTSDKData()) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+        const vendorListObject = getVendorList();
+        if (!vendorListObject || !vendorListObject.vendors) { return; } //<- wont have vendors if not IAB2
+
+        const otsdk_saveQueue = [];
+
+        if (vendorIDs){
+
+            // loop through each vendor id passed into this function.
+            for (let itemID in vendorIDs) {
+                const vendorId = vendorIDs[itemID];
+                const vendorRecord = vendorListObject.vendors[vendorId];
+                if (vendorRecord && vendorRecord.shouldShowConsentToggleForVendor) {
+                    vendorRecord["UIState_vendorConsentToggleIsOn"] = isEnabled;
+                    otsdk_saveQueue.push({ "vendorId": vendorId, "newValue": isEnabled });
+                }
+            }
+
+        }else{
+
+            // loop through each vendor record
+            for (const vendorId in vendorListObject.vendors) {
+                const vendorRecord = vendorListObject.vendors[vendorId];
+                if (vendorRecord.shouldShowConsentToggleForVendor) {
+                    vendorRecord["UIState_vendorConsentToggleIsOn"] = isEnabled;
+                    otsdk_saveQueue.push({ "vendorId": vendorId, "newValue": isEnabled });
+                }
+            }
+
+        }
+
+
+        localStorage.setItem("OneTrust_VendorList", JSON.stringify(vendorListObject));
+        localStorage.setItem("OneTrust_saveQueue_vendor", JSON.stringify(otsdk_saveQueue));
+
+    } catch (error) {
+        throw error;
+    }
+}
+
+const toggleVendors = async (isEnabled) => {
+    try {
+        // Make Sure We Have Data To Work With
+        if (!getOTSDKData()) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+
+        clearVendorListSaveQueue();
+
+        // ///////////////////////////////////////////////
+        // PREPARE THE DATA
+        // ///////////////////////////////////////////////
+        var vendorListObject = getVendorList();
+        if (!vendorListObject || !vendorListObject.vendors) { return; } //<- wont have vendors if not IAB2
+
+        var vendorConsentUserSelections = getSavedVendorConsents();
+        var vendorLIUserSelections = getSavedVendorLegitInterest();
+
+        var vendorRecords = vendorListObject["vendors"];
+        for (var vendorID in vendorRecords) {
+            var vendorRecord = vendorRecords[vendorID];
+            // set value for Consent
+            if (vendorRecord.shouldShowConsentToggleForVendor) {
+                vendorConsentUserSelections[vendorID] = isEnabled;
+                vendorRecord["vendorConsentToggleIsOn"] = isEnabled;
+            }
+
+            // set value for Legitimate Interest
+            if (vendorRecord.shouldShowLegitimateInterestToggleForVendor) {
+                vendorLIUserSelections[vendorID] = isEnabled;
+                vendorRecord["vendorLegitimateInterestToggleIsOn"] = isEnabled;
+            }
+
+            // MOB-6304
+            vendorRecord["UIState_vendorConsentToggleIsOn"] = vendorRecord["vendorConsentToggleIsOn"];
+            vendorRecord["UIState_vendorLegitimateInterestToggleIsOn"] = vendorRecord["vendorLegitimateInterestToggleIsOn"];
+        }
+        // ///////////////////////////////////////////////
+        // SAVE THE DATA TO LOCAL STORAGE
+        // ///////////////////////////////////////////////
+        localStorage.setItem("OneTrust_vendorConsentUserSelections", JSON.stringify(vendorConsentUserSelections));
+        localStorage.setItem("OneTrust_vendorLIUserSelections", JSON.stringify(vendorLIUserSelections));
+        localStorage.setItem("OneTrust_VendorList", JSON.stringify(vendorListObject));
+
+        var vendorGoogleListObject = getGoogleVendorList();
+        if (vendorGoogleListObject && vendorGoogleListObject.vendors) {
+            var googlevendorConsentUserSelections = getSavedGoogleVendorConsents();
+            var googlevendorRecords = vendorGoogleListObject["vendors"];
+            for (var vendorID in googlevendorRecords) {
+                var vendorRecord = googlevendorRecords[vendorID];
+                // set value for Consent
+                if (vendorRecord.shouldShowConsentToggleForVendor) {
+                    googlevendorConsentUserSelections[vendorID] = isEnabled;
+                    vendorRecord["vendorConsentToggleIsOn"] = isEnabled;
+                }
+                vendorRecord["UIState_vendorConsentToggleIsOn"] = vendorRecord["vendorConsentToggleIsOn"];
+            }
+            localStorage.setItem("OneTrust_vendorGoogleConsentUserSelections", JSON.stringify(googlevendorConsentUserSelections));
+            localStorage.setItem("OneTrust_Google_VendorList", JSON.stringify(vendorGoogleListObject));
+         }
+
+        // since we changed vendors, we'll need to rebuild the TCF strig
+        writeTCString();
+
+        // convert response to JSON object
+        const data = await getVendorListData();
+
+        // ///////////////////////////////////////////////
+        // returns a promise, which resolves to this data value
+        // ///////////////////////////////////////////////
+        return data;
+
+    } catch (error) {
+        throw error;
+    }
+}
+
+function updateVendorConsent(vendorId, boolConsentValue) {
+
+    try {
+
+
+        var otsdk_saveQueue = [];
+
+        // if we already have a queue @ disk, use it.
+        var otsdk_saveQueue_str = localStorage.getItem("OneTrust_saveQueue_vendor");
+        if (otsdk_saveQueue_str && otsdk_saveQueue_str.length > 0) {
+            otsdk_saveQueue = JSON.parse(otsdk_saveQueue_str);
+        }
+
+        // remove any dups
+        for (var i = 0; i < otsdk_saveQueue.length; i++) {
+            if (otsdk_saveQueue[i].vendorId === vendorId) {
+                otsdk_saveQueue.splice(i, 1);
+                i--;
+            }
+        }
+
+        // add to the save queue
+        otsdk_saveQueue.push({ "vendorId": vendorId, "newValue": boolConsentValue });
+
+        // MOB-6304 - update the vendor list object
+        const vendorListObject = getVendorList();
+        if(vendorListObject['vendors'][vendorId.toString()] != undefined){
+            vendorListObject['vendors'][vendorId.toString()]['UIState_vendorConsentToggleIsOn'] = boolConsentValue;
+            localStorage.setItem("OneTrust_VendorList", JSON.stringify(vendorListObject));
+        }else{
+            const googleVendorListObject = getGoogleVendorList();
+            googleVendorListObject['vendors'][vendorId.toString()]['UIState_vendorConsentToggleIsOn'] = boolConsentValue;
+            localStorage.setItem("OneTrust_Google_VendorList", JSON.stringify(googleVendorListObject));
+        }
+
+
+        // write the queue to disk
+        localStorage.setItem("OneTrust_saveQueue_vendor", JSON.stringify(otsdk_saveQueue));
+
+
+    } catch (error) {
+        throw error;
+
+    }
+
+}
+
+
+function updateVendorLegitInterest(vendorId, boolConsentValue) {
+
+    try {
+
+        var otsdk_saveQueue = [];
+
+        // if we already have a queue @ disk, use it.
+        var otsdk_saveQueue_str = localStorage.getItem("OneTrust_saveQueue_vendor_li");
+        if (otsdk_saveQueue_str && otsdk_saveQueue_str.length > 0) {
+            otsdk_saveQueue = JSON.parse(otsdk_saveQueue_str);
+        }
+
+        // remove any dups
+        for (var i = 0; i < otsdk_saveQueue.length; i++) {
+            if (otsdk_saveQueue[i].vendorId === vendorId) {
+                otsdk_saveQueue.splice(i, 1);
+                i--;
+            }
+        }
+
+        // add to the save queue
+        otsdk_saveQueue.push({ "vendorId": vendorId, "newValue": boolConsentValue });
+
+        // MOB-6304 - update the vendor list object
+        const vendorListObject = getVendorList();
+        vendorListObject['vendors'][vendorId.toString()]['UIState_vendorLegitimateInterestToggleIsOn'] = boolConsentValue;
+        localStorage.setItem("OneTrust_VendorList", JSON.stringify(vendorListObject));
+
+
+        // write the queue to disk
+        localStorage.setItem("OneTrust_saveQueue_vendor_li", JSON.stringify(otsdk_saveQueue));
+
+
+    } catch (error) {
+        throw error;
+
+    }
+
+}
+
+const vendorsSaveChanges = async () => {
+
+    try {
+
+        // Make Sure We Have Data To Work With
+        if (!getOTSDKData()) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+
+
+
+        // ///////////////////////////////////////////////
+        // Get the data I'll need
+        // ///////////////////////////////////////////////
+
+        var vendorListObject = getVendorList();
+        if (!vendorListObject || !vendorListObject.vendors) { return; } //<- wont have vendors if not IAB2
+
+        var vendorRecords = vendorListObject["vendors"];
+        var vendorConsentUserSelections = getSavedVendorConsents();
+        var vendorLIUserSelections = getSavedVendorLegitInterest();
+
+        var vendorGoogleListObject = getGoogleVendorList();
+
+        // ///////////////////////////////////////////////
+        // process the vendor consent queue
+        // ///////////////////////////////////////////////
+
+        // Get the save queue from disk
+        var otsdk_saveQueue = [];
+        var otsdk_saveQueue_str = localStorage.getItem("OneTrust_saveQueue_vendor");
+        if (otsdk_saveQueue_str && otsdk_saveQueue_str.length > 0) {
+            otsdk_saveQueue = JSON.parse(otsdk_saveQueue_str);
+        }
+
+        // update local storage and the vendor list
+        for (const keyName in otsdk_saveQueue) {
+            var record = otsdk_saveQueue[keyName];
+            if (record) {
+                var vendorId = record["vendorId"];
+                vendorConsentUserSelections[vendorId] = record["newValue"];
+                if(vendorRecords[vendorId]){
+                vendorRecords[vendorId]["vendorConsentToggleIsOn"] = record["newValue"];
+
+                // MOB-6304
+                vendorRecords[vendorId]["UIState_vendorConsentToggleIsOn"] = record["newValue"];
+                }
+
+            }
+        }
+
+        if (vendorGoogleListObject && vendorGoogleListObject.vendors) {
+            var googlevendorConsentUserSelections = getSavedGoogleVendorConsents();
+            var googlevendorRecords = vendorGoogleListObject["vendors"];
+            // update local storage and the vendor list
+            for (const keyName in otsdk_saveQueue) {
+                var record = otsdk_saveQueue[keyName];
+                if (record) {
+                    var vendorId = record["vendorId"];
+                    if(googlevendorRecords[vendorId]){
+                    googlevendorConsentUserSelections[vendorId] = record["newValue"];
+                    googlevendorRecords[vendorId]["vendorConsentToggleIsOn"] = record["newValue"];
+
+                    // // MOB-6304
+                    googlevendorRecords[vendorId]["UIState_vendorConsentToggleIsOn"] = record["newValue"];
+                    }
+                }
+            }
+        }
+
+        // ///////////////////////////////////////////////
+        // process the vendor LI consent queue
+        // ///////////////////////////////////////////////
+
+        // Get the save queue from disk
+        otsdk_saveQueue = [];
+        otsdk_saveQueue_str = localStorage.getItem("OneTrust_saveQueue_vendor_li");
+        if (otsdk_saveQueue_str && otsdk_saveQueue_str.length > 0) {
+            otsdk_saveQueue = JSON.parse(otsdk_saveQueue_str);
+        }
+
+        // update local storage and the vendor list
+        for (const keyName in otsdk_saveQueue) {
+            var record = otsdk_saveQueue[keyName];
+            if (record) {
+                var vendorId = record["vendorId"];
+                vendorLIUserSelections[vendorId] = record["newValue"];
+                vendorRecords[vendorId]["vendorLegitimateInterestToggleIsOn"] = record["newValue"];
+
+                // MOB-6304
+                vendorRecords[vendorId]["UIState_vendorLegitimateInterestToggleIsOn"] = record["newValue"];
+            }
+        }
+
+
+        // ///////////////////////////////////////////////
+        // Save updates to disk
+        // ///////////////////////////////////////////////
+
+        localStorage.setItem("OneTrust_VendorList", JSON.stringify(vendorListObject));
+        localStorage.setItem("OneTrust_vendorLIUserSelections", JSON.stringify(vendorLIUserSelections));
+        localStorage.setItem("OneTrust_vendorConsentUserSelections", JSON.stringify(vendorConsentUserSelections));
+        localStorage.setItem("OneTrust_saveQueue_vendor", JSON.stringify([]));
+        localStorage.setItem("OneTrust_saveQueue_vendor_li", JSON.stringify([]));
+
+        localStorage.setItem("OneTrust_Google_VendorList", JSON.stringify(vendorGoogleListObject));
+        localStorage.setItem("OneTrust_vendorGoogleConsentUserSelections", JSON.stringify(googlevendorConsentUserSelections));
+
+
+
+        // since we changed vendors, we'll need to rebuild the TCF strig
+        writeTCString();
+
+
+        // ///////////////////////////////////////////////
+        // return the latest vendor consent profile
+        // ///////////////////////////////////////////////
+
+        const data = await getVendorListData();
+        return data;
+
+
+    } catch (error) {
+        throw error;
+    }
+
+}
+
+function getVendorListData() {
+
+    try {
+
+        if (!getVendorList()) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+
+        var vendorListObject = getVendorList();
+        var vendorRecords = vendorListObject["vendors"];
+        var answer = {}
+
+        for (var vendorID in vendorRecords) {
+
+            var vendorRecord = vendorRecords[vendorID];
+            var shouldShowVendor = vendorRecord["shouldShowVendor"];
+            var vendorConsentToggleIsOn = vendorRecord["vendorConsentToggleIsOn"]
+            var vendorLegitimateInterestToggleIsOn = vendorRecord["vendorLegitimateInterestToggleIsOn"]
+            var shouldShowLegitimateInterestToggleForVendor = vendorRecord["shouldShowLegitimateInterestToggleForVendor"]
+            var shouldShowConsentToggleForVendor = vendorRecord["shouldShowConsentToggleForVendor"]
+
+            var record = {
+                "vendorID": vendorID,
+                "shouldShowVendor": shouldShowVendor,
+                "shouldShowConsentToggleForVendor": shouldShowConsentToggleForVendor,
+                "vendorConsentToggleIsOn": vendorConsentToggleIsOn,
+                "shouldShowLegitimateInterestToggleForVendor": shouldShowLegitimateInterestToggleForVendor,
+                "vendorLegitimateInterestToggleIsOn": vendorLegitimateInterestToggleIsOn,
+                "UIState_vendorConsentToggleIsOn": vendorRecord["vendorConsentToggleIsOn"],
+                "UIState_vendorLegitimateInterestToggleIsOn": vendorRecord["vendorLegitimateInterestToggleIsOn"]
+            };
+
+            answer[vendorID] = record;
+        }
+
+        return answer;
+
+    } catch (error) {
+        throw error
+
+    }
+
+}
+
+
+function clearPreferenceCenterSaveQueue() {
+    localStorage.setItem("OneTrust_saveQueue", JSON.stringify([]));
+}
+
+function clearVendorListSaveQueue() {
+    localStorage.setItem("OneTrust_saveQueue_vendor", JSON.stringify([]));
+    localStorage.setItem("OneTrust_saveQueue_vendor_li", JSON.stringify([]));
+}
+
+
+
+// export const OTSDK_getTcString = async () => {
+//
+//     try {
+//
+//         // Make Sure We Have Data To Work With
+//         if (!getOTSDKData()) {
+//             throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+//         }
+//         const data = getOTSDKData();
+//         const syncGroup = data["domain"]["SyncGroupId"];
+//         return data["profile"]["fetch"]["syncGroups"][syncGroup]["tcStringV2"];
+//
+//     } catch (error) {
+//         throw "tcStringV2 not found";
+//
+//     }
+//
+// }
+
+
+function writeTCString() {
+
+    try {
+        const sdkData = getOTSDKData();
+        // ///////////////////////////////////////////////
+        // Make Sure We Have Data To Work With
+        // ///////////////////////////////////////////////
+        if (!sdkData) {
+            throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+        }
+
+        // we only create string for IABv2
+        if (!isIAB2()) {
+            return '';
+        }
+
+        // ///////////////////////////////////////////////
+        // make sure I have the data I need
+        // ///////////////////////////////////////////////
+
+        const OneTrust_sdk_keys = JSON.parse(atob(localStorage.getItem("OneTrust_sdk_keys")));
+
+        const IabV2Data = sdkData["domain"]["IabV2Data"];
+        if (!IabV2Data) {
+            throw "MISSING IabV2Data NODE FROM getOTSDKData";
+        }
+
+        const globalVendorListUrl = IabV2Data["globalVendorListUrl"];
+        if (!globalVendorListUrl) {
+            throw "MISSING globalVendorListUrl NODE FROM IabV2Data node";
+        }
+
+        const vendorList = getVendorList();
+        if (!vendorList) {
+            // if I have what I need, should I just try to download it again?
+            throw "MISSING localStorage.OneTrust_VendorList";
+        }
+
+
+        const OneTrust_VendorList_maxVendorID = localStorage.getItem("OneTrust_VendorList_maxVendorID");
+        if (!OneTrust_VendorList_maxVendorID) {
+            throw "MISSING localStorage.OneTrust_VendorList_maxVendorID";
+        }
+
+
+        const iabPayload = {};
+        const updatedTime = IabV2Data["updatedTime"];
+
+        // Meta Data
+        iabPayload["Version"] = 2; //Version number of the encoding format - the value is 2 for IAB 2.0.
+        iabPayload["Created"] = new Date();
+
+        if (updatedTime != null) {
+            iabPayload["Created"] = new Date(updatedTime + 'Z');
+        }
+
+        iabPayload["LastUpdated"] = new Date();
+        iabPayload["CmpId"] = IabV2Data["cmpId"];
+        iabPayload["CmpVersion"] = IabV2Data["cmpVersion"];
+        iabPayload["ConsentScreen"] = IabV2Data["consentScreen"];
+        iabPayload["ConsentLanguage"] = OneTrust_sdk_keys["languageCode"];
+        iabPayload["PublisherCC"] = sdkData["domain"]["PublisherCC"]; //"UK";
+        iabPayload["VendorListVersion"] = getVendorList()["vendorListVersion"];
+        iabPayload["TcfPolicyVersion"] = getVendorList()["tcfPolicyVersion"];
+
+        // Purposes & Special Features
+        iabPayload["PurposesConsent"] = getValuesForTCFFromConsentProfile('IAB2_PURPOSE', 'Status');
+        iabPayload["PurposesLITransparency"] = getValuesForTCFFromConsentProfile('IAB2_PURPOSE', 'LI'); // new Array(3, 4, 5, 8, 9, 10);
+        iabPayload["SpecialFeatureOptins"] = getValuesForTCFFromConsentProfile('IAB2_SPL_FEATURE', 'Status');
+
+        // Vendors
+        iabPayload["VendorConsents"] = getVendorConsentsArrayForTCF();  //new array(2, 3, 6, 7, 8, 10, 12, 13, 14, 15, 16, 21, 25, 27, 30, 31, 34, 35, 37, 38, 39, 42, 43, 49, 52, 54, 55, 56, 57, 59, 60, 63, 64, 65, 66, 67, 68, 69, 73, 74, 76, 78, 83, 86, 87, 89, 90, 92, 96, 99, 100, 106, 109, 110, 114, 115);
+        iabPayload["VendorLegitimateInterest"] = getVendorLiArrayForTCF(); //new array(1, 9, 26, 27, 30, 36, 37, 43, 86, 97, 110, 113);
+
+        iabPayload["OOBVendorsAllowed"] = []; // since this is an app, we might not need this.... but what about cross decice?
+        iabPayload["DisclosedVendors"] = []; // since this is an app, we might not need this.... but what about cross decice?
+        iabPayload["AllowedVendors"] = []; // since this is an app, we might not need this.... but what about cross decice?
+
+
+        //// Custom Purposes
+        iabPayload["NumCustomPurposes"] = 0;
+        iabPayload["CustomPurposesConsent"] = []; // NOT YET SUPPORTED, JUST PASS AN EMPTY ARRAY FOR NOW
+        iabPayload["CustomPurposesLITransparency"] = []; // NOT YET SUPPORTED, JUST PASS AN EMPTY ARRAY FOR NOW
+
+        // Special Flags
+        iabPayload["PurposeOneTreatment"] = getPurposeOneTreatment();
+        iabPayload["IsServiceSpecific"] = 1; // global = 0,  1 = service-specific storage
+        iabPayload["UseNonStandardStacks"] = 0;
+
+        // Other
+        iabPayload["gdprApplies"] = 1;
+
+        //PublisherRestrictions
+        iabPayload["PublisherRestrictions"] = sdkData["culture"]["DomainData"]["publisher"]["restrictions"];
+
+        // when we downloaded the vendor list on init, we had to loop through them - we grabbed the max id and stored to disk.
+        iabPayload["maxVendorIDFromVendorList"] = parseInt(OneTrust_VendorList_maxVendorID);
+
+        // create the strings
+        const core = createTCFCoreString(iabPayload);
+        const publisherTC = createTCFPublisherTC(iabPayload);
+
+        // since this is an app, and not a global scope cookie all we need is the core string and publisher tc
+        const encodedString = core + "." + publisherTC;
+
+        // save the string to disk
+        localStorage.setItem("IABTCF_TCString", encodedString);
+
+        // write the cookie
+        writeTCStringCookie(encodedString);
+
+        OTSDK_logger("TC String ->" + encodedString);
+
+        // Compute IABTCF_AddtlConsent String  - MOB-8233
+        writeIABTCF_AddtlConsent();
+
+
+        // return the answer
+        return encodedString;
+
+
+    } catch (error) {
+        throw error;
+
+    }
+
+}
+
+function writeCCPAString() {
+
+
+    const ccpaData = getOTSDKData()["culture"]["MobileData"]["ccpaData"];
+
+    // look for reasons NOT to write the string
+    if (ccpaData == null) { return; }
+    if (!ccpaData.hasOwnProperty("parentCCPACategory")) { return; }
+    if (!ccpaData.hasOwnProperty("ccpaExpNotice")) { return; }
+    if (!ccpaData.hasOwnProperty("computeCCPA")) { return; }
+    if (!ccpaData["computeCCPA"]) { return; }
+
+    // look for reasons NOT to write the string
+    const savedProfile = getPurposesList();
+    if (savedProfile.length === 0) { return; }
+
+
+    let ccpaString = "1---";
+    let consent_status = getConsentStatus(ccpaData["parentCCPACategory"]);
+
+    ccpaString = "1";
+    ccpaString += ccpaData["ccpaExpNotice"] === true ? "Y" : "N"; // ccpaExpNotice
+    ccpaString += consent_status === "inactive" ? "Y" : "N";  // opt out sale
+    ccpaString += ccpaData["ccpaLspa"] === true ? "Y" : "N";  // Limited Service Provider Agreement
+
+    localStorage.setItem("IABUSPrivacy_String", ccpaString);
+
+    return ccpaString
+
+}
+
+
+function writeIABTCF_AddtlConsent() {
+
+    // Compute IABTCF_Additional Consent String for Google Vendors  - MOB-8233
+
+    try {
+
+        // Make Sure We Have Data To Work With
+        const sdkData = getOTSDKData();
+        if (!sdkData) { return; }
+
+        // we only create string for IABv2
+        if (!isIAB2()) { return; }
+
+        // check to make sure we should really build the string?
+        const mobileData = sdkData["culture"]["MobileData"]["preferenceCenterData"]["googleVendors"]["general"];
+        if(!mobileData.show){
+            OTSDK_logger("IABTCF_AddtlConsent ->" + "Google vendor is not enabled for this template");
+            return;
+        }
+
+        // build the string
+        const googleVendorConsentUserSelections = getSavedGoogleVendorConsents();
+        let encodedString = "1~";
+        for (let vendorID in googleVendorConsentUserSelections) {
+           if (googleVendorConsentUserSelections.hasOwnProperty(vendorID) && googleVendorConsentUserSelections[vendorID]){
+                encodedString = encodedString + "." + vendorID.toString();
+            }
+        }
+
+        // store the string to disk
+        localStorage.setItem("IABTCF_AddtlConsent", encodedString);
+
+        // logging
+        OTSDK_logger("IABTCF_AddtlConsent ->" + encodedString);
+
+    } catch (error) {
+        OTSDK_logger("IABTCF_AddtlConsent ->" + error.toString());
+
+    }
+
+}
+
+
+function getBannerData() {
+    const sdkData = getOTSDKData();
+    const bannerData = {};
+    if (!sdkData || (Object.keys(sdkData).length === 0)) {
+        return bannerData;
+    }
+    const domainData = sdkData.culture.DomainData;
+    const commonData = sdkData.culture.CommonData;
+    const mobileData = sdkData.culture.MobileData;
+    bannerData.BannerTitle = domainData.BannerTitle;
+    bannerData.AlertNoticeText = domainData.AlertNoticeText;
+    bannerData.OptanonLogo = commonData.OptanonLogo;
+    bannerData.ShowBannerAcceptButton = commonData.ShowBannerAcceptButton;
+    bannerData.AlertAllowCookiesText = domainData.AlertAllowCookiesText;
+    bannerData.BannerShowRejectAllButton = domainData.BannerShowRejectAllButton;
+    bannerData.BannerRejectAllButtonText = domainData.BannerRejectAllButtonText;
+    bannerData.ShowBannerCookieSettings = commonData.ShowBannerCookieSettings;
+    bannerData.BContinueColor = commonData.BContinueColor;
+    bannerData.closeButton = mobileData.bannerData.buttons.closeButton;
+    bannerData.AlertMoreInfoText = domainData.AlertMoreInfoText;
+    bannerData.styleData = getBannerStyleData();
+    bannerData.BannerDPDTitle = domainData.BannerDPDTitle
+    bannerData.BannerDPDDescription = domainData.BannerDPDDescription
+    bannerData.BannerIABPartnersLink = domainData.BannerIABPartnersLink
+    bannerData.showBannerCloseButton = domainData.showBannerCloseButton;
+    bannerData.BannerAdditionalDescription = domainData.BannerAdditionalDescription;
+    bannerData.BannerAdditionalDescPlacement = domainData.BannerAdditionalDescPlacement;
+    bannerData.BannerSettingsButtonDisplayLink = domainData.BannerSettingsButtonDisplayLink;
+    bannerData.isIAB = isIAB2();
+    return bannerData;
+}
+
+function getPreferenceCenterData() {
+    const pcData = {};
+    const sdkData = getOTSDKData();
+    if (!sdkData || (Object.keys(sdkData).length === 0)) {
+        return pcData;
+    }
+    const domainData = sdkData.culture.DomainData;
+    const commonData = sdkData.culture.CommonData;
+    const OTTData = sdkData.culture.OTTData;
+    const MobileData = sdkData.culture.MobileData;
+    pcData.OptanonLogo = commonData.OptanonLogo;
+    pcData.MainText = domainData.MainText;
+    pcData.MainInfoText = domainData.MainInfoText;
+    pcData.PreferenceCenterConfirmText = domainData.PreferenceCenterConfirmText;
+    pcData.ConfirmText = domainData.ConfirmText;
+    pcData.PCenterShowRejectAllButton = domainData.PCenterShowRejectAllButton;
+    pcData.PCenterRejectAllButtonText = domainData.PCenterRejectAllButtonText;
+    pcData.styleData = getPCStyleData();
+    pcData.VendorListText = domainData.VendorListText;
+    pcData.PCIABVendorsText = domainData.PCIABVendorsText;
+    pcData.BannerIABPartnersLink = domainData.BannerIABPartnersLink;
+    pcData.ShowPreferenceCenterCloseButton = domainData.ShowPreferenceCenterCloseButton;
+    pcData.AlwaysActiveText = domainData.AlwaysActiveText;
+    pcData.BLegitInterestText = commonData.BLegitInterestText;
+    pcData.Groups = getPurposesList();
+    pcData.isIAB = isIAB2();
+    pcData.LegIntSettings = getLegIntSettings();
+    pcData.BConsentText = commonData.BConsentText;
+    pcData.activeText = OTTData.preferenceCenterData.purposeList.ActiveText;
+    pcData.inactiveText = OTTData.preferenceCenterData.purposeList.InactiveText;
+    pcData.subCategoryHeaderText = OTTData.preferenceCenterData.purposeList.SubCategoryHeaderText;
+    pcData.PCGoogleVendorsText = MobileData.preferenceCenterData.googleVendors.general.text;
+    pcData.UseGoogleVendors = MobileData.preferenceCenterData.googleVendors.general.show;
+    pcData.showParentToggle = false;
+    pcData.showPartnersIAB = false;
+    OTSDK_logger("Preference center is called");
+    return pcData
+}
+
+function getVendorPageData() {
+    const vendorPage = {};
+    const sdkData = getOTSDKData();
+
+    if (!sdkData || (Object.keys(sdkData).length === 0)) {
+        return vendorPage;
+    }
+
+    const domainData = sdkData.culture.DomainData;
+    const commonData = sdkData.culture.CommonData;
+    const OTTData = sdkData.culture.OTTData;
+    vendorPage.OptanonLogo = commonData.OptanonLogo;
+    vendorPage.styleData = getPCStyleData();
+    vendorPage.LegIntSettings = getLegIntSettings();
+    vendorPage.PCenterVendorsListText = domainData.PCenterVendorsListText; //vendor page title
+    vendorPage.PCenterViewPrivacyPolicyText = domainData.PCenterViewPrivacyPolicyText;
+    vendorPage.PCenterAllowAllConsentText = domainData.PCenterAllowAllConsentText;
+    vendorPage.VendorListNonCookieUsage = domainData.PCenterVendorListNonCookieUsage;
+    vendorPage.VendorListLifespan = domainData.PCenterVendorListLifespan; // Lifepsan
+    vendorPage.LifespanTypeText = domainData.LifespanTypeText; // Session
+    vendorPage.VendorListLifespanDay = domainData.PCenterVendorListLifespanDay;
+    vendorPage.VendorListLifespanDays = domainData.PCenterVendorListLifespanDays;
+    vendorPage.VendorListLifespanMonth = domainData.PCenterVendorListLifespanMonth;
+    vendorPage.VendorListLifespanMonths = domainData.PCenterVendorListLifespanMonths;
+    vendorPage.ConsentPurposesText = commonData.BConsentPurposesText;
+    vendorPage.SpecialPurposesText = commonData.BSpecialPurposesText;
+    vendorPage.LIPurposesText = commonData.BLegitimateInterestPurposesText;
+    vendorPage.FeaturesText = commonData.BFeaturesText;
+    vendorPage.SpecialFeaturesText = commonData.BSpecialFeaturesText;
+    vendorPage.BConsentText = commonData.BConsentText;
+    vendorPage.BLegitInterestText = commonData.BLegitInterestText;
+    vendorPage.VendorListDisclosure = domainData.PCenterVendorListDisclosure;
+    vendorPage.VendorListStorageIdentifier = domainData.PCenterVendorListStorageIdentifier;
+    vendorPage.VendorListStorageType = domainData.PCenterVendorListStorageType;
+    vendorPage.VendorListStorageDomain = domainData.PCenterVendorListStorageDomain;
+    vendorPage.VendorListStoragePurposes = domainData.PCenterVendorListStoragePurposes;
+    vendorPage.PreferenceCenterConfirmText = domainData.PreferenceCenterConfirmText;
+    vendorPage.ConfirmText = domainData.ConfirmText;
+    vendorPage.PCenterShowRejectAllButton = domainData.PCenterShowRejectAllButton;
+    vendorPage.PCenterRejectAllButtonText = domainData.PCenterRejectAllButtonText;
+    vendorPage.PCenterClearFiltersText = domainData.PCenterClearFiltersText;
+    vendorPage.showFilter = false;
+    vendorPage.activeText = OTTData.preferenceCenterData.purposeList.ActiveText;
+    vendorPage.inactiveText = OTTData.preferenceCenterData.purposeList.InactiveText;
+    vendorPage.searchNoResultsFoundText = OTTData.vendorListData.general.searchNoResultsFoundText
+    vendorPage.iabGroups = getIabGroups();
+    vendorPage.PCGoogleVendorsText = domainData.PCGoogleVendorsText;
+    OTSDK_logger("vendorPage is called");
+    return vendorPage;
+}
+
+function setupUI(view) {
+    const sdkData = getOTSDKData();
+    if (!sdkData || (Object.keys(sdkData).length === 0)) {
+        OTSDK_logger("SDK data is null");
+        return;
+    }
+
+    const showBanner = shouldShowBanner();
+
+    if (showBanner && view === "banner") {
+        OTSDK_logger("showBanner -> " + showBanner);
+        localStorage.setItem("OneTrust_didShowBanner", true);
+        localStorage.setItem("OneTrust_BannerShownTime", parseInt(new Date().getTime() / 1000));
+        location.href = "OTPublishersSDK/views/banner.html";
+
+    } else if (showBanner && view === "preferencecenter") {
+        OTSDK_logger("onShowpreference called");
+        location.href = "OTPublishersSDK/views/PreferenceCenter.html";
+
+    } else {
+        OTSDK_logger("setupUI - no nav because no matching rules");
+
+    }
+
+}
+
+// export function OTSDK_showBannerUI() {
+//     const sdkData = getOTSDKData();
+//     if (!sdkData || (Object.keys(sdkData).length === 0)) {
+//         OTSDK_logger("SDK data is null");
+//         return;
+//     }
+//     OTSDK_logger("onShowbanner called");
+//     localStorage.setItem("OneTrust_didShowBanner", true);
+//     localStorage.setItem("OneTrust_BannerShownTime", parseInt(new Date().getTime() / 1000));
+//     location.href = "OTPublishersSDK/views/banner.html";
+// }
+
+
+// export function OTSDK_showPreferenceCenterUI() {
+//     OTSDK_logger("onShowpreference called");
+//     var sdkData = getOTSDKData();
+//     if (!sdkData || (Object.keys(sdkData).length === 0)) {
+//         OTSDK_logger("SDK data is null");
+//         return;
+//     }
+//     location.href = "OTPublishersSDK/views/PreferenceCenter.html";
+// }
+
+function OTSDK_logger(data) {
+    let sessionLogs;
+    if (sessionStorage.getItem("sessionLogs")) {
+        sessionLogs = sessionStorage.getItem("sessionLogs") + "\n" + "[" + new Date().toLocaleTimeString() + "] " + data;
+    } else {
+        sessionLogs = "[" + new Date().toLocaleTimeString() + "] " + data;
+    }
+    sessionStorage.setItem("sessionLogs", sessionLogs);
+    // console.clear();
+    // console.log(sessionStorage.getItem("sessionLogs"));
+}
+
+// ////////////////////////////
+//  PRIVATE METHODS
+//////////////////////////////////////
+
+function geteTag() {
+    return ''; // <-- revisit when we have a solution for handling 304's
+    // if (getOTSDKData() === null) { return ""; }
+    // let eTag = getOTSDKData()["profile"]["sync"]["eTag"];
+    // if (eTag === null) { eTag = ''; }
+    // return eTag;
+}
+
+
+function getGroupIDFromPurposeID(purposeID, data) {
+
+    const records = data["culture"]["DomainData"]["Groups"];
+
+    for (const recordID in records) {
+        const record = records[recordID];
+        const thisRecordPurposeId = record["PurposeId"];
+        if (purposeID.toLowerCase() === thisRecordPurposeId.toLowerCase()) {
+            return record["CustomGroupId"];
+        }
+    }
+
+}
+
+function translateSyncStatusValue(serverValue, data) {
+    switch (serverValue) {
+        case "ACTIVE":
+            return "active";
+        case "ALWAYS_ACTIVE":
+            return "always active";
+        case "NO_CONSENT":
+            const vendorConsentModel = data["culture"]["DomainData"]["VendorConsentModel"];
+            const defaultConsentStatus = (vendorConsentModel.toLowerCase() === "opt-out");  // opt-out = ON by default
+            return defaultConsentStatus ? "active" : "inactive";
+        case "PENDING":
+        case "OPT_OUT":
+        case "EXPIRED":
+        case "WITHDRAWN":
+            return "inactive";
+    }
+}
+
+/**
+ * @return {boolean}
+ */
+function isIAB2() {
+
+    const sdkData = getOTSDKData();
+    // ///////////////////////////////////////////////
+    // Make Sure We Have Data To Work With
+    // ///////////////////////////////////////////////
+    if (!sdkData) {
+        return false;
+    }
+
+    return sdkData["domain"]["ruleDetails"]["type"] === 'IAB2';
+}
+
+
+/**
+ * @return {boolean}
+ */
+function allPurposesUpdatedAfterSync() {
+
+    let answer = false;
+
+    const allPurposesUpdatedAfterSync = getOTSDKData()["profile"]["sync"]["allPurposesUpdatedAfterSync"];
+    if (allPurposesUpdatedAfterSync) {
+        answer = allPurposesUpdatedAfterSync;
+    }
+
+    return answer;
+}
+
+
+/**
+ * @return {boolean}
+ */
+function didReconsentFrequencyDaysExpire() {
+
+    const lastLocalConsentDate = localStorage.getItem("OneTrust_lastConsentDate");
+    if (lastLocalConsentDate) {
+
+        const ReconsentFrequencyDays = getOTSDKData()["culture"]["DomainData"]["ReconsentFrequencyDays"];
+        if (ReconsentFrequencyDays != null) {
+
+            const date1 = new Date(parseFloat(lastLocalConsentDate));
+            const date2 = new Date();
+            const difference = date2.getTime() - date1.getTime();
+            const daysOld = Math.ceil(difference / (1000 * 3600 * 24));
+
+            if (daysOld > ReconsentFrequencyDays) {
+                return true;
+            }
+
+        }
+    }
+
+    return false;
+
+}
+
+
+/**
+ * @return {boolean}
+ */
+function lastReconsentDatesMatch() {
+
+    // ////////////////
+    // returning false will show the banner
+    // ////////////////
+
+    const sdkData = getOTSDKData();
+    if (!sdkData) {
+        throw "YOU MUST FIRST INIT OTSDK BEFORE CALLING THIS FUNCTION";
+    }
+
+    let answer = true;
+
+    const serverlLastReconsentDate = sdkData["culture"]["DomainData"]["LastReconsentDate"];
+    if (serverlLastReconsentDate && serverlLastReconsentDate.toString().trim().length > 0) {
+        const lastLocalConsentDate = localStorage.getItem("OneTrust_lastConsentDate");
+        if (lastLocalConsentDate) {
+            answer = !(parseFloat(serverlLastReconsentDate) > parseFloat(lastLocalConsentDate));
+        }
+    }
+
+    // no rules match, so return the default value for this function
+    return answer;
+
+}
+
+
+async function updateLastConsentDate() {
+
+    let lastConsentDate = new Date().getTime().toString();
+    localStorage.setItem("OneTrust_lastConsentDate", lastConsentDate);
+    writeCCPAString();
+
+    // we only need to write the tc string here, if we did not already do so when sending to OT servers.
+    //if (!getOTSDKData()["DomainData"]["IsConsentLoggingEnabled"]) { writeTCString();}
+
+    // we store this because shouldShowBanner needs to determine category changes between launches. mod-5634/5636.
+    const validGroupIDs = []; getValidGroup().forEach(function (gd) { validGroupIDs.push(gd.CustomGroupId); });
+    localStorage.setItem("OneTrust_categoriesAvailableLastInteraction", JSON.stringify(validGroupIDs));
+
+}
+
+function getValuesForTCFFromConsentProfile(recordType, fieldName) {
+
+    let idParts;
+    let item;
+    let CustomGroupId;
+    const answer = [];
+    const groupsArray = getPurposesList();
+
+    if (groupsArray == null) { return answer; }
+
+    for (const recordID in groupsArray) {
+
+        item = groupsArray[recordID];
+
+        if (item.Type.toUpperCase() === recordType) {
+            if (item[fieldName] && (item[fieldName].toString() === 'always active' || item[fieldName].toString() === 'active')) {
+                CustomGroupId = item["CustomGroupId"].toString();
+                idParts = CustomGroupId.split('_');
+                const lastItemInArray = idParts[idParts.length - 1].toString().trim();
+                answer.push(parseInt(lastItemInArray));
+            }
+
+        }
+
+    }
+
+    return answer;
+
+}
+
+
+function getVendorConsentsArrayForTCF() {
+    const answer = [];
+
+    const vendorList = getVendorList();
+    if (vendorList == null) { return answer; }
+
+    const vendorsArray = vendorList["vendors"]
+    if (vendorsArray == null) { return answer; }
+
+
+    for (const recordID in vendorsArray) {
+        const vendorRecord = vendorsArray[recordID];
+
+        if (vendorRecord.shouldShowVendor
+            && vendorRecord.shouldShowConsentToggleForVendor
+            && vendorRecord.vendorConsentToggleIsOn) {
+            answer.push(parseInt(vendorRecord["id"]));
+        }
+
+    }
+
+    return answer;
+}
+
+function getVendorLiArrayForTCF() {
+    const answer = [];
+
+    const vendorList = getVendorList();
+    if (vendorList == null) { return answer; }
+
+    const vendorsArray = vendorList["vendors"]
+    if (vendorsArray == null) { return answer; }
+
+
+    for (const recordID in vendorsArray) {
+        const vendorRecord = vendorsArray[recordID];
+
+        if (vendorRecord.shouldShowVendor
+            && vendorRecord.shouldShowLegitimateInterestToggleForVendor
+            && vendorRecord.vendorLegitimateInterestToggleIsOn) {
+            answer.push(parseInt(vendorRecord["id"]));
+        }
+
+    }
+
+    return answer;
+}
+
+
+
+
+function writeTCStringCookie(tcString) {
+
+    let d = new Date();
+    d.setTime(d.getTime() + ((13 * 30) * 24 * 60 * 60 * 1000));
+
+    const expires = "expires=" + d.toUTCString();
+    const cname = "eupubconsent-v2"
+    const sameSiteParam =
+        new RegExp('^https:', 'i').test(window.location.protocol)
+            ? 'Samesite=None; Secure'
+            : 'Samesite=Lax';
+    document.cookie = cname + "=" + tcString + ";" + expires + ";path=/;" + sameSiteParam;
+
+}
+
+
+function createTCFCoreString(iabPayload) {
+
+    ////////////////////////////////////////
+    //
+    // Got the bit length from here:
+    // https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20Consent%20string%20and%20vendor%20list%20formats%20v2.md#publisher-purposes-transparency-and-consent
+    //
+    //////////////////////////////////////////
+
+
+    let encodedItems = [];
+    let strBinaryString = "";
+    let b64 = "";
+    let maxVendorId = 0;
+
+    try {
+
+        // localStorage.setItem("IABTCF_TCString", encodedString);
+        localStorage.setItem("IABTCF_gdprApplies", iabPayload["gdprApplies"]);
+
+        //' Version - 6 bits (0-5)
+        encodedItems.push(encode_Integer(iabPayload["Version"], 6));
+
+        //' Created - 36 bits (6-41)
+        encodedItems.push(encode_Date(iabPayload["Created"], 36));
+
+        //' LastUpdated - 36 bits (42-77)
+        encodedItems.push(encode_Date(iabPayload["LastUpdated"], 36));
+
+        //' CmpId - 12 bits (78-89)
+        encodedItems.push(encode_Integer(iabPayload["CmpId"], 12));
+        localStorage.setItem("IABTCF_CmpSdkID", iabPayload["CmpId"]);
+
+        //' CmpVersion - 12 bits (90-101)
+        encodedItems.push(encode_Integer(iabPayload["CmpVersion"], 12));
+        localStorage.setItem("IABTCF_CmpSdkVersion", iabPayload["CmpVersion"]);
+
+        //' ConsentScreen - 6 bits (102-107)
+        encodedItems.push(encode_Integer(iabPayload["ConsentScreen"], 6));
+
+        //' ConsentLanguage - 12 bits (108-119)
+        encodedItems.push(encode_ConsentLanguage(iabPayload["ConsentLanguage"]));
+
+        //' VendorListVersion - 12 bits (120-131)
+        encodedItems.push(encode_Integer(iabPayload["VendorListVersion"], 12));
+
+        //' TcfPolicyVersion - 6 bits (132-137) - Version of policy used within GVL
+        encodedItems.push(encode_Integer(iabPayload["TcfPolicyVersion"], 6));
+        localStorage.setItem("IABTCF_PolicyVersion", iabPayload["TcfPolicyVersion"]);
+
+        //' IsServiceSpecific - 1 bits (138-138)  1 = service-specific storage, 0 = ‘global’ consensu.org shared storage
+        encodedItems.push(encode_Integer(iabPayload["IsServiceSpecific"], 1));
+
+        //' UseNonStandardStacks - 1 bits (139-139)  1 CMP used non-IAB standard stacks during consent gathering 0 IAB standard stacks were used
+        encodedItems.push(encode_Integer(iabPayload["UseNonStandardStacks"], 1));
+        localStorage.setItem("IABTCF_UseNonStandardStacks", iabPayload["UseNonStandardStacks"]);
+
+        //' SpecialFeatureOptIns - 12 bits (140-151)  One bit for each Special Feature: 1 = Opted in, 0 = Not opted in
+        encodedItems.push(encode_FromItemsLookup(iabPayload["SpecialFeatureOptins"], 12));
+        localStorage.setItem("IABTCF_SpecialFeaturesOptIns", encodedItems[encodedItems.length - 1]);
+
+
+        //' PurposesConsent - 24 bits (152-175)  One bit for each Purpose: 1 = Consent,  0 = No Consent
+        encodedItems.push(encode_FromItemsLookup(iabPayload["PurposesConsent"], 24));
+        localStorage.setItem("IABTCF_PurposeConsents", encodedItems[encodedItems.length - 1]);
+        localStorage.setItem("IABTCF_PublisherConsent", encodedItems[encodedItems.length - 1]); //? not sure about this one
+
+
+        //' PurposesLITransparency - 24 bits (176-199)
+        // One bit for each Purpose: 1 = legitimate interest established,
+        // 0 = legitimate interest was NOT established or it was established but user exercised their “Right to Object” to the Purpose.
+        encodedItems.push(encode_FromItemsLookup(iabPayload["PurposesLITransparency"], 24));
+        localStorage.setItem("IABTCF_PurposeLegitimateInterests", encodedItems[encodedItems.length - 1]);
+        localStorage.setItem("IABTCF_PublisherLegitimateInterests", encodedItems[encodedItems.length - 1]); //? not sure about this one
+
+
+        //' PurposeOneTreatment 1 bit (200-200) 1 = Purpose 1 was NOT disclosed at all,  0 = Purpose 1 was disclosed commonly as consent as expected by the Policies.
+        encodedItems.push(encode_Integer(iabPayload["PurposeOneTreatment"], 1));
+        localStorage.setItem("IABTCF_PurposeOneTreatment", iabPayload["PurposeOneTreatment"]);
+
+
+        //' PublisherCC 12 bit (201-210) The country code of the country that determines legislation of reference. Commonly, this corresponds to the country in which the publisher’s business entity is established.
+        encodedItems.push(encode_PublisherCountryCode(iabPayload["PublisherCC"]));
+        localStorage.setItem("IABTCF_PublisherCC", iabPayload["PublisherCC"]);
+
+
+        //'//////////////////////////////
+        // Vendor Consent Section
+        //'//////////////////////////////
+
+        //' MaxVendorId - 16 bits
+        maxVendorId = getMaxVendorID(iabPayload["VendorConsents"]);
+        encodedItems.push(encode_Integer(maxVendorId, 16));
+
+        //' IsRangeEncoding 1 bit - 1 Range, 0 BitField
+        encodedItems.push(encode_Integer(0, 1));
+
+        //' BitField
+        //encodedItems.Add("01");
+
+        encodedItems.push(encode_FromItemsLookup(iabPayload["VendorConsents"], maxVendorId));
+        localStorage.setItem("IABTCF_VendorConsents", encodedItems[encodedItems.length - 1]);
+
+
+
+        //'//////////////////////////////////////////////////
+        // Vendor Legitimate Interest Section
+        //'//////////////////////////////////////////////////
+
+        //' MaxVendorId - 16 bits
+        maxVendorId = getMaxVendorID(iabPayload["VendorLegitimateInterest"]);
+        encodedItems.push(encode_Integer(maxVendorId, 16));
+
+        //' IsRangeEncoding 1 bit - 1 Range, 0 BitField
+        encodedItems.push(encode_Integer(0, 1));
+
+        //' BitField
+        //encodedItems.Add("01000101");
+        encodedItems.push(encode_FromItemsLookup(iabPayload["VendorLegitimateInterest"], maxVendorId));
+        localStorage.setItem("IABTCF_VendorLegitimateInterests", encodedItems[encodedItems.length - 1]);
+
+
+
+        ////////////////////////////////////////////////////
+        // Publisher Restrictions
+        ////////////////////////////////////////////////////
+        //' NumPubRestrictions - 12 bits - Number of restriction records to follow. Value is required even if it is 0
+        const organizedPublisherRestrictions = organizePublisherRestrictions(iabPayload["PublisherRestrictions"]);
+        encodedItems.push(encode_Integer(organizedPublisherRestrictions.length, 12));
+        localStorage.setItem("IABTCF_PublisherRestrictions", encodedItems[encodedItems.length - 1]);
+
+        // PUBLISHER RESTRICTIONS SECTION
+        if (organizedPublisherRestrictions.length > 0) {
+            encodeOrganizedPublisherRestrictions(organizedPublisherRestrictions, encodedItems);
+        }
+
+        // WRITE PUBLISHER RESTRICTIONS IABTCF_PublisherRestrictions{ID} TO DISK
+        const maxVendorIDFromVendorList = iabPayload["maxVendorIDFromVendorList"];
+        write_IABTCF_PublisherRestrictions_toDisk(iabPayload["PublisherRestrictions"], maxVendorIDFromVendorList);
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+        // not sure why I need this, but unless a pad the end with 12 bytes it doesnt work!
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+        encodedItems.push(encode_Integer(0, 12));
+
+
+        ////////////////////////////////
+        // encode the string
+        ////////////////////////////////
+
+        strBinaryString = encodedItems.join('');
+        b64 = convertBinaryStringToBase64(strBinaryString);
+
+
+        ////////////////////////////////
+        // Return The Answer
+        ////////////////////////////////
+        OTSDK_logger("IAB TCF v2 Core ->" + b64);
+
+        return b64;
+
+
+    }
+    catch (ex) {
+        throw ex;
+    }
+
+
+};
+
+
+function createTCFPublisherTC(iabPayload) {
+
+    /////////////////
+    // Global - A TC String in this context is saved globally and is shared by CMPs running on sites across the web;
+    // When stored globally, they must NOT contain Publisher restrictions or a Publisher TC segment but they may contain a DisclosedVendors segment.
+    /////////////////
+
+    const encodedItems = [];
+    let strBinaryString = "";
+    let b64 = "";
+    let numCustomPurposes = 0;
+
+
+    try {
+
+
+        //' SegmentType - 3 bits,  3 = PublisherTC
+        encodedItems.push(encode_Integer(3, 3));
+
+        //' PubPurposesConsent - 24 bits
+        // ' One bit for each Purpose: 1 Consent. 0 No Consent
+        encodedItems.push(encode_FromItemsLookup(iabPayload["PurposesConsent"], 24));
+
+
+        //' PubPurposesLITransparency - 24 bits
+        // ' One bit for each Purpose: 1 = legitimate interest established,  0 = legitimate interest was NOT established or it was established but user exercised their “Right to Object” to the Purpose
+        encodedItems.push(encode_FromItemsLookup(iabPayload["PurposesLITransparency"], 24));
+
+
+        //' NumCustomPurposes - 6 bits
+        //' Custom purpose IDs are numbered 1 to NumberCustomPurposes. Custom purposes will be defined by the publisher and displayed to a user in a CMP user interface.
+        //' If the publisher does not use any Custom Purposes, this field is set to 0 and the following two fields will be omitted.
+        numCustomPurposes = iabPayload["NumCustomPurposes"];
+        encodedItems.push(encode_Integer(numCustomPurposes, 6));
+
+        if (numCustomPurposes > 0) {
+            encodedItems.push(encode_FromItemsLookup(iabPayload["CustomPurposesConsent"], numCustomPurposes));
+            localStorage.setItem("IABTCF_PublisherCustomPurposesConsents", encodedItems[encodedItems.length - 1]);
+
+            encodedItems.push(encode_FromItemsLookup(iabPayload["CustomPurposesLITransparency"], numCustomPurposes));
+            localStorage.setItem("IABTCF_PublisherCustomPurposesLegitimateInterests", encodedItems[encodedItems.length - 1]);
+
+        }
+        else {
+            localStorage.setItem("IABTCF_PublisherCustomPurposesConsents", "");
+            localStorage.setItem("IABTCF_PublisherCustomPurposesLegitimateInterests", "");
+
+        }
+
+
+        strBinaryString = encodedItems.join('');
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+        // not sure why I need this, but unless a pad with equal length, it doesnt work
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+        encodedItems.push(encode_Integer(0, strBinaryString.length));
+
+        strBinaryString = encodedItems.join('');
+
+        ////////////////////////////////
+        // encode the string
+        ////////////////////////////////
+        b64 = convertBinaryStringToBase64(strBinaryString);
+
+
+        ////////////////////////////////
+        // Return The Answer
+        ////////////////////////////////
+        OTSDK_logger("PublisherTC ->" + b64);
+        return b64;
+
+    }
+    catch (ex) {
+        throw ex;
+    }
+
+}
+
+
+String.prototype.padLeft = function (totalWidth, paddingStr) {
+    //return Array(n-String(this).length+1).join(str||'0')+this;
+    return this.padStart(totalWidth, paddingStr);
+}
+String.prototype.padRight = function (totalWidth, paddingStr) {
+    //return this + Array(n-String(this).length+1).join(str||'0');
+    return this.padEnd(totalWidth, paddingStr);
+}
+
+
+function encode_Integer(theValue, toLength) {
+
+    try {
+        return parseInt(theValue).toString(2).padLeft(toLength, '0');
+    }
+    catch (ex) {
+        throw ex;
+    }
+
+}
+
+
+function encode_Date(aDate, toLength) {
+
+    // encode this date 2017-11-07T19:15:55.4Z
+    // seconds would be this: 15100821554
+    // must end up like this: 001110000100000101000100000000110010
+
+
+    //let epoch = new Date("1970-01-01T00:00:00.000Z");
+    let totalSeconds = 0;
+    let binaryString = null;
+
+    try {
+        //totalSeconds = parseInt(Math.abs(( aDate.getTime() - epoch.getTime() ) / 1000).toString());
+        totalSeconds = parseInt((aDate.getTime() / 100).toString())
+        binaryString = totalSeconds.toString(2).padLeft(toLength, '0');
+        return binaryString;
+
+    } catch (ex) {
+        throw ex;
+    }
+
+}
+
+
+function encode_ConsentLanguage(theValue) {
+
+    const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+    let idx = 0;
+    let firstLetter = null;
+    let secondLetter = null;
+
+    try {
+
+        if (theValue.toString().trim().length !== 2) { throw "consent language must be length of two characters"; }
+
+        idx = alphabet.indexOf(theValue.charAt(0).toUpperCase());
+        firstLetter = encode_Integer(idx, 6);
+
+        idx = alphabet.indexOf(theValue.charAt(1).toUpperCase());
+        secondLetter = encode_Integer(idx, 6);
+
+        return firstLetter.concat(secondLetter);
+
+    } catch (ex) {
+        throw ex;
+    }
+
+}
+
+
+
+function encode_FromItemsLookup(items, toLength) {
+
+    const answer = [];
+    let lookupValue = null;
+    let bitVal = null;
+
+    try {
+
+        for (let i = 0; i < toLength; i++) {
+            lookupValue = (i + 1).toString();
+
+            bitVal = "0";
+
+            for (let key in items) {
+                const item = String(items[key]);
+                if (item === lookupValue) {
+                    bitVal = "1";
+                    break;
+                }
+            }
+
+            answer.push(bitVal);
+
+        }
+
+        return answer.join('');
+    }
+    catch (ex) {
+        throw ex;
+    }
+
+}
+
+function encode_PublisherCountryCode(theValue) {
+
+    const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+    let idx = 0;
+    let firstLetter = null;
+    let secondLetter = null;
+
+    try {
+
+
+        if (theValue.toString().trim().length !== 2) { throw "publisher country code must be length of two characters"; }
+
+        idx = alphabet.indexOf(theValue.charAt(0).toUpperCase());
+        firstLetter = encode_Integer(idx, 6);
+
+        idx = alphabet.indexOf(theValue.charAt(1).toUpperCase());
+        secondLetter = encode_Integer(idx, 6);
+
+        return firstLetter.concat(secondLetter);
+
+    }
+    catch (ex) {
+        throw ex;
+    }
+
+}
+
+
+function getMaxVendorID(items) {
+
+    let answer = 0;
+    let item;
+
+    try {
+
+        for (let i = 0; i < items.length; i++) {
+
+            item = parseInt(items[i]);
+            if (item > answer) { answer = item; }
+        }
+
+        return answer;
+    }
+    catch (ex) {
+        throw ex;
+    }
+
+}
+
+
+function organizePublisherRestrictions(publisherRestrictions) {
+
+    // I need to store it like this... purpose / restrictionType / [VendorIDs]
+    // but OT gives me that data like this... purpose / VendorID / restrictionType
+    // so... transform the OT data in such a way that I can use it in a loop
+
+    const answer = [];
+    const temp = [];
+
+    const publisherRestrictionskeys = Object.keys(publisherRestrictions);
+
+    for (const index in publisherRestrictionskeys) {
+        const purposeID = publisherRestrictionskeys[index];
+
+        let purposeRecord = {};
+        purposeRecord["purposeID"] = purposeID;
+        purposeRecord["0"] = [];
+        purposeRecord["1"] = [];
+        purposeRecord["2"] = [];
+
+        const vendorDict = publisherRestrictions[purposeID];
+        const vendorIDs = Object.keys(vendorDict);
+
+        for (const index2 in vendorIDs) {
+            const vendorID = vendorIDs[index2];
+            const restrictionTypeForVendor = parseInt(vendorDict[vendorID]);
+            if (restrictionTypeForVendor >= 0 && restrictionTypeForVendor <= 2) {
+                const keyName = restrictionTypeForVendor.toString();
+                purposeRecord[keyName].push(vendorID);
+            }
+        }
+
+        temp.push(purposeRecord);
+
+    }
+
+
+    // /////////////////////////////////////////////////////////////////////
+    // I need it to end up like this....  PurposeID, RestrictionType, List
+    // /////////////////////////////////////////////////////////////////////
+    let i;
+
+    for (i = 0; i < temp.length; i++) {
+
+        const purposeRecord = temp[i];
+        const purposeID = purposeRecord["purposeID"];
+
+        for (let j = 0; j < 3; j++) {
+            const vendorsForRestriction = purposeRecord[j];
+            if (vendorsForRestriction.length > 0) {
+                let restrictionEntry = {};
+                restrictionEntry["purposeID"] = purposeID;
+                restrictionEntry["restrictionType"] = j;
+                restrictionEntry["vendors"] = vendorsForRestriction;
+
+                answer.push(restrictionEntry);
+            }
+        }
+
+    }
+
+    return answer;
+
+}
+
+function organizePublisherRestrictionsForQuickLookupByVendor(publisherRestrictions) {
+    const answer = {};
+    try{
+
+    const publisherRestrictionsKeys = Object.keys(publisherRestrictions);
+    if(publisherRestrictionsKeys.length === 0) { return answer; }
+    else{
+    for (const index in publisherRestrictionsKeys) {
+
+        const purposeID = publisherRestrictionsKeys[index];
+        const vendorDict = publisherRestrictions[purposeID];
+        const vendorIDs = Object.keys(vendorDict);
+
+        for (const index2 in vendorIDs) {
+
+            const vendorID = vendorIDs[index2];
+            const restrictionType = parseInt(vendorDict[vendorID]);
+
+            if (restrictionType >= 0 && restrictionType <= 2) {
+                const strVendorID = vendorID.toString();
+                const strRestrictionType = restrictionType.toString();
+
+                if (!answer.hasOwnProperty(strVendorID)) {
+                    answer[strVendorID] = { '0': [], '1': [], '2': [] };
+                }
+
+                answer[strVendorID][strRestrictionType].push(parseInt(purposeID));
+
+            }
+
+        }
+
+    }
+     return answer;
+}
+   
+
+    }catch(err){
+      OTSDK_logger("publisher Restrictions error -> " + err.message);
+      return answer;
+    }
+    
+    
+
+}
+
+
+function encodeOrganizedPublisherRestrictions(organizedPublisherRestrictions, encodedItems) {
+
+    // //////////////////////////////////////////////
+    // Make sure we have data to work with
+    // //////////////////////////////////////////////
+
+    if (organizedPublisherRestrictions == null) { return; }
+    if (organizedPublisherRestrictions.length === 0) { return; }
+
+
+    // /////////////////////////////////////////////////////////////
+    // FOR EACH Restriction Entry RECORD, WRITE THE TCF BITS
+    for (const index in organizedPublisherRestrictions) {
+
+        const restrictionEntry = organizedPublisherRestrictions[index];
+
+        // PurposeID 6 bits - The Vendor’s declared Purpose ID that the publisher has indicated that they are overriding.
+        const purposeID = parseInt(restrictionEntry["purposeID"]);
+        encodedItems.push(encode_Integer(purposeID, 6));
+
+
+        // RestrictionType 2 bits - 0 = Not Allowed, 1 =  Require Consent, 2 = Require Legitimate Interest
+        const restrictionType = parseInt(restrictionEntry["restrictionType"]);
+        encodedItems.push(encode_Integer(restrictionType, 2));
+
+
+        // NumEntries - 12 bits
+        const vendorRecords = restrictionEntry["vendors"];
+        encodedItems.push(encode_Integer(vendorRecords.length, 12));
+
+
+        // //////////////////////
+        // for each vendor
+        for (const index2 in vendorRecords) {
+
+            const vendorID = vendorRecords[index2];
+
+            // IsARange - 1 bit  - 1 Vendor ID range 0 Single Vendor ID
+            encodedItems.push(encode_Integer(0, 1));
+
+            // VendorId - 16 bits
+            encodedItems.push(encode_Integer(parseInt(vendorID), 16));
+
+        }
+
+    }
+
+}
+
+function clearPubRestrictionsFromDisk() {
+
+    localStorage.removeItem("IABTCF_PublisherRestrictions1");
+    localStorage.removeItem("IABTCF_PublisherRestrictions2");
+    localStorage.removeItem("IABTCF_PublisherRestrictions3");
+    localStorage.removeItem("IABTCF_PublisherRestrictions4");
+    localStorage.removeItem("IABTCF_PublisherRestrictions5");
+    localStorage.removeItem("IABTCF_PublisherRestrictions6");
+    localStorage.removeItem("IABTCF_PublisherRestrictions7");
+    localStorage.removeItem("IABTCF_PublisherRestrictions8");
+    localStorage.removeItem("IABTCF_PublisherRestrictions9");
+    localStorage.removeItem("IABTCF_PublisherRestrictions10");
+}
+
+function write_IABTCF_PublisherRestrictions_toDisk(publisherRestrictions, maxVendorIDFromVendorList) {
+
+    //OT gives me that data like this... purpose / VendorID / restrictionType
+
+    // remove from disk any cached values
+    clearPubRestrictionsFromDisk();
+
+    // ///////////////////////////////////////////////////////////////////
+    // for each purpose write IABTCF_PublisherRestrictions to disk
+    // ///////////////////////////////////////////////////////////////////
+    const publisherRestrictionskeys = Object.keys(publisherRestrictions);
+
+    for (let iRecord = 0; iRecord < publisherRestrictionskeys.length; iRecord++) {
+
+        const purposeID = publisherRestrictionskeys[iRecord];  // the each key in publisherRestrictions is a purposeID
+
+        const IABTCF_PublisherRestrictions = [];
+        for (let i = 0; i < maxVendorIDFromVendorList; i++) { IABTCF_PublisherRestrictions.push("_"); }
+
+
+        const vendorDict = publisherRestrictions[purposeID];
+        const vendorDictKeys = Object.keys(vendorDict);
+
+        for (let i = 0; i < vendorDictKeys.length; i++) {
+            const vendorID = vendorDictKeys[i]; // the each key in vendorDict is a VendorID
+            const restrictionTypeForVendor = vendorDict[vendorID];
+
+            const indexPosition = parseInt(vendorID) - 1;
+            if (indexPosition >= 0 && indexPosition < IABTCF_PublisherRestrictions.length) {
+                IABTCF_PublisherRestrictions[indexPosition] = restrictionTypeForVendor;
+            }
+        }
+
+        const keyName = "IABTCF_PublisherRestrictions" + purposeID;
+        const storeThis = IABTCF_PublisherRestrictions.join('');
+        localStorage.setItem(keyName, storeThis);
+
+    }
+
+
+}
+
+
+function convertBinaryStringToBase64(strBinaryString) {
+
+    let intStrLength = 0;
+    let intPadding = 0;
+    let paddedBinaryString = "";
+    let numOfBytes = 0;
+    let bytes;
+    let multiples = 8;
+
+    //' make sure the string is multiples of 8
+    intStrLength = strBinaryString.length;
+    intPadding = parseInt((intStrLength / multiples).toString()) * multiples - intStrLength;
+    paddedBinaryString = strBinaryString.padRight((intStrLength + intPadding), '0');
+
+    //' convert the string to bytes
+    numOfBytes = parseInt((paddedBinaryString.length / multiples).toString());
+    bytes = new Uint8Array(numOfBytes);
+    for (let i = 0; i < numOfBytes; i++) {
+        let substring = paddedBinaryString.substr((multiples * i), multiples);
+        let b1 = parseInt(substring, 2);
+        if (b1 > 127) {
+            b1 -= 256;
+        }
+        bytes[i] = b1;
+    }
+
+    let encodedString = btoa(String.fromCharCode.apply(null, bytes));
+    encodedString = encodedString.replace(new RegExp('\\+', 'g'), '-');
+    encodedString = encodedString.replace(new RegExp('/', 'g'), '_');
+    encodedString = encodedString.replace(new RegExp('=', 'g'), '');
+
+    return encodedString;
+
+}
+
+function getPurposeOneTreatment() {
+
+    // as defined in MOB-5335
+    // When ShowInPopup is = false for IABV2_1, we need to do the following:
+    //      We should hide in PC view
+    //      We should set IAB Purpose 1’s Consent to OFF (0) in the TCData and TCString
+    //      We should set IABTCF_PurposeOneTreatment = 1 in SharedPreferences when use clicks acceptAll() or rejectAll()
+
+
+    let defaultAnswer = 0;
+
+    // if NOT IAB 2 Template, return the default answer
+    if (!isIAB2()) { return defaultAnswer; }
+
+    // Get the Purpose 1 group
+    const IABV2_1 = getGroupByID("IABV2_1");
+
+    // if I dont have the ShowInPopup data I need, return the default answer
+    if (!IABV2_1 || !IABV2_1.ShowInPopup) { return defaultAnswer; }
+
+    // get the ShowInPopup value for Purpose 1
+    const ShowInPopup = IABV2_1["ShowInPopup"];
+
+    // not disclosed to the user (PurposeOneTreatment = 1)
+    if (!ShowInPopup) { return 1; }
+
+    // if we got this far, return the default answer
+    return defaultAnswer;
+
+}
+
+function getGroupByID(CustomGroupId) {
+
+    const groups = getOTSDKData().culture.DomainData.Groups;
+
+    for (const key in groups) {
+        const group = groups[key];
+        if (group.CustomGroupId === CustomGroupId) {
+            return group;
+        }
+    }
+
+    return null;
+
+}
+
+
+
+function getValidGroup() {
+    const sdkData = getOTSDKData();
+    const groups = sdkData.culture.DomainData.Groups;
+    const gpValid = [];
+    groups.forEach(function (gd) {
+        const isParent = isParentGroup(gd.OptanonGroupId, groups);
+        const storageKeyName = "OneTrust_CustomGroupId_" + gd.CustomGroupId;
+        const liStorageKeyName = "OneTrust_CustomGroupId_LI_" + gd.CustomGroupId;
+        if (gd.FirstPartyCookies.length > 0 || gd.IsIabPurpose || isParent) {
+            if (localStorage.getItem(storageKeyName)) {
+                gd.Status = localStorage.getItem(storageKeyName);
+            }
+            if (localStorage.getItem(liStorageKeyName)) {
+                gd.HasLegIntOptOutStatus = localStorage.getItem(liStorageKeyName);
+            }
+
+            gd.isParent = isParent; //<-- in getSavedProfile(), we exclude parent groups, so we'll add this field to the record
+            gpValid.push(gd);
+        }
+    });
+    return gpValid
+}
+
+
+
+
+function isParentGroup(groupId, groups) {
+
+    let isParent = false;
+    groups.forEach(function (gd) {
+        if (gd.Parent === groupId) {
+            isParent = true;
+        }
+    });
+    return isParent;
+}
+
+
+function getLegIntSettings() {
+    const sdkData = getOTSDKData();
+    const LegIntSettings = sdkData.culture.DomainData.LegIntSettings;
+    let PAllowLI = null;
+    if (LegIntSettings != null) {
+        PAllowLI = LegIntSettings;
+    }
+    return PAllowLI;
+}
+
+function isTestApp() {
+    const sdkData = getOTSDKData();
+    const scriptType = sdkData.domain.ScriptType;
+    return scriptType.toLowerCase() === "test";
+}
+
+
+function getIdForIabGrp(id) {
+    if (id.indexOf('ISPV2_') > -1) { // Special purpose
+        id = id.replace('ISPV2_', '');
+    } else if (id.indexOf('IABV2_') > -1) { // Purpose
+        id = id.replace('IABV2_', '');
+    } else if (id.indexOf('IFEV2_') > -1) { // Feature
+        id = id.replace('IFEV2_', '');
+    } else if (id.indexOf('ISFV2_') > -1) { // Spcieal feature
+        id = id.replace('ISFV2_', '');
+    }
+    return id;
+}
+
+function getIabGroups() {
+    const sdkData = getOTSDKData();
+    const groups = sdkData.culture.DomainData.Groups;
+    const iabGrps = {
+        purpose: {},
+        sp: {},
+        feature: {},
+        sf: {}
+    };
+    groups.forEach(function (grp) {
+        const iabGrpId = getIdForIabGrp(grp.CustomGroupId);
+        const grpName = grp.GroupName;
+        switch (grp.Type) {
+            case "IAB2_PURPOSE":
+                iabGrps.purpose[iabGrpId] = grpName;
+                break;
+            case "IAB2_SPL_PURPOSE":
+                iabGrps.sp[iabGrpId] = grpName;
+                break;
+            case "IAB2_FEATURE":
+                iabGrps.feature[iabGrpId] = grpName;
+                break;
+            case "IAB2_SPL_FEATURE":
+                iabGrps.sf[iabGrpId] = grpName;
+                break;
+        }
+    });
+    return iabGrps;
+}
+
+
+function isCrossDevice() {
+
+    // not sure if there is a better way, perhaps in the server JSON,
+    // but as of now, I assume crossDevice is enables if I have a syncAuth
+
+    const cached_OneTrust_sdk_keys_encoded = localStorage.getItem("OneTrust_sdk_keys");
+    if (cached_OneTrust_sdk_keys_encoded) {
+        const cached_OneTrust_sdk_keys = JSON.parse(atob(cached_OneTrust_sdk_keys_encoded));
+        return (cached_OneTrust_sdk_keys.syncProfileAuth && cached_OneTrust_sdk_keys.syncProfileAuth.trim().length > 0);
+    }
+
+    return false;
+}
+
+function hasNewCategoriesSinceLastLocalInteraction() {
+
+    const validGroupIDs = []; getValidGroup().forEach(function (gd) { validGroupIDs.push(gd.CustomGroupId); });
+    let validGroupIDs_lastInteraction = localStorage.getItem("OneTrust_categoriesAvailableLastInteraction");
+
+    if (validGroupIDs_lastInteraction) {
+        validGroupIDs_lastInteraction = JSON.parse(validGroupIDs_lastInteraction);
+
+        const newItems = [];
+        const deletedItems = [];
+        const diffItems = getDiffFromArray(validGroupIDs_lastInteraction, validGroupIDs);
+
+        // figure out if these are new or deleted categories
+        diffItems.forEach((value, index) => {
+            if (validGroupIDs.indexOf(value) === -1) {
+                deletedItems.push(value);
+            } else {
+                newItems.push(value);
+            }
+        });
+
+        OTSDK_logger("New categories ->" + JSON.stringify(newItems));
+        OTSDK_logger("Deleted categories  ->" + JSON.stringify(deletedItems));
+
+        return newItems.length > 0;
+
+    }
+
+    return false;
+}
+
+
+function getDiffFromArray(array1, array2) {
+
+    const spread = [...array1, ...array2];
+    return spread.filter(el => {
+        return !(array1.includes(el) && array2.includes(el));
+    })
+
+}
+
+
+const sendDataIfAllowed = async (sendTheseRecordsToOneTrust, interactionType) => {
+    const sdkData = getOTSDKData()["culture"];
+    const domainData = getOTSDKData()["domain"];
+
+    const isConsentLoggingEnabled = sdkData["DomainData"]["IsConsentLoggingEnabled"];
+    if (!isConsentLoggingEnabled) {
+        OTSDK_logger("Consent Logging NOT Enabled");
+        return { "info": "Consent Logging NOT Enabled" };
+    }
+
+
+    const consentIntegration = sdkData["CommonData"]["ConsentIntegration"];
+    const ConsentApi = consentIntegration["ConsentApi"];
+    const RequestInformation = consentIntegration["RequestInformation"];
+
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    myHeaders.append("cache-control", "no-cache");
+
+
+    const OneTrust_sdk_keys = JSON.parse(atob(localStorage.getItem("OneTrust_sdk_keys")));
+    let isAnonymous = true;
+    if (OneTrust_sdk_keys.shouldCreateProfile && localStorage.getItem("OneTrust_datasubjectID_known") === 'true') {
+        isAnonymous = false;
+    }
+
+    OTSDK_logger("dataSubject isAnonymous ->" + isAnonymous.toString());
+
+    // we send the tc string to OneTrust.
+    const tcStringV2 = writeTCString();
+
+
+    const body = {
+        "requestInformation": RequestInformation,
+        "identifier": getDataSubjectIdentifier(),
+        "test": isTestApp(),
+        "isAnonymous": isAnonymous,
+        "tcStringV2": tcStringV2,
+        "customPayload": {
+            "Interaction": 1,
+            "AddDefaultInteraction": true
+        },
+        "purposes": sendTheseRecordsToOneTrust,
+        "dsDataElements": {},
+        "syncGroup": domainData.SyncGroupId
+    }
+
+    // Advanced Analytics Rules
+    if (sdkData["DomainData"]["AdvancedAnalyticsCategory"] && sdkData["DomainData"]["AdvancedAnalyticsCategory"].trim().length > 0) {
+
+        // MOB-6427
+        body.dsDataElements.UserAgent = navigator.userAgent;
+
+        //MOB-6424
+        body.dsDataElements.Country = getOTSDKData()["domain"]["countryCode"];
+
+        //MOB-6422
+        body.dsDataElements.InteractionType = interactionType;
+
+    }
+
+
+
+    OTSDK_logger("Consent request ->" + JSON.stringify(body));
+
+    const requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        redirect: 'follow',
+        body: JSON.stringify(body)
+    };
+
+    const response = await fetch(ConsentApi, requestOptions)
+        .catch(error => {
+            throw error;
+        });
+
+    // check if response worked (no 404 errors etc...)
+    if (!response.ok) {
+        OTSDK_logger("response.statusText -> " + response.statusText);
+        throw new Error(response.statusText);
+    }
+
+
+    // store the receipt
+    localStorage.setItem("OneTrust_Receipt", JSON.stringify(response));
+    localStorage.setItem("OneTrust_Receipt_Date", (new Date().getTime() / 1000).toString());
+
+    return response.json();
+
+}
+
+function clearIABLocalPurposes() {
+    const sdkData = getOTSDKData();
+    const groups = sdkData.culture.DomainData.Groups;
+    groups.forEach(function (gd) {
+        const id = gd.CustomGroupId;
+        if (gd.IsIabPurpose) {
+            const storageKeyName = "OneTrust_CustomGroupId_" + id;
+            const liStorageKeyName = "OneTrust_CustomGroupId_LI_" + id;
+            if (localStorage.getItem(storageKeyName)) {
+                localStorage.removeItem(storageKeyName);
+            }
+            if (localStorage.getItem(liStorageKeyName)) {
+                localStorage.removeItem(liStorageKeyName);
+            }
+        }
+    });
+
+    // also clear any user modifications to the vendor list
+    // clearIABLocalPurposes() is called before downloadVendorList()
+    // which will repopulate the keys below with defaults.
+    localStorage.removeItem("OneTrust_VendorList");
+    localStorage.removeItem("OneTrust_vendorLIUserSelections");
+    localStorage.removeItem("OneTrust_vendorConsentUserSelections");
+    localStorage.removeItem("OneTrust_saveQueue_vendor");
+    localStorage.removeItem("OneTrust_saveQueue_vendor_li");
+
+    localStorage.removeItem("OneTrust_Google_VendorList");
+    localStorage.removeItem("OneTrust_vendorGoogleConsentUserSelections");
+
+}
+
+function triggerConsentEv() {
+    window.dispatchEvent(new CustomEvent('OneTrustGroupsUpdated', {
+        detail: getSavedProfile()
+    }));
+}
+
+let m_vendorSearchIndex;
+let m_vendorSearchLastFieldName;
+let m_vendorSearchLastSearchTerm;
+let m_vendorSearchLastResults;
+
+const filterVendorListBy = async (searchConfig) => {
+
+    // searchConfig looks like: {fieldName:'name', searchTerm:'expo' } //
+
+    // if we dont have a search term, return all the vendors.
+    if (!searchConfig || !searchConfig.searchTerm || searchConfig.searchTerm.trim().length == 0){
+        return getVendorList().vendors;
+    }
+
+    // clear searchIndex if search Field name changes.
+    if (m_vendorSearchLastFieldName !== searchConfig.fieldName){
+        m_vendorSearchLastFieldName = searchConfig.fieldName;
+        m_vendorSearchIndex = null;
+    }
+
+
+    // if we dont already have a search index for this field, create one
+    if (!m_vendorSearchIndex) {
+        m_vendorSearchIndex = [];
+        const vendors = getVendorList().vendors;
+        const vendorsKeys = Object.keys(vendors);
+        for(let i=0; i < vendorsKeys.length; i++){
+            const vendorID = vendorsKeys[i]
+            const fieldName = searchConfig.fieldName;
+            const fieldValue = vendors[vendorID][fieldName].toLowerCase();
+            m_vendorSearchIndex.push({"id":vendorID, fieldName:fieldValue });
+        }
+    }
+
+
+    // reset results if search term startsWith changes
+    const searchTerm = searchConfig.searchTerm.toLowerCase();
+    if ( ! searchTerm.startsWith( m_vendorSearchLastSearchTerm ) ) {
+        m_vendorSearchLastResults = m_vendorSearchIndex;
+    }
+
+    // remember search term
+    m_vendorSearchLastSearchTerm = searchTerm;
+
+
+    // perform the search on our ever shrinking list.  As they type, the m_vendorSearchLastResults gets smaller, and search gets quicker
+    m_vendorSearchLastResults = m_vendorSearchLastResults.filter(indexRecord => indexRecord.fieldName.indexOf(searchTerm) !== -1)
+
+    // return the answer, a dictionary containing the filtered vendors
+    const answer = {};
+    const vendors = getVendorList().vendors;
+    m_vendorSearchLastResults.forEach(function (indexRecord) {
+        const vendorID = indexRecord.id.toString();
+        answer[vendorID] = vendors[vendorID];
+    });
+
+    return answer;
+
+}
+
+function OTSDK_performance_logger(metricEnum, startDate, stopDate) {
+
+    let  strMessage = "unknown metricEnum";
+    let secondBetweenTwoDate = 0;
+
+    try {
+        secondBetweenTwoDate = Math.abs((stopDate - startDate) / 1000);
+        switch (metricEnum) {
+            case 1: {strMessage = `Time taken for OT SDK setup data fetch: ${secondBetweenTwoDate} seconds.`; break;}
+            case 2: {strMessage = `Time taken for IAB vendor list data setup: ${secondBetweenTwoDate} seconds.`; break;}
+            case 3: {strMessage = `Time taken for Google vendor list data setup: ${secondBetweenTwoDate} seconds.`; break;}
+            case 4: {strMessage = `Time taken for OT SDK data setup: ${secondBetweenTwoDate} seconds.`; break;}
+        };
+
+        OTSDK_logger("logExecutionTime -> " + strMessage.toString());
+
+    }catch (e) {
+        OTSDK_logger("logExecutionTime -> " + e.toString());
+
+    }finally {
+        strMessage = null;
+        secondBetweenTwoDate = null;
+
+    }
+
+
+}
+
+function OTBackButtonMode(backMode){
+    var defaultBackMode = "";
+    if(backMode === "DISMISS_BANNER" || backMode === "DEFAULT_CONSENT_AND_CLOSE_BANNER"){
+        defaultBackMode = backMode;
+    }
+    localStorage.setItem("OneTrust_backButtonMode",defaultBackMode);
+}
+
+function getBannerBackMode(){
+    return localStorage.getItem("OneTrust_backButtonMode");
+}
+
+function getBannerStyleData(){
+    const sdkData = getOTSDKData();
+    const domainData = sdkData.culture.DomainData;
+    const commonData = sdkData.culture.CommonData;
+    const mobileData = sdkData.culture.MobileData;
+    const OTTData = sdkData.culture.OTTData;
+    const OTTbuttons = OTTData.bannerData.buttons;
+    // const OTTData = null;
+    // const OTTbuttons = null;
+    const styleData = {
+        "textColor": "",
+        "backgroundColor": "",
+        "acceptbuttonColor": "",
+        "acceptbuttonTextColor":"",
+        "acceptbuttonFocusColor": "",
+        "acceptbuttonTextFocusColor": "",
+        "rejectbuttonColor": "",
+        "rejectbuttonTextColor": "",
+        "rejectbuttonFocusColor": "",
+        "rejectbuttonTextFocusColor": "",
+        "pcbuttonColor": "",
+        "pcbuttonTextColor": "",
+        "pcbuttonFocusColor": "",
+        "pcbuttonTextFocusColor": "",
+        "customCSS": commonData.BannerCustomCSS,
+        "vendorLinkColor" : ""
+    };
+    styleData.textColor = OTTData !== null && OTTData.bannerData !== null && OTTData.bannerData.general !== null && OTTData.bannerData.general.textColor !== null && OTTData.bannerData.general.textColor !== "" ? OTTData.bannerData.general.textColor : commonData.TextColor;
+    styleData.backgroundColor = OTTData !== null && OTTData.bannerData !== null && OTTData.bannerData.general !== null && OTTData.bannerData.general.backgroundColor !== null && OTTData.bannerData.general.backgroundColor !== "" ? OTTData.bannerData.general.backgroundColor : commonData.BackgroundColor;
+    styleData.acceptbuttonColor = OTTbuttons !== null && OTTbuttons.acceptAll !== null && OTTbuttons.acceptAll.color !== null && OTTbuttons.acceptAll.color !== "" ? OTTbuttons.acceptAll.color : commonData.ButtonColor;
+    styleData.acceptbuttonTextColor = OTTbuttons !== null && OTTbuttons.acceptAll !== null && OTTbuttons.acceptAll.textColor !== null && OTTbuttons.acceptAll.textColor !== "" ? OTTbuttons.acceptAll.textColor : commonData.ButtonTextColor;
+    styleData.acceptbuttonFocusColor = OTTData !== null && OTTData.bannerData !== null && OTTData.bannerData.general !== null && OTTData.bannerData.general.buttonFocusColor !== undefined && OTTData.bannerData.general.buttonFocusColor !== "" ? OTTData.bannerData.general.buttonFocusColor : commonData.ButtonColor;
+    styleData.acceptbuttonTextFocusColor = OTTData !== null && OTTData.bannerData !== null && OTTData.bannerData.general !== null && OTTData.bannerData.general.buttonFocusTextColor !== undefined && OTTData.bannerData.general.buttonFocusTextColor !== "" ? OTTData.bannerData.general.buttonFocusTextColor : commonData.ButtonTextColor;
+    styleData.rejectbuttonColor = OTTbuttons !== null && OTTbuttons.rejectAll !== null && OTTbuttons.rejectAll.color !== null && OTTbuttons.rejectAll.color !== "" ? OTTbuttons.rejectAll.color : commonData.ButtonColor;
+    styleData.rejectbuttonTextColor = OTTbuttons !== null && OTTbuttons.rejectAll !== null && OTTbuttons.rejectAll.textColor !== null && OTTbuttons.rejectAll.textColor !== "" ? OTTbuttons.rejectAll.textColor : commonData.ButtonTextColor;
+    styleData.rejectbuttonFocusColor = OTTData !== null && OTTData.bannerData !== null && OTTData.bannerData.general !== null && OTTData.bannerData.general.buttonFocusColor !== undefined && OTTData.bannerData.general.buttonFocusColor !== "" ? OTTData.bannerData.general.buttonFocusColor : commonData.ButtonColor;
+    styleData.rejectbuttonTextFocusColor = OTTData !== null && OTTData.bannerData !== null && OTTData.bannerData.general !== null && OTTData.bannerData.general.buttonFocusTextColor !== undefined && OTTData.bannerData.general.buttonFocusTextColor !== "" ? OTTData.bannerData.general.buttonFocusTextColor : commonData.ButtonTextColor;
+    styleData.pcbuttonColor = OTTbuttons !== null && OTTbuttons.showPreferences !== null && OTTbuttons.showPreferences.color !== null && OTTbuttons.showPreferences.color !== "" ? OTTbuttons.showPreferences.color : commonData.BannerMPButtonColor;
+    styleData.pcbuttonTextColor = OTTbuttons !== null && OTTbuttons.showPreferences !== null && OTTbuttons.showPreferences.textColor !== null && OTTbuttons.showPreferences.textColor !== "" ? OTTbuttons.showPreferences.textColor : commonData.BannerMPButtonTextColor;
+    styleData.pcbuttonFocusColor = OTTData !== null && OTTData.bannerData !== null && OTTData.bannerData.general !== null && OTTData.bannerData.general.buttonFocusColor !== undefined && OTTData.bannerData.general.buttonFocusColor !== "" ?OTTData.bannerData.general.buttonFocusColor : commonData.BannerMPButtonTextColor;
+    styleData.pcbuttonTextFocusColor = OTTData !== null && OTTData.bannerData !== null && OTTData.bannerData.general !== null && OTTData.bannerData.general.buttonFocusTextColor !== undefined && OTTData.bannerData.general.buttonFocusTextColor !== "" ? OTTData.bannerData.general.buttonFocusTextColor : commonData.BannerMPButtonColor;
+    styleData.vendorLinkColor = OTTData !== null && OTTData.bannerData !== null && OTTData.bannerData.links !== undefined && OTTData.bannerData.links.vendorListLink !== undefined && OTTData.bannerData.links.vendorListLink.color !== null && OTTData.bannerData.links.vendorListLink.color !== "" ? OTTData.bannerData.links.vendorListLink.color : ""
+    return styleData;
+}
+
+function getPCStyleData(){
+    const sdkData = getOTSDKData();
+    const commonData = sdkData.culture.CommonData;
+    const OTTData = sdkData.culture.OTTData;
+    const OTTpcdata = OTTData.preferenceCenterData;
+    const OTTbuttons = OTTpcdata.buttons;
+    // const OTTpcdata = null;
+    // const OTTbuttons = null;
+    const styleData = {
+        "textColor": "",
+        "backgroundColor": "",
+        "buttonColor": "",
+        "buttonTextColor": "",
+        "buttonFocusColor": "",
+        "buttonTextFocusColor": "",
+        "activeColor" : "",
+        "activeTextColor" : "",
+        "acceptbuttonColor": "",
+        "acceptbuttonTextColor":"",
+        "acceptbuttonFocusColor": "",
+        "acceptbuttonTextFocusColor": "",
+        "rejectbuttonColor": "",
+        "rejectbuttonTextColor": "",
+        "rejectbuttonFocusColor": "",
+        "rejectbuttonTextFocusColor": "",
+        "pcbuttonColor": "",
+        "pcbuttonTextColor": "",
+        "pcbuttonFocusColor": "",
+        "pcbuttonTextFocusColor": "",
+        "customCSS": commonData.PCCustomCSS
+    };
+    styleData.textColor = OTTpcdata !== null && OTTpcdata.general !== null && OTTpcdata.general.textColor !== null && OTTpcdata.general.textColor !== "" ? OTTpcdata.general.textColor : commonData.PcTextColor;
+    styleData.backgroundColor = OTTpcdata !== null && OTTpcdata.general !== null && OTTpcdata.general.backgroundColor !== null && OTTpcdata.general.backgroundColor !== "" ? OTTpcdata.general.backgroundColor : commonData.PcBackgroundColor;
+    styleData.buttonColor = OTTpcdata !== null && OTTpcdata.menu !== undefined && OTTpcdata.menu.color !== null && OTTpcdata.menu.color !== "" ? OTTpcdata.menu.color:commonData.PcTextColor;
+    styleData.buttonTextColor = OTTpcdata !== null && OTTpcdata.menu !== undefined && OTTpcdata.menu.textColor !== null && OTTpcdata.menu.textColor !== "" ? OTTpcdata.menu.textColor:commonData.PcBackgroundColor;
+    styleData.buttonFocusColor = OTTpcdata !== null && OTTpcdata.menu !== undefined && OTTpcdata.menu.focusColor !== null && OTTpcdata.menu.focusColor !== "" ? OTTpcdata.menu.focusColor:commonData.PcButtonColor;
+    styleData.buttonTextFocusColor = OTTpcdata !== null && OTTpcdata.menu !== undefined && OTTpcdata.menu.focusTextColor !== null && OTTpcdata.menu.focusTextColor !== "" ? OTTpcdata.menu.focusTextColor:commonData.PcButtonTextColor;
+    styleData.activeColor = OTTpcdata !== null && OTTpcdata.menu !== undefined && OTTpcdata.menu.activeColor !== null && OTTpcdata.menu.activeColor !== "" ? OTTpcdata.menu.activeColor:commonData.PcButtonTextColor;
+    styleData.activeTextColor = OTTpcdata !== null && OTTpcdata.menu !== undefined && OTTpcdata.menu.activeTextColor !== null && OTTpcdata.menu.activeTextColor !== "" ? OTTpcdata.menu.activeTextColor:commonData.PcButtonColor;
+    styleData.acceptbuttonColor = OTTbuttons !== null && OTTbuttons.acceptAll !== null && OTTbuttons.acceptAll.color !== null && OTTbuttons.acceptAll.color !== "" ? OTTbuttons.acceptAll.color : commonData.PcButtonColor;
+    styleData.acceptbuttonTextColor = OTTbuttons !== null && OTTbuttons.acceptAll !== null && OTTbuttons.acceptAll.textColor !== null && OTTbuttons.acceptAll.textColor !== "" ? OTTbuttons.acceptAll.textColor : commonData.PcButtonTextColor;
+    styleData.acceptbuttonFocusColor = OTTpcdata !== null && OTTpcdata.general !== null && OTTpcdata.general.buttonFocusColor !== undefined && OTTpcdata.general.buttonFocusColor !== "" ? OTTpcdata.general.buttonFocusColor : commonData.PcButtonColor;
+    styleData.acceptbuttonTextFocusColor = OTTpcdata !== null && OTTpcdata.general !== null && OTTpcdata.general.buttonFocusTextColor !== undefined && OTTpcdata.general.buttonFocusTextColor !== "" ? OTTpcdata.general.buttonFocusTextColor : commonData.PcButtonTextColor;
+    styleData.rejectbuttonColor = OTTbuttons !== null && OTTbuttons.rejectAll !== null && OTTbuttons.rejectAll.color !== null && OTTbuttons.rejectAll.color !== "" ? OTTbuttons.rejectAll.color : commonData.PcButtonColor;
+    styleData.rejectbuttonTextColor = OTTbuttons !== null && OTTbuttons.rejectAll !== null && OTTbuttons.rejectAll.textColor !== null && OTTbuttons.rejectAll.textColor !== "" ? OTTbuttons.rejectAll.textColor : commonData.PcButtonTextColor;
+    styleData.rejectbuttonFocusColor = OTTpcdata !== null && OTTpcdata.general !== null && OTTpcdata.general.buttonFocusColor !== undefined && OTTpcdata.general.buttonFocusColor !== "" ? OTTpcdata.general.buttonFocusColor : commonData.PcButtonColor;
+    styleData.rejectbuttonTextFocusColor = OTTpcdata !== null && OTTpcdata.general !== null && OTTpcdata.general.buttonFocusTextColor !== undefined && OTTpcdata.general.buttonFocusTextColor !== "" ? OTTpcdata.general.buttonFocusTextColor : commonData.PcButtonTextColor;
+    styleData.pcbuttonColor = OTTbuttons !== null && OTTbuttons.showPreferences !== null && OTTbuttons.showPreferences.color !== null && OTTbuttons.showPreferences.color !== "" ? OTTbuttons.showPreferences.color : commonData.PcButtonColor;
+    styleData.pcbuttonTextColor = OTTbuttons !== null && OTTbuttons.showPreferences !== null && OTTbuttons.showPreferences.textColor !== null && OTTbuttons.showPreferences.textColor !== "" ? OTTbuttons.showPreferences.textColor : commonData.PcButtonTextColor;
+    styleData.pcbuttonFocusColor = OTTpcdata !== null && OTTpcdata.general !== null && OTTpcdata.general.buttonFocusColor !== undefined && OTTpcdata.general.buttonFocusColor !== "" ?OTTpcdata.general.buttonFocusColor : commonData.PcButtonColor;
+    styleData.pcbuttonTextFocusColor = OTTpcdata !== null && OTTpcdata.general !== null && OTTpcdata.general.buttonFocusTextColor !== undefined && OTTpcdata.general.buttonFocusTextColor !== "" ? OTTpcdata.general.buttonFocusTextColor : commonData.PcButtonTextColor;
+    return styleData;
+}
+
+//MOB-7978; Automatic Reconsent override
+const performAutomaticReconsentOverride = async () => {
+
+    const data = OTCMP.getOTSDKData();
+    if (data) {
+        // How many days
+        const ReconsentFrequencyDays = data["culture"]["DomainData"]["ReconsentFrequencyDays"];
+        OTSDK_logger(`performAutomaticReconsentOverride -> Setting last consent date to today minus ${ReconsentFrequencyDays} days.`);
+
+        // reset the date & save to disk
+        const date = Date.now() - 1000 * 60 * 60 * 24 * ReconsentFrequencyDays;
+        OTSDK_logger(`performAutomaticReconsentOverride -> New consent timestamp is now ${date}`);
+        localStorage.setItem("OneTrust_lastConsentDate", date.toString());
+
+        // restart the sdk
+        const sdk_keys = JSON.parse(atob(localStorage.getItem("OneTrust_sdk_keys")));
+        return await OTCMP.startSDK(sdk_keys);
+
+    } else {
+        OTSDK_logger("performAutomaticReconsentOverride -> There is no OneTrust Data!");
+    }
+
+}
+
+const getConsentExpired = function(){
+    const data = OTCMP.getOTSDKData();
+    let consentExpired = false;
+    if (data) {
+        const profileStatusCode = data["status"]["profile"]["code"];
+        if (profileStatusCode && profileStatusCode === 200) {
+            const shouldShowBannerAsConsentExpired = data["profile"]["sync"]["shouldShowBannerAsConsentExpired"];
+            consentExpired = shouldShowBannerAsConsentExpired;
+        }
+    }
+    return consentExpired;
+};
+
+OTCMP = __webpack_exports__;
+/******/ })()
+;

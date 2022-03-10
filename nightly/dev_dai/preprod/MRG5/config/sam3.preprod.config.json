@@ -24,6 +24,10 @@
             "clientID": "10TVL1SAM30000004901NGTVAM00000000000000",
             "clientSecret": ""
         },
+        "mtvcmp": {
+            "clientID": "10TVL1SAM30000004901NGTVAM00000000000000",
+            "clientSecret": ""
+        },
         "default": {
             "clientID": "10TVL1SAM30000004901NGTVAUTHMANAGER00000",
             "clientSecret": ""

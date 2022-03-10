@@ -227,5 +227,14 @@
         "isEditableByOperator": true,
         "domainType": "subscriber",
         "dataType": "longstring"
+    },
+    {
+        "isEditableByEndUser": true,
+        "key": "RegionalConfiguration",
+        "description": "Regional Configuration",
+        "name": "RegionalConfiguration",
+        "isEditableByOperator": true,
+        "domainType": "device",
+        "dataType": "String"
     }
 ]

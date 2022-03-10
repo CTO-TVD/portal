@@ -103,6 +103,9 @@
                         "full"
                     ],
                     "consentManagement": [
+                        "full"
+                    ],
+                    "medienstaatsvertrag": [
                         "none"
                     ],
                     "vodDeleteLicence": [
@@ -199,6 +202,9 @@
                     "consentManagement": [
                         "none"
                     ],
+                    "medienstaatsvertrag": [
+                        "full"
+                    ],
                     "vodDeleteLicence": [
                         "full"
                     ],
@@ -289,6 +295,9 @@
                     ],
                     "consentManagement": [
                         "none"
+                    ],
+                    "medienstaatsvertrag": [
+                        "full"
                     ],
                     "extendedpowermanagement": [
                         "none"
