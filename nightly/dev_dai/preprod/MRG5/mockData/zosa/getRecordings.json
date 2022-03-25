@@ -3824,11 +3824,30 @@
 		"endTime": 1576299300000,
 		"images": [
 			{
-				"height": 230,
-				"serviceProviderImageType": "7",
-				"url": "http://programm-manager.telekom.de/media/gracenote/p11982358_i_h9_aa.jpg",
-				"width": 480
+				"height": 720,
+				"serviceProviderImageType": "1000",
+				"url": "http://ngisstest.t-online.de/iss/?client=vtu_ngtv&ar=keep&y=720&src=http://ngisstest.t-online.de/sweetprogrammanager0/media/gracenote/1/8/p184720_i_h10_ac.jpg",
+				"width": 1280
+			},
+			{
+				"height": 553,
+				"serviceProviderImageType": "1001",
+				"url": "http://ngisstest.t-online.de/iss/?client=vtu_ngtv&ar=keep&y=553&src=http://ngisstest.t-online.de/sweetprogrammanager0/media/gracenote/1/8/p184720_i_h10_ac.jpg",
+				"width": 983
+			},
+			{
+				"height": 153,
+				"serviceProviderImageType": "1002",
+				"url": "http://ngisstest.t-online.de/iss/?client=vtu_ngtv&ar=keep&y=153&src=http://ngisstest.t-online.de/sweetprogrammanager0/media/gracenote/1/8/p184720_i_h10_ac.jpg",
+				"width": 272
+			},
+			{
+				"height": 124,
+				"serviceProviderImageType": "1003",
+				"url": "http://ngisstest.t-online.de/iss/?client=vtu_ngtv&ar=keep&y=124&src=http://ngisstest.t-online.de/sweetprogrammanager0/media/gracenote/1/8/p184720_i_h10_ac.jpg",
+				"width": 220
 			}
+
 		],
 		"programId": "053d4124:dd17f790:5be5ab47a7a",
 		"recordingState": 1,

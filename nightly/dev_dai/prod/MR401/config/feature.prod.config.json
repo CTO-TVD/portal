@@ -108,6 +108,9 @@
                     "medienstaatsvertrag": [
                         "none"
                     ],
+                    "searchHelpLane": [
+                        "none"
+                    ],
                     "vodDeleteLicence": [
                         "full"
                     ],
@@ -207,6 +210,9 @@
                         "none"
                     ],
                     "medienstaatsvertrag": [
+                        "full"
+                    ],
+                    "searchHelpLane": [
                         "none"
                     ],
                     "vodDeleteLicence": [
@@ -305,6 +311,9 @@
                         "none"
                     ],
                     "medienstaatsvertrag": [
+                        "full"
+                    ],
+                    "searchHelpLane": [
                         "none"
                     ],
                     "extendedpowermanagement": [

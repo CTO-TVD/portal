@@ -4,10 +4,7 @@
         "storageLocation": "cdn.cookielaw.org",
         "domainIdentifier": "2be38d26-c39d-49f2-8cdf-279ed9436539-test",
         "languageCode": "de",
-        "apiVersion": "6.30.0"
+        "apiVersion": "6.31.0"
     },
-    "testflag": false,
-    "tenantId": "9b180ddd-6132-42e4-8a25-f5530aba881e",
-    "syncGroupId": "27df0045-1d67-4ac2-b935-b77f8353977b",
-    "appCmsId": "ARDMediathek"
+    "appCmsId": "appConsent"
 }

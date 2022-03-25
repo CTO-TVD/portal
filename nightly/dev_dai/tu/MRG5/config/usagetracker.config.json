@@ -119,6 +119,11 @@
                         "lvl2id": 10
                 },
                 {
+                        "regex": "^nc_remote-search-page", // UI10 "^searchcontainer(::keyboard1)?(::)?(tvlist2_)?", // root::searchcontainer::keyboard1::tvlist2_searchList root::searchcontainer::keyboard1::inputfield root::searchcontainer::keyboard1 root::searchcontainer
+                        "replace": "Page", // input e.g. nc_search-page::nc_search-component::content::BlockInputNavContainer::nav_characters
+                        "lvl2id": 10
+                },
+                {
                         "regex": "^searchgridpage_([^_]*?)(_\\w*)::resultcontainer", // non greedy group to get search term
                         "replace": "Grid::$1", // input e.g. searchgridpage_Akten_groupTypeAdult__ac029cc2888eae76697249788e299236
                         "lvl2id": 10

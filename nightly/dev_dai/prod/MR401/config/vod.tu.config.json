@@ -8,7 +8,7 @@
   "auto_startplay_timeout": 8, // [s]
   "monitoring": false,
   "soonTresholdDays": 60, // ">" days to switch from a date to "Demmächst" label
-  "remainTresholdDays": 7, // "<" days to show a remain indicator (to purchase, rent-right are running out, etc.)
+  "remainTresholdDays": 60, // "<" days to show a remain indicator (to purchase, rent-right are running out, etc.)
   "askServerForInlineRedirects": true, // instead of 302 browser redirects, we can ask vodas to send 200 responses with a redirect inside the content => than we can add query params
   "shortlinkRegex": ".+/\\d+/(\\w+)", // parse expression for getting shortlink from a deeplink - opposite of manifest.setting.deeplink which convert shortlink to deeplinks
   "bootstrapUrl":  "https://x3wcps.t-online.de/bootstrap/iptv2015/v1/manifest" , //"https://x1wcss.t-online.de/bootstrap/iptv2015/v1/manifest"
