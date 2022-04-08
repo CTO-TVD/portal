@@ -1,0 +1,219 @@
+{
+    // default assignment for the application 
+    "assignment": ["mr401"],
+
+    // definition of the feature structure for the application
+    "featureStructure": {
+
+        "assignmentSource": [
+            {
+                "type": "urlSource",
+                "query": "subscriber_type",
+                "rule": {
+                    "expression": "BASISTV",
+                    "assignment": "basistv"
+                }
+            },
+            {
+                "type": "urlSource",
+                "query": "subscriber_type",
+                "rule": {
+                    "expression": "IPTV",
+                    "assignment": "iptv"
+                }
+            },
+            {
+                "type": "urlSource",
+                "query": "subscriber_type",
+                "rule": {
+                    "expression": "SATHYBRID",
+                    "assignment": "sathybrid"
+                }
+            },
+            {
+                "type": "urlSource",
+                "query": "hostname",
+                "rule": {
+                    "expression": "localhost",
+                    "assignment": "nightly_prod"
+                }
+            }
+        ],
+
+        "definition": {
+
+            "rights": {
+
+                "full": ["viewItems", "addItems", "deleteItems", "editItems"],
+                "read": ["viewItems"],
+                "edit": ["viewItems", "addItems", "deleteItems", "editItems"]
+            }
+        },
+        
+        "assignment": {
+
+            "mr401": {
+
+                "rights": {
+
+                    "app": ["full"],
+                    "usb": ["none"],
+                    "bluetooth": ["none"],
+                    "moreTvMySubscriptionsPackages": ["none"],
+                    "moreTvMagentaHaus" : ["full"],
+                    "moreTvUX20" : ["none"],
+                    "avscontent": ["full"],
+                    "satellite": ["none"],
+                    "satellitesubscriber": [],
+                    "mixedpvr": ["full"],
+                    "extendedui": ["full"],
+                    "longpress": ["none"],
+                    "useshortcuts": ["full"],
+                    "searchNetflix": ["none"],
+                    "searchYoutube": ["full"],
+                    "consentManagement": ["full"],
+                    "medienstaatsvertrag": ["none"],
+                    "vodDeleteLicence": ["full"],
+                    "vodBingeWatchImprovement": ["full"],
+                    "demoarea": ["full"],
+                    "voiceKeySupport": ["none"],
+                    "remoteMessageGroupSearch": ["full"],
+                    "uacALA" : ["full"]
+                },
+
+              	"values": {
+
+                    // Id of a partner map. If this value is set, the cmls result will be filtered by the given map id.
+                    "partnerMapId": {"value": "entertaintvA"},
+
+                    // Id of a app map. If this value is set, the cmls result will be filtered by the given map id.
+                    "appMapId": {"value": "APPS_ZENTERIO"},
+
+                    // Id of the main menu. If this value is set it overrides the value from backend.
+                    "mainMenuId": {"value": 33764},
+
+                    // appnames for VOD App Services
+                    "appname720":  {"value": "ui20rest"},
+                    "appname1080": {"value": "ui20rest"}
+                },
+
+                "assignment": {
+                    "sathybrid": {
+                        "rights": {
+                            "satellitesubscriber": ["full"]
+                        }
+                    }
+                }
+            },
+
+            "mrsat": {
+                
+                "rights": {
+
+                    "app": ["full"],
+                    "usb": ["none"],
+                    "bluetooth": ["none"],
+                    "moreTvMySubscriptionsPackages": ["none"],
+                    "moreTvMagentaHaus" : ["full"],
+                    "moreTvUX20" : ["none"],
+                    "avscontent": ["full"],
+                    "satellite": ["full"],
+                    "satellitesubscriber": [],
+                    "mixedpvr": ["full"],
+                    "extendedui": ["full"],
+                    "longpress": ["none"],
+                    "useshortcuts": ["full"],
+                    "searchNetflix": ["none"],
+                    "searchYoutube": ["full"],
+                    "consentManagement": ["full"],
+                    "medienstaatsvertrag": ["none"],
+                    "vodDeleteLicence": ["full"],
+                    "vodBingeWatchImprovement": ["full"],
+                    "demoarea": ["full"],
+                    "voiceKeySupport": ["none"],
+                    "remoteMessageGroupSearch": ["full"],
+                    "uacALA" : ["full"]
+                },
+
+                "values": {
+
+                    // Id of a partner map. If this value is set, the cmls result will be filtered by the given map id.
+                    "partnerMapId": {"value": "entertaintvA"},
+
+                    // Id of a app map. If this value is set, the cmls result will be filtered by the given map id.
+                    "appMapId": {"value": "APPS_ZENTERIO"},
+
+                    // Id of the main menu. If this value is set it overrides the value from backend.
+                    "mainMenuId": {"value": 34857},
+
+                    // appnames for VOD App Services
+                    "appname720":  {"value": "ui20rest"},
+                    "appname1080": {"value": "ui20rest"}
+                },
+                
+                "assignment": {
+                    "sathybrid": {
+                        "rights": {
+                            "satellitesubscriber": ["full"]
+                        }
+                    }
+                }
+            },
+
+            "mrg5": {
+
+                "rights": {
+
+                    "app": ["full"],
+                    "usb": ["none"],
+                    "moreTvMySubscriptionsPackages": ["none"],
+                    "moreTvMagentaHaus" : ["full"],
+                    "moreTvUX20" : ["none"],
+                    "avscontent": ["full"],
+                    "satellite": ["none"],
+                    "satellitesubscriber": [],
+                    "mixedpvr": ["full"],
+                    "extendedui": ["full"],
+                    "longpress": ["full"],
+                    "useshortcuts": ["full"],
+                    "searchNetflix": ["none"],
+                    "searchYoutube": ["full"],
+                    "consentManagement": ["full"],
+                    "medienstaatsvertrag": ["none"],
+                    "extendedpowermanagement": ["none"],
+                    "fullremote": ["none"],
+                    "vodDeleteLicence": ["full"],
+                    "vodBingeWatchImprovement": ["full"],
+                    "demoarea": ["full"],
+                    "voiceKeySupport": ["full"],
+                    "remoteMessageGroupSearch": ["full"],
+                    "uacALA" : ["full"]
+                },
+
+              	"values": {
+
+                    // Id of a partner map. If this value is set, the cmls result will be filtered by the given map id.
+                    "partnerMapId": {"value": "entertaintvA"},
+
+                    // Id of a app map. If this value is set, the cmls result will be filtered by the given map id.
+                    "appMapId": {"value": "APPS_ZENTERIO"},
+
+                    // Id of the main menu. If this value is set it overrides the value from backend.
+                    "mainMenuId": {"value": 33764},
+
+                    // appnames for VOD App Services
+                    "appname720":  {"value": "ui20rest"},
+                    "appname1080": {"value": "ui20rest"}
+                },
+
+                "assignment": {
+                    "sathybrid": {
+                        "rights": {
+                            "satellitesubscriber": ["full"]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

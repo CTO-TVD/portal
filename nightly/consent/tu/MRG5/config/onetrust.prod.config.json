@@ -1,0 +1,11 @@
+{
+    "sdkKeys": {
+        "domaindata_url": "https://mobile-data.onetrust.io/bannersdk/v2/applicationdata",
+        "storageLocation": "cdn.cookielaw.org",
+        "domainIdentifier": "xxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "languageCode": "de",
+        "apiVersion": "6.33.0"
+    },
+    "appCmsId": "appConsent"
+
+}

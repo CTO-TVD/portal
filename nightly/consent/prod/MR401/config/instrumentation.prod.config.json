@@ -1,0 +1,18 @@
+{
+    "activeEndpoint": "aws",
+
+    "endpoints": {
+
+        "aws": {
+            "transformationRule": "aws",
+            "url": "https://prod.dcp.telekom-dienste.de/auth",
+            "typeId" : "NUI-TU0-8ee416ef-7f8e-4e10-bf86-1cb53e12b86e"
+        },
+
+        "dev": {
+            "transformationRule": "none",
+            "url": "ws://scrum999.ddnss.de:9001/mqtt"
+        }
+
+    }
+}
