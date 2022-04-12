@@ -186,8 +186,7 @@ const startSDK = async sdk_keys => {
                 const syncGroups = data["profile"]["fetch"]["syncGroups"];
                 const syncGroupId = data["domain"]["SyncGroupId"];
                 if(syncGroups.hasOwnProperty(syncGroupId)){
-                    const tcString=syncGroups[syncGroupId]["tcStringV2Decoded"];
-                    const purposeLI = tcString ? syncGroups[syncGroupId]["tcStringV2Decoded"]["purpose"]["legitimateInterests"]:"";
+                    const purposeLI = syncGroups[syncGroupId]["tcStringV2Decoded"]["purpose"]["legitimateInterests"];
                     const purposeLIArr = purposeLI.split("");
                     for(var i=0;i<purposeLIArr.length-1;i++){
                         const storageKeyName = "OneTrust_CustomGroupId_LI_IABV2_" + (i+1);
