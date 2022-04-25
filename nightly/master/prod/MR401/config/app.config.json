@@ -34,5 +34,6 @@
     "netflix": "import({ return './config/netflix.' + config.env + '.config.json'; })",
     "instrumentation": "import({ return './config/instrumentation.' + config.env + '.config.json'; })",
     "fileblob": "import(./config/fileblob.config.json)",
-    "voicehistory": "import({ return './config/voicehistory.' + config.env + '.config.json'; })"
+    "voicehistory": "import({ return './config/voicehistory.' + config.env + '.config.json'; })",
+    "channelpromo": "import({ return './config/channelpromo.' + config.env + '.config.json'; })"
 }
