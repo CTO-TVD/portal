@@ -122,6 +122,9 @@
                     ],
                     "uacALA": [
                         "full"
+                    ],
+                    "promoChannel": [
+                        "full"
                     ]
                 },
                 "values": {
@@ -222,6 +225,9 @@
                         "full"
                     ],
                     "uacALA": [
+                        "full"
+                    ],
+                    "promoChannel": [
                         "full"
                     ]
                 },
@@ -326,6 +332,9 @@
                         "full"
                     ],
                     "uacALA": [
+                        "full"
+                    ],
+                    "promoChannel": [
                         "full"
                     ]
                 },

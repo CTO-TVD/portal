@@ -79,7 +79,8 @@
                     "demoarea": ["full"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
-                    "uacALA" : ["full"]
+                    "uacALA" : ["full"],
+                    "promoChannel": ["full"]
                 },
 
               	"values": {
@@ -134,7 +135,8 @@
                     "demoarea": ["full"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
-                    "uacALA" : ["full"]
+                    "uacALA" : ["full"],
+                    "promoChannel": ["full"]
                 },
 
                 "values": {
@@ -190,7 +192,8 @@
                     "demoarea": ["full"],
                     "voiceKeySupport": ["full"],
                     "remoteMessageGroupSearch": ["full"],
-                    "uacALA" : ["full"]
+                    "uacALA" : ["full"],
+                    "promoChannel": ["full"]
                 },
 
               	"values": {
