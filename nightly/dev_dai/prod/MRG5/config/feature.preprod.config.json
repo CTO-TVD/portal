@@ -77,7 +77,8 @@
                     "vodBingeWatchImprovement": ["full"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
-                    "uacALA" : ["full"]
+                    "uacALA" : ["full"],
+                    "promoChannel": ["full"]
                 },
 
               	"values": {
@@ -137,7 +138,8 @@
                     "vodBingeWatchImprovement": ["full"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
-                    "uacALA" : ["full"]
+                    "uacALA" : ["full"],
+                    "promoChannel": ["full"]
                 },
 
                 "values": {
@@ -198,7 +200,8 @@
                     "vodBingeWatchImprovement": ["full"],
                     "voiceKeySupport": ["full"],
                     "remoteMessageGroupSearch": ["full"],
-                    "uacALA" : ["full"]
+                    "uacALA" : ["full"],
+                    "promoChannel": ["full"]
                 },
 
               	"values": {

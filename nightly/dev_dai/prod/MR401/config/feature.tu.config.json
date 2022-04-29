@@ -72,14 +72,15 @@
                     "searchNetflix": ["none"],
                     "searchYoutube": ["full"],
                     "consentManagement": ["full"],
-                    "medienstaatsvertrag": ["none"],
+                    "medienstaatsvertrag": ["full"],
                     "searchHelpLane": ["full"],
                     "vodDeleteLicence": ["full"],
                     "vodBingeWatchImprovement": ["full"],
                     "demoarea": ["full"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
-                    "uacALA" : ["full"]
+                    "uacALA" : ["full"],
+                    "promoChannel": ["full"]
                 },
 
               	"values": {
@@ -127,14 +128,15 @@
                     "searchNetflix": ["none"],
                     "searchYoutube": ["full"],
                     "consentManagement": ["none"],
-                    "medienstaatsvertrag": ["none"],
+                    "medienstaatsvertrag": ["full"],
                     "searchHelpLane": ["full"],
                     "vodDeleteLicence": ["full"],
                     "vodBingeWatchImprovement": ["full"],
                     "demoarea": ["full"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
-                    "uacALA" : ["full"]
+                    "uacALA" : ["full"],
+                    "promoChannel": ["full"]
                 },
 
                 "values": {
@@ -181,7 +183,7 @@
                     "searchNetflix": ["none"],
                     "searchYoutube": ["full"],
                     "consentManagement": ["none"],
-                    "medienstaatsvertrag": ["none"],
+                    "medienstaatsvertrag": ["full"],
                     "searchHelpLane": ["full"],
                     "extendedpowermanagement": ["none"],
                     "fullremote": ["none"],
@@ -190,7 +192,8 @@
                     "demoarea": ["full"],
                     "voiceKeySupport": ["full"],
                     "remoteMessageGroupSearch": ["full"],
-                    "uacALA" : ["full"]
+                    "uacALA" : ["full"],
+                    "promoChannel": ["full"]
                 },
 
               	"values": {

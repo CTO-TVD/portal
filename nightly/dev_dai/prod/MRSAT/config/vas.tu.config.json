@@ -26,6 +26,7 @@
     },
     "continueWatchingLaneAppBlackList": [
         "app10",
-        "magentahaus"
+        "magentahaus",
+        "appConsent"
     ]
 }

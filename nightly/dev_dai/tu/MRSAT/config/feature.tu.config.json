@@ -106,7 +106,7 @@
                         "full"
                     ],
                     "medienstaatsvertrag": [
-                        "none"
+                        "full"
                     ],
                     "searchHelpLane": [
                         "full"
@@ -127,6 +127,9 @@
                         "full"
                     ],
                     "uacALA": [
+                        "full"
+                    ],
+                    "promoChannel": [
                         "full"
                     ]
                 },
@@ -206,7 +209,7 @@
                         "none"
                     ],
                     "medienstaatsvertrag": [
-                        "none"
+                        "full"
                     ],
                     "searchHelpLane": [
                         "full"
@@ -227,6 +230,9 @@
                         "full"
                     ],
                     "uacALA": [
+                        "full"
+                    ],
+                    "promoChannel": [
                         "full"
                     ]
                 },
@@ -303,7 +309,7 @@
                         "none"
                     ],
                     "medienstaatsvertrag": [
-                        "none"
+                        "full"
                     ],
                     "searchHelpLane": [
                         "full"
@@ -330,6 +336,9 @@
                         "full"
                     ],
                     "uacALA": [
+                        "full"
+                    ],
+                    "promoChannel": [
                         "full"
                     ]
                 },
