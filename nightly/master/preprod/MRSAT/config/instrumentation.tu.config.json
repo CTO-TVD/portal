@@ -11,7 +11,7 @@
 
         "aws_sandbox": {
             "transformationRule": "aws",
-            "url": "https://dev.dcp.telekom-dienste.de/bootstrap/",
+            "url": "https://dev.dcp.telekom-dienste.de/auth/bootstrap/",
             "typeId" : "NUI-TU0-8ee416ef-7f8e-4e10-bf86-1cb53e12b86e"
         },
 
