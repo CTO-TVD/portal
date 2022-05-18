@@ -6,6 +6,6 @@
         "languageCode": "de",
         "apiVersion": "6.33.0"
     },
-    "appCmsId": "appConsent"
-
+    "appCmsId": "appConsent",
+    "maxAge" : "14000" // [s] 14000 = 4h
 }
