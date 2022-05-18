@@ -78,7 +78,8 @@
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
                     "uacALA" : ["full"],
-                    "promoChannel": ["full"]
+                    "promoChannel": ["full"],
+                    "skyAbos": ["none"]
                 },
 
               	"values": {
