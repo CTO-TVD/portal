@@ -72,7 +72,7 @@
                     "searchNetflix": ["none"],
                     "searchYoutube": ["full"],
                     "consentManagement": ["none"],
-                    "medienstaatsvertrag": ["full"],
+                    "medienstaatsvertrag": ["none"],
                     "searchHelpLane": ["full"],
                     "vodDeleteLicence": ["full"],
                     "vodBingeWatchImprovement": ["full"],
@@ -81,7 +81,7 @@
                     "remoteMessageGroupSearch": ["full"],
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
-                    "skyAbos": ["none"]
+                    "skyAbos": ["full"]
                 },
 
               	"values": {
@@ -129,7 +129,7 @@
                     "searchNetflix": ["none"],
                     "searchYoutube": ["full"],
                     "consentManagement": ["none"],
-                    "medienstaatsvertrag": ["full"],
+                    "medienstaatsvertrag": ["none"],
                     "searchHelpLane": ["full"],
                     "vodDeleteLicence": ["full"],
                     "vodBingeWatchImprovement": ["full"],
@@ -138,7 +138,7 @@
                     "remoteMessageGroupSearch": ["full"],
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
-                    "skyAbos": ["none"]
+                    "skyAbos": ["full"]
                 },
 
                 "values": {
@@ -185,7 +185,7 @@
                     "searchNetflix": ["none"],
                     "searchYoutube": ["full"],
                     "consentManagement": ["none"],
-                    "medienstaatsvertrag": ["full"],
+                    "medienstaatsvertrag": ["none"],
                     "searchHelpLane": ["full"],
                     "extendedpowermanagement": ["none"],
                     "fullremote": ["none"],
@@ -196,7 +196,7 @@
                     "remoteMessageGroupSearch": ["full"],
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
-                    "skyAbos": ["none"]
+                    "skyAbos": ["full"]
                 },
 
               	"values": {

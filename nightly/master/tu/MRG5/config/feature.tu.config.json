@@ -106,7 +106,7 @@
                         "none"
                     ],
                     "medienstaatsvertrag": [
-                        "full"
+                        "none"
                     ],
                     "searchHelpLane": [
                         "full"
@@ -133,7 +133,7 @@
                         "full"
                     ],
                     "skyAbos": [
-                        "none"
+                        "full"
                     ]
                 },
                 "values": {
@@ -212,7 +212,7 @@
                         "none"
                     ],
                     "medienstaatsvertrag": [
-                        "full"
+                        "none"
                     ],
                     "searchHelpLane": [
                         "full"
@@ -239,7 +239,7 @@
                         "full"
                     ],
                     "skyAbos": [
-                        "none"
+                        "full"
                     ]
                 },
                 "values": {
@@ -315,7 +315,7 @@
                         "none"
                     ],
                     "medienstaatsvertrag": [
-                        "full"
+                        "none"
                     ],
                     "searchHelpLane": [
                         "full"
@@ -348,7 +348,7 @@
                         "full"
                     ],
                     "skyAbos": [
-                        "none"
+                        "full"
                     ]
                 },
                 "values": {
