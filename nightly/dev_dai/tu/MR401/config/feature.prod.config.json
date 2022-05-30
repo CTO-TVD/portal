@@ -79,7 +79,8 @@
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
                     "uacALA" : ["full"],
-                    "promoChannel": ["none"]
+                    "promoChannel": ["none"],
+                    "skyAbos": ["full"]
                 },
 
               	"values": {
@@ -141,7 +142,8 @@
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
                     "uacALA" : ["full"],
-                    "promoChannel": ["none"]
+                    "promoChannel": ["none"],
+                    "skyAbos": ["full"]
                 },
 
                 "values": {
@@ -204,7 +206,8 @@
                     "voiceKeySupport": ["full"],
                     "remoteMessageGroupSearch": ["full"],
                     "uacALA" : ["full"],
-                    "promoChannel": ["none"]
+                    "promoChannel": ["none"],
+                    "skyAbos": ["full"]
                 },
 
               	"values": {
