@@ -76,7 +76,7 @@
                     "searchHelpLane": ["full"],
                     "vodDeleteLicence": ["full"],
                     "vodBingeWatchImprovement": ["full"],
-                    "demoarea": ["none"],
+                    "demoarea": ["full"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
                     "uacALA" : ["full"],
