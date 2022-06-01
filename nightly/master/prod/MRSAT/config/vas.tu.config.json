@@ -22,7 +22,8 @@
         "Arte7": "arte7",
         "PhonostarRadio": "phonostar",
         "Disney": "disneyplus",
-        "Bild" : "bild"
+        "Bild" : "bild",
+        "SkyTicket": "skyticket"
     },
     "continueWatchingLaneAppBlackList": [
         "app10",
