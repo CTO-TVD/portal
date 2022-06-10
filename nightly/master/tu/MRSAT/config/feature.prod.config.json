@@ -197,7 +197,7 @@
                     "searchNetflix": ["none"],
                     "searchYoutube": ["full"],
                     "consentManagement": ["none"],
-                    "medienstaatsvertrag": ["full"],
+                    "medienstaatsvertrag": ["none"],
                     "searchHelpLane": ["none"],
                     "extendedpowermanagement": ["none"],
                     "fullremote": ["none"],
