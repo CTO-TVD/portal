@@ -22,7 +22,8 @@
         "Arte7": "APP00173-ARTE7",
         "PhonostarRadio": "APP00288-phonostarRadio-Appneu",
         "Disney": "disneyplus",
-        "Bild" : "APP00172-BILD"
+        "Bild" : "APP00172-BILD",
+        "SkyTicket": "WOW"
     },
     "continueWatchingLaneAppBlackList": [
         "APP00266-MagentaSportBeta-Test",

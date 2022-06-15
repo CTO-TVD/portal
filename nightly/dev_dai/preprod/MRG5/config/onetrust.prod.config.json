@@ -2,7 +2,7 @@
     "sdkKeys": {
         "domaindata_url": "https://mobile-data.onetrust.io/bannersdk/v2/applicationdata",
         "storageLocation": "cdn.cookielaw.org",
-        "domainIdentifier": "2be38d26-c39d-49f2-8cdf-279ed9436539-test",
+        "domainIdentifier": "43be42fc-172a-4741-a0f9-6b17e4ac234c",
         "languageCode": "de",
         "apiVersion": "6.33.0"
     },

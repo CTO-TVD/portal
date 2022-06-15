@@ -7,5 +7,5 @@
         "apiVersion": "6.33.0" 
     },
     "appCmsId": "appConsent",
-    "maxAge" : "14400" // [s] 14400 = 4h
+    "maxAge" : "300" // [s] 14400 = 4h
 }
