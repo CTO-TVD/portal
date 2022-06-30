@@ -103,7 +103,10 @@
                         "full"
                     ],
                     "consentManagement": [
-                        "none"
+                        "full"
+                    ],
+                    "consentSettingsBtn": [
+                        "full"
                     ],
                     "medienstaatsvertrag": [
                         "full"
@@ -209,7 +212,10 @@
                         "full"
                     ],
                     "consentManagement": [
-                        "none"
+                        "full"
+                    ],
+                    "consentSettingsBtn": [
+                        "full"
                     ],
                     "medienstaatsvertrag": [
                         "full"
@@ -312,7 +318,10 @@
                         "full"
                     ],
                     "consentManagement": [
-                        "none"
+                        "full"
+                    ],
+                    "consentSettingsBtn": [
+                        "full"
                     ],
                     "medienstaatsvertrag": [
                         "full"

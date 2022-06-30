@@ -36,6 +36,8 @@
   "userStoreKeySuppressAskToSetMaster": "appcore.suppressAskToSetMaster",
   "userStoreKeySatWizardLastRuntime": "appcore.satWizardLastRuntime",
   "userStoreKeyFtuPassedDate": "appcore.ftuPassedDate",
+  "userStoreKeyStartPrivacyConsent": "appcore.setting.device.privacyconsent.start",
+  "defaultValueStartPrivacyConsent": "false",
   "userStoreKeyPowerManagementMode": "appcore.setting.device.powermanagement.mode.value",
   "userStoreKeyPwrMgmtSelectionIsDefault": "appcore.setting.device.powermanagement.mode.isDefault",
   "userStoreKeyRadioAppChoice": "appradio.migration.radio.app.choice",

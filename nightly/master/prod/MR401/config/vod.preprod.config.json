@@ -12,5 +12,6 @@
   "shortlinkRegex": ".*/\\d*/(\\w*)", // parse expression for getting shortlink from a deeplink - opposite of manifest.setting.deeplink which convert shortlink to deeplinks
   
   "bootstrapUrl": "https://i1wcps.t-online.de/bootstrap_m1/iptv2015/v1/manifest",
-  "enableXSTBSerialNumber": true // send serialId on every request as a Http-Header `X-STBSerialNumber`
+  "enableXSTBSerialNumber": true, // send serialId on every request as a Http-Header `X-STBSerialNumber`
+  "dai_heartbeat_interval": "250" // [ms]
 }

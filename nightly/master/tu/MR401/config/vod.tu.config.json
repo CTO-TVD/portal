@@ -12,5 +12,6 @@
   "askServerForInlineRedirects": true, // instead of 302 browser redirects, we can ask vodas to send 200 responses with a redirect inside the content => than we can add query params
   "shortlinkRegex": ".+/\\d+/(\\w+)", // parse expression for getting shortlink from a deeplink - opposite of manifest.setting.deeplink which convert shortlink to deeplinks
   "bootstrapUrl":  "https://x3wcps.t-online.de/bootstrap/iptv2015/v1/manifest" , //"https://x1wcss.t-online.de/bootstrap/iptv2015/v1/manifest"
-  "enableXSTBSerialNumber": true // send serialId on every request as a Http-Header `X-STBSerialNumber`
+  "enableXSTBSerialNumber": true, // send serialId on every request as a Http-Header `X-STBSerialNumber`
+  "dai_heartbeat_interval": "250" // [ms]
 }

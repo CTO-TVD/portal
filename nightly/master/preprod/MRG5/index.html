@@ -89,11 +89,19 @@
                 "rxjs": requireLibsRoot + (devEnv ? "rxjs/bundles/rxjs.umd" : "rxjs/bundles/rxjs.umd.min"),
                 "underscore": requireLibsRoot + (devEnv ? "underscore/underscore" : "underscore/underscore-min"),
                 "URIjs": requireLibsRoot + "urijs",
-                "zosaJS": ["file:///usr/share/zosa/zosa", requireLibsRoot + "zenterio/zosa"]
+                "zosaJS": ["file:///usr/share/zosa/zosa", requireLibsRoot + "zenterio/zosa"],
+                "admanagement-sdk": requireLibsRoot + "yospace/admanagement-sdk-es5-3.2.3.min",
+                "cmpsdkJS": requireLibsRoot + (devEnv ? "onetrust/cmpsdk" : "onetrust/cmpsdk"),
             },
             shim: {
                 zosaJS: {
                     exports: "Zosa"
+                },  
+                'admanagement-sdk': {
+                    exports: "YospaceAdManagement"
+                },
+                cmpsdkJS: {
+                    exports: "OTCMP"
                 }
             },
             callback: () => {

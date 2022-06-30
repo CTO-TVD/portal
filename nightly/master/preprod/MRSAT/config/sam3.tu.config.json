@@ -28,6 +28,10 @@
             "clientID": "10TVL0SAM30000004901NGTVAM00000000000000",
             "clientSecret": ""
         },
+        "mtvcmp": {
+            "clientID": "10TVL0SAM30000004901NGTVAM00000000000000",
+            "clientSecret": ""
+        },
         "default": {
             "clientID": "10TVL0SAM30000004901NGTVAUTHMANAGER00000",
             "clientSecret": ""
@@ -40,7 +44,7 @@
         "password": "",
         "pin": "1111",
         "avspin": "1818",
-        "anid": "120049010000000000696743",
+        "anid": "120049010000000001134575",
         "code": "",
         "redirectUri": "https://cto-tvd.github.io/portal/nightly/redirect.tu.html"
     },
@@ -74,17 +78,6 @@
         "pin": "1111",
         "avspin": "1818",
         "anid": "120049010000000005358255",
-        "code": "",
-        "redirectUri": "https://cto-tvd.github.io/portal/nightly/redirect.tu.html"
-    },
-    "mock4": {
-        "clientID": "10TVL0SAM30000004901NGTVUIDEMO0000000000",
-        "endpoint": "https://accounts.login00.idm.ver.sul.t-online.de/oauth2/tokens",
-        "username": "",
-        "password": "",
-        "pin": "1111",
-        "avspin": "1818",
-        "anid": "120049010000000000696743",
         "code": "",
         "redirectUri": "https://cto-tvd.github.io/portal/nightly/redirect.tu.html"
     }
