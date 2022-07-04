@@ -71,9 +71,6 @@
                     "moreTvMySubscriptionsPackages": [
                         "none"
                     ],
-                    "moreTvUX20": [
-                        "none"
-                    ],
                     "avscontent": [
                         "full"
                     ],
@@ -93,12 +90,6 @@
                     "useshortcuts": [
                         "full"
                     ],
-                    "searchNetflix": [
-                        "full"
-                    ],
-                    "searchYoutube": [
-                        "full"
-                    ],
                     "consentManagement": [
                         "none"
                     ],
@@ -107,12 +98,6 @@
                     ],
                     "searchHelpLane": [
                         "none"
-                    ],
-                    "vodDeleteLicence": [
-                        "full"
-                    ],
-                    "vodBingeWatchImprovement": [
-                        "full"
                     ],
                     "voiceKeySupport": [
                         "none"
@@ -178,9 +163,6 @@
                     "moreTvMySubscriptionsPackages": [
                         "none"
                     ],
-                    "moreTvUX20": [
-                        "none"
-                    ],
                     "avscontent": [
                         "full"
                     ],
@@ -200,12 +182,6 @@
                     "useshortcuts": [
                         "full"
                     ],
-                    "searchNetflix": [
-                        "full"
-                    ],
-                    "searchYoutube": [
-                        "full"
-                    ],
                     "consentManagement": [
                         "none"
                     ],
@@ -214,12 +190,6 @@
                     ],
                     "searchHelpLane": [
                         "none"
-                    ],
-                    "vodDeleteLicence": [
-                        "full"
-                    ],
-                    "vodBingeWatchImprovement": [
-                        "full"
                     ],
                     "voiceKeySupport": [
                         "none"
@@ -279,9 +249,6 @@
                     "moreTvMySubscriptionsPackages": [
                         "none"
                     ],
-                    "moreTvUX20": [
-                        "none"
-                    ],
                     "avscontent": [
                         "full"
                     ],
@@ -301,12 +268,6 @@
                     "useshortcuts": [
                         "full"
                     ],
-                    "searchNetflix": [
-                        "full"
-                    ],
-                    "searchYoutube": [
-                        "full"
-                    ],
                     "consentManagement": [
                         "none"
                     ],
@@ -321,12 +282,6 @@
                     ],
                     "fullremote": [
                         "none"
-                    ],
-                    "vodDeleteLicence": [
-                        "full"
-                    ],
-                    "vodBingeWatchImprovement": [
-                        "full"
                     ],
                     "voiceKeySupport": [
                         "full"
