@@ -68,7 +68,7 @@
                     "longpress": ["none"],
                     "useshortcuts": ["full"],
                     "consentManagement": ["full"],
-                    "consentSettingsBtn": ["none"],
+                    "consentSettingsBtn": ["full"],
                     "medienstaatsvertrag": ["none"],
                     "searchHelpLane": ["full"],
                     "demoarea": ["full"],
