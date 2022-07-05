@@ -94,10 +94,10 @@
                         "full"
                     ],
                     "consentSettingsBtn": [
-                        "full"
+                        "none"
                     ],
                     "medienstaatsvertrag": [
-                        "full"
+                        "none"
                     ],
                     "searchHelpLane": [
                         "full"
@@ -118,7 +118,7 @@
                         "full"
                     ],
                     "skyAbos": [
-                        "full"
+                        "none"
                     ]
                 },
                 "values": {

@@ -67,15 +67,15 @@
                     "extendedui": ["none"],
                     "longpress": ["none"],
                     "useshortcuts": ["full"],
-                    "consentManagement": ["none"],
+                    "consentManagement": ["full"],
                     "consentSettingsBtn": ["none"],
-                    "medienstaatsvertrag": ["full"],
+                    "medienstaatsvertrag": ["none"],
                     "searchHelpLane": ["none"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
                     "uacALA" : ["full"],
                     "promoChannel": ["none"],
-                    "skyAbos": ["full"]
+                    "skyAbos": ["none"]
                 },
 
               	"values": {

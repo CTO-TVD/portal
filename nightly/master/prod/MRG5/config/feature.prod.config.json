@@ -91,13 +91,13 @@
                         "full"
                     ],
                     "consentManagement": [
-                        "none"
+                        "full"
                     ],
                     "consentSettingsBtn": [
                         "none"
                     ],
                     "medienstaatsvertrag": [
-                        "full"
+                        "none"
                     ],
                     "searchHelpLane": [
                         "none"
@@ -115,7 +115,7 @@
                         "none"
                     ],
                     "skyAbos": [
-                        "full"
+                        "none"
                     ]
                 },
                 "values": {
