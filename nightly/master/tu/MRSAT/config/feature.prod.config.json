@@ -65,7 +65,7 @@
                     "satellitesubscriber": [],
                     "mixedpvr": ["full"],
                     "extendedui": ["none"],
-                    "longpress": ["none"],
+                    "longpress": ["full"],
                     "useshortcuts": ["full"],
                     "consentManagement": ["full"],
                     "consentSettingsBtn": ["full"],
