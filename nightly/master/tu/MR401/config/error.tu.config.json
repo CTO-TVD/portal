@@ -262,6 +262,11 @@
         "a-69": {
             "toastTemplate": "appCore.ERROR_TOAST_0x645"
         },
+        "a-70": {
+            "dialogID": "GLOBAL_ERROR_DIALOG_SIMPLE",
+            "dialogTitle": "appCore.ERROR_DIALOG_TITLE_0x85983523",
+            "dialogMessage": "appCore.ERROR_DIALOG_MESSAGE_0x85983523"
+        },
         "general": {
             "toastTemplate": "appCore.ERROR_TOAST"
         },
@@ -622,6 +627,13 @@
             "required": [
                 "a-59",
                 "a-60"
+            ]
+        },
+        // New tariff customer
+        {
+            "errorCode": "^0x8598352[3|7]$",
+            "required": [
+                "a-70"
             ]
         },
         // ZosaUnknownError - 0x10270202
