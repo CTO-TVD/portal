@@ -100,7 +100,7 @@
                         "none"
                     ],
                     "searchHelpLane": [
-                        "full"
+                        "none"
                     ],
                     "voiceKeySupport": [
                         "none"
@@ -287,7 +287,7 @@
                         "full"
                     ],
                     "searchHelpLane": [
-                        "full"
+                        "none"
                     ],
                     "extendedpowermanagement": [
                         "none"
