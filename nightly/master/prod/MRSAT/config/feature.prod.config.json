@@ -189,10 +189,10 @@
                         "full"
                     ],
                     "consentSettingsBtn": [
-                        "none"
+                        "full"
                     ],
                     "medienstaatsvertrag": [
-                        "full"
+                        "none"
                     ],
                     "searchHelpLane": [
                         "none"
@@ -207,10 +207,10 @@
                         "full"
                     ],
                     "promoChannel": [
-                        "none"
+                        "full"
                     ],
                     "skyAbos": [
-                        "full"
+                        "none"
                     ]
                 },
                 "values": {
@@ -281,10 +281,10 @@
                         "full"
                     ],
                     "consentSettingsBtn": [
-                        "none"
+                        "full"
                     ],
                     "medienstaatsvertrag": [
-                        "full"
+                        "none"
                     ],
                     "searchHelpLane": [
                         "none"
@@ -305,10 +305,10 @@
                         "full"
                     ],
                     "promoChannel": [
-                        "none"
+                        "full"
                     ],
                     "skyAbos": [
-                        "full"
+                        "none"
                     ]
                 },
                 "values": {

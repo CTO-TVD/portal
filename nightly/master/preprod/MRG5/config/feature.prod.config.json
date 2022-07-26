@@ -126,14 +126,14 @@
                     "longpress": ["none"],
                     "useshortcuts": ["full"],
                     "consentManagement": ["full"],
-                    "consentSettingsBtn": ["none"],
-                    "medienstaatsvertrag": ["full"],
+                    "consentSettingsBtn": ["full"],
+                    "medienstaatsvertrag": ["none"],
                     "searchHelpLane": ["none"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
                     "uacALA" : ["full"],
-                    "promoChannel": ["none"],
-                    "skyAbos": ["full"]
+                    "promoChannel": ["full"],
+                    "skyAbos": ["none"]
                 },
 
                 "values": {
@@ -183,16 +183,16 @@
                     "longpress": ["full"],
                     "useshortcuts": ["full"],
                     "consentManagement": ["full"],
-                    "consentSettingsBtn": ["none"],
-                    "medienstaatsvertrag": ["full"],
+                    "consentSettingsBtn": ["full"],
+                    "medienstaatsvertrag": ["none"],
                     "searchHelpLane": ["none"],
                     "extendedpowermanagement": ["none"],
                     "fullremote": ["none"],
                     "voiceKeySupport": ["full"],
                     "remoteMessageGroupSearch": ["full"],
                     "uacALA" : ["full"],
-                    "promoChannel": ["none"],
-                    "skyAbos": ["full"]
+                    "promoChannel": ["full"],
+                    "skyAbos": ["none"]
                 },
 
               	"values": {
