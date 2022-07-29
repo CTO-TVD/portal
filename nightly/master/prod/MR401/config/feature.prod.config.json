@@ -197,6 +197,9 @@
                     "medienstaatsvertrag": [
                         "none"
                     ],
+                    "frequency": [
+                        "none"
+                    ],
                     "searchHelpLane": [
                         "none"
                     ],
@@ -287,6 +290,9 @@
                         "full"
                     ],
                     "medienstaatsvertrag": [
+                        "none"
+                    ],
+                    "frequency": [
                         "none"
                     ],
                     "searchHelpLane": [
