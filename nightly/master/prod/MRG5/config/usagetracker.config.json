@@ -79,7 +79,7 @@
                 {
                         "regex": "^programdetail_rec_(.*)::",
                         "replace": "Program detail::$1::", // input e.g.: programdetail_rec_rec:a9abad90::primaryaction_container detail::tv_04df599e:5cfb94dc:47547cc255b::primaryaction_container
-                        "lvl2id": 2
+                        "lvl2id": 13
                 },
                 {
                         "regex": "^programdetail_rec_(.*)", // fallback for parent see above
@@ -106,7 +106,7 @@
                 {
                         "regex": "^optionPanel(_/)?(.*)",
                         "replace": "Option Panel::$2",
-                        "lvl2id": 2 // 2/TV_PROGRAM or 18 ???
+                        "lvl2id": 18 // 2/TV_PROGRAM or 18 ???
                 },
                 {
                         "regex": "^epg", // root epg and also optionPanel
