@@ -111,6 +111,9 @@
                     "remoteMessageGroupSearch": [
                         "full"
                     ],
+                    "rtlSmartSearch": [
+                        "full"
+                    ],
                     "uacALA": [
                         "full"
                     ],
@@ -200,6 +203,9 @@
                         "none"
                     ],
                     "remoteMessageGroupSearch": [
+                        "full"
+                    ],
+                    "rtlSmartSearch": [
                         "full"
                     ],
                     "uacALA": [
@@ -294,6 +300,9 @@
                         "full"
                     ],
                     "remoteMessageGroupSearch": [
+                        "full"
+                    ],
+                    "rtlSmartSearch": [
                         "full"
                     ],
                     "uacALA": [

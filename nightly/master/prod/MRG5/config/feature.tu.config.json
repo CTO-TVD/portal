@@ -74,6 +74,7 @@
                     "demoarea": ["full"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
+                    "rtlSmartSearch": ["full"],
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
                     "skyAbos": ["none"]
@@ -126,6 +127,7 @@
                     "demoarea": ["full"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
+                    "rtlSmartSearch": ["full"],
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
                     "skyAbos": ["none"]
@@ -179,6 +181,7 @@
                     "demoarea": ["full"],
                     "voiceKeySupport": ["full"],
                     "remoteMessageGroupSearch": ["full"],
+                    "rtlSmartSearch": ["full"],
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
                     "skyAbos": ["none"]
