@@ -72,7 +72,7 @@
                     "searchHelpLane": ["none"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
-                    "rtlSmartsearch": ["full"],
+                    "rtlSmartsearch": ["none"],
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
                     "skyAbos": ["none"]
@@ -130,7 +130,7 @@
                     "searchHelpLane": ["none"],
                     "voiceKeySupport": ["none"],
                     "remoteMessageGroupSearch": ["full"],
-                    "rtlSmartSearch": ["full"],
+                    "rtlSmartSearch": ["none"],
                     "uacALA" : ["full"],
                     "promoChannel": ["full"]
                 },
@@ -188,7 +188,7 @@
                     "fullremote": ["none"],
                     "voiceKeySupport": ["full"],
                     "remoteMessageGroupSearch": ["full"],
-                    "rtlSmartSearch": ["full"],
+                    "rtlSmartSearch": ["none"],
                     "uacALA" : ["full"],
                     "promoChannel": ["full"]
                 },
