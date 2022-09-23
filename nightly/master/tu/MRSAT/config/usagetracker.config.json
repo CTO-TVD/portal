@@ -382,7 +382,8 @@
                 {
                         "regex": "^powerManagementDialog",
                         "replace": "Power Management Dialog",
-                        "lvl2id": 8 // settings =>  a lvl2id 'system' would be better
+                        "lvl2id": 8, // settings =>  a lvl2id 'system' would be better
+                        "clickType": "A"
                 },
                 {
                         "regex": "^selfdiagnostic-component",
