@@ -28,6 +28,14 @@
             "clientID": "10TVL0SAM30000004901NGTVAM00000000000000",
             "clientSecret": ""
         },
+        "sms_kek": {
+            "clientID": "10TVL0SAM30000004901NGTVAM00000000000000",
+            "clientSecret": ""
+        },
+        "halapide": {
+            "clientID": "10TVL0SAM30000004901NGTVAM00000000000000",
+            "clientSecret": ""
+        },
         "mtvcmp": {
             "clientID": "10TVL0SAM30000004901NGTVAM00000000000000",
             "clientSecret": ""

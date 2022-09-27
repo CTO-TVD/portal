@@ -32,6 +32,14 @@
             "clientID": "10LIVESAM30000004901NGTVAM00000000000000",
             "clientSecret": ""
         },
+        "sms_kek": {
+            "clientID": "10LIVESAM30000004901NGTVAM00000000000000",
+            "clientSecret": ""
+        },
+        "halapide": {
+            "clientID": "10LIVESAM30000004901NGTVAM00000000000000",
+            "clientSecret": ""
+        },
         "default": {
             "clientID": "10LIVESAM30000004901NGTVAUTHMANAGER00000",
             "clientSecret": ""
