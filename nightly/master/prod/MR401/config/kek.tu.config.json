@@ -1,5 +1,5 @@
 {
-    "domain": "api.tu0.kek.ng.telekom.net/setKek",
+    "domain": "https://api.tu0.kek.ng.telekom.net/setKek",
     "partyPrivacyProfileTypeRef": {
         "id": "efd91633-5fcd-4ef3-b106-825a8aec52c3",
         "version": "4.5"
