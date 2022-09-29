@@ -1,7 +1,7 @@
 {
     "domain": "https://api.kek.ng.telekom.net/setKek",
     "partyPrivacyProfileTypeRef": {
-        "id": "",
+        "id": "56da88aa-0d77-4500-99ed-085288f0d40d",
         "version": "4.5"
     },
     "audit": {
