@@ -360,7 +360,27 @@
                         "lvl2id": 20 // Message
                 },
                 {
-                        "regex": "^satWizard-(\\w*)",
+                        "regex": "^bluetooth-pairing-dialog-component",
+                        "replace": "Bluetooth Pairing Dialog",
+                        "lvl2id": 20 // Message
+                },
+                {
+                        "regex": "^voicekeypage_container(\\w*)",
+                        "replace": "VoiceKeyPage::$1",
+                        "lvl2id": 8 // Settings
+                },
+                {
+                        "regex": "^master_slave_nav_container((\\w*)",
+                        "replace": "MasterSlave Container::$1",
+                        "lvl2id": 8 // Settings
+                },
+                {
+                        "regex": "^importchannellist-dialog",
+                        "replace": "Import Channellist",
+                        "lvl2id": 20 // Message
+                },
+                {
+                        "regex": "^satwizard-(\\w*)",
                         "replace": "SAT Wizard::$1",
                         "lvl2id": 8 // settings
                 },
