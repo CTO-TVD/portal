@@ -370,7 +370,7 @@
                         "lvl2id": 8 // Settings
                 },
                 {
-                        "regex": "^master_slave_nav_container((\\w*)",
+                        "regex": "^master_slave_nav_container(\\w*)",
                         "replace": "MasterSlave Container::$1",
                         "lvl2id": 8 // Settings
                 },
