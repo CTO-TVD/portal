@@ -6,5 +6,5 @@
     "rtlSearchAppId": "Rtl",
 
     // rtl url is used in search to start app
-    "rtlMusicUrl": "https://plus.rtl.de/musik/"
+    "rtlMusicUrl": "https://plus.rtl.de/suche/"
 }

@@ -5,6 +5,6 @@
     // app id of rtl app to use in search to check pcon settings
     "rtlSearchAppId": "Rtl",
 
-    // rtl url is used in search to start app
-    "rtlMusicUrl": "https://plus.rtl.de/musik/"
+    // rtl url is used in search to start music app
+    "rtlMusicUrl": "https://plus.rtl.de/suche/"
 }
