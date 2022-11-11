@@ -99,6 +99,9 @@
                     "medienstaatsvertrag": [
                         "none"
                     ],
+                    "kek": [
+                        "none"
+                    ],
                     "searchHelpLane": [
                         "none"
                     ],
@@ -197,6 +200,9 @@
                     "medienstaatsvertrag": [
                         "none"
                     ],
+                    "kek": [
+                        "none"
+                    ],
                     "searchHelpLane": [
                         "none"
                     ],
@@ -290,6 +296,9 @@
                         "full"
                     ],
                     "medienstaatsvertrag": [
+                        "none"
+                    ],
+                    "kek": [
                         "none"
                     ],
                     "searchHelpLane": [
