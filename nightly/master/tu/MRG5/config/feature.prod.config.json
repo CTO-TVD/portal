@@ -190,7 +190,7 @@
                     "consentSettingsBtn": ["full"],
                     "medienstaatsvertrag": ["none"],
                     "kek": ["none"],
-                    "searchHelpLane": ["none"],
+                    "searchHelpLane": ["full"],
                     "extendedpowermanagement": ["none"],
                     "fullremote": ["none"],
                     "voiceKeySupport": ["full"],
