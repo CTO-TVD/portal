@@ -29,6 +29,7 @@
     "keymap": "auto",
     "vas": "import({ return './config/vas.' + config.env + '.config.json'; })",
     "youtube": "import({ return './config/youtube.' + config.env + '.config.json'; })",
+    "rtl": "import({ return './config/rtl.' + config.env + '.config.json'; })",
     "usagetracker": "import({ return './config/usagetracker.' + config.env + '.config.json'; })",
     "sat": "import({ return './config/sat.' + config.env + '.config.json'; })",
     "editorial": "import({ return './config/editorial.' + config.env + '.config.json'; })",
