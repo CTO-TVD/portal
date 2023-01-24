@@ -103,7 +103,7 @@
                         "full"
                     ],
                     "searchHelpLane": [
-                        "none"
+                        "full"
                     ],
                     "voiceKeySupport": [
                         "none"
@@ -112,7 +112,7 @@
                         "full"
                     ],
                     "rtlSmartSearch": [
-                        "none"
+                        "full"
                     ],
                     "uacALA": [
                         "full"
@@ -204,7 +204,7 @@
                         "full"
                     ],
                     "searchHelpLane": [
-                        "none"
+                        "full"
                     ],
                     "voiceKeySupport": [
                         "none"
@@ -213,7 +213,7 @@
                         "full"
                     ],
                     "rtlSmartSearch": [
-                        "none"
+                        "full"
                     ],
                     "uacALA": [
                         "full"
@@ -302,7 +302,7 @@
                         "full"
                     ],
                     "searchHelpLane": [
-                        "none"
+                        "full"
                     ],
                     "extendedpowermanagement": [
                         "none"
@@ -317,7 +317,7 @@
                         "full"
                     ],
                     "rtlSmartSearch": [
-                        "none"
+                        "full"
                     ],
                     "uacALA": [
                         "full"
