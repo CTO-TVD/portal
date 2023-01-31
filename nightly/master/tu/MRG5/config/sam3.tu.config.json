@@ -47,7 +47,7 @@
     },
     "mock": {
         "clientID": "10TVL0SAM30000004901NGTVUIDEMO0000000000",
-        "endpoint": "https://accounts.login00.idm.ver.sul.t-online.de/oauth2/tokens",
+        "endpoint": "https://accounts.login00.idm.ver.sul.t-online.de/.well-known/openid-configuration",
         "username": "",
         "password": "",
         "pin": "1111",
