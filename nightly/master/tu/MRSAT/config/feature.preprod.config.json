@@ -76,7 +76,8 @@
                     "rtlSmartsearch": ["none"],
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
-                    "skyAbos": ["none"]
+                    "skyAbos": ["none"],
+                    "yospaceDebug": ["none"]
                 },
 
               	"values": {

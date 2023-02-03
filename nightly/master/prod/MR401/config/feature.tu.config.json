@@ -78,7 +78,8 @@
                     "rtlSmartSearch": ["full"],
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
-                    "skyAbos": ["none"]
+                    "skyAbos": ["none"],
+                    "yospaceDebug": ["full"]
                 },
 
               	"values": {
@@ -132,7 +133,8 @@
                     "rtlSmartSearch": ["full"],
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
-                    "skyAbos": ["none"]
+                    "skyAbos": ["none"],
+                    "yospaceDebug": ["full"]
                 },
 
                 "values": {
@@ -187,7 +189,8 @@
                     "rtlSmartSearch": ["full"],
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
-                    "skyAbos": ["none"]
+                    "skyAbos": ["none"],
+                    "yospaceDebug": ["full"]
                 },
 
               	"values": {

@@ -122,6 +122,9 @@
                     ],
                     "skyAbos": [
                         "none"
+                    ],
+                    "yospaceDebug": [
+                        "full"
                     ]
                 },
                 "values": {
@@ -223,6 +226,9 @@
                     ],
                     "skyAbos": [
                         "none"
+                    ],
+                    "yospaceDebug": [
+                        "full"
                     ]
                 },
                 "values": {
@@ -327,6 +333,9 @@
                     ],
                     "skyAbos": [
                         "none"
+                    ],
+                    "yospaceDebug": [
+                        "full"
                     ]
                 },
                 "values": {
