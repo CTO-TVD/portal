@@ -100,7 +100,7 @@
                         "none"
                     ],
                     "kek": [
-                        "full"
+                        "none"
                     ],
                     "searchHelpLane": [
                         "full"
@@ -127,7 +127,7 @@
                         "none"
                     ],
                     "yospaceDebug": [
-                        "full"
+                        "none"
                     ]
                 },
                 "values": {
@@ -200,7 +200,7 @@
                         "none"
                     ],
                     "kek": [
-                        "full"
+                        "none"
                     ],
                     "searchHelpLane": [
                         "full"
@@ -227,7 +227,7 @@
                         "none"
                     ],
                     "yospaceDebug": [
-                        "full"
+                        "none"
                     ]
                 },
                 "values": {
@@ -297,7 +297,7 @@
                         "none"
                     ],
                     "kek": [
-                        "full"
+                        "none"
                     ],
                     "searchHelpLane": [
                         "full"
@@ -330,7 +330,7 @@
                         "none"
                     ],
                     "yospaceDebug": [
-                        "full"
+                        "none"
                     ]
                 },
                 "values": {

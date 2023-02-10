@@ -78,7 +78,7 @@
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
                     "skyAbos": ["none"],
-                    "yospaceDebug": ["full"]
+                    "yospaceDebug": ["none"]
                 },
 
               	"values": {
@@ -139,7 +139,7 @@
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
                     "skyAbos": ["none"],
-                    "yospaceDebug": ["full"]
+                    "yospaceDebug": ["none"]
                 },
 
                 "values": {
@@ -201,7 +201,7 @@
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
                     "skyAbos": ["none"],
-                    "yospaceDebug": ["full"]
+                    "yospaceDebug": ["none"]
                 },
 
               	"values": {

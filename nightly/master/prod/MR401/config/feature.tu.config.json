@@ -70,7 +70,7 @@
                     "consentManagement": ["full"],
                     "consentSettingsBtn": ["full"],
                     "medienstaatsvertrag": ["none"],
-                    "kek": ["full"],
+                    "kek": ["none"],
                     "searchHelpLane": ["full"],
                     "demoarea": ["full"],
                     "voiceKeySupport": ["none"],
@@ -79,7 +79,7 @@
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
                     "skyAbos": ["none"],
-                    "yospaceDebug": ["full"]
+                    "yospaceDebug": ["none"]
                 },
 
               	"values": {
@@ -125,7 +125,7 @@
                     "consentManagement": ["full"],
                     "consentSettingsBtn": ["full"],
                     "medienstaatsvertrag": ["none"],
-                    "kek": ["full"],
+                    "kek": ["none"],
                     "searchHelpLane": ["full"],
                     "demoarea": ["full"],
                     "voiceKeySupport": ["none"],
@@ -134,7 +134,7 @@
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
                     "skyAbos": ["none"],
-                    "yospaceDebug": ["full"]
+                    "yospaceDebug": ["none"]
                 },
 
                 "values": {
@@ -179,7 +179,7 @@
                     "consentManagement": ["full"],
                     "consentSettingsBtn": ["full"],
                     "medienstaatsvertrag": ["none"],
-                    "kek": ["full"],
+                    "kek": ["none"],
                     "searchHelpLane": ["full"],
                     "extendedpowermanagement": ["none"],
                     "fullremote": ["none"],
@@ -190,7 +190,7 @@
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
                     "skyAbos": ["none"],
-                    "yospaceDebug": ["full"]
+                    "yospaceDebug": ["none"]
                 },
 
               	"values": {
