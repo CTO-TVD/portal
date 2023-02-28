@@ -24,6 +24,11 @@
   {"env":"t0","model":"mrsat","build":"fallback","url":"https://appepidat10001.tu0.sngtv.t-online.de:33227/EPG/NGTV_MRSAT/index.html"},
   {"env":"t0","model":"mrg5","build":"fallback","url":"https://appepidat10001.tu0.sngtv.t-online.de:33227/EPG/NGTV_MRG5/index.html"},
 
+  {"env":"t0","model":"mrentry","build":"dev_nextfeature","url":"https://appepidat10002.tu0.sngtv.t-online.de:33227/EPG/NGTV_Nightly2.0_MREntry/index.html"},
+  {"env":"t0","model":"mr401","build":"dev_nextfeature","url": "https://cto-tvd.github.io/portal/nightly/dev_nextfeature/tu/MR401/index.html"},
+  {"env":"t0","model":"mrsat","build":"dev_nextfeature","url":"https://cto-tvd.github.io/portal/nightly/dev_nextfeature/tu/MRSAT/index.html"},
+  {"env":"t0","model":"mrg5","build":"dev_nextfeature","url":"https://cto-tvd.github.io/portal/nightly/dev_nextfeature/tu/MRG5/index.html"},
+
   {"env":"preprod","model":"mrentry","build":"nightly","url":"https://appepidap10001.prep.sngtv.t-online.de:33227/EPG/NGTV_Nightly_MREntry/index.html"},
   {"env":"preprod","model":"mr401","build":"nightly","url": "https://cto-tvd.github.io/portal/nightly/preprod/MR401/index.html"},
   {"env":"preprod","model":"mrsat","build":"nightly","url":"https://cto-tvd.github.io/portal/nightly/preprod/MRSAT/index.html"},
