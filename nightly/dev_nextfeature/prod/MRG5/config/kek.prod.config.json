@@ -1,0 +1,11 @@
+{
+    "domain": "https://api.kek.ng.telekom.net/setKek",
+    "partyPrivacyProfileTypeRef": {
+        "id": "56da88aa-0d77-4500-99ed-085288f0d40d",
+        "version": "4.5"
+    },
+    "audit": {
+        "sourceSystem": "magentatv"
+    },
+    "apiKey": "KEK-0fae5f2a-dc68-4bcb-b83d-a34b46e76933"
+}

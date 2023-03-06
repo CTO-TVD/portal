@@ -1,0 +1,33 @@
+{
+    "attachDialEventHandlerDelay": 2000,
+    "internalApps": {
+        "urlPattern": "^.*Internal:",
+        "localChannelUrlPattern": "^http(s)*://Internal:LocalChannel$",
+        "whiteLabelUrlPattern": "^http(s)*:\/\/Internal:WhiteLableAPP",
+        "moreTvUrl": "^http(s)*:\/\/Internal:MehrTvAPP"
+    },
+    "cmsIds": {
+        "Megathek": "APP00231-EntertainTVSerien",
+        "Videoload": "Videoload",
+        "TelekomSport": "TelekomSport",
+        "Netflix": "Netflix",
+        "Amazon": "amazon",
+        "YouTube": "YouTubeZ",
+        "DAZN": "DAZN",
+        "Sky": "Sky",
+        "ARDMediathek": "ARDMediathek",
+        "ZDFMediathek": "ZDFMediathek",
+        "TvNow": "APP00175-TVNOW",
+        "SevenTV": "7TV",
+        "Arte7": "arte7",
+        "PhonostarRadio": "phonostar",
+        "Disney": "disneyplus",
+        "Bild" : "bild",
+        "SkyTicket": "skyticket"
+    },
+    "continueWatchingLaneAppBlackList": [
+        "app10",
+        "magentahaus",
+        "appConsent"
+    ]
+}

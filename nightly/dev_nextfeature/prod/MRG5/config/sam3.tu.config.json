@@ -1,0 +1,103 @@
+{
+    "clients": {
+        "ngtvepg": {
+            "clientID": "10TVL0SAM30000004901NGTVAM00000000000000",
+            "clientSecret": ""
+        },
+        "ngtvvod": {
+            "clientID": "10TVL0SAM30000004901NGTVAM00000000000000",
+            "clientSecret": ""
+        },
+        "payment": {
+            "clientID": "10TVL0SAM30000004901NGTVAM00000000000000",
+            "clientSecret": ""
+        },
+        "dcp": {
+            "clientID": "10TVL0SAM30000004901NGTVAM00000000000000",
+            "clientSecret": ""
+        },
+        "sdpnf": {
+            "clientID": "10TVL0SAM30000004901NGTVAM00000000000000",
+            "clientSecret": ""
+        },
+        "smarthub": {
+            "clientID": "10TVL0SAM30000004901NGTVAM00000000000000",
+            "clientSecret": ""
+        },
+        "rtl_hd": {
+            "clientID": "10TVL0SAM30000004901NGTVAM00000000000000",
+            "clientSecret": ""
+        },
+        "sms_kek": {
+            "clientID": "10TVL0SAM30000004901NGTVAM00000000000000",
+            "clientSecret": ""
+        },
+        "halapide": {
+            "clientID": "10TVL0SAM30000004901NGTVAM00000000000000",
+            "clientSecret": ""
+        },
+        "mtvcmp": {
+            "clientID": "10TVL0SAM30000004901NGTVAM00000000000000",
+            "clientSecret": ""
+        },
+        "default": {
+            "clientID": "10TVL0SAM30000004901NGTVAUTHMANAGER00000",
+            "clientSecret": ""
+        }
+    },
+    "mock": {
+        "clientID": "10TVL0SAM30000004901NGTVUIDEMO0000000000",
+        "endpoint": "https://accounts.login00.idm.ver.sul.t-online.de/.well-known/openid-configuration",
+        "username": "",
+        "password": "",
+        "pin": "1111",
+        "avspin": "1818",
+        "anid": "120049010000000000696743",
+        "code": "",
+        "redirectUri": "https://cto-tvd.github.io/portal/nightly/redirect.tu.html"
+    },
+    "mock1": {
+        "clientID": "10TVL0SAM30000004901NGTVUIDEMO0000000000",
+        "endpoint": "https://accounts.login00.idm.ver.sul.t-online.de/.well-known/openid-configuration",
+        "username": "",
+        "password": "",
+        "pin": "1111",
+        "avspin": "1818",
+        "anid": "120049010000000001134537",
+        "code": "",
+        "redirectUri": "https://cto-tvd.github.io/portal/nightly/redirect.tu.html"
+    },
+    "mock2": {
+        "clientID": "10TVL0SAM30000004901NGTVUIDEMO0000000000",
+        "endpoint": "https://accounts.login00.idm.ver.sul.t-online.de/.well-known/openid-configuration",
+        "username": "",
+        "password": "",
+        "pin": "1111",
+        "avspin": "1818",
+        "anid": "120049010000000001112411",
+        "code": "",
+        "redirectUri": "https://cto-tvd.github.io/portal/nightly/redirect.tu.html"
+    },
+    "mock3": {
+        "clientID": "10TVL0SAM30000004901NGTVUIDEMO0000000000",
+        "endpoint": "https://accounts.login00.idm.ver.sul.t-online.de/.well-known/openid-configuration",
+        "username": "",
+        "password": "",
+        "pin": "1111",
+        "avspin": "1818",
+        "anid": "120049010000000005358255",
+        "code": "",
+        "redirectUri": "https://cto-tvd.github.io/portal/nightly/redirect.tu.html"
+    },
+    "mock4": {
+        "clientID": "10TVL0SAM30000004901NGTVUIDEMO0000000000",
+        "endpoint": "https://accounts.login00.idm.ver.sul.t-online.de/.well-known/openid-configuration",
+        "username": "",
+        "password": "",
+        "pin": "1111",
+        "avspin": "1818",
+        "anid": "120049010000000001134575",
+        "code": "",
+        "redirectUri": "https://cto-tvd.github.io/portal/nightly/redirect.tu.html"
+    }
+}

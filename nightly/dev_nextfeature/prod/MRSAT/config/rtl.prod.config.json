@@ -1,0 +1,10 @@
+{
+    // search api url for rtl
+    "apiBaseUrl": "https://cdn.bff.rin-tvnow-ott-prod.aws-cbc.cloud/magenta/search",
+
+    // app id of rtl app to use in search to check pcon settings
+    "rtlSearchAppId": "rtlplusneu",
+
+    // rtl url is used in search to start app
+    "rtlMusicUrl": "https://plus.rtl.de/suche/"
+}

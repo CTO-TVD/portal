@@ -1,0 +1,12 @@
+{
+    "sdkKeys": {
+        "domaindata_url": "https://mobile-data.onetrust.io/bannersdk/v2/applicationdata",
+        "storageLocation": "cdn.cookielaw.org",
+        "domainIdentifier": "3adbfbab-56ff-414e-8cb4-3e102d8fb49d", 
+        "languageCode": "de",
+        "apiVersion": "6.37.0" 
+    },
+    "appCmsId": "appConsent",
+    "maxAge" : "14400", // [s] 14400 = 4h
+    "defaultTC": "CPbqKruPbzxehAcABBDECXCgAAAAAH_AAChQAAAPHAAAEAIAAKAAMCQAAIIAAAAIAAIAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAACAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAAAAAQCQkAIAPwDPg0AEBnwiACAz4VABAZ8MgAgM-HQAwA_AEWAZ8QgAgM-JQAQGfFIAYAfgCLAM-AA.YAAAD_gAAAAAAAAAAAA"
+}
