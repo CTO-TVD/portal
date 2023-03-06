@@ -6,5 +6,9 @@
     "rtlSearchAppId": "rtlplusneu",
 
     // rtl url is used in search to start music app
-    "rtlMusicUrl": "https://plus.rtl.de/suche/"
+    "rtlMusicUrl": "https://plus.rtl.de/suche/",
+
+    // excludes for music and podcast
+    "rtlMusicExcludes": "DeezerAudiobook,MusicRadio,MusicSong,MusicTrack,MusicArtist,MusicTrack,Podcast,PodcastEpisode,PodcastFormat,PrhAudiobook,WatchMovie,WatchTvSeries,WatchTvShow",
+    "rtlPodcastExcludes": "DeezerAudiobook,MusicAlbum,MusicArtist,MusicPlaylist,MusicRadio,MusicSong,MusicTrack,PodcastEpisode,PodcastFormat,PrhAudiobook,WatchMovie,WatchTvSeries,WatchTvShow"
 }
