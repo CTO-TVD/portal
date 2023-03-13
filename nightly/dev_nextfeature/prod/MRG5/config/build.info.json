@@ -1,7 +1,7 @@
 {
     "buildAgent": "githubActions",
-    "buildDate": "2023-03-10T13:24:29.671Z",
-    "buildVersion": "11344",
+    "buildDate": "2023-03-13T11:58:30.557Z",
+    "buildVersion": "11346",
     "buildIsNightly": true,
     "branch": "dev_nextfeature",
     "commit": "c64895c781f059692ced5f1281d27185a83c1076",
