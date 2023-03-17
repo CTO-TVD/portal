@@ -3,7 +3,7 @@
     "apiBaseUrl": "https://cdn.bff.ott.tvnow.de/magenta/search",
 
     // app id of rtl app to use in search to check pcon settings
-    "rtlSearchAppId": "APP00175-TVNOW", //"rtlplusneu",
+    "rtlSearchAppId": "rtlplusneu",
 
     // rtl url is used in search to start app
     "rtlMusicUrl": "https://plus.rtl.de/suche/",
