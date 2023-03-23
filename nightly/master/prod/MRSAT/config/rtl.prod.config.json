@@ -6,7 +6,7 @@
     "transformscope": "ngtv-stb",
 
     // app id of rtl app to use in search to check pcon settings
-    "rtlSearchAppId": "APP00175-TVNOW" //"rtlplusneu",
+    "rtlSearchAppId": "APP00175-TVNOW", //"rtlplusneu",
 
     // excludes for music and podcast
     "rtlMusicExcludes": "DeezerAudiobook,MusicRadio,MusicSong,MusicTrack,Podcast,PodcastEpisode,PodcastFormat,PrhAudiobook,WatchMovie,WatchTvSeries,WatchTvShow",
