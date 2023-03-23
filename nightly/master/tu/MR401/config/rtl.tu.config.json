@@ -3,13 +3,10 @@
     "apiBaseUrl": "https://cdn.bff.rin-tvnow-ott-preprod.aws-cbc.cloud/magenta/search",
 
     // x-transform scope for search
-        "transformscope": "ngtv-stb",
+    "transformscope": "ngtv-stb",
 
     // app id of rtl app to use in search to check pcon settings
     "rtlSearchAppId": "rtlplusneu",
-
-    // rtl url is used in search to start music app
-    "rtlMusicUrl": "https://plus.rtl.de/suche/",
 
     // excludes for music and podcast
     "rtlMusicExcludes": "DeezerAudiobook,MusicRadio,MusicSong,MusicTrack,Podcast,PodcastEpisode,PodcastFormat,PrhAudiobook,WatchMovie,WatchTvSeries,WatchTvShow",

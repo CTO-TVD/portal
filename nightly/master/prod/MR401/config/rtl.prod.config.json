@@ -8,9 +8,6 @@
     // app id of rtl app to use in search to check pcon settings
     "rtlSearchAppId": "rtlplusneu",
 
-    // rtl url is used in search to start app
-    "rtlMusicUrl": "https://plus.rtl.de/suche/",
-
     // excludes for music and podcast
     "rtlMusicExcludes": "DeezerAudiobook,MusicRadio,MusicSong,MusicTrack,Podcast,PodcastEpisode,PodcastFormat,PrhAudiobook,WatchMovie,WatchTvSeries,WatchTvShow",
     "rtlPodcastExcludes": "DeezerAudiobook,MusicAlbum,MusicArtist,MusicPlaylist,MusicRadio,MusicSong,MusicTrack,PodcastEpisode,PodcastFormat,PrhAudiobook,WatchMovie,WatchTvSeries,WatchTvShow"
