@@ -1,10 +1,10 @@
 {
-  "buildAgent": "local",
-  "buildDate": "2023-06-26T14:31:42.363Z",
-  "buildVersion": "11433",
-  "buildIsNightly": true,
-  "branch": "master",
-  "commit": "4fc32ea489614cb7ae6c835f8640aa1e724cd99b",
-  "majorVersion": "2.127",
-  "packageDate": "1970-01-01T00:00:00.000Z"
+    "buildAgent": "githubActions",
+    "buildDate": "2023-07-03T06:47:33.996Z",
+    "buildVersion": "11434",
+    "buildIsNightly": true,
+    "branch": "master",
+    "commit": "0597a9a9c53e1442fa9d36d1012e549ac405cac4",
+    "majorVersion": "2.127",
+    "packageDate": "1970-01-01T00:00:00.000Z"
 }
