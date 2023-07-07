@@ -47,7 +47,7 @@
     },
     "mock": {
         "clientID": "10TVL0SAM30000004901NGTVUIDEMO0000000000",
-        "endpoint": "https://accounts.login00.idm.ver.sul.t-online.de/.well-known/openid-configuration",
+        "endpoint": "https://login.acceptance.p5x.telekom-dienste.de/.well-known/openid-configuration",
         "username": "",
         "password": "",
         "pin": "1111",
@@ -58,7 +58,7 @@
     },
     "mock1": {
         "clientID": "10TVL0SAM30000004901NGTVUIDEMO0000000000",
-        "endpoint": "https://accounts.login00.idm.ver.sul.t-online.de/.well-known/openid-configuration",
+        "endpoint": "https://login.acceptance.p5x.telekom-dienste.de/.well-known/openid-configuration",
         "username": "",
         "password": "",
         "pin": "1111",
@@ -69,7 +69,7 @@
     },
     "mock2": {
         "clientID": "10TVL0SAM30000004901NGTVUIDEMO0000000000",
-        "endpoint": "https://accounts.login00.idm.ver.sul.t-online.de/.well-known/openid-configuration",
+        "endpoint": "https://login.acceptance.p5x.telekom-dienste.de/.well-known/openid-configuration",
         "username": "",
         "password": "",
         "pin": "1111",
@@ -80,7 +80,7 @@
     },
     "mock3": {
         "clientID": "10TVL0SAM30000004901NGTVUIDEMO0000000000",
-        "endpoint": "https://accounts.login00.idm.ver.sul.t-online.de/.well-known/openid-configuration",
+        "endpoint": "https://login.acceptance.p5x.telekom-dienste.de/.well-known/openid-configuration",
         "username": "",
         "password": "",
         "pin": "1111",
@@ -91,7 +91,7 @@
     },
     "mock4": {
         "clientID": "10TVL0SAM30000004901NGTVUIDEMO0000000000",
-        "endpoint": "https://accounts.login00.idm.ver.sul.t-online.de/.well-known/openid-configuration",
+        "endpoint": "https://login.acceptance.p5x.telekom-dienste.de/.well-known/openid-configuration",
         "username": "",
         "password": "",
         "pin": "1111",
