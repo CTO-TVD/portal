@@ -339,11 +339,11 @@
                         "replace": "Exit Dialog",
                         "lvl2id": 1 // navigation
                 },
-                {
-                        "regex": "^infodialog",
-                        "replace": "Info Dialog",
-                        "lvl2id": 20 // Message
-                },
+                // {
+                //         "regex": "^infodialog",
+                //         "replace": "Info Dialog",
+                //         "lvl2id": 20 // Message
+                // },
                 {
                         "regex": "^genericdialog",
                         "replace": "Generic Dialog",
