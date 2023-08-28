@@ -78,7 +78,7 @@
                     "uacALA" : ["full"],
                     "promoChannel": ["full"],
                     "skyAbos": ["none"],
-                    "yospaceDebug": ["none"]
+                    "yospaceDebug": ["none"],
                 },
 
               	"values": {
