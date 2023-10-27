@@ -3952,6 +3952,52 @@
 		"isLocked": false,
 		"icon": null,
 		"cmsId": "tarifwechsel"
+	},
+	{
+		"vasType": 1,
+		"zosaId": "zosa:FFxKQxpWEQAJQwdWVFmD",
+		"isSubscribed": true,
+		"isBlocked": true,
+		"availabilityStartTime": 1470820951000,
+		"parentalRatingAgency": null,
+		"zosaType": "VasItem",
+		"minViewingAge": 0,
+		"title": "Consent Einstellungen",
+		"parentalRating": 0,
+		"url": "",
+		"description": null,
+		"images": [
+			{
+				"serviceProviderImageType": "4",
+				"url": "http://epgpm-sl0.ver.sda.t-online.de/media/81b1fa77e1a3281e077bf7c2b22e6d05a1c108e9.png",
+				"imageType": 0
+			}
+		],
+		"customProps": [
+			{
+				"key": "RESOLUTION",
+				"value": "1080"
+			},
+			{
+				"key": "KEY_MAPPING_ID",
+				"value": "DEFAULT"
+			},
+			{
+				"key": "MANIFEST_NAME",
+				"value": "browserInt"
+			},
+			{
+				"key": "TURN_VIDEO_OFF",
+				"value": "true"
+			}
+		],
+		"shortDescription": "ConsentApp",
+		"availabilityEndTime": 2114380799000,
+		"parentalRatingLabel": "0",
+		"isAdult": false,
+		"isLocked": false,
+		"icon": null,
+		"cmsId": "appConsent"
 	}
 ]
 
