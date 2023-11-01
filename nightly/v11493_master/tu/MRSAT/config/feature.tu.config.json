@@ -1,0 +1,365 @@
+{
+    "assignment": [
+        "mrsat"
+    ],
+    "featureStructure": {
+        "assignmentSource": [
+            {
+                "type": "urlSource",
+                "query": "subscriber_type",
+                "rule": {
+                    "expression": "BASISTV",
+                    "assignment": "basistv"
+                }
+            },
+            {
+                "type": "urlSource",
+                "query": "subscriber_type",
+                "rule": {
+                    "expression": "IPTV",
+                    "assignment": "iptv"
+                }
+            },
+            {
+                "type": "urlSource",
+                "query": "subscriber_type",
+                "rule": {
+                    "expression": "SATHYBRID",
+                    "assignment": "sathybrid"
+                }
+            },
+            {
+                "type": "urlSource",
+                "query": "hostname",
+                "rule": {
+                    "expression": "localhost",
+                    "assignment": "nightly_prod"
+                }
+            }
+        ],
+        "definition": {
+            "rights": {
+                "full": [
+                    "viewItems",
+                    "addItems",
+                    "deleteItems",
+                    "editItems"
+                ],
+                "read": [
+                    "viewItems"
+                ],
+                "edit": [
+                    "viewItems",
+                    "addItems",
+                    "deleteItems",
+                    "editItems"
+                ]
+            }
+        },
+        "assignment": {
+            "mr401": {
+                "rights": {
+                    "app": [
+                        "full"
+                    ],
+                    "usb": [
+                        "none"
+                    ],
+                    "bluetooth": [
+                        "none"
+                    ],
+                    "moreTvMySubscriptionsPackages": [
+                        "none"
+                    ],
+                    "avscontent": [
+                        "full"
+                    ],
+                    "satellite": [
+                        "none"
+                    ],
+                    "satellitesubscriber": [],
+                    "mixedpvr": [
+                        "full"
+                    ],
+                    "extendedui": [
+                        "full"
+                    ],
+                    "longpress": [
+                        "none"
+                    ],
+                    "useshortcuts": [
+                        "full"
+                    ],
+                    "consentManagement": [
+                        "full"
+                    ],
+                    "consentSettingsBtn": [
+                        "full"
+                    ],
+                    "medienstaatsvertrag": [
+                        "none"
+                    ],
+                    "kek": [
+                        "full"
+                    ],
+                    "searchHelpLane": [
+                        "none"
+                    ],
+                    "demoarea": [
+                        "full"
+                    ],
+                    "voiceKeySupport": [
+                        "none"
+                    ],
+                    "remoteMessageGroupSearch": [
+                        "full"
+                    ],
+                    "rtlSmartSearch": [
+                        "full"
+                    ],
+                    "uacALA": [
+                        "full"
+                    ],
+                    "promoChannel": [
+                        "full"
+                    ],
+                    "skyAbos": [
+                        "none"
+                    ],
+                    "yospaceDebug": [
+                        "none"
+                    ]
+                },
+                "values": {
+                    "partnerMapId": {
+                        "value": "entertaintvA"
+                    },
+                    "appMapId": {
+                        "value": "APPS_ZENTERIO"
+                    },
+                    "mainMenuId": {
+                        "value": 33764
+                    },
+                    "appname720": {
+                        "value": "ui20rest"
+                    },
+                    "appname1080": {
+                        "value": "ui20rest"
+                    }
+                },
+                "assignment": {
+                    "sathybrid": {
+                        "rights": {
+                            "satellitesubscriber": [
+                                "full"
+                            ]
+                        }
+                    }
+                }
+            },
+            "mrsat": {
+                "rights": {
+                    "app": [
+                        "full"
+                    ],
+                    "usb": [
+                        "none"
+                    ],
+                    "bluetooth": [
+                        "none"
+                    ],
+                    "moreTvMySubscriptionsPackages": [
+                        "none"
+                    ],
+                    "avscontent": [
+                        "full"
+                    ],
+                    "satellite": [
+                        "full"
+                    ],
+                    "satellitesubscriber": [],
+                    "mixedpvr": [
+                        "full"
+                    ],
+                    "extendedui": [
+                        "full"
+                    ],
+                    "longpress": [
+                        "none"
+                    ],
+                    "useshortcuts": [
+                        "full"
+                    ],
+                    "consentManagement": [
+                        "full"
+                    ],
+                    "consentSettingsBtn": [
+                        "full"
+                    ],
+                    "medienstaatsvertrag": [
+                        "none"
+                    ],
+                    "kek": [
+                        "full"
+                    ],
+                    "searchHelpLane": [
+                        "none"
+                    ],
+                    "demoarea": [
+                        "full"
+                    ],
+                    "voiceKeySupport": [
+                        "none"
+                    ],
+                    "remoteMessageGroupSearch": [
+                        "full"
+                    ],
+                    "rtlSmartSearch": [
+                        "full"
+                    ],
+                    "uacALA": [
+                        "full"
+                    ],
+                    "promoChannel": [
+                        "full"
+                    ],
+                    "skyAbos": [
+                        "none"
+                    ],
+                    "yospaceDebug": [
+                        "none"
+                    ]
+                },
+                "values": {
+                    "partnerMapId": {
+                        "value": "entertaintvA"
+                    },
+                    "appMapId": {
+                        "value": "APPS_ZENTERIO"
+                    },
+                    "mainMenuId": {
+                        "value": 34857
+                    },
+                    "appname720": {
+                        "value": "ui20rest"
+                    },
+                    "appname1080": {
+                        "value": "ui20rest"
+                    }
+                },
+                "assignment": {
+                    "sathybrid": {
+                        "rights": {
+                            "satellitesubscriber": [
+                                "full"
+                            ]
+                        }
+                    }
+                }
+            },
+            "mrg5": {
+                "rights": {
+                    "app": [
+                        "full"
+                    ],
+                    "usb": [
+                        "none"
+                    ],
+                    "moreTvMySubscriptionsPackages": [
+                        "none"
+                    ],
+                    "avscontent": [
+                        "full"
+                    ],
+                    "satellite": [
+                        "none"
+                    ],
+                    "satellitesubscriber": [],
+                    "mixedpvr": [
+                        "full"
+                    ],
+                    "extendedui": [
+                        "full"
+                    ],
+                    "longpress": [
+                        "full"
+                    ],
+                    "useshortcuts": [
+                        "full"
+                    ],
+                    "consentManagement": [
+                        "full"
+                    ],
+                    "consentSettingsBtn": [
+                        "full"
+                    ],
+                    "medienstaatsvertrag": [
+                        "none"
+                    ],
+                    "kek": [
+                        "full"
+                    ],
+                    "searchHelpLane": [
+                        "full"
+                    ],
+                    "extendedpowermanagement": [
+                        "none"
+                    ],
+                    "fullremote": [
+                        "none"
+                    ],
+                    "demoarea": [
+                        "full"
+                    ],
+                    "voiceKeySupport": [
+                        "full"
+                    ],
+                    "remoteMessageGroupSearch": [
+                        "full"
+                    ],
+                    "rtlSmartSearch": [
+                        "full"
+                    ],
+                    "uacALA": [
+                        "full"
+                    ],
+                    "promoChannel": [
+                        "full"
+                    ],
+                    "skyAbos": [
+                        "none"
+                    ],
+                    "yospaceDebug": [
+                        "none"
+                    ]
+                },
+                "values": {
+                    "partnerMapId": {
+                        "value": "entertaintvA"
+                    },
+                    "appMapId": {
+                        "value": "APPS_ZENTERIO"
+                    },
+                    "mainMenuId": {
+                        "value": 33764
+                    },
+                    "appname720": {
+                        "value": "ui20rest"
+                    },
+                    "appname1080": {
+                        "value": "ui20rest"
+                    }
+                },
+                "assignment": {
+                    "sathybrid": {
+                        "rights": {
+                            "satellitesubscriber": [
+                                "full"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
