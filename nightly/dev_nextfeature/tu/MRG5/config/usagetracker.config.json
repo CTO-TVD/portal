@@ -312,7 +312,7 @@
                 {
                         "regex": "^instantrecording-component",
                         "replace": "Instant Recording",
-                        "lvl2id": 18 // 2/TV_PROGRAM or 18 ???
+                        "lvl2id": 2 // 2/TV_PROGRAM or 18 ???
                 },
                 {
                         "regex": "^playeractiondialog", // root::browseBar::dummy

@@ -234,7 +234,7 @@
         },
         "a-62": {
             "internalError": false,
-            "sqmTemplate": "appCore.ERROR_DIALOG_MESSAGE_F104031"
+            "sqmTemplate": "appCore.ERROR_DIALOG_MESSAGE_F104031_SQM"
         },
         "a-63": {
             "toastTemplate": "appCore.ERROR_TOAST_0x63E"
