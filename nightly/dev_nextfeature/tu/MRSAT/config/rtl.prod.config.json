@@ -1,6 +1,6 @@
 {
     // search api url for rtl
-    "apiBaseUrl": "https://cdn.bff.ott.tvnow.de/magenta/search",
+    "apiBaseUrl": "https://cdn.ott.partner.magenta.ott.tvnow.de/search",
 
     // x-transform scope for search
     "transformscope": "ngtv-stb",
