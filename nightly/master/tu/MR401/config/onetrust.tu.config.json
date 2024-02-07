@@ -4,7 +4,7 @@
         "storageLocation": "cdn.cookielaw.org",
         "domainIdentifier": "1b1e3c30-008d-428d-b31e-c7b5c3572d85", 
         "languageCode": "de",
-        "apiVersion": "202310.2.7"  //"202401.2.2"
+        "apiVersion": "202310.2.7"  //"202401.2.2"   "202310.2.7"
     },
     "appCmsId": "appConsent",
     "maxAge" : "14400", // [s] 14400 = 4h
