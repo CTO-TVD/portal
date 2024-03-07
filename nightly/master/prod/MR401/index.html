@@ -91,7 +91,7 @@
                 "URIjs": requireLibsRoot + "urijs",
                 "zosaJS": ["file:///usr/share/zosa/zosa", requireLibsRoot + "zenterio/zosa"],
                 "admanagement-sdk": requireLibsRoot + "yospace/admanagement-sdk-es5-3.5.2.min",
-                "onetrust": requireLibsRoot + "onetrust/onetrust",
+                "cmpsdkJS": requireLibsRoot + (devEnv ? "onetrust/cmpsdk" : "onetrust/cmpsdk"),
             },
             shim: {
                 zosaJS: {
@@ -100,8 +100,8 @@
                 "admanagement-sdk": {
                     exports: "YospaceAdManagement"
                 },
-                onetrust: {
-                    exports: "onetrust"
+                cmpsdkJS: {
+                    exports: "OTCMP"
                 }
             },
             callback: () => {
