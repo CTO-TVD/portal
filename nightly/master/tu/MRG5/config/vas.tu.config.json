@@ -7,7 +7,7 @@
         "moreTvUrl": "^http(s)*:\/\/Internal:MehrTvAPP"
     },
     "cmsIds": {
-        "Megathek": "APP00231-EntertainTVSerien",
+        "Megathek": "REMOVEDAPP00231-EntertainTVSerien",
         "Videoload": "Videoload",
         "TelekomSport": "TelekomSport",
         "Netflix": "Netflix",
