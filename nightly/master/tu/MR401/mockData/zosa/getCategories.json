@@ -9,14 +9,6 @@
 	{
 		"hasSubCategories": true,
 		"isLocked": false,
-		"numContentItems": "0",
-		"title": "Bouquets",
-		"zosaId": "2000000001",
-		"zosaType": "CategoryItem"
-	},
-	{
-		"hasSubCategories": true,
-		"isLocked": false,
 		"title": "Application and Function Channels",
 		"zosaId": "2000000061",
 		"zosaType": "CategoryItem"
