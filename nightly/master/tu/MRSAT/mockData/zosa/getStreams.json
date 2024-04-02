@@ -2,62 +2,6 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "14847576",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240330_sony_2320_sendung_nsf/1/240330_sony_2320_sendung_nsf_1628k_p13v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "879ec151",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240330_sony_2320_sendung_nsf/1/240330_sony_2320_sendung_nsf_808k_p11v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "683441ff",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240330_sony_2320_sendung_nsf/1/240330_sony_2320_sendung_nsf_508k_p9v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "683441ff",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240330_sony_2320_sendung_nsf/1/240330_sony_2320_sendung_nsf_508k_p9v15.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
-				"id": "14847576",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240330_sony_2320_sendung_nsf/1/240330_sony_2320_sendung_nsf_1628k_p13v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "879ec151",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240330_sony_2320_sendung_nsf/1/240330_sony_2320_sendung_nsf_808k_p11v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "683441ff",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240330_sony_2320_sendung_nsf/1/240330_sony_2320_sendung_nsf_508k_p9v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "683441ff",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240330_sony_2320_sendung_nsf/1/240330_sony_2320_sendung_nsf_508k_p9v15.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
 				"id": "d8baac31",
 				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/17/04/170415_2015_sendung_spf/3/170415_2015_sendung_spf_1628k_p13v17.mp4",
 				"video3dFormat": 0,
@@ -114,27 +58,27 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "9dfb6e36",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240331_sony_0040_sendung_nsf/1/240331_sony_0040_sendung_nsf_1628k_p13v15.mp4",
+				"id": "efa9784c",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231213_men_in_black_3_mit_ad_spf/2/231213_men_in_black_3_mit_ad_spf_a1a2_1628k_p13v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "fb190891",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240331_sony_0040_sendung_nsf/1/240331_sony_0040_sendung_nsf_808k_p11v15.mp4",
+				"id": "3c51944b",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231213_men_in_black_3_mit_ad_spf/2/231213_men_in_black_3_mit_ad_spf_a1a2_808k_p11v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "8f706dbf",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240331_sony_0040_sendung_nsf/1/240331_sony_0040_sendung_nsf_508k_p9v15.mp4",
+				"id": "ce881f65",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231213_men_in_black_3_mit_ad_spf/2/231213_men_in_black_3_mit_ad_spf_a1a2_508k_p9v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "8f706dbf",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240331_sony_0040_sendung_nsf/1/240331_sony_0040_sendung_nsf_508k_p9v15.mp4",
+			"id": "ce881f65",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231213_men_in_black_3_mit_ad_spf/2/231213_men_in_black_3_mit_ad_spf_a1a2_508k_p9v17.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
@@ -142,27 +86,83 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "9dfb6e36",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240331_sony_0040_sendung_nsf/1/240331_sony_0040_sendung_nsf_1628k_p13v15.mp4",
+				"id": "efa9784c",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231213_men_in_black_3_mit_ad_spf/2/231213_men_in_black_3_mit_ad_spf_a1a2_1628k_p13v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "fb190891",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240331_sony_0040_sendung_nsf/1/240331_sony_0040_sendung_nsf_808k_p11v15.mp4",
+				"id": "3c51944b",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231213_men_in_black_3_mit_ad_spf/2/231213_men_in_black_3_mit_ad_spf_a1a2_808k_p11v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "8f706dbf",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240331_sony_0040_sendung_nsf/1/240331_sony_0040_sendung_nsf_508k_p9v15.mp4",
+				"id": "ce881f65",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231213_men_in_black_3_mit_ad_spf/2/231213_men_in_black_3_mit_ad_spf_a1a2_508k_p9v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "8f706dbf",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240331_sony_0040_sendung_nsf/1/240331_sony_0040_sendung_nsf_508k_p9v15.mp4",
+			"id": "ce881f65",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231213_men_in_black_3_mit_ad_spf/2/231213_men_in_black_3_mit_ad_spf_a1a2_508k_p9v17.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "757dadb3",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231225_alex_und_eve_film_spf/1/231225_alex_und_eve_film_spf_1628k_p13v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "fe042c14",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231225_alex_und_eve_film_spf/1/231225_alex_und_eve_film_spf_808k_p11v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "c1311a1a",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231225_alex_und_eve_film_spf/1/231225_alex_und_eve_film_spf_508k_p9v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "c1311a1a",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231225_alex_und_eve_film_spf/1/231225_alex_und_eve_film_spf_508k_p9v17.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "757dadb3",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231225_alex_und_eve_film_spf/1/231225_alex_und_eve_film_spf_1628k_p13v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "fe042c14",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231225_alex_und_eve_film_spf/1/231225_alex_und_eve_film_spf_808k_p11v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "c1311a1a",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231225_alex_und_eve_film_spf/1/231225_alex_und_eve_film_spf_508k_p9v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "c1311a1a",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231225_alex_und_eve_film_spf/1/231225_alex_und_eve_film_spf_508k_p9v17.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
@@ -226,27 +226,27 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "757dadb3",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231225_alex_und_eve_film_spf/1/231225_alex_und_eve_film_spf_1628k_p13v17.mp4",
+				"id": "8600333",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/04/240401_sony_1705_sendung_nsf/1/240401_sony_1705_sendung_nsf_1628k_p13v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "fe042c14",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231225_alex_und_eve_film_spf/1/231225_alex_und_eve_film_spf_808k_p11v17.mp4",
+				"id": "c7e097d4",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/04/240401_sony_1705_sendung_nsf/1/240401_sony_1705_sendung_nsf_808k_p11v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "c1311a1a",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231225_alex_und_eve_film_spf/1/231225_alex_und_eve_film_spf_508k_p9v17.mp4",
+				"id": "80546c5a",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/04/240401_sony_1705_sendung_nsf/1/240401_sony_1705_sendung_nsf_508k_p9v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "c1311a1a",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231225_alex_und_eve_film_spf/1/231225_alex_und_eve_film_spf_508k_p9v17.mp4",
+			"id": "80546c5a",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/04/240401_sony_1705_sendung_nsf/1/240401_sony_1705_sendung_nsf_508k_p9v17.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
@@ -254,27 +254,27 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "757dadb3",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231225_alex_und_eve_film_spf/1/231225_alex_und_eve_film_spf_1628k_p13v17.mp4",
+				"id": "8600333",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/04/240401_sony_1705_sendung_nsf/1/240401_sony_1705_sendung_nsf_1628k_p13v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "fe042c14",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231225_alex_und_eve_film_spf/1/231225_alex_und_eve_film_spf_808k_p11v17.mp4",
+				"id": "c7e097d4",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/04/240401_sony_1705_sendung_nsf/1/240401_sony_1705_sendung_nsf_808k_p11v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "c1311a1a",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231225_alex_und_eve_film_spf/1/231225_alex_und_eve_film_spf_508k_p9v17.mp4",
+				"id": "80546c5a",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/04/240401_sony_1705_sendung_nsf/1/240401_sony_1705_sendung_nsf_508k_p9v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "c1311a1a",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231225_alex_und_eve_film_spf/1/231225_alex_und_eve_film_spf_508k_p9v17.mp4",
+			"id": "80546c5a",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/04/240401_sony_1705_sendung_nsf/1/240401_sony_1705_sendung_nsf_508k_p9v17.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
