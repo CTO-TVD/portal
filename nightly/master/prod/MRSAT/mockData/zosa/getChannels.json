@@ -23884,12 +23884,6 @@
 		"cmsId": "disneyplus",
 		"images": [
 			{
-				"serviceProviderImageType": "7",
-				"url": "http://ngiss.t-online.de/cm1s/media/050fef2eadd66674fd4f2ed3f2941d47ab381226.png",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
 				"serviceProviderImageType": "1",
 				"url": "http://ngiss.t-online.de/cm1s/media/050fef2eadd66674fd4f2ed3f2941d47ab381226.png",
 				"height": "1080",
@@ -23897,7 +23891,7 @@
 			},
 			{
 				"serviceProviderImageType": "4",
-				"url": "http://ngiss.t-online.de/cm1s/media/5b226886fcc1abdc021cca96939ce0fa33af14c9.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/9787f24f0c52d968f9c34b4562478a54ad8fee77.png",
 				"height": "264",
 				"width": "264"
 			},
@@ -23906,6 +23900,12 @@
 				"url": "http://ngiss.t-online.de/cm1s/media/16a68a76598574689a3cf9180044937bd0a60035.png",
 				"height": "48",
 				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "7",
+				"url": "http://ngiss.t-online.de/cm1s/media/050fef2eadd66674fd4f2ed3f2941d47ab381226.png",
+				"height": "1080",
+				"width": "1920"
 			}
 		],
 		"isFavorited": true,
