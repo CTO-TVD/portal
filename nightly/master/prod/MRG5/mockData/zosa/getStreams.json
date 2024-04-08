@@ -58,27 +58,27 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "9dfb6e36",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240331_sony_0040_sendung_nsf/1/240331_sony_0040_sendung_nsf_1628k_p13v15.mp4",
+				"id": "af10f073",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/04/240407_sony_last_action_hero_spielfilm/3/240407_sony_last_action_hero_spielfilm_1628k_p13v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "fb190891",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240331_sony_0040_sendung_nsf/1/240331_sony_0040_sendung_nsf_808k_p11v15.mp4",
+				"id": "dfe60b74",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/04/240407_sony_last_action_hero_spielfilm/3/240407_sony_last_action_hero_spielfilm_808k_p11v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "8f706dbf",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240331_sony_0040_sendung_nsf/1/240331_sony_0040_sendung_nsf_508k_p9v15.mp4",
+				"id": "d84637a",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/04/240407_sony_last_action_hero_spielfilm/3/240407_sony_last_action_hero_spielfilm_508k_p9v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "8f706dbf",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240331_sony_0040_sendung_nsf/1/240331_sony_0040_sendung_nsf_508k_p9v15.mp4",
+			"id": "d84637a",
+			"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/04/240407_sony_last_action_hero_spielfilm/3/240407_sony_last_action_hero_spielfilm_508k_p9v17.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
@@ -86,27 +86,27 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "9dfb6e36",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240331_sony_0040_sendung_nsf/1/240331_sony_0040_sendung_nsf_1628k_p13v15.mp4",
+				"id": "af10f073",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/04/240407_sony_last_action_hero_spielfilm/3/240407_sony_last_action_hero_spielfilm_1628k_p13v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "fb190891",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240331_sony_0040_sendung_nsf/1/240331_sony_0040_sendung_nsf_808k_p11v15.mp4",
+				"id": "dfe60b74",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/04/240407_sony_last_action_hero_spielfilm/3/240407_sony_last_action_hero_spielfilm_808k_p11v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "8f706dbf",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240331_sony_0040_sendung_nsf/1/240331_sony_0040_sendung_nsf_508k_p9v15.mp4",
+				"id": "d84637a",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/04/240407_sony_last_action_hero_spielfilm/3/240407_sony_last_action_hero_spielfilm_508k_p9v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "8f706dbf",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240331_sony_0040_sendung_nsf/1/240331_sony_0040_sendung_nsf_508k_p9v15.mp4",
+			"id": "d84637a",
+			"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/04/240407_sony_last_action_hero_spielfilm/3/240407_sony_last_action_hero_spielfilm_508k_p9v17.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
@@ -114,27 +114,27 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "f52b1896",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/03/240331_sony_sinn_und_sinnlichkeit_spielfilm/1/240331_sony_sinn_und_sinnlichkeit_spielfilm_1628k_p13v17.mp4",
+				"id": "57ce2cfd",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/19/06/190617_2215_sendung_spf/3/190617_2215_sendung_spf_1628k_p13v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "291aa111",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/03/240331_sony_sinn_und_sinnlichkeit_spielfilm/1/240331_sony_sinn_und_sinnlichkeit_spielfilm_808k_p11v17.mp4",
+				"id": "11870d1a",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/19/06/190617_2215_sendung_spf/3/190617_2215_sendung_spf_808k_p11v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "3c42663f",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/03/240331_sony_sinn_und_sinnlichkeit_spielfilm/1/240331_sony_sinn_und_sinnlichkeit_spielfilm_508k_p9v17.mp4",
+				"id": "2d4b6254",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/19/06/190617_2215_sendung_spf/3/190617_2215_sendung_spf_508k_p9v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "3c42663f",
-			"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/03/240331_sony_sinn_und_sinnlichkeit_spielfilm/1/240331_sony_sinn_und_sinnlichkeit_spielfilm_508k_p9v17.mp4",
+			"id": "2d4b6254",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/19/06/190617_2215_sendung_spf/3/190617_2215_sendung_spf_508k_p9v17.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
@@ -142,27 +142,27 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "f52b1896",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/03/240331_sony_sinn_und_sinnlichkeit_spielfilm/1/240331_sony_sinn_und_sinnlichkeit_spielfilm_1628k_p13v17.mp4",
+				"id": "57ce2cfd",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/19/06/190617_2215_sendung_spf/3/190617_2215_sendung_spf_1628k_p13v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "291aa111",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/03/240331_sony_sinn_und_sinnlichkeit_spielfilm/1/240331_sony_sinn_und_sinnlichkeit_spielfilm_808k_p11v17.mp4",
+				"id": "11870d1a",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/19/06/190617_2215_sendung_spf/3/190617_2215_sendung_spf_808k_p11v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "3c42663f",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/03/240331_sony_sinn_und_sinnlichkeit_spielfilm/1/240331_sony_sinn_und_sinnlichkeit_spielfilm_508k_p9v17.mp4",
+				"id": "2d4b6254",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/19/06/190617_2215_sendung_spf/3/190617_2215_sendung_spf_508k_p9v17.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "3c42663f",
-			"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/03/240331_sony_sinn_und_sinnlichkeit_spielfilm/1/240331_sony_sinn_und_sinnlichkeit_spielfilm_508k_p9v17.mp4",
+			"id": "2d4b6254",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/19/06/190617_2215_sendung_spf/3/190617_2215_sendung_spf_508k_p9v17.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
