@@ -1437,12 +1437,12 @@
                         "showPartnerLogo": false,
                         "action": {
                             "params": {
-                                "externalUrl": "APP00175-TVNOW",
+                                "externalUrl": "rtlplus",
                                 "target": "app"
                             },
                             "name": "navigate"
                         },
-                        "contentId": "APP00175-TVNOW",
+                        "contentId": "rtlplus",
                         "style": "appSmall"
                     },
                     {
