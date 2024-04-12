@@ -4649,21 +4649,6 @@
 		},
 		"streams": [
 			{
-				"bitrate": "9000",
-				"clientPvrAllowed": true,
-				"clientPvrSupported": false,
-				"hasAlternativeStream": false,
-				"instantRestartAllowed": true,
-				"instantRestartSupported": true,
-				"livePlayAllowed": true,
-				"livePlaySupported": true,
-				"transmissionType": 12,
-				"video3dFormat": 0,
-				"videoDefinition": 2,
-				"zosaId": "21157",
-				"zosaType": "StreamItem"
-			},
-			{
 				"bitrate": "4000",
 				"clientPvrAllowed": true,
 				"clientPvrSupported": false,
@@ -4676,6 +4661,21 @@
 				"video3dFormat": 0,
 				"videoDefinition": 1,
 				"zosaId": "5469",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "21157",
 				"zosaType": "StreamItem"
 			}
 		],
@@ -20641,13 +20641,13 @@
 		"images": [
 			{
 				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/c28c2033bbba5d0423a10e93a5fe985ac9645f29.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/aca973b633b8301cb920c47ccd27f571a9afca85.png",
 				"height": "1080",
 				"width": "1920"
 			},
 			{
 				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/0b253961f1ed86531231b7ebef4856fe2393998c.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/f8cce57b1346e70a50ba565675a380392e48f598.png",
 				"height": "48",
 				"width": "120"
 			},
@@ -20714,30 +20714,36 @@
 				"zosaType": "StreamItem"
 			}
 		],
-		"title": "Sky Cinema Premieren",
+		"title": "Sky Cinema Premiere",
 		"zosaId": "48:195",
 		"zosaType": "ChannelItem"
 	},
 	{
 		"channelNumber": 756,
 		"channelType": 0,
-		"cmsId": "skycine24",
+		"cmsId": "KID01009-SkyCinemaHighlights",
 		"images": [
 			{
 				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/f2af068e6cfa5e574aa0a3e629d3a932c6ea74fb.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/33e8623f9ca69f1506e27d51d37faba4b1117756.png",
 				"height": "1080",
 				"width": "1920"
 			},
 			{
 				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/5371a1404566488319991aef236525c5cdd96fd0.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/fac7ce5d53b31cab6f240ec100656f2c3e099dba.png",
 				"height": "48",
 				"width": "120"
 			},
 			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/f15c195a659c9105ff27056be3976a70b9b85733.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
 				"serviceProviderImageType": "99",
-				"url": "http://ngiss.t-online.de/cm1s/media/fa7dca214ed86f2a43444b008d1191ce529872ac.jpeg",
+				"url": "http://ngiss.t-online.de/cm1s/media/8fa126c51e3f077f5d6b6f1f4b789d07a2995fdd.jpeg",
 				"height": "1080",
 				"width": "1920"
 			}
@@ -20757,7 +20763,7 @@
 			"transmissionType": 12,
 			"video3dFormat": 0,
 			"videoDefinition": 1,
-			"zosaId": "2593",
+			"zosaId": "23292",
 			"zosaType": "StreamItem"
 		},
 		"streams": [
@@ -20773,184 +20779,16 @@
 				"transmissionType": 12,
 				"video3dFormat": 0,
 				"videoDefinition": 2,
-				"zosaId": "2589",
-				"zosaType": "StreamItem"
-			},
-			{
-				"bitrate": "4000",
-				"clientPvrAllowed": true,
-				"clientPvrSupported": false,
-				"hasAlternativeStream": false,
-				"instantRestartAllowed": true,
-				"instantRestartSupported": true,
-				"livePlayAllowed": true,
-				"livePlaySupported": true,
-				"transmissionType": 12,
-				"video3dFormat": 0,
-				"videoDefinition": 1,
-				"zosaId": "2581",
+				"zosaId": "23287",
 				"zosaType": "StreamItem"
 			}
 		],
-		"title": "Sky Cinema Premieren +24",
-		"zosaId": "391:202",
+		"title": "Sky Cinema Highlights",
+		"zosaId": "391:6210",
 		"zosaType": "ChannelItem"
 	},
 	{
 		"channelNumber": 757,
-		"channelType": 0,
-		"cmsId": "skyhits",
-		"images": [
-			{
-				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/26bb3698acb3b165f3e84517662d1e0e3d3027d1.png",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
-				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/77d3c919d3c47429cf376c34c510bb1ef2dc1b8d.png",
-				"height": "48",
-				"width": "120"
-			},
-			{
-				"serviceProviderImageType": "19",
-				"url": "http://ngiss.t-online.de/cm1s/media/f15c195a659c9105ff27056be3976a70b9b85733.jpeg",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
-				"serviceProviderImageType": "99",
-				"url": "http://ngiss.t-online.de/cm1s/media/8fa126c51e3f077f5d6b6f1f4b789d07a2995fdd.jpeg",
-				"height": "1080",
-				"width": "1920"
-			}
-		],
-		"isFavorited": true,
-		"isHidden": false,
-		"parentalRating": "-1",
-		"pipStream": {
-			"bitrate": "350",
-			"clientPvrAllowed": true,
-			"clientPvrSupported": false,
-			"hasAlternativeStream": false,
-			"instantRestartAllowed": true,
-			"instantRestartSupported": true,
-			"livePlayAllowed": true,
-			"livePlaySupported": true,
-			"transmissionType": 12,
-			"video3dFormat": 0,
-			"videoDefinition": 1,
-			"zosaId": "2924",
-			"zosaType": "StreamItem"
-		},
-		"streams": [
-			{
-				"bitrate": "9000",
-				"clientPvrAllowed": true,
-				"clientPvrSupported": false,
-				"hasAlternativeStream": false,
-				"instantRestartAllowed": true,
-				"instantRestartSupported": true,
-				"livePlayAllowed": true,
-				"livePlaySupported": true,
-				"transmissionType": 12,
-				"video3dFormat": 0,
-				"videoDefinition": 2,
-				"zosaId": "2911",
-				"zosaType": "StreamItem"
-			},
-			{
-				"bitrate": "4000",
-				"clientPvrAllowed": true,
-				"clientPvrSupported": false,
-				"hasAlternativeStream": false,
-				"instantRestartAllowed": true,
-				"instantRestartSupported": true,
-				"livePlayAllowed": true,
-				"livePlaySupported": true,
-				"transmissionType": 12,
-				"video3dFormat": 0,
-				"videoDefinition": 1,
-				"zosaId": "2905",
-				"zosaType": "StreamItem"
-			}
-		],
-		"title": "Sky Cinema Best of",
-		"zosaId": "4375:263",
-		"zosaType": "ChannelItem"
-	},
-	{
-		"channelNumber": 758,
-		"channelType": 0,
-		"cmsId": "KID00884-SkyCinemaThriller",
-		"images": [
-			{
-				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/4df156eaa910ee8c40d2a74cba5ed628d22f850a.png",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
-				"serviceProviderImageType": "19",
-				"url": "http://ngiss.t-online.de/cm1s/media/f15c195a659c9105ff27056be3976a70b9b85733.jpeg",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
-				"serviceProviderImageType": "99",
-				"url": "http://ngiss.t-online.de/cm1s/media/8fa126c51e3f077f5d6b6f1f4b789d07a2995fdd.jpeg",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
-				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/e72acc4e943682e5c0fc1bc320a6fbe2b9675fd0.png",
-				"height": "48",
-				"width": "120"
-			}
-		],
-		"isFavorited": true,
-		"isHidden": false,
-		"parentalRating": "-1",
-		"pipStream": {
-			"bitrate": "350",
-			"clientPvrAllowed": true,
-			"clientPvrSupported": false,
-			"hasAlternativeStream": false,
-			"instantRestartAllowed": true,
-			"instantRestartSupported": true,
-			"livePlayAllowed": true,
-			"livePlaySupported": true,
-			"transmissionType": 12,
-			"video3dFormat": 0,
-			"videoDefinition": 1,
-			"zosaId": "18152",
-			"zosaType": "StreamItem"
-		},
-		"streams": [
-			{
-				"bitrate": "9000",
-				"clientPvrAllowed": true,
-				"clientPvrSupported": false,
-				"hasAlternativeStream": false,
-				"instantRestartAllowed": true,
-				"instantRestartSupported": true,
-				"livePlayAllowed": true,
-				"livePlaySupported": true,
-				"transmissionType": 12,
-				"video3dFormat": 0,
-				"videoDefinition": 2,
-				"zosaId": "18151",
-				"zosaType": "StreamItem"
-			}
-		],
-		"title": "Sky Cinema Thriller",
-		"zosaId": "407:4356",
-		"zosaType": "ChannelItem"
-	},
-	{
-		"channelNumber": 759,
 		"channelType": 0,
 		"cmsId": "skyaction",
 		"images": [
@@ -21030,11 +20868,11 @@
 			}
 		],
 		"title": "Sky Cinema Action",
-		"zosaId": "386:40",
+		"zosaId": "4375:40",
 		"zosaType": "ChannelItem"
 	},
 	{
-		"channelNumber": 760,
+		"channelNumber": 758,
 		"channelType": 0,
 		"cmsId": "KID00776-SkyCinemaFamily",
 		"images": [
@@ -21114,164 +20952,11 @@
 			}
 		],
 		"title": "Sky Cinema Family",
-		"zosaId": "373:572",
+		"zosaId": "407:572",
 		"zosaType": "ChannelItem"
 	},
 	{
-		"channelNumber": 761,
-		"channelType": 0,
-		"cmsId": "KID00878-SkyCinemaSpecial",
-		"images": [
-			{
-				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/b4935d33ecfe29e85ae1786abc650159acbd9ec2.png",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
-				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/2c4c6b314f2e5280c36b01434468d73c7d8c6ab7.png",
-				"height": "48",
-				"width": "120"
-			},
-			{
-				"serviceProviderImageType": "19",
-				"url": "http://ngiss.t-online.de/cm1s/media/f15c195a659c9105ff27056be3976a70b9b85733.jpeg",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
-				"serviceProviderImageType": "99",
-				"url": "http://ngiss.t-online.de/cm1s/media/8fa126c51e3f077f5d6b6f1f4b789d07a2995fdd.jpeg",
-				"height": "1080",
-				"width": "1920"
-			}
-		],
-		"isFavorited": true,
-		"isHidden": false,
-		"parentalRating": "-1",
-		"pipStream": {
-			"bitrate": "350",
-			"clientPvrAllowed": true,
-			"clientPvrSupported": false,
-			"hasAlternativeStream": false,
-			"instantRestartAllowed": true,
-			"instantRestartSupported": true,
-			"livePlayAllowed": true,
-			"livePlaySupported": true,
-			"transmissionType": 12,
-			"video3dFormat": 0,
-			"videoDefinition": 1,
-			"zosaId": "17165",
-			"zosaType": "StreamItem"
-		},
-		"streams": [
-			{
-				"bitrate": "9000",
-				"clientPvrAllowed": true,
-				"clientPvrSupported": false,
-				"hasAlternativeStream": false,
-				"instantRestartAllowed": true,
-				"instantRestartSupported": true,
-				"livePlayAllowed": true,
-				"livePlaySupported": true,
-				"transmissionType": 12,
-				"video3dFormat": 0,
-				"videoDefinition": 2,
-				"zosaId": "17163",
-				"zosaType": "StreamItem"
-			}
-		],
-		"title": "Sky Cinema Special",
-		"zosaId": "408:3844",
-		"zosaType": "ChannelItem"
-	},
-	{
-		"channelNumber": 770,
-		"channelType": 0,
-		"cmsId": "skycomedy",
-		"images": [
-			{
-				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/f6a7bf52afe312c829e02a1471b7781129647220.png",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
-				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/b49bd59ff13cb015a5ab9243bf102d6b3d1cc4be.png",
-				"height": "48",
-				"width": "120"
-			},
-			{
-				"serviceProviderImageType": "19",
-				"url": "http://ngiss.t-online.de/cm1s/media/f15c195a659c9105ff27056be3976a70b9b85733.jpeg",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
-				"serviceProviderImageType": "99",
-				"url": "http://ngiss.t-online.de/cm1s/media/8fa126c51e3f077f5d6b6f1f4b789d07a2995fdd.jpeg",
-				"height": "1080",
-				"width": "1920"
-			}
-		],
-		"isFavorited": true,
-		"isHidden": false,
-		"parentalRating": "-1",
-		"pipStream": {
-			"bitrate": "350",
-			"clientPvrAllowed": true,
-			"clientPvrSupported": false,
-			"hasAlternativeStream": false,
-			"instantRestartAllowed": true,
-			"instantRestartSupported": true,
-			"livePlayAllowed": true,
-			"livePlaySupported": true,
-			"transmissionType": 12,
-			"video3dFormat": 0,
-			"videoDefinition": 1,
-			"zosaId": "2586",
-			"zosaType": "StreamItem"
-		},
-		"streams": [
-			{
-				"bitrate": "4000",
-				"clientPvrAllowed": true,
-				"clientPvrSupported": false,
-				"hasAlternativeStream": false,
-				"instantRestartAllowed": true,
-				"instantRestartSupported": true,
-				"livePlayAllowed": true,
-				"livePlaySupported": true,
-				"transmissionType": 12,
-				"video3dFormat": 0,
-				"videoDefinition": 1,
-				"zosaId": "2578",
-				"zosaType": "StreamItem"
-			},
-			{
-				"bitrate": "9000",
-				"clientPvrAllowed": true,
-				"clientPvrSupported": false,
-				"hasAlternativeStream": false,
-				"instantRestartAllowed": true,
-				"instantRestartSupported": true,
-				"livePlayAllowed": true,
-				"livePlaySupported": true,
-				"transmissionType": 12,
-				"video3dFormat": 0,
-				"videoDefinition": 2,
-				"zosaId": "21556",
-				"zosaType": "StreamItem"
-			}
-		],
-		"title": "Sky Cinema Fun",
-		"zosaId": "404:235",
-		"zosaType": "ChannelItem"
-	},
-	{
-		"channelNumber": 772,
+		"channelNumber": 759,
 		"channelType": 0,
 		"cmsId": "skynostalgie",
 		"images": [
@@ -21351,11 +21036,11 @@
 			}
 		],
 		"title": "Sky Cinema Classics",
-		"zosaId": "381:200",
+		"zosaId": "386:200",
 		"zosaType": "ChannelItem"
 	},
 	{
-		"channelNumber": 775,
+		"channelNumber": 760,
 		"channelType": 0,
 		"cmsId": "KID00741-TNTFilmSky",
 		"images": [
@@ -21435,7 +21120,391 @@
 			}
 		],
 		"title": "Warner TV Film (Sky)",
-		"zosaId": "374:540",
+		"zosaId": "373:540",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 761,
+		"channelType": 0,
+		"cmsId": "skyhits",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/26bb3698acb3b165f3e84517662d1e0e3d3027d1.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/77d3c919d3c47429cf376c34c510bb1ef2dc1b8d.png",
+				"height": "48",
+				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/6e0a26f782832726087552149decc57ac54389bb.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/6e0a26f782832726087552149decc57ac54389bb.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "2924",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "2911",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "2905",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Sky Cinema Best of",
+		"zosaId": "408:263",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 762,
+		"channelType": 0,
+		"cmsId": "KID00884-SkyCinemaThriller",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/4df156eaa910ee8c40d2a74cba5ed628d22f850a.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/6e0a26f782832726087552149decc57ac54389bb.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/6e0a26f782832726087552149decc57ac54389bb.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/e72acc4e943682e5c0fc1bc320a6fbe2b9675fd0.png",
+				"height": "48",
+				"width": "120"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "18152",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "18151",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Sky Cinema Thriller",
+		"zosaId": "404:4356",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 763,
+		"channelType": 0,
+		"cmsId": "KID00878-SkyCinemaSpecial",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/b4935d33ecfe29e85ae1786abc650159acbd9ec2.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/2c4c6b314f2e5280c36b01434468d73c7d8c6ab7.png",
+				"height": "48",
+				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/6e0a26f782832726087552149decc57ac54389bb.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/6e0a26f782832726087552149decc57ac54389bb.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "17165",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "17163",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Sky Cinema Special",
+		"zosaId": "381:3844",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 764,
+		"channelType": 0,
+		"cmsId": "skycomedy",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/f6a7bf52afe312c829e02a1471b7781129647220.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/b49bd59ff13cb015a5ab9243bf102d6b3d1cc4be.png",
+				"height": "48",
+				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/6e0a26f782832726087552149decc57ac54389bb.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/6e0a26f782832726087552149decc57ac54389bb.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "2586",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "2578",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "21556",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Sky Cinema Fun",
+		"zosaId": "374:235",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 765,
+		"channelType": 0,
+		"cmsId": "skycine24",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/f2af068e6cfa5e574aa0a3e629d3a932c6ea74fb.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/5371a1404566488319991aef236525c5cdd96fd0.png",
+				"height": "48",
+				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/6e0a26f782832726087552149decc57ac54389bb.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "2593",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "2589",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "2581",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Sky Cinema Premieren +24",
+		"zosaId": "385:202",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21519,7 +21588,7 @@
 			}
 		],
 		"title": "Sky Sport News",
-		"zosaId": "385:190",
+		"zosaId": "405:190",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21603,7 +21672,7 @@
 			}
 		],
 		"title": "Sky Sport Top Event",
-		"zosaId": "405:31",
+		"zosaId": "382:31",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21687,7 +21756,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga",
-		"zosaId": "382:42",
+		"zosaId": "403:42",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21756,7 +21825,7 @@
 			}
 		],
 		"title": "Sky Sport F1",
-		"zosaId": "403:4889",
+		"zosaId": "387:4889",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21825,7 +21894,7 @@
 			}
 		],
 		"title": "Sky Sport Premier League",
-		"zosaId": "387:5555",
+		"zosaId": "54:5555",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21894,7 +21963,7 @@
 			}
 		],
 		"title": "Sky Sport Mix",
-		"zosaId": "54:5556",
+		"zosaId": "392:5556",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21978,7 +22047,7 @@
 			}
 		],
 		"title": "Sky Sport Tennis",
-		"zosaId": "392:198",
+		"zosaId": "375:198",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22047,7 +22116,7 @@
 			}
 		],
 		"title": "Sky Sport Golf",
-		"zosaId": "375:5558",
+		"zosaId": "376:5558",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22110,7 +22179,7 @@
 			}
 		],
 		"title": "Sky Sport UHD",
-		"zosaId": "376:631",
+		"zosaId": "371:631",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22173,7 +22242,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga UHD",
-		"zosaId": "371:630",
+		"zosaId": "48:630",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22257,7 +22326,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 1",
-		"zosaId": "48:206",
+		"zosaId": "391:206",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22341,7 +22410,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 2",
-		"zosaId": "391:211",
+		"zosaId": "4375:211",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22425,7 +22494,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 3",
-		"zosaId": "4375:199",
+		"zosaId": "407:199",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22509,7 +22578,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 4",
-		"zosaId": "407:232",
+		"zosaId": "386:232",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22593,7 +22662,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 5",
-		"zosaId": "386:234",
+		"zosaId": "373:234",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22677,7 +22746,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 6",
-		"zosaId": "373:231",
+		"zosaId": "408:231",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22761,7 +22830,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 7",
-		"zosaId": "408:258",
+		"zosaId": "404:258",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22845,7 +22914,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 8",
-		"zosaId": "404:219",
+		"zosaId": "381:219",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22929,7 +22998,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 9",
-		"zosaId": "381:237",
+		"zosaId": "374:237",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22998,7 +23067,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 10",
-		"zosaId": "374:5557",
+		"zosaId": "385:5557",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23082,7 +23151,7 @@
 			}
 		],
 		"title": "Sky Sport 1",
-		"zosaId": "385:192",
+		"zosaId": "405:192",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23166,7 +23235,7 @@
 			}
 		],
 		"title": "Sky Sport 2",
-		"zosaId": "405:212",
+		"zosaId": "382:212",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23250,7 +23319,7 @@
 			}
 		],
 		"title": "Sky Sport 3",
-		"zosaId": "382:189",
+		"zosaId": "403:189",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23334,7 +23403,7 @@
 			}
 		],
 		"title": "Sky Sport 4",
-		"zosaId": "403:111",
+		"zosaId": "387:111",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23418,7 +23487,7 @@
 			}
 		],
 		"title": "Sky Sport 5",
-		"zosaId": "387:114",
+		"zosaId": "54:114",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23502,7 +23571,7 @@
 			}
 		],
 		"title": "Sky Sport 6",
-		"zosaId": "54:113",
+		"zosaId": "392:113",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23586,7 +23655,7 @@
 			}
 		],
 		"title": "Sky Sport 7",
-		"zosaId": "392:127",
+		"zosaId": "375:127",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23670,7 +23739,7 @@
 			}
 		],
 		"title": "Sky Sport 8",
-		"zosaId": "375:261",
+		"zosaId": "376:261",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23754,7 +23823,7 @@
 			}
 		],
 		"title": "Sky Sport 9",
-		"zosaId": "376:187",
+		"zosaId": "371:187",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23823,7 +23892,7 @@
 			}
 		],
 		"title": "Sky Sport 10",
-		"zosaId": "371:5554",
+		"zosaId": "48:5554",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23875,7 +23944,7 @@
 			}
 		],
 		"title": "DAZN",
-		"zosaId": "48:4584",
+		"zosaId": "391:4584",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23927,7 +23996,7 @@
 			}
 		],
 		"title": "Disney+",
-		"zosaId": "391:4887",
+		"zosaId": "4375:4887",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23979,7 +24048,7 @@
 			}
 		],
 		"title": "MagentaTV+",
-		"zosaId": "4375:812",
+		"zosaId": "407:812",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -24031,7 +24100,7 @@
 			}
 		],
 		"title": "Netflix",
-		"zosaId": "407:613",
+		"zosaId": "386:613",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -24089,7 +24158,7 @@
 			}
 		],
 		"title": "Prime Video",
-		"zosaId": "386:2921",
+		"zosaId": "373:2921",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -24131,7 +24200,7 @@
 			}
 		],
 		"title": "MagentaTV Info",
-		"zosaId": "373:115",
+		"zosaId": "408:115",
 		"zosaType": "ChannelItem"
 	}
 ]
