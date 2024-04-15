@@ -1476,7 +1476,64 @@
 			}
 		],
 		"title": "BR Fernsehen Süd",
-		"zosaId": "386:407",
+		"zosaId": "6050:407",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 22,
+		"channelType": 0,
+		"cmsId": "KID01001-FUSSBALLTV1",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/51e9858925ffe8fb6e5df889436a3d07be4b7ac7.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/5ae13706ac56f102d8ee35cfd37b63cbbe1ca063.png",
+				"height": "48",
+				"width": "120"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "22904",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "22903",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "FUSSBALL.TV 1",
+		"zosaId": "373:6050",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -1548,7 +1605,7 @@
 			}
 		],
 		"title": "hr-fernsehen",
-		"zosaId": "373:386",
+		"zosaId": "408:386",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -1620,7 +1677,7 @@
 			}
 		],
 		"title": "MDR-Fernsehen Sachsen",
-		"zosaId": "408:370",
+		"zosaId": "404:370",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -1692,7 +1749,7 @@
 			}
 		],
 		"title": "NDR Fernsehen Niedersachsen",
-		"zosaId": "404:377",
+		"zosaId": "381:377",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -1764,7 +1821,7 @@
 			}
 		],
 		"title": "Radio Bremen TV",
-		"zosaId": "381:368",
+		"zosaId": "374:368",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -1836,7 +1893,7 @@
 			}
 		],
 		"title": "rbb fernsehen Berlin",
-		"zosaId": "374:384",
+		"zosaId": "385:384",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -1908,7 +1965,7 @@
 			}
 		],
 		"title": "SR Fernsehen",
-		"zosaId": "385:379",
+		"zosaId": "405:379",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -1980,7 +2037,7 @@
 			}
 		],
 		"title": "SWR Fernsehen BW",
-		"zosaId": "405:398",
+		"zosaId": "382:398",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -2052,7 +2109,7 @@
 			}
 		],
 		"title": "SWR Fernsehen RP",
-		"zosaId": "382:393",
+		"zosaId": "403:393",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -2124,7 +2181,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Köln",
-		"zosaId": "403:397",
+		"zosaId": "387:397",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -2196,7 +2253,7 @@
 			}
 		],
 		"title": "More Than Sports TV",
-		"zosaId": "387:5078",
+		"zosaId": "54:5078",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -2253,7 +2310,7 @@
 			}
 		],
 		"title": "MS Sport",
-		"zosaId": "54:3757",
+		"zosaId": "392:3757",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -2331,7 +2388,7 @@
 			}
 		],
 		"title": "Eurosport 1",
-		"zosaId": "392:389",
+		"zosaId": "375:389",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -2403,7 +2460,7 @@
 			}
 		],
 		"title": "Red Bull TV",
-		"zosaId": "375:5027",
+		"zosaId": "376:5027",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -2466,7 +2523,7 @@
 			}
 		],
 		"title": "Servus TV Motorsport",
-		"zosaId": "376:5026",
+		"zosaId": "371:5026",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -2544,7 +2601,7 @@
 			}
 		],
 		"title": "SPORT1",
-		"zosaId": "371:401",
+		"zosaId": "48:401",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -2616,7 +2673,7 @@
 			}
 		],
 		"title": "ARTE",
-		"zosaId": "48:394",
+		"zosaId": "391:394",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -2688,7 +2745,7 @@
 			}
 		],
 		"title": "ONE",
-		"zosaId": "391:402",
+		"zosaId": "4375:402",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -2760,7 +2817,7 @@
 			}
 		],
 		"title": "ANIXE+",
-		"zosaId": "4375:452",
+		"zosaId": "407:452",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -2769,16 +2826,16 @@
 		"cmsId": "KID00893-ANIXEHDSerie",
 		"images": [
 			{
-				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/f105ac8c8e8dbede59277c3b2019c65ea1ecfc95.png",
-				"height": "48",
-				"width": "120"
-			},
-			{
 				"serviceProviderImageType": "14",
 				"url": "http://ngiss.t-online.de/cm1s/media/6dad0a5ad793821b149d1fc6bfd4168e6d128a2d.png",
 				"height": "1080",
 				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/f105ac8c8e8dbede59277c3b2019c65ea1ecfc95.png",
+				"height": "48",
+				"width": "120"
 			}
 		],
 		"isFavorited": true,
@@ -2817,7 +2874,7 @@
 			}
 		],
 		"title": "ANIXE HD Serie",
-		"zosaId": "407:4777",
+		"zosaId": "6050:4777",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -2895,7 +2952,7 @@
 			}
 		],
 		"title": "Comedy Central",
-		"zosaId": "386:50",
+		"zosaId": "373:50",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -2967,7 +3024,7 @@
 			}
 		],
 		"title": "craction",
-		"zosaId": "373:5394",
+		"zosaId": "408:5394",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -3045,7 +3102,7 @@
 			}
 		],
 		"title": "Disney Channel",
-		"zosaId": "408:27",
+		"zosaId": "404:27",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -3123,7 +3180,7 @@
 			}
 		],
 		"title": "DMAX",
-		"zosaId": "404:429",
+		"zosaId": "381:429",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -3195,7 +3252,7 @@
 			}
 		],
 		"title": "Fashion TV",
-		"zosaId": "381:5206",
+		"zosaId": "374:5206",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -3273,7 +3330,7 @@
 			}
 		],
 		"title": "HGTV",
-		"zosaId": "374:3583",
+		"zosaId": "385:3583",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -3330,7 +3387,7 @@
 			}
 		],
 		"title": "INPLUS",
-		"zosaId": "385:5476",
+		"zosaId": "405:5476",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -3402,7 +3459,7 @@
 			}
 		],
 		"title": "OUTtv",
-		"zosaId": "405:5477",
+		"zosaId": "382:5477",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -3480,7 +3537,7 @@
 			}
 		],
 		"title": "ProSieben MAXX",
-		"zosaId": "382:396",
+		"zosaId": "403:396",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -3558,7 +3615,7 @@
 			}
 		],
 		"title": "NITRO",
-		"zosaId": "403:395",
+		"zosaId": "387:395",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -3636,7 +3693,7 @@
 			}
 		],
 		"title": "RTLup",
-		"zosaId": "387:542",
+		"zosaId": "54:542",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -3708,7 +3765,7 @@
 			}
 		],
 		"title": "RiC",
-		"zosaId": "54:5329",
+		"zosaId": "392:5329",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -3786,7 +3843,7 @@
 			}
 		],
 		"title": "SAT.1 GOLD",
-		"zosaId": "392:338",
+		"zosaId": "375:338",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -3858,7 +3915,7 @@
 			}
 		],
 		"title": "DF1",
-		"zosaId": "375:39",
+		"zosaId": "376:39",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -3936,7 +3993,7 @@
 			}
 		],
 		"title": "sixx",
-		"zosaId": "376:380",
+		"zosaId": "371:380",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4014,7 +4071,7 @@
 			}
 		],
 		"title": "TLC",
-		"zosaId": "371:383",
+		"zosaId": "48:383",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4086,7 +4143,7 @@
 			}
 		],
 		"title": "TOGGO plus",
-		"zosaId": "48:601",
+		"zosaId": "391:601",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4094,12 +4151,6 @@
 		"channelType": 0,
 		"cmsId": "KID00880-VOXup",
 		"images": [
-			{
-				"serviceProviderImageType": "99",
-				"url": "http://ngiss.t-online.de/cm1s/media/eece51e7d023df59eaba2d666bd7e7ea93ede81d.jpeg",
-				"height": "1080",
-				"width": "1920"
-			},
 			{
 				"serviceProviderImageType": "14",
 				"url": "http://ngiss.t-online.de/cm1s/media/343f563d2dfffc0ef1ef4c10fe83bc88b5dfdad3.png",
@@ -4111,6 +4162,12 @@
 				"url": "http://ngiss.t-online.de/cm1s/media/7475b5f5fce6df60756901f94904c42d2675c6d9.png",
 				"height": "48",
 				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/eece51e7d023df59eaba2d666bd7e7ea93ede81d.jpeg",
+				"height": "1080",
+				"width": "1920"
 			}
 		],
 		"isFavorited": true,
@@ -4164,7 +4221,7 @@
 			}
 		],
 		"title": "VOXup",
-		"zosaId": "391:3930",
+		"zosaId": "4375:3930",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4236,7 +4293,7 @@
 			}
 		],
 		"title": "wedo movies",
-		"zosaId": "4375:5399",
+		"zosaId": "407:5399",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4293,7 +4350,7 @@
 			}
 		],
 		"title": "ARD-alpha",
-		"zosaId": "407:479",
+		"zosaId": "6050:479",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4365,7 +4422,7 @@
 			}
 		],
 		"title": "ZDFinfo",
-		"zosaId": "386:378",
+		"zosaId": "373:378",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4422,7 +4479,7 @@
 			}
 		],
 		"title": "Imearth",
-		"zosaId": "373:5839",
+		"zosaId": "408:5839",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4494,7 +4551,7 @@
 			}
 		],
 		"title": "Bibel TV",
-		"zosaId": "408:485",
+		"zosaId": "404:485",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4551,7 +4608,7 @@
 			}
 		],
 		"title": "Travelxp",
-		"zosaId": "404:5840",
+		"zosaId": "381:5840",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4608,7 +4665,7 @@
 			}
 		],
 		"title": "Euronews Deutsch",
-		"zosaId": "381:482",
+		"zosaId": "374:482",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4680,7 +4737,7 @@
 			}
 		],
 		"title": "K-TV",
-		"zosaId": "374:487",
+		"zosaId": "385:487",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4758,7 +4815,7 @@
 			}
 		],
 		"title": "Kabel Eins Doku",
-		"zosaId": "385:573",
+		"zosaId": "405:573",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4830,7 +4887,7 @@
 			}
 		],
 		"title": "Marco Polo TV",
-		"zosaId": "405:5295",
+		"zosaId": "382:5295",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4908,7 +4965,7 @@
 			}
 		],
 		"title": "N24 Doku",
-		"zosaId": "382:553",
+		"zosaId": "403:553",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4980,7 +5037,7 @@
 			}
 		],
 		"title": "tagesschau24",
-		"zosaId": "403:400",
+		"zosaId": "387:400",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -5052,7 +5109,7 @@
 			}
 		],
 		"title": "Welt der Wunder",
-		"zosaId": "387:60",
+		"zosaId": "54:60",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -5124,7 +5181,7 @@
 			}
 		],
 		"title": "SCHLAGER DELUXE",
-		"zosaId": "54:5505",
+		"zosaId": "392:5505",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -5202,7 +5259,7 @@
 			}
 		],
 		"title": "DELUXE MUSIC",
-		"zosaId": "392:25",
+		"zosaId": "375:25",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -5280,7 +5337,7 @@
 			}
 		],
 		"title": "MTV",
-		"zosaId": "375:28",
+		"zosaId": "376:28",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -5352,7 +5409,7 @@
 			}
 		],
 		"title": "Deutsches Musik Fernsehen",
-		"zosaId": "376:5312",
+		"zosaId": "371:5312",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -5424,7 +5481,7 @@
 			}
 		],
 		"title": "Ballermann TV",
-		"zosaId": "371:5331",
+		"zosaId": "48:5331",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -5496,7 +5553,7 @@
 			}
 		],
 		"title": "Schlagerparadies.TV",
-		"zosaId": "48:5387",
+		"zosaId": "391:5387",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -5568,7 +5625,7 @@
 			}
 		],
 		"title": "Volksmusik.TV",
-		"zosaId": "391:5388",
+		"zosaId": "4375:5388",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -5640,7 +5697,7 @@
 			}
 		],
 		"title": "FOLX MUSIC TELEVISION",
-		"zosaId": "4375:5390",
+		"zosaId": "407:5390",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -5712,7 +5769,7 @@
 			}
 		],
 		"title": "ONE MUSIC TELEVISION",
-		"zosaId": "407:5389",
+		"zosaId": "6050:5389",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -5784,7 +5841,7 @@
 			}
 		],
 		"title": "ZWEI MUSIC TELEVISION",
-		"zosaId": "386:5391",
+		"zosaId": "373:5391",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -5856,7 +5913,7 @@
 			}
 		],
 		"title": "Stingray Classica",
-		"zosaId": "373:5397",
+		"zosaId": "408:5397",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -5928,7 +5985,7 @@
 			}
 		],
 		"title": "Stingray iConcerts",
-		"zosaId": "408:5398",
+		"zosaId": "404:5398",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -6000,7 +6057,7 @@
 			}
 		],
 		"title": "Stingray DJAZZ",
-		"zosaId": "404:5400",
+		"zosaId": "381:5400",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -6072,7 +6129,7 @@
 			}
 		],
 		"title": "1-2-3.tv",
-		"zosaId": "381:4724",
+		"zosaId": "374:4724",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -6144,7 +6201,7 @@
 			}
 		],
 		"title": "CHANNEL21",
-		"zosaId": "374:5176",
+		"zosaId": "385:5176",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -6216,7 +6273,7 @@
 			}
 		],
 		"title": "HSE",
-		"zosaId": "385:451",
+		"zosaId": "405:451",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -6288,7 +6345,7 @@
 			}
 		],
 		"title": "QVC",
-		"zosaId": "405:446",
+		"zosaId": "382:446",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -6360,7 +6417,7 @@
 			}
 		],
 		"title": "Shop LC",
-		"zosaId": "382:5172",
+		"zosaId": "403:5172",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -6432,7 +6489,7 @@
 			}
 		],
 		"title": "sonnenklar.TV",
-		"zosaId": "403:486",
+		"zosaId": "387:486",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -6504,7 +6561,7 @@
 			}
 		],
 		"title": "Al Jazeera English",
-		"zosaId": "387:5315",
+		"zosaId": "54:5315",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -6576,7 +6633,7 @@
 			}
 		],
 		"title": "Asharq News",
-		"zosaId": "54:5330",
+		"zosaId": "392:5330",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -6648,7 +6705,7 @@
 			}
 		],
 		"title": "ERT World",
-		"zosaId": "392:5475",
+		"zosaId": "375:5475",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -6705,7 +6762,7 @@
 			}
 		],
 		"title": "BBC News",
-		"zosaId": "375:454",
+		"zosaId": "376:454",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -6777,7 +6834,7 @@
 			}
 		],
 		"title": "CNBC International",
-		"zosaId": "376:5506",
+		"zosaId": "371:5506",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -6855,7 +6912,7 @@
 			}
 		],
 		"title": "CNN International",
-		"zosaId": "371:399",
+		"zosaId": "48:399",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -6927,7 +6984,7 @@
 			}
 		],
 		"title": "Euronews English",
-		"zosaId": "48:5600",
+		"zosaId": "391:5600",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -6984,7 +7041,7 @@
 			}
 		],
 		"title": "FREEDOM",
-		"zosaId": "391:5601",
+		"zosaId": "4375:5601",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -7041,7 +7098,7 @@
 			}
 		],
 		"title": "Espreso",
-		"zosaId": "4375:5602",
+		"zosaId": "407:5602",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -7098,7 +7155,7 @@
 			}
 		],
 		"title": "France 2",
-		"zosaId": "407:6002",
+		"zosaId": "6050:6002",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -7155,7 +7212,7 @@
 			}
 		],
 		"title": "France 3",
-		"zosaId": "386:6003",
+		"zosaId": "373:6003",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -7227,7 +7284,7 @@
 			}
 		],
 		"title": "France 24 francais",
-		"zosaId": "373:5316",
+		"zosaId": "408:5316",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -7299,7 +7356,7 @@
 			}
 		],
 		"title": "France 24 english",
-		"zosaId": "408:5386",
+		"zosaId": "404:5386",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -7371,7 +7428,7 @@
 			}
 		],
 		"title": "TV5MONDE Europe",
-		"zosaId": "404:5314",
+		"zosaId": "381:5314",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -7428,7 +7485,7 @@
 			}
 		],
 		"title": "Magenta Musik 1",
-		"zosaId": "381:616",
+		"zosaId": "374:616",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -7485,7 +7542,7 @@
 			}
 		],
 		"title": "Magenta Musik 2",
-		"zosaId": "374:617",
+		"zosaId": "385:617",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -7548,7 +7605,7 @@
 			}
 		],
 		"title": "ProSiebenSat.1 UHD",
-		"zosaId": "385:5116",
+		"zosaId": "405:5116",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -7563,16 +7620,16 @@
 				"width": "1920"
 			},
 			{
-				"serviceProviderImageType": "99",
-				"url": "http://ngiss.t-online.de/cm1s/media/b5670cdf511723542767c22cf595f8a48f2be00b.jpeg",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
 				"serviceProviderImageType": "15",
 				"url": "http://ngiss.t-online.de/cm1s/media/c43968e8b52cd562a75352ae94b5be37b1c40f72.png",
 				"height": "48",
 				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/b5670cdf511723542767c22cf595f8a48f2be00b.jpeg",
+				"height": "1080",
+				"width": "1920"
 			}
 		],
 		"isFavorited": true,
@@ -7611,7 +7668,7 @@
 			}
 		],
 		"title": "RTL UHD",
-		"zosaId": "405:3220",
+		"zosaId": "382:3220",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -7674,7 +7731,7 @@
 			}
 		],
 		"title": "Travelxp 4K",
-		"zosaId": "382:3178",
+		"zosaId": "403:3178",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -7737,7 +7794,7 @@
 			}
 		],
 		"title": "INULTRA",
-		"zosaId": "403:632",
+		"zosaId": "387:632",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -7821,7 +7878,7 @@
 			}
 		],
 		"title": "13TH STREET",
-		"zosaId": "387:255",
+		"zosaId": "54:255",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -7905,7 +7962,7 @@
 			}
 		],
 		"title": "AXN Black",
-		"zosaId": "54:110",
+		"zosaId": "392:110",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -7989,7 +8046,7 @@
 			}
 		],
 		"title": "Kabel Eins CLASSICS",
-		"zosaId": "392:157",
+		"zosaId": "375:157",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8073,7 +8130,7 @@
 			}
 		],
 		"title": "KinoweltTV",
-		"zosaId": "375:137",
+		"zosaId": "376:137",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8157,7 +8214,7 @@
 			}
 		],
 		"title": "ProSieben FUN",
-		"zosaId": "376:259",
+		"zosaId": "371:259",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8241,7 +8298,7 @@
 			}
 		],
 		"title": "RTL Crime",
-		"zosaId": "371:216",
+		"zosaId": "48:216",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8325,7 +8382,7 @@
 			}
 		],
 		"title": "SYFY",
-		"zosaId": "48:133",
+		"zosaId": "391:133",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8409,7 +8466,7 @@
 			}
 		],
 		"title": "Warner TV Comedy",
-		"zosaId": "391:181",
+		"zosaId": "4375:181",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8493,7 +8550,7 @@
 			}
 		],
 		"title": "Warner TV Film",
-		"zosaId": "4375:184",
+		"zosaId": "407:184",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8577,7 +8634,7 @@
 			}
 		],
 		"title": "Warner TV Serie",
-		"zosaId": "407:53",
+		"zosaId": "6050:53",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8661,7 +8718,7 @@
 			}
 		],
 		"title": "Universal TV",
-		"zosaId": "386:185",
+		"zosaId": "373:185",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8724,7 +8781,7 @@
 			}
 		],
 		"title": "Baby TV",
-		"zosaId": "373:109",
+		"zosaId": "408:109",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8808,7 +8865,7 @@
 			}
 		],
 		"title": "Cartoonito",
-		"zosaId": "408:148",
+		"zosaId": "404:148",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8892,7 +8949,7 @@
 			}
 		],
 		"title": "Cartoon Network",
-		"zosaId": "404:126",
+		"zosaId": "381:126",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8961,7 +9018,7 @@
 			}
 		],
 		"title": "Nick Jr.",
-		"zosaId": "381:221",
+		"zosaId": "374:221",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9045,7 +9102,7 @@
 			}
 		],
 		"title": "BonGusto",
-		"zosaId": "374:117",
+		"zosaId": "385:117",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9114,7 +9171,7 @@
 			}
 		],
 		"title": "Heimatkanal",
-		"zosaId": "385:661",
+		"zosaId": "405:661",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9198,7 +9255,7 @@
 			}
 		],
 		"title": "RTL Passion",
-		"zosaId": "405:209",
+		"zosaId": "382:209",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9282,7 +9339,7 @@
 			}
 		],
 		"title": "Romance TV",
-		"zosaId": "382:260",
+		"zosaId": "403:260",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9366,7 +9423,7 @@
 			}
 		],
 		"title": "RTL Living",
-		"zosaId": "403:227",
+		"zosaId": "387:227",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9450,7 +9507,7 @@
 			}
 		],
 		"title": "SAT.1 emotions",
-		"zosaId": "387:224",
+		"zosaId": "54:224",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9534,7 +9591,7 @@
 			}
 		],
 		"title": "AXN White",
-		"zosaId": "54:188",
+		"zosaId": "392:188",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9603,7 +9660,7 @@
 			}
 		],
 		"title": "wetter.com TV",
-		"zosaId": "392:571",
+		"zosaId": "375:571",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9687,7 +9744,7 @@
 			}
 		],
 		"title": "Animal Planet",
-		"zosaId": "375:105",
+		"zosaId": "376:105",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9771,7 +9828,7 @@
 			}
 		],
 		"title": "Crime+Investigation",
-		"zosaId": "376:106",
+		"zosaId": "371:106",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9855,7 +9912,7 @@
 			}
 		],
 		"title": "Discovery Channel",
-		"zosaId": "371:23",
+		"zosaId": "48:23",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9939,7 +9996,7 @@
 			}
 		],
 		"title": "GEO Television",
-		"zosaId": "48:153",
+		"zosaId": "391:153",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10023,7 +10080,7 @@
 			}
 		],
 		"title": "The HISTORY Channel",
-		"zosaId": "391:162",
+		"zosaId": "4375:162",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10107,7 +10164,7 @@
 			}
 		],
 		"title": "National Geographic",
-		"zosaId": "4375:35",
+		"zosaId": "407:35",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10191,7 +10248,7 @@
 			}
 		],
 		"title": "National Geographic Wild",
-		"zosaId": "407:569",
+		"zosaId": "6050:569",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10275,7 +10332,7 @@
 			}
 		],
 		"title": "Bergblick",
-		"zosaId": "386:45",
+		"zosaId": "373:45",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10359,7 +10416,7 @@
 			}
 		],
 		"title": "Spiegel Geschichte",
-		"zosaId": "373:4406",
+		"zosaId": "408:4406",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10443,7 +10500,7 @@
 			}
 		],
 		"title": "Curiosity Channel",
-		"zosaId": "408:186",
+		"zosaId": "404:186",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10527,7 +10584,7 @@
 			}
 		],
 		"title": "auto motor und sport",
-		"zosaId": "404:108",
+		"zosaId": "381:108",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10611,7 +10668,7 @@
 			}
 		],
 		"title": "Eurosport 2",
-		"zosaId": "381:18",
+		"zosaId": "374:18",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10680,7 +10737,7 @@
 			}
 		],
 		"title": "Motorvision+",
-		"zosaId": "374:604",
+		"zosaId": "385:604",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10764,7 +10821,7 @@
 			}
 		],
 		"title": "SPORT1+",
-		"zosaId": "385:44",
+		"zosaId": "405:44",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10848,7 +10905,7 @@
 			}
 		],
 		"title": "eSPORTS1",
-		"zosaId": "405:191",
+		"zosaId": "382:191",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10917,7 +10974,7 @@
 			}
 		],
 		"title": "Blue Hustler",
-		"zosaId": "382:112",
+		"zosaId": "403:112",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11001,7 +11058,7 @@
 			}
 		],
 		"title": "Lust pur",
-		"zosaId": "403:32",
+		"zosaId": "387:32",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11085,7 +11142,7 @@
 			}
 		],
 		"title": "Penthouse Passion",
-		"zosaId": "387:228",
+		"zosaId": "54:228",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11154,7 +11211,7 @@
 			}
 		],
 		"title": "Playboy Europe",
-		"zosaId": "54:34",
+		"zosaId": "392:34",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11226,7 +11283,7 @@
 			}
 		],
 		"title": "Jukebox",
-		"zosaId": "392:218",
+		"zosaId": "375:218",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11283,7 +11340,7 @@
 			}
 		],
 		"title": "MagentaSport",
-		"zosaId": "375:5075",
+		"zosaId": "376:5075",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11352,7 +11409,7 @@
 			}
 		],
 		"title": "Sport 1 - myTeamTV",
-		"zosaId": "376:550",
+		"zosaId": "371:550",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11421,7 +11478,7 @@
 			}
 		],
 		"title": "Sport 2 - myTeamTV",
-		"zosaId": "371:548",
+		"zosaId": "48:548",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11490,7 +11547,7 @@
 			}
 		],
 		"title": "Sport 3 - myTeamTV",
-		"zosaId": "48:549",
+		"zosaId": "391:549",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11559,7 +11616,7 @@
 			}
 		],
 		"title": "Sport 4 - myTeamTV",
-		"zosaId": "391:648",
+		"zosaId": "4375:648",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11628,7 +11685,7 @@
 			}
 		],
 		"title": "Sport 5 - myTeamTV",
-		"zosaId": "4375:645",
+		"zosaId": "407:645",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11697,7 +11754,7 @@
 			}
 		],
 		"title": "Sport 6 - myTeamTV",
-		"zosaId": "407:647",
+		"zosaId": "6050:647",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11766,7 +11823,7 @@
 			}
 		],
 		"title": "Sport 7 - myTeamTV",
-		"zosaId": "386:646",
+		"zosaId": "373:646",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11835,7 +11892,7 @@
 			}
 		],
 		"title": "Sport 8 - myTeamTV",
-		"zosaId": "373:623",
+		"zosaId": "408:623",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11904,7 +11961,7 @@
 			}
 		],
 		"title": "Sport 9 - myTeamTV",
-		"zosaId": "408:626",
+		"zosaId": "404:626",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11973,7 +12030,7 @@
 			}
 		],
 		"title": "Sport 10 - myTeamTV",
-		"zosaId": "404:624",
+		"zosaId": "381:624",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12042,7 +12099,7 @@
 			}
 		],
 		"title": "Sport 11 - myTeamTV",
-		"zosaId": "381:625",
+		"zosaId": "374:625",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12111,7 +12168,7 @@
 			}
 		],
 		"title": "Sport 12 - myTeamTV",
-		"zosaId": "374:627",
+		"zosaId": "385:627",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12180,7 +12237,7 @@
 			}
 		],
 		"title": "Sport 13 - myTeamTV",
-		"zosaId": "385:629",
+		"zosaId": "405:629",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12249,7 +12306,7 @@
 			}
 		],
 		"title": "Sport 14 - myTeamTV",
-		"zosaId": "405:628",
+		"zosaId": "382:628",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12318,7 +12375,7 @@
 			}
 		],
 		"title": "Sport 15 - myTeamTV",
-		"zosaId": "382:367",
+		"zosaId": "403:367",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12387,7 +12444,7 @@
 			}
 		],
 		"title": "Sport 16 - myTeamTV",
-		"zosaId": "403:366",
+		"zosaId": "387:366",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12456,7 +12513,7 @@
 			}
 		],
 		"title": "Sport 17 - myTeamTV",
-		"zosaId": "387:369",
+		"zosaId": "54:369",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12525,7 +12582,7 @@
 			}
 		],
 		"title": "Sport 18 - myTeamTV",
-		"zosaId": "54:3686",
+		"zosaId": "392:3686",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12609,7 +12666,7 @@
 			}
 		],
 		"title": "SPORTDIGITAL FUSSBALL",
-		"zosaId": "392:194",
+		"zosaId": "375:194",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12678,7 +12735,7 @@
 			}
 		],
 		"title": "Sky Sport Kompakt 1",
-		"zosaId": "375:637",
+		"zosaId": "376:637",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12747,7 +12804,7 @@
 			}
 		],
 		"title": "DAZN 1",
-		"zosaId": "376:5507",
+		"zosaId": "371:5507",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12816,7 +12873,7 @@
 			}
 		],
 		"title": "DAZN 2",
-		"zosaId": "371:5508",
+		"zosaId": "48:5508",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12885,7 +12942,7 @@
 			}
 		],
 		"title": "TeleBom/TeleDom",
-		"zosaId": "48:483",
+		"zosaId": "391:483",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12954,7 +13011,7 @@
 			}
 		],
 		"title": "Euronews Russki",
-		"zosaId": "391:475",
+		"zosaId": "4375:475",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13023,7 +13080,7 @@
 			}
 		],
 		"title": "Kinomir",
-		"zosaId": "4375:472",
+		"zosaId": "407:472",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13092,7 +13149,7 @@
 			}
 		],
 		"title": "OstWest",
-		"zosaId": "407:476",
+		"zosaId": "6050:476",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13161,7 +13218,7 @@
 			}
 		],
 		"title": "iTVN",
-		"zosaId": "386:474",
+		"zosaId": "373:474",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13245,7 +13302,7 @@
 			}
 		],
 		"title": "TVP Polonia",
-		"zosaId": "373:473",
+		"zosaId": "408:473",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13314,7 +13371,7 @@
 			}
 		],
 		"title": "CEM TV",
-		"zosaId": "408:4377",
+		"zosaId": "404:4377",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13383,7 +13440,7 @@
 			}
 		],
 		"title": "Euro D",
-		"zosaId": "404:136",
+		"zosaId": "381:136",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13452,7 +13509,7 @@
 			}
 		],
 		"title": "Eurostar TV",
-		"zosaId": "381:21",
+		"zosaId": "374:21",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13536,7 +13593,7 @@
 			}
 		],
 		"title": "Kanal 7",
-		"zosaId": "374:29",
+		"zosaId": "385:29",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13620,7 +13677,7 @@
 			}
 		],
 		"title": "beIN iZ",
-		"zosaId": "385:3826",
+		"zosaId": "405:3826",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13704,7 +13761,7 @@
 			}
 		],
 		"title": "beIN Movies Turk",
-		"zosaId": "405:440",
+		"zosaId": "382:440",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13773,7 +13830,7 @@
 			}
 		],
 		"title": "Habertürk TV",
-		"zosaId": "382:4378",
+		"zosaId": "403:4378",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13857,7 +13914,7 @@
 			}
 		],
 		"title": "Show Turk",
-		"zosaId": "403:215",
+		"zosaId": "387:215",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13941,7 +13998,7 @@
 			}
 		],
 		"title": "Show Max",
-		"zosaId": "387:3827",
+		"zosaId": "54:3827",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14010,7 +14067,7 @@
 			}
 		],
 		"title": "TV8 Int",
-		"zosaId": "54:439",
+		"zosaId": "392:439",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14094,7 +14151,7 @@
 			}
 		],
 		"title": "ÜLKE TV",
-		"zosaId": "392:236",
+		"zosaId": "375:236",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14163,7 +14220,7 @@
 			}
 		],
 		"title": "Euronews Italiano",
-		"zosaId": "375:121",
+		"zosaId": "376:121",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14232,7 +14289,7 @@
 			}
 		],
 		"title": "Rai 1",
-		"zosaId": "376:43",
+		"zosaId": "371:43",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14301,7 +14358,7 @@
 			}
 		],
 		"title": "Rai 2",
-		"zosaId": "371:46",
+		"zosaId": "48:46",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14370,7 +14427,7 @@
 			}
 		],
 		"title": "Rai 3",
-		"zosaId": "48:210",
+		"zosaId": "391:210",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14427,7 +14484,7 @@
 			}
 		],
 		"title": "Baden TV",
-		"zosaId": "391:3685",
+		"zosaId": "4375:3685",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14484,7 +14541,7 @@
 			}
 		],
 		"title": "Baden TV Süd",
-		"zosaId": "4375:3749",
+		"zosaId": "407:3749",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14541,7 +14598,7 @@
 			}
 		],
 		"title": "L-TV",
-		"zosaId": "407:578",
+		"zosaId": "6050:578",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14598,7 +14655,7 @@
 			}
 		],
 		"title": "Regio TV",
-		"zosaId": "386:660",
+		"zosaId": "373:660",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14655,7 +14712,7 @@
 			}
 		],
 		"title": "RNF",
-		"zosaId": "373:246",
+		"zosaId": "408:246",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14733,7 +14790,7 @@
 			}
 		],
 		"title": "RTL Rhein-Neckar",
-		"zosaId": "408:6048",
+		"zosaId": "404:6048",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14790,7 +14847,7 @@
 			}
 		],
 		"title": "a.tv",
-		"zosaId": "404:161",
+		"zosaId": "381:161",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14847,7 +14904,7 @@
 			}
 		],
 		"title": "allgäu.tv",
-		"zosaId": "381:448",
+		"zosaId": "374:448",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14904,7 +14961,7 @@
 			}
 		],
 		"title": "BR Fernsehen Nord",
-		"zosaId": "374:175",
+		"zosaId": "385:175",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14961,7 +15018,7 @@
 			}
 		],
 		"title": "NIEDERBAYERN TV Deggendorf - Straubing",
-		"zosaId": "385:177",
+		"zosaId": "405:177",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15018,7 +15075,7 @@
 			}
 		],
 		"title": "Franken Fernsehen",
-		"zosaId": "405:238",
+		"zosaId": "382:238",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15075,7 +15132,7 @@
 			}
 		],
 		"title": "tv.ingolstadt",
-		"zosaId": "382:173",
+		"zosaId": "403:173",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15132,7 +15189,7 @@
 			}
 		],
 		"title": "NIEDERBAYERN TV Landshut",
-		"zosaId": "403:174",
+		"zosaId": "387:174",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15189,7 +15246,7 @@
 			}
 		],
 		"title": "münchen.tv",
-		"zosaId": "387:241",
+		"zosaId": "54:241",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15246,7 +15303,7 @@
 			}
 		],
 		"title": "Oberpfalz TV",
-		"zosaId": "54:141",
+		"zosaId": "392:141",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15303,7 +15360,7 @@
 			}
 		],
 		"title": "RFO",
-		"zosaId": "392:143",
+		"zosaId": "375:143",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15381,7 +15438,7 @@
 			}
 		],
 		"title": "RTL Bayern",
-		"zosaId": "375:6047",
+		"zosaId": "376:6047",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15459,7 +15516,7 @@
 			}
 		],
 		"title": "SAT.1 Bayern",
-		"zosaId": "376:146",
+		"zosaId": "371:146",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15516,7 +15573,7 @@
 			}
 		],
 		"title": "NIEDERBAYERN TV Passau",
-		"zosaId": "371:154",
+		"zosaId": "48:154",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15573,7 +15630,7 @@
 			}
 		],
 		"title": "TV Oberfranken",
-		"zosaId": "48:170",
+		"zosaId": "391:170",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15630,7 +15687,7 @@
 			}
 		],
 		"title": "TV Mainfranken",
-		"zosaId": "391:156",
+		"zosaId": "4375:156",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15687,7 +15744,7 @@
 			}
 		],
 		"title": "TVA Ostbayern",
-		"zosaId": "4375:171",
+		"zosaId": "407:171",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15744,7 +15801,7 @@
 			}
 		],
 		"title": "ALEX Berlin",
-		"zosaId": "407:649",
+		"zosaId": "6050:649",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15807,7 +15864,7 @@
 			}
 		],
 		"title": "HAUPTSTADT.TV",
-		"zosaId": "386:3284",
+		"zosaId": "373:3284",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15864,7 +15921,7 @@
 			}
 		],
 		"title": "tv.berlin",
-		"zosaId": "373:599",
+		"zosaId": "408:599",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15921,7 +15978,7 @@
 			}
 		],
 		"title": "rbb fernsehen Brandenburg",
-		"zosaId": "408:242",
+		"zosaId": "404:242",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15999,7 +16056,7 @@
 			}
 		],
 		"title": "RTL Bremen & Niedersachsen",
-		"zosaId": "404:100",
+		"zosaId": "381:100",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16077,7 +16134,7 @@
 			}
 		],
 		"title": "SAT.1 Niedersachsen und Bremen",
-		"zosaId": "381:144",
+		"zosaId": "374:144",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16134,7 +16191,7 @@
 			}
 		],
 		"title": "Hamburg 1",
-		"zosaId": "374:244",
+		"zosaId": "385:244",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16191,7 +16248,7 @@
 			}
 		],
 		"title": "NDR Fernsehen Hamburg",
-		"zosaId": "385:150",
+		"zosaId": "405:150",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16248,7 +16305,7 @@
 			}
 		],
 		"title": "NDR Fernsehen Schleswig-Holstein",
-		"zosaId": "405:151",
+		"zosaId": "382:151",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16326,7 +16383,7 @@
 			}
 		],
 		"title": "RTL Hamburg & Schleswig-Holstein",
-		"zosaId": "382:102",
+		"zosaId": "403:102",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16404,7 +16461,7 @@
 			}
 		],
 		"title": "SAT.1 Hamburg und Schleswig-Holstein",
-		"zosaId": "403:142",
+		"zosaId": "387:142",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16461,7 +16518,7 @@
 			}
 		],
 		"title": "OF-TV",
-		"zosaId": "387:546",
+		"zosaId": "54:546",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16518,7 +16575,7 @@
 			}
 		],
 		"title": "Rhein-Main TV",
-		"zosaId": "54:2966",
+		"zosaId": "392:2966",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16596,7 +16653,7 @@
 			}
 		],
 		"title": "RTL Hessen",
-		"zosaId": "392:101",
+		"zosaId": "375:101",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16653,7 +16710,7 @@
 			}
 		],
 		"title": "NDR Fernsehen Mecklenburg-Vorpommern",
-		"zosaId": "375:240",
+		"zosaId": "376:240",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16710,7 +16767,7 @@
 			}
 		],
 		"title": "ems TV",
-		"zosaId": "376:4380",
+		"zosaId": "371:4380",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16767,7 +16824,7 @@
 			}
 		],
 		"title": "Friesischer Rundfunk",
-		"zosaId": "371:4513",
+		"zosaId": "48:4513",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16830,7 +16887,7 @@
 			}
 		],
 		"title": "NRWision",
-		"zosaId": "48:3750",
+		"zosaId": "391:3750",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16908,7 +16965,7 @@
 			}
 		],
 		"title": "RTL Nordrhein-Westfalen",
-		"zosaId": "391:478",
+		"zosaId": "4375:478",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16986,7 +17043,7 @@
 			}
 		],
 		"title": "SAT.1 Nordrhein-Westfalen",
-		"zosaId": "4375:251",
+		"zosaId": "407:251",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17043,7 +17100,7 @@
 			}
 		],
 		"title": "Studio 47",
-		"zosaId": "407:2616",
+		"zosaId": "6050:2616",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17100,7 +17157,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Aachen",
-		"zosaId": "386:160",
+		"zosaId": "373:160",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17157,7 +17214,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Bielefeld",
-		"zosaId": "373:158",
+		"zosaId": "408:158",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17214,7 +17271,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Bonn",
-		"zosaId": "408:155",
+		"zosaId": "404:155",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17271,7 +17328,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Dortmund",
-		"zosaId": "404:172",
+		"zosaId": "381:172",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17328,7 +17385,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Duisburg",
-		"zosaId": "381:165",
+		"zosaId": "374:165",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17385,7 +17442,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Düsseldorf",
-		"zosaId": "374:167",
+		"zosaId": "385:167",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17442,7 +17499,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Essen",
-		"zosaId": "385:531",
+		"zosaId": "405:531",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17499,7 +17556,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Münster",
-		"zosaId": "405:239",
+		"zosaId": "382:239",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17556,7 +17613,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Siegen",
-		"zosaId": "382:166",
+		"zosaId": "403:166",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17613,7 +17670,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Wuppertal",
-		"zosaId": "403:249",
+		"zosaId": "387:249",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17670,7 +17727,7 @@
 			}
 		],
 		"title": "OK4",
-		"zosaId": "387:3045",
+		"zosaId": "54:3045",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17727,7 +17784,7 @@
 			}
 		],
 		"title": "OK54 Trier",
-		"zosaId": "54:663",
+		"zosaId": "392:663",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17784,7 +17841,7 @@
 			}
 		],
 		"title": "OK Weinstraße",
-		"zosaId": "392:3042",
+		"zosaId": "375:3042",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17841,7 +17898,7 @@
 			}
 		],
 		"title": "OK-TV Ludwigshafen",
-		"zosaId": "375:662",
+		"zosaId": "376:662",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17898,7 +17955,7 @@
 			}
 		],
 		"title": "OK:TV Mainz",
-		"zosaId": "376:3044",
+		"zosaId": "371:3044",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17976,7 +18033,7 @@
 			}
 		],
 		"title": "SAT.1 Rheinland-Pfalz und Hessen",
-		"zosaId": "371:145",
+		"zosaId": "48:145",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18033,7 +18090,7 @@
 			}
 		],
 		"title": "TV Mittelrhein",
-		"zosaId": "48:581",
+		"zosaId": "391:581",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18090,7 +18147,7 @@
 			}
 		],
 		"title": "WWTV",
-		"zosaId": "391:580",
+		"zosaId": "4375:580",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18147,7 +18204,7 @@
 			}
 		],
 		"title": "Chemnitz Fernsehen",
-		"zosaId": "4375:2612",
+		"zosaId": "407:2612",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18204,7 +18261,7 @@
 			}
 		],
 		"title": "Dresden Fernsehen",
-		"zosaId": "407:2611",
+		"zosaId": "6050:2611",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18261,7 +18318,7 @@
 			}
 		],
 		"title": "LAUSITZWELLE",
-		"zosaId": "386:4727",
+		"zosaId": "373:4727",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18270,16 +18327,16 @@
 		"cmsId": "KID00847-LeipzigFernsehen",
 		"images": [
 			{
-				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/8755b09d6bda3c93b0f2d453cedd0a01372982d3.png",
-				"height": "48",
-				"width": "120"
-			},
-			{
 				"serviceProviderImageType": "14",
 				"url": "http://ngiss.t-online.de/cm1s/media/cde7f7c42829fe07dc3fa09679f8efac35f4dd1d.png",
 				"height": "1080",
 				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/8755b09d6bda3c93b0f2d453cedd0a01372982d3.png",
+				"height": "48",
+				"width": "120"
 			}
 		],
 		"isFavorited": true,
@@ -18318,7 +18375,7 @@
 			}
 		],
 		"title": "Leipzig Fernsehen",
-		"zosaId": "373:3179",
+		"zosaId": "408:3179",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18375,7 +18432,7 @@
 			}
 		],
 		"title": "TV Westsachsen",
-		"zosaId": "408:2610",
+		"zosaId": "404:2610",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18432,7 +18489,7 @@
 			}
 		],
 		"title": "MDF.1 Fernsehen",
-		"zosaId": "404:4888",
+		"zosaId": "381:4888",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18489,7 +18546,7 @@
 			}
 		],
 		"title": "MDR-Fernsehen Sachsen-Anhalt",
-		"zosaId": "381:147",
+		"zosaId": "374:147",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18546,7 +18603,7 @@
 			}
 		],
 		"title": "RFH Regionalfernsehen Harz",
-		"zosaId": "374:4723",
+		"zosaId": "385:4723",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18603,7 +18660,7 @@
 			}
 		],
 		"title": "altenburg.tv",
-		"zosaId": "385:3660",
+		"zosaId": "405:3660",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18660,7 +18717,7 @@
 			}
 		],
 		"title": "JenaTV",
-		"zosaId": "405:5744",
+		"zosaId": "382:5744",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18717,7 +18774,7 @@
 			}
 		],
 		"title": "MDR-Fernsehen Thüringen",
-		"zosaId": "382:252",
+		"zosaId": "403:252",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18774,7 +18831,7 @@
 			}
 		],
 		"title": "Rennsteig.TV",
-		"zosaId": "403:2609",
+		"zosaId": "387:2609",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18837,7 +18894,7 @@
 			}
 		],
 		"title": "salve.tv",
-		"zosaId": "387:3073",
+		"zosaId": "54:3073",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18894,7 +18951,7 @@
 			}
 		],
 		"title": "SRF",
-		"zosaId": "54:5144",
+		"zosaId": "392:5144",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18963,7 +19020,7 @@
 			}
 		],
 		"title": "Sky Showcase",
-		"zosaId": "392:5577",
+		"zosaId": "375:5577",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19047,7 +19104,7 @@
 			}
 		],
 		"title": "Sky One",
-		"zosaId": "375:576",
+		"zosaId": "376:576",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19116,7 +19173,7 @@
 			}
 		],
 		"title": "Sky Krimi",
-		"zosaId": "376:201",
+		"zosaId": "371:201",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19200,7 +19257,7 @@
 			}
 		],
 		"title": "Sky Atlantic",
-		"zosaId": "371:264",
+		"zosaId": "48:264",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19269,7 +19326,7 @@
 			}
 		],
 		"title": "Sky Replay",
-		"zosaId": "48:3756",
+		"zosaId": "391:3756",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19338,7 +19395,7 @@
 			}
 		],
 		"title": "Sky Crime",
-		"zosaId": "391:4924",
+		"zosaId": "4375:4924",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19407,7 +19464,7 @@
 			}
 		],
 		"title": "Sky Documentaries",
-		"zosaId": "4375:5143",
+		"zosaId": "407:5143",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19476,7 +19533,7 @@
 			}
 		],
 		"title": "Sky Nature",
-		"zosaId": "407:5142",
+		"zosaId": "6050:5142",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19560,7 +19617,7 @@
 			}
 		],
 		"title": "SYFY (Sky)",
-		"zosaId": "386:465",
+		"zosaId": "373:465",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19644,7 +19701,7 @@
 			}
 		],
 		"title": "13TH STREET (Sky)",
-		"zosaId": "373:471",
+		"zosaId": "408:471",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19713,7 +19770,7 @@
 			}
 		],
 		"title": "Universal TV (Sky)",
-		"zosaId": "408:462",
+		"zosaId": "404:462",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19797,7 +19854,7 @@
 			}
 		],
 		"title": "Warner TV Serie (Sky)",
-		"zosaId": "404:458",
+		"zosaId": "381:458",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19866,7 +19923,7 @@
 			}
 		],
 		"title": "Warner TV Comedy (Sky)",
-		"zosaId": "381:461",
+		"zosaId": "374:461",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19929,7 +19986,7 @@
 			}
 		],
 		"title": "Heimatkanal (Sky)",
-		"zosaId": "374:134",
+		"zosaId": "385:134",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19992,7 +20049,7 @@
 			}
 		],
 		"title": "Romance TV (Sky)",
-		"zosaId": "385:658",
+		"zosaId": "405:658",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20061,7 +20118,7 @@
 			}
 		],
 		"title": "The HISTORY Channel (Sky)",
-		"zosaId": "405:467",
+		"zosaId": "382:467",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20145,7 +20202,7 @@
 			}
 		],
 		"title": "Discovery Channel (Sky)",
-		"zosaId": "382:468",
+		"zosaId": "403:468",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20214,7 +20271,7 @@
 			}
 		],
 		"title": "Crime+Investigation (Sky)",
-		"zosaId": "403:5141",
+		"zosaId": "387:5141",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20283,7 +20340,7 @@
 			}
 		],
 		"title": "Cartoonito (Sky)",
-		"zosaId": "387:3843",
+		"zosaId": "54:3843",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20352,7 +20409,7 @@
 			}
 		],
 		"title": "Nick Jr. (Sky)",
-		"zosaId": "54:4379",
+		"zosaId": "392:4379",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20421,7 +20478,7 @@
 			}
 		],
 		"title": "Nicktoons (Sky)",
-		"zosaId": "392:4405",
+		"zosaId": "375:4405",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20490,7 +20547,7 @@
 			}
 		],
 		"title": "Cartoon Network (Sky)",
-		"zosaId": "375:4512",
+		"zosaId": "376:4512",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20553,7 +20610,7 @@
 			}
 		],
 		"title": "Jukebox (Sky)",
-		"zosaId": "376:132",
+		"zosaId": "371:132",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20631,7 +20688,7 @@
 			}
 		],
 		"title": "Beate-Uhse.TV (Sky)",
-		"zosaId": "371:107",
+		"zosaId": "48:107",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20715,7 +20772,7 @@
 			}
 		],
 		"title": "Sky Cinema Premiere",
-		"zosaId": "48:195",
+		"zosaId": "391:195",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20784,7 +20841,7 @@
 			}
 		],
 		"title": "Sky Cinema Highlights",
-		"zosaId": "391:6210",
+		"zosaId": "4375:6210",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20868,7 +20925,7 @@
 			}
 		],
 		"title": "Sky Cinema Action",
-		"zosaId": "4375:40",
+		"zosaId": "407:40",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20952,7 +21009,7 @@
 			}
 		],
 		"title": "Sky Cinema Family",
-		"zosaId": "407:572",
+		"zosaId": "6050:572",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21036,7 +21093,7 @@
 			}
 		],
 		"title": "Sky Cinema Classics",
-		"zosaId": "386:200",
+		"zosaId": "373:200",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21120,7 +21177,7 @@
 			}
 		],
 		"title": "Warner TV Film (Sky)",
-		"zosaId": "373:540",
+		"zosaId": "408:540",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21204,7 +21261,7 @@
 			}
 		],
 		"title": "Sky Cinema Best of",
-		"zosaId": "408:263",
+		"zosaId": "404:263",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21219,6 +21276,12 @@
 				"width": "1920"
 			},
 			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/e72acc4e943682e5c0fc1bc320a6fbe2b9675fd0.png",
+				"height": "48",
+				"width": "120"
+			},
+			{
 				"serviceProviderImageType": "19",
 				"url": "http://ngiss.t-online.de/cm1s/media/6e0a26f782832726087552149decc57ac54389bb.jpeg",
 				"height": "1080",
@@ -21229,12 +21292,6 @@
 				"url": "http://ngiss.t-online.de/cm1s/media/6e0a26f782832726087552149decc57ac54389bb.jpeg",
 				"height": "1080",
 				"width": "1920"
-			},
-			{
-				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/e72acc4e943682e5c0fc1bc320a6fbe2b9675fd0.png",
-				"height": "48",
-				"width": "120"
 			}
 		],
 		"isFavorited": true,
@@ -21273,7 +21330,7 @@
 			}
 		],
 		"title": "Sky Cinema Thriller",
-		"zosaId": "404:4356",
+		"zosaId": "381:4356",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21342,7 +21399,7 @@
 			}
 		],
 		"title": "Sky Cinema Special",
-		"zosaId": "381:3844",
+		"zosaId": "374:3844",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21426,7 +21483,7 @@
 			}
 		],
 		"title": "Sky Cinema Fun",
-		"zosaId": "374:235",
+		"zosaId": "385:235",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21504,7 +21561,7 @@
 			}
 		],
 		"title": "Sky Cinema Premieren +24",
-		"zosaId": "385:202",
+		"zosaId": "405:202",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21588,7 +21645,7 @@
 			}
 		],
 		"title": "Sky Sport News",
-		"zosaId": "405:190",
+		"zosaId": "382:190",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21672,7 +21729,7 @@
 			}
 		],
 		"title": "Sky Sport Top Event",
-		"zosaId": "382:31",
+		"zosaId": "403:31",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21756,7 +21813,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga",
-		"zosaId": "403:42",
+		"zosaId": "387:42",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21825,7 +21882,7 @@
 			}
 		],
 		"title": "Sky Sport F1",
-		"zosaId": "387:4889",
+		"zosaId": "54:4889",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21894,7 +21951,7 @@
 			}
 		],
 		"title": "Sky Sport Premier League",
-		"zosaId": "54:5555",
+		"zosaId": "392:5555",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21963,7 +22020,7 @@
 			}
 		],
 		"title": "Sky Sport Mix",
-		"zosaId": "392:5556",
+		"zosaId": "375:5556",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22047,7 +22104,7 @@
 			}
 		],
 		"title": "Sky Sport Tennis",
-		"zosaId": "375:198",
+		"zosaId": "376:198",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22116,7 +22173,7 @@
 			}
 		],
 		"title": "Sky Sport Golf",
-		"zosaId": "376:5558",
+		"zosaId": "371:5558",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22179,7 +22236,7 @@
 			}
 		],
 		"title": "Sky Sport UHD",
-		"zosaId": "371:631",
+		"zosaId": "48:631",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22242,7 +22299,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga UHD",
-		"zosaId": "48:630",
+		"zosaId": "391:630",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22326,7 +22383,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 1",
-		"zosaId": "391:206",
+		"zosaId": "4375:206",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22410,7 +22467,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 2",
-		"zosaId": "4375:211",
+		"zosaId": "407:211",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22494,7 +22551,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 3",
-		"zosaId": "407:199",
+		"zosaId": "6050:199",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22578,7 +22635,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 4",
-		"zosaId": "386:232",
+		"zosaId": "373:232",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22662,7 +22719,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 5",
-		"zosaId": "373:234",
+		"zosaId": "408:234",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22746,7 +22803,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 6",
-		"zosaId": "408:231",
+		"zosaId": "404:231",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22830,7 +22887,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 7",
-		"zosaId": "404:258",
+		"zosaId": "381:258",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22914,7 +22971,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 8",
-		"zosaId": "381:219",
+		"zosaId": "374:219",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -22998,7 +23055,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 9",
-		"zosaId": "374:237",
+		"zosaId": "385:237",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23067,7 +23124,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 10",
-		"zosaId": "385:5557",
+		"zosaId": "405:5557",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23151,7 +23208,7 @@
 			}
 		],
 		"title": "Sky Sport 1",
-		"zosaId": "405:192",
+		"zosaId": "382:192",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23235,7 +23292,7 @@
 			}
 		],
 		"title": "Sky Sport 2",
-		"zosaId": "382:212",
+		"zosaId": "403:212",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23319,7 +23376,7 @@
 			}
 		],
 		"title": "Sky Sport 3",
-		"zosaId": "403:189",
+		"zosaId": "387:189",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23403,7 +23460,7 @@
 			}
 		],
 		"title": "Sky Sport 4",
-		"zosaId": "387:111",
+		"zosaId": "54:111",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23487,7 +23544,7 @@
 			}
 		],
 		"title": "Sky Sport 5",
-		"zosaId": "54:114",
+		"zosaId": "392:114",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23571,7 +23628,7 @@
 			}
 		],
 		"title": "Sky Sport 6",
-		"zosaId": "392:113",
+		"zosaId": "375:113",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23655,7 +23712,7 @@
 			}
 		],
 		"title": "Sky Sport 7",
-		"zosaId": "375:127",
+		"zosaId": "376:127",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23739,7 +23796,7 @@
 			}
 		],
 		"title": "Sky Sport 8",
-		"zosaId": "376:261",
+		"zosaId": "371:261",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23823,7 +23880,7 @@
 			}
 		],
 		"title": "Sky Sport 9",
-		"zosaId": "371:187",
+		"zosaId": "48:187",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23892,7 +23949,7 @@
 			}
 		],
 		"title": "Sky Sport 10",
-		"zosaId": "48:5554",
+		"zosaId": "391:5554",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23944,7 +24001,7 @@
 			}
 		],
 		"title": "DAZN",
-		"zosaId": "391:4584",
+		"zosaId": "4375:4584",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -23996,7 +24053,7 @@
 			}
 		],
 		"title": "Disney+",
-		"zosaId": "4375:4887",
+		"zosaId": "407:4887",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -24048,7 +24105,7 @@
 			}
 		],
 		"title": "MagentaTV+",
-		"zosaId": "407:812",
+		"zosaId": "6050:812",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -24100,7 +24157,7 @@
 			}
 		],
 		"title": "Netflix",
-		"zosaId": "386:613",
+		"zosaId": "373:613",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -24158,7 +24215,7 @@
 			}
 		],
 		"title": "Prime Video",
-		"zosaId": "373:2921",
+		"zosaId": "408:2921",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -24200,7 +24257,7 @@
 			}
 		],
 		"title": "MagentaTV Info",
-		"zosaId": "408:115",
+		"zosaId": "404:115",
 		"zosaType": "ChannelItem"
 	}
 ]
