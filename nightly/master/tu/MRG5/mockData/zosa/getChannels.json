@@ -2533,15 +2533,15 @@
 		"images": [
 			{
 				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/6461d1813040d490c6eaf8887286ba876e938a17.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/94977337f9f8820fc5258cc186f803a581286245.png",
 				"height": "1080",
 				"width": "1920"
 			},
 			{
 				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/55428ca65d529b1cf67623cb017c53af5de49d89.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/4aa035dc4275cf2f0e06b1e8a296e239a5e4e0a7.png",
 				"height": "48",
-				"width": "94"
+				"width": "120"
 			},
 			{
 				"serviceProviderImageType": "99",
@@ -10747,13 +10747,13 @@
 		"images": [
 			{
 				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/af9a42b6042b440dcbe2d2b0eec4a8ddf5c271af.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/b7c67b15a961323d5c8ff47db7e12d440b7cb6c2.png",
 				"height": "1080",
 				"width": "1920"
 			},
 			{
 				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/074034f464715db15c5859b60b36558cac35a5e3.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/cf512e0bfc3604249cdb0418e3baa80abaaf492d.png",
 				"height": "48",
 				"width": "120"
 			},
@@ -10831,13 +10831,13 @@
 		"images": [
 			{
 				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/c295c992a70344eb7a9ba0b2058f91818902f434.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/54fcaafd99da1033a484325028f9fe33aeeb44c8.png",
 				"height": "1080",
 				"width": "1920"
 			},
 			{
 				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/6e4cee1ab1da1d86af73c1bfb533f11fe7711c5b.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/db482843563c10f6527e4bd3bc9f3ed68c1603f7.png",
 				"height": "48",
 				"width": "120"
 			},
@@ -18628,7 +18628,7 @@
 		"isHidden": false,
 		"parentalRating": "-1",
 		"pipStream": {
-			"bitrate": "1800",
+			"bitrate": "350",
 			"clientPvrAllowed": true,
 			"clientPvrSupported": false,
 			"hasAlternativeStream": false,
@@ -18639,12 +18639,12 @@
 			"transmissionType": 12,
 			"video3dFormat": 0,
 			"videoDefinition": 1,
-			"zosaId": "16770",
+			"zosaId": "23413",
 			"zosaType": "StreamItem"
 		},
 		"streams": [
 			{
-				"bitrate": "1800",
+				"bitrate": "9000",
 				"clientPvrAllowed": true,
 				"clientPvrSupported": false,
 				"hasAlternativeStream": false,
@@ -18654,8 +18654,8 @@
 				"livePlaySupported": true,
 				"transmissionType": 12,
 				"video3dFormat": 0,
-				"videoDefinition": 1,
-				"zosaId": "16769",
+				"videoDefinition": 2,
+				"zosaId": "23414",
 				"zosaType": "StreamItem"
 			}
 		],
