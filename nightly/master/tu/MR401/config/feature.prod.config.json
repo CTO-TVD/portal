@@ -93,8 +93,10 @@
                     "mainMenuId": {"value": 58451},
 
                     // appnames for VOD App Services
-                    "appname720":  {"value": "ui20rest"},
-                    "appname1080": {"value": "ui20rest"}
+                    //"appname720":  {"value": "ui20rest"},
+                    //"appname1080": {"value": "ui20rest"}
+                    "appname720":  {"value": "ui20resthanval"},
+                    "appname1080": {"value": "ui20resthanval"}
                 },
 
                 "assignment": {
