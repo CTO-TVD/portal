@@ -2826,16 +2826,16 @@
 		"cmsId": "KID00893-ANIXEHDSerie",
 		"images": [
 			{
-				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/6dad0a5ad793821b149d1fc6bfd4168e6d128a2d.png",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
 				"serviceProviderImageType": "15",
 				"url": "http://ngiss.t-online.de/cm1s/media/f105ac8c8e8dbede59277c3b2019c65ea1ecfc95.png",
 				"height": "48",
 				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/6dad0a5ad793821b149d1fc6bfd4168e6d128a2d.png",
+				"height": "1080",
+				"width": "1920"
 			}
 		],
 		"isFavorited": true,
@@ -4152,6 +4152,12 @@
 		"cmsId": "KID00880-VOXup",
 		"images": [
 			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/eece51e7d023df59eaba2d666bd7e7ea93ede81d.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
 				"serviceProviderImageType": "14",
 				"url": "http://ngiss.t-online.de/cm1s/media/343f563d2dfffc0ef1ef4c10fe83bc88b5dfdad3.png",
 				"height": "1080",
@@ -4162,12 +4168,6 @@
 				"url": "http://ngiss.t-online.de/cm1s/media/7475b5f5fce6df60756901f94904c42d2675c6d9.png",
 				"height": "48",
 				"width": "120"
-			},
-			{
-				"serviceProviderImageType": "99",
-				"url": "http://ngiss.t-online.de/cm1s/media/eece51e7d023df59eaba2d666bd7e7ea93ede81d.jpeg",
-				"height": "1080",
-				"width": "1920"
 			}
 		],
 		"isFavorited": true,
@@ -6386,21 +6386,6 @@
 		},
 		"streams": [
 			{
-				"bitrate": "9000",
-				"clientPvrAllowed": true,
-				"clientPvrSupported": false,
-				"hasAlternativeStream": false,
-				"instantRestartAllowed": true,
-				"instantRestartSupported": true,
-				"livePlayAllowed": true,
-				"livePlaySupported": true,
-				"transmissionType": 12,
-				"video3dFormat": 0,
-				"videoDefinition": 2,
-				"zosaId": "20377",
-				"zosaType": "StreamItem"
-			},
-			{
 				"bitrate": "4000",
 				"clientPvrAllowed": true,
 				"clientPvrSupported": false,
@@ -6413,6 +6398,21 @@
 				"video3dFormat": 0,
 				"videoDefinition": 1,
 				"zosaId": "20379",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "20377",
 				"zosaType": "StreamItem"
 			}
 		],
@@ -7683,16 +7683,16 @@
 				"width": "1920"
 			},
 			{
-				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/c43968e8b52cd562a75352ae94b5be37b1c40f72.png",
-				"height": "48",
-				"width": "120"
-			},
-			{
 				"serviceProviderImageType": "99",
 				"url": "http://ngiss.t-online.de/cm1s/media/b5670cdf511723542767c22cf595f8a48f2be00b.jpeg",
 				"height": "1080",
 				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/c43968e8b52cd562a75352ae94b5be37b1c40f72.png",
+				"height": "48",
+				"width": "120"
 			}
 		],
 		"isFavorited": true,
@@ -7861,6 +7861,342 @@
 		"zosaType": "ChannelItem"
 	},
 	{
+		"channelNumber": 200,
+		"channelType": 0,
+		"cmsId": "13th-street",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/a8e6a82760b56428170e316932f38fabeb0814db.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/668cd4d06f6981b82841f40fad42bc350babb056.png",
+				"height": "48",
+				"width": "50"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/70479184ec6e36781942cc2fa5aae16634592877.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/e869226dbfb70b64adcdb491dd292f80d4612381.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "2684",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "2680",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "2683",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "13TH STREET",
+		"zosaId": "392:255",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 202,
+		"channelType": 0,
+		"cmsId": "axn",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/c4a0608099c553e609d54d568cad48779ff9b639.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/df6a8f84c2ecbe26b090e37b782db46b9d98b1bb.png",
+				"height": "48",
+				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/c96329ec6477a261dccf164d1028b2663ab28d50.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/e7ca7f92ca10a385ebca29d4b3924512ba56f189.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "1624",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "1620",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "1616",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "AXN Black",
+		"zosaId": "375:110",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 205,
+		"channelType": 0,
+		"cmsId": "kabel-1-classics",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/a58e98653f4966262ca6d714b555f583cdd5870e.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/3d6c4e11c8058b35f0726c1e25ab1b391a2ada75.png",
+				"height": "48",
+				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/70479184ec6e36781942cc2fa5aae16634592877.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/e869226dbfb70b64adcdb491dd292f80d4612381.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "1724",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "1720",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "1722",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Kabel Eins CLASSICS",
+		"zosaId": "376:157",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 206,
+		"channelType": 0,
+		"cmsId": "kinowelt-tv",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/ebdbf39814820b3b2fa697c7c5f18c2d2d42bfde.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/8f80fdd4f8fe6853800aeec106062fc2ee1d5ab4.png",
+				"height": "48",
+				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/c96329ec6477a261dccf164d1028b2663ab28d50.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/e7ca7f92ca10a385ebca29d4b3924512ba56f189.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "1725",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "1723",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "19576",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "KinoweltTV",
+		"zosaId": "371:137",
+		"zosaType": "ChannelItem"
+	},
+	{
 		"channelNumber": 207,
 		"channelType": 0,
 		"cmsId": "pro7-fun",
@@ -7941,7 +8277,7 @@
 			}
 		],
 		"title": "ProSieben FUN",
-		"zosaId": "392:259",
+		"zosaId": "48:259",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8025,7 +8361,7 @@
 			}
 		],
 		"title": "RTL Crime",
-		"zosaId": "375:216",
+		"zosaId": "391:216",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8109,7 +8445,7 @@
 			}
 		],
 		"title": "SYFY",
-		"zosaId": "376:133",
+		"zosaId": "4375:133",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8193,7 +8529,7 @@
 			}
 		],
 		"title": "Warner TV Comedy",
-		"zosaId": "371:181",
+		"zosaId": "407:181",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8277,7 +8613,7 @@
 			}
 		],
 		"title": "Warner TV Film",
-		"zosaId": "48:184",
+		"zosaId": "6050:184",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8361,7 +8697,7 @@
 			}
 		],
 		"title": "Warner TV Serie",
-		"zosaId": "391:53",
+		"zosaId": "373:53",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8445,7 +8781,7 @@
 			}
 		],
 		"title": "Universal TV",
-		"zosaId": "4375:185",
+		"zosaId": "408:185",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8508,7 +8844,175 @@
 			}
 		],
 		"title": "Baby TV",
-		"zosaId": "407:109",
+		"zosaId": "404:109",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 216,
+		"channelType": 0,
+		"cmsId": "boomerang",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/c9fb8cd1a2d705392bd73dc6618c1747bd8418bc.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/f609f4d13fd7e77d4c7b654a363ed5bc08e15c7a.png",
+				"height": "48",
+				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/70479184ec6e36781942cc2fa5aae16634592877.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/e869226dbfb70b64adcdb491dd292f80d4612381.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "1654",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "1651",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "1648",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Cartoonito",
+		"zosaId": "381:148",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 217,
+		"channelType": 0,
+		"cmsId": "cartoon-network",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/62db037b6484ffd2e0c2aa3642c19958eb292c80.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/f73ed871486bd026ffc3ff4cf5e5ac2eeaf6f746.png",
+				"height": "48",
+				"width": "71"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/70479184ec6e36781942cc2fa5aae16634592877.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/e869226dbfb70b64adcdb491dd292f80d4612381.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "1659",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "1655",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "1657",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Cartoon Network",
+		"zosaId": "374:126",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8577,7 +9081,160 @@
 			}
 		],
 		"title": "Nick Jr.",
-		"zosaId": "6050:221",
+		"zosaId": "385:221",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 230,
+		"channelType": 0,
+		"cmsId": "bongusto",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/c1b8b637efa554081624dbcee2257dbe813a6ba0.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/65ebe25329d441714dc70fa737e90c68c2a6e129.png",
+				"height": "48",
+				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/c96329ec6477a261dccf164d1028b2663ab28d50.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/e7ca7f92ca10a385ebca29d4b3924512ba56f189.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "1653",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "1647",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "1650",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "BonGusto",
+		"zosaId": "405:117",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 233,
+		"channelType": 0,
+		"cmsId": "KID00841-Heimatkanal",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/bde2d6cf0a6444e7c5d69dda485e41a4c7c19d00.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/daabe8d88933d58ca50ef01e692058fe39759627.png",
+				"height": "48",
+				"width": "71"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/c96329ec6477a261dccf164d1028b2663ab28d50.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/e7ca7f92ca10a385ebca29d4b3924512ba56f189.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "9405",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "9404",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Heimatkanal",
+		"zosaId": "382:661",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8661,7 +9318,7 @@
 			}
 		],
 		"title": "RTL Passion",
-		"zosaId": "373:209",
+		"zosaId": "403:209",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8745,7 +9402,7 @@
 			}
 		],
 		"title": "Romance TV",
-		"zosaId": "408:260",
+		"zosaId": "387:260",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8829,7 +9486,7 @@
 			}
 		],
 		"title": "RTL Living",
-		"zosaId": "404:227",
+		"zosaId": "54:227",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8913,7 +9570,91 @@
 			}
 		],
 		"title": "SAT.1 emotions",
-		"zosaId": "381:224",
+		"zosaId": "392:224",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 240,
+		"channelType": 0,
+		"cmsId": "sony-tv",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/61ac41de9c79f983cf6c725267a88060241f9124.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/cf1405ca89e285dadb2b62c136abc44c214f811e.png",
+				"height": "48",
+				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/70479184ec6e36781942cc2fa5aae16634592877.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/e869226dbfb70b64adcdb491dd292f80d4612381.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "2634",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "2628",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "2620",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "AXN White",
+		"zosaId": "375:188",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -8982,7 +9723,343 @@
 			}
 		],
 		"title": "wetter.com TV",
-		"zosaId": "374:571",
+		"zosaId": "376:571",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 245,
+		"channelType": 0,
+		"cmsId": "animal-planet",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/5255ebd8c1bfed40d33eff7bc066c6a61c7adab4.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/cd0ca6f68c634ba2fd4ce665043f3cefdd1c1c9d.png",
+				"height": "48",
+				"width": "82"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/70479184ec6e36781942cc2fa5aae16634592877.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/e869226dbfb70b64adcdb491dd292f80d4612381.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "1609",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "1607",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "1608",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Animal Planet",
+		"zosaId": "371:105",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 246,
+		"channelType": 0,
+		"cmsId": "ae",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/dfd75d6307871c1d4f40d5741b92c3d411835dec.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/98c3430141aaf756c564aedafebb36d0258f34c1.png",
+				"height": "48",
+				"width": "72"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/c96329ec6477a261dccf164d1028b2663ab28d50.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/e7ca7f92ca10a385ebca29d4b3924512ba56f189.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "1605",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "1602",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "1603",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Crime+Investigation",
+		"zosaId": "48:106",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 247,
+		"channelType": 0,
+		"cmsId": "discovery-channel",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/ea845e7451e73ccd87dbea800822c4dccbd11345.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/6e522d9ae4b2a9a8f686281f7d3adff2d8862ee3.png",
+				"height": "48",
+				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/70479184ec6e36781942cc2fa5aae16634592877.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/e869226dbfb70b64adcdb491dd292f80d4612381.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "1142",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "1115",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "1123",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Discovery Channel",
+		"zosaId": "391:23",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 248,
+		"channelType": 0,
+		"cmsId": "geo",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/9dd569bb4c1de835f21d29ac6fa9202c4d692a2e.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/267643eb7bc861bb7e308a303f66e5301e848db7.png",
+				"height": "48",
+				"width": "76"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/c96329ec6477a261dccf164d1028b2663ab28d50.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/e7ca7f92ca10a385ebca29d4b3924512ba56f189.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "1701",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "1697",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "1700",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "GEO Television",
+		"zosaId": "4375:153",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9066,7 +10143,7 @@
 			}
 		],
 		"title": "The HISTORY Channel",
-		"zosaId": "385:162",
+		"zosaId": "407:162",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9150,7 +10227,7 @@
 			}
 		],
 		"title": "National Geographic",
-		"zosaId": "405:35",
+		"zosaId": "6050:35",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9234,7 +10311,91 @@
 			}
 		],
 		"title": "National Geographic Wild",
-		"zosaId": "382:569",
+		"zosaId": "373:569",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 255,
+		"channelType": 0,
+		"cmsId": "planet-tv",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/cc621620a4408b246b2b8e628f30b129c6bf08dc.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/2f68a8b738d31415c99da911bea93a97020ee1f3.png",
+				"height": "48",
+				"width": "56"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/c96329ec6477a261dccf164d1028b2663ab28d50.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/e7ca7f92ca10a385ebca29d4b3924512ba56f189.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "1237",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "1235",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "1236",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Bergblick",
+		"zosaId": "408:45",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9318,7 +10479,91 @@
 			}
 		],
 		"title": "Spiegel Geschichte",
-		"zosaId": "403:4406",
+		"zosaId": "404:4406",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 257,
+		"channelType": 0,
+		"cmsId": "spiegel-wissen",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/325486fcef8f3898f0012d7a89a3e3dccd2cb8de.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/7502f4f2236a2916323f079e168237ffd7150a25.png",
+				"height": "48",
+				"width": "112"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/c96329ec6477a261dccf164d1028b2663ab28d50.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/e7ca7f92ca10a385ebca29d4b3924512ba56f189.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "2636",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "2623",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "2631",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Curiosity Channel",
+		"zosaId": "381:186",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9402,7 +10647,91 @@
 			}
 		],
 		"title": "auto motor und sport",
-		"zosaId": "387:108",
+		"zosaId": "374:108",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 263,
+		"channelType": 0,
+		"cmsId": "eurosport-2",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/2e93193d3564e9ceba2faf1a89427e489b5d981a.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/fbc41d77249de69bb35febcff1bb74dd87a3b031.png",
+				"height": "48",
+				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/70479184ec6e36781942cc2fa5aae16634592877.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/e869226dbfb70b64adcdb491dd292f80d4612381.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "1163",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "1151",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "9410",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Eurosport 2",
+		"zosaId": "385:18",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9471,7 +10800,7 @@
 			}
 		],
 		"title": "Motorvision+",
-		"zosaId": "54:604",
+		"zosaId": "405:604",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9555,7 +10884,7 @@
 			}
 		],
 		"title": "SPORT1+",
-		"zosaId": "392:44",
+		"zosaId": "382:44",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9639,7 +10968,76 @@
 			}
 		],
 		"title": "eSPORTS1",
-		"zosaId": "375:191",
+		"zosaId": "403:191",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 276,
+		"channelType": 0,
+		"cmsId": "blue-hustler",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/6f12c57f968312ffd7571a42ed181879fb033220.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/f6660e8167e19658dc0831526d326b2b12a0d78b.png",
+				"height": "48",
+				"width": "106"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/c96329ec6477a261dccf164d1028b2663ab28d50.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/e7ca7f92ca10a385ebca29d4b3924512ba56f189.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "1646",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "1644",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Blue Hustler",
+		"zosaId": "387:112",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9723,7 +11121,7 @@
 			}
 		],
 		"title": "Lust pur",
-		"zosaId": "376:32",
+		"zosaId": "54:32",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9807,7 +11205,7 @@
 			}
 		],
 		"title": "Penthouse Passion",
-		"zosaId": "371:228",
+		"zosaId": "392:228",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9876,7 +11274,7 @@
 			}
 		],
 		"title": "Playboy Europe",
-		"zosaId": "48:34",
+		"zosaId": "375:34",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -9948,7 +11346,7 @@
 			}
 		],
 		"title": "Jukebox",
-		"zosaId": "391:218",
+		"zosaId": "376:218",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10005,7 +11403,76 @@
 			}
 		],
 		"title": "MagentaSport",
-		"zosaId": "4375:5075",
+		"zosaId": "371:5075",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 301,
+		"channelType": 0,
+		"cmsId": "KID00754-TelekomEishockey1",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/67710077a71d4e688d6cc7a23ef5c14665f39ecb.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/98154b022b1cd559da555d70d6343b5d8cfb13ce.png",
+				"height": "48",
+				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/3a90b5f6a6d5afc0c79228f5e178f8b68226636c.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/ecdad6692845539f7e3d0b55b368ffa0356bc22c.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "7214",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "7211",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Sport 1 - myTeamTV",
+		"zosaId": "48:550",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10074,7 +11541,7 @@
 			}
 		],
 		"title": "Sport 2 - myTeamTV",
-		"zosaId": "407:548",
+		"zosaId": "391:548",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10143,7 +11610,7 @@
 			}
 		],
 		"title": "Sport 3 - myTeamTV",
-		"zosaId": "6050:549",
+		"zosaId": "4375:549",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10212,7 +11679,7 @@
 			}
 		],
 		"title": "Sport 4 - myTeamTV",
-		"zosaId": "373:648",
+		"zosaId": "407:648",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10281,7 +11748,7 @@
 			}
 		],
 		"title": "Sport 5 - myTeamTV",
-		"zosaId": "408:645",
+		"zosaId": "6050:645",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10350,7 +11817,7 @@
 			}
 		],
 		"title": "Sport 6 - myTeamTV",
-		"zosaId": "404:647",
+		"zosaId": "373:647",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10419,7 +11886,7 @@
 			}
 		],
 		"title": "Sport 7 - myTeamTV",
-		"zosaId": "381:646",
+		"zosaId": "408:646",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10488,7 +11955,7 @@
 			}
 		],
 		"title": "Sport 8 - myTeamTV",
-		"zosaId": "374:623",
+		"zosaId": "404:623",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10557,7 +12024,7 @@
 			}
 		],
 		"title": "Sport 9 - myTeamTV",
-		"zosaId": "385:626",
+		"zosaId": "381:626",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10626,7 +12093,7 @@
 			}
 		],
 		"title": "Sport 10 - myTeamTV",
-		"zosaId": "405:624",
+		"zosaId": "374:624",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10695,7 +12162,7 @@
 			}
 		],
 		"title": "Sport 11 - myTeamTV",
-		"zosaId": "382:625",
+		"zosaId": "385:625",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10764,7 +12231,7 @@
 			}
 		],
 		"title": "Sport 12 - myTeamTV",
-		"zosaId": "403:627",
+		"zosaId": "405:627",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10833,7 +12300,7 @@
 			}
 		],
 		"title": "Sport 13 - myTeamTV",
-		"zosaId": "387:629",
+		"zosaId": "382:629",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10902,7 +12369,7 @@
 			}
 		],
 		"title": "Sport 14 - myTeamTV",
-		"zosaId": "54:628",
+		"zosaId": "403:628",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -10971,7 +12438,7 @@
 			}
 		],
 		"title": "Sport 15 - myTeamTV",
-		"zosaId": "392:367",
+		"zosaId": "387:367",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11040,7 +12507,7 @@
 			}
 		],
 		"title": "Sport 16 - myTeamTV",
-		"zosaId": "375:366",
+		"zosaId": "54:366",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11109,7 +12576,7 @@
 			}
 		],
 		"title": "Sport 17 - myTeamTV",
-		"zosaId": "376:369",
+		"zosaId": "392:369",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11178,7 +12645,7 @@
 			}
 		],
 		"title": "Sport 18 - myTeamTV",
-		"zosaId": "371:3686",
+		"zosaId": "375:3686",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11262,7 +12729,7 @@
 			}
 		],
 		"title": "SPORTDIGITAL FUSSBALL",
-		"zosaId": "48:194",
+		"zosaId": "376:194",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11331,7 +12798,7 @@
 			}
 		],
 		"title": "Sky Sport Kompakt 1",
-		"zosaId": "391:637",
+		"zosaId": "371:637",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11400,7 +12867,7 @@
 			}
 		],
 		"title": "DAZN 1",
-		"zosaId": "4375:5507",
+		"zosaId": "48:5507",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11469,7 +12936,7 @@
 			}
 		],
 		"title": "DAZN 2",
-		"zosaId": "407:5508",
+		"zosaId": "391:5508",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11538,7 +13005,145 @@
 			}
 		],
 		"title": "TeleBom/TeleDom",
-		"zosaId": "6050:483",
+		"zosaId": "4375:483",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 351,
+		"channelType": 0,
+		"cmsId": "euron-rus",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/5964362084a4b56ad4c1c242e321816d89707306.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/8ce9f3f5f5960bba793fed99f7e33bafcdde099a.png",
+				"height": "48",
+				"width": "95"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/e8eba0c3c3824989972c8894455499aeb29bb07a.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/eece51e7d023df59eaba2d666bd7e7ea93ede81d.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "5466",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": true,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "5465",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Euronews Russki",
+		"zosaId": "407:475",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 352,
+		"channelType": 0,
+		"cmsId": "nashe-kino",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/33cb6a595f8e2f571835f118aee7a01fa71fefc0.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/098c6714998abd943c85a2842032a879b2ccb87d.png",
+				"height": "48",
+				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/e8eba0c3c3824989972c8894455499aeb29bb07a.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/eece51e7d023df59eaba2d666bd7e7ea93ede81d.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "5471",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": true,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "5468",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Kinomir",
+		"zosaId": "6050:472",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11764,6 +13369,228 @@
 		"zosaType": "ChannelItem"
 	},
 	{
+		"channelNumber": 366,
+		"channelType": 0,
+		"cmsId": "euro-d",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/f60e277807a9560767b9ee90ae3f55535d522810.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/cc7af74240e70d176aa544f1bc5138a71da1a079.png",
+				"height": "48",
+				"width": "78"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/21139f45333792a5de89a01547cb30c3e723d84c.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/eece51e7d023df59eaba2d666bd7e7ea93ede81d.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "1680",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": true,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "1679",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Euro D",
+		"zosaId": "381:136",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 367,
+		"channelType": 0,
+		"cmsId": "euro-star",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/828a562a5bdf2609a0533caf33470f3518745c55.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/ac7d3b48dcb31fb67fc9da22cad4cf4675aef72f.png",
+				"height": "48",
+				"width": "47"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/21139f45333792a5de89a01547cb30c3e723d84c.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/eece51e7d023df59eaba2d666bd7e7ea93ede81d.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "1172",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": true,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "1158",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Eurostar TV",
+		"zosaId": "374:21",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 368,
+		"channelType": 0,
+		"cmsId": "kanal-7",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/3ad609da92533d461d3e8b05375cdd4bca8554ba.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/d1f86c2f46f1070b4d2c8cbd1ffa1f61d2c62b2d.png",
+				"height": "48",
+				"width": "58"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/21139f45333792a5de89a01547cb30c3e723d84c.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/eece51e7d023df59eaba2d666bd7e7ea93ede81d.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "1200",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": true,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "18931",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": true,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "1193",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Kanal 7",
+		"zosaId": "385:29",
+		"zosaType": "ChannelItem"
+	},
+	{
 		"channelNumber": 369,
 		"channelType": 0,
 		"cmsId": "KID00876-beINiZ",
@@ -11844,7 +13671,7 @@
 			}
 		],
 		"title": "beIN iZ",
-		"zosaId": "381:3826",
+		"zosaId": "405:3826",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -11928,7 +13755,76 @@
 			}
 		],
 		"title": "beIN Movies Turk",
-		"zosaId": "374:440",
+		"zosaId": "382:440",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 371,
+		"channelType": 0,
+		"cmsId": "KID00885-HaberTrk",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/69e21d2bd5141f9c5036c6ef5ce6a213b299fd47.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/e62395d34d225a483eef3d68535f47ac373dc403.png",
+				"height": "48",
+				"width": "99"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/21139f45333792a5de89a01547cb30c3e723d84c.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/eece51e7d023df59eaba2d666bd7e7ea93ede81d.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "18203",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": true,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "18201",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Habertürk TV",
+		"zosaId": "403:4378",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12012,7 +13908,7 @@
 			}
 		],
 		"title": "Show Turk",
-		"zosaId": "385:215",
+		"zosaId": "387:215",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12096,7 +13992,7 @@
 			}
 		],
 		"title": "Show Max",
-		"zosaId": "405:3827",
+		"zosaId": "54:3827",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12165,7 +14061,7 @@
 			}
 		],
 		"title": "TV8 Int",
-		"zosaId": "382:439",
+		"zosaId": "392:439",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12249,7 +14145,76 @@
 			}
 		],
 		"title": "ÜLKE TV",
-		"zosaId": "403:236",
+		"zosaId": "375:236",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 380,
+		"channelType": 0,
+		"cmsId": "euron-i",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/5964362084a4b56ad4c1c242e321816d89707306.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/8ce9f3f5f5960bba793fed99f7e33bafcdde099a.png",
+				"height": "48",
+				"width": "95"
+			},
+			{
+				"serviceProviderImageType": "19",
+				"url": "http://ngiss.t-online.de/cm1s/media/86d1c11e2eaad1c9e428491b872a778cf5d46d03.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/eece51e7d023df59eaba2d666bd7e7ea93ede81d.jpeg",
+				"height": "1080",
+				"width": "1920"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "1684",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": true,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "1682",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Euronews Italiano",
+		"zosaId": "376:121",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12318,7 +14283,7 @@
 			}
 		],
 		"title": "Rai 1",
-		"zosaId": "387:43",
+		"zosaId": "371:43",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12387,7 +14352,7 @@
 			}
 		],
 		"title": "Rai 2",
-		"zosaId": "54:46",
+		"zosaId": "48:46",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12456,7 +14421,7 @@
 			}
 		],
 		"title": "Rai 3",
-		"zosaId": "392:210",
+		"zosaId": "391:210",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12513,7 +14478,7 @@
 			}
 		],
 		"title": "Baden TV",
-		"zosaId": "375:3685",
+		"zosaId": "4375:3685",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12570,7 +14535,7 @@
 			}
 		],
 		"title": "Baden TV Süd",
-		"zosaId": "376:3749",
+		"zosaId": "407:3749",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12627,7 +14592,7 @@
 			}
 		],
 		"title": "L-TV",
-		"zosaId": "371:578",
+		"zosaId": "6050:578",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12684,7 +14649,7 @@
 			}
 		],
 		"title": "Regio TV",
-		"zosaId": "48:660",
+		"zosaId": "373:660",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12741,7 +14706,7 @@
 			}
 		],
 		"title": "RNF",
-		"zosaId": "391:246",
+		"zosaId": "408:246",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12819,7 +14784,7 @@
 			}
 		],
 		"title": "RTL Rhein-Neckar",
-		"zosaId": "4375:6048",
+		"zosaId": "404:6048",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12876,7 +14841,7 @@
 			}
 		],
 		"title": "a.tv",
-		"zosaId": "407:161",
+		"zosaId": "381:161",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12933,7 +14898,7 @@
 			}
 		],
 		"title": "allgäu.tv",
-		"zosaId": "6050:448",
+		"zosaId": "374:448",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -12990,7 +14955,7 @@
 			}
 		],
 		"title": "BR Fernsehen Nord",
-		"zosaId": "373:175",
+		"zosaId": "385:175",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13047,7 +15012,7 @@
 			}
 		],
 		"title": "NIEDERBAYERN TV Deggendorf - Straubing",
-		"zosaId": "408:177",
+		"zosaId": "405:177",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13104,7 +15069,7 @@
 			}
 		],
 		"title": "Franken Fernsehen",
-		"zosaId": "404:238",
+		"zosaId": "382:238",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13161,7 +15126,7 @@
 			}
 		],
 		"title": "tv.ingolstadt",
-		"zosaId": "381:173",
+		"zosaId": "403:173",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13218,7 +15183,7 @@
 			}
 		],
 		"title": "NIEDERBAYERN TV Landshut",
-		"zosaId": "374:174",
+		"zosaId": "387:174",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13275,7 +15240,7 @@
 			}
 		],
 		"title": "münchen.tv",
-		"zosaId": "385:241",
+		"zosaId": "54:241",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13332,7 +15297,7 @@
 			}
 		],
 		"title": "Oberpfalz TV",
-		"zosaId": "405:141",
+		"zosaId": "392:141",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13389,7 +15354,7 @@
 			}
 		],
 		"title": "RFO",
-		"zosaId": "382:143",
+		"zosaId": "375:143",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13467,7 +15432,7 @@
 			}
 		],
 		"title": "RTL Bayern",
-		"zosaId": "403:6047",
+		"zosaId": "376:6047",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13545,7 +15510,7 @@
 			}
 		],
 		"title": "SAT.1 Bayern",
-		"zosaId": "387:146",
+		"zosaId": "371:146",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13602,7 +15567,7 @@
 			}
 		],
 		"title": "NIEDERBAYERN TV Passau",
-		"zosaId": "54:154",
+		"zosaId": "48:154",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13659,7 +15624,7 @@
 			}
 		],
 		"title": "TV Oberfranken",
-		"zosaId": "392:170",
+		"zosaId": "391:170",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13716,7 +15681,7 @@
 			}
 		],
 		"title": "TV Mainfranken",
-		"zosaId": "375:156",
+		"zosaId": "4375:156",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13773,7 +15738,7 @@
 			}
 		],
 		"title": "TVA Ostbayern",
-		"zosaId": "376:171",
+		"zosaId": "407:171",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13830,7 +15795,7 @@
 			}
 		],
 		"title": "ALEX Berlin",
-		"zosaId": "371:649",
+		"zosaId": "6050:649",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13893,7 +15858,7 @@
 			}
 		],
 		"title": "HAUPTSTADT.TV",
-		"zosaId": "48:3284",
+		"zosaId": "373:3284",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -13950,7 +15915,7 @@
 			}
 		],
 		"title": "tv.berlin",
-		"zosaId": "391:599",
+		"zosaId": "408:599",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14007,7 +15972,7 @@
 			}
 		],
 		"title": "rbb fernsehen Brandenburg",
-		"zosaId": "4375:242",
+		"zosaId": "404:242",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14085,7 +16050,7 @@
 			}
 		],
 		"title": "RTL Bremen & Niedersachsen",
-		"zosaId": "407:100",
+		"zosaId": "381:100",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14163,7 +16128,7 @@
 			}
 		],
 		"title": "SAT.1 Niedersachsen und Bremen",
-		"zosaId": "6050:144",
+		"zosaId": "374:144",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14220,7 +16185,7 @@
 			}
 		],
 		"title": "Hamburg 1",
-		"zosaId": "373:244",
+		"zosaId": "385:244",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14277,7 +16242,7 @@
 			}
 		],
 		"title": "NDR Fernsehen Hamburg",
-		"zosaId": "408:150",
+		"zosaId": "405:150",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14334,7 +16299,7 @@
 			}
 		],
 		"title": "NDR Fernsehen Schleswig-Holstein",
-		"zosaId": "404:151",
+		"zosaId": "382:151",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14412,7 +16377,7 @@
 			}
 		],
 		"title": "RTL Hamburg & Schleswig-Holstein",
-		"zosaId": "381:102",
+		"zosaId": "403:102",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14490,7 +16455,7 @@
 			}
 		],
 		"title": "SAT.1 Hamburg und Schleswig-Holstein",
-		"zosaId": "374:142",
+		"zosaId": "387:142",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14547,7 +16512,7 @@
 			}
 		],
 		"title": "OF-TV",
-		"zosaId": "385:546",
+		"zosaId": "54:546",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14604,7 +16569,7 @@
 			}
 		],
 		"title": "Rhein-Main TV",
-		"zosaId": "405:2966",
+		"zosaId": "392:2966",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14682,7 +16647,7 @@
 			}
 		],
 		"title": "RTL Hessen",
-		"zosaId": "382:101",
+		"zosaId": "375:101",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14739,7 +16704,7 @@
 			}
 		],
 		"title": "NDR Fernsehen Mecklenburg-Vorpommern",
-		"zosaId": "403:240",
+		"zosaId": "376:240",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14796,7 +16761,7 @@
 			}
 		],
 		"title": "ems TV",
-		"zosaId": "387:4380",
+		"zosaId": "371:4380",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14853,7 +16818,7 @@
 			}
 		],
 		"title": "Friesischer Rundfunk",
-		"zosaId": "54:4513",
+		"zosaId": "48:4513",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14916,7 +16881,7 @@
 			}
 		],
 		"title": "NRWision",
-		"zosaId": "392:3750",
+		"zosaId": "391:3750",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -14994,7 +16959,7 @@
 			}
 		],
 		"title": "RTL Nordrhein-Westfalen",
-		"zosaId": "375:478",
+		"zosaId": "4375:478",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15072,7 +17037,7 @@
 			}
 		],
 		"title": "SAT.1 Nordrhein-Westfalen",
-		"zosaId": "376:251",
+		"zosaId": "407:251",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15129,7 +17094,7 @@
 			}
 		],
 		"title": "Studio 47",
-		"zosaId": "371:2616",
+		"zosaId": "6050:2616",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15186,7 +17151,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Aachen",
-		"zosaId": "48:160",
+		"zosaId": "373:160",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15243,7 +17208,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Bielefeld",
-		"zosaId": "391:158",
+		"zosaId": "408:158",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15300,7 +17265,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Bonn",
-		"zosaId": "4375:155",
+		"zosaId": "404:155",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15357,7 +17322,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Dortmund",
-		"zosaId": "407:172",
+		"zosaId": "381:172",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15414,7 +17379,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Duisburg",
-		"zosaId": "6050:165",
+		"zosaId": "374:165",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15471,7 +17436,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Düsseldorf",
-		"zosaId": "373:167",
+		"zosaId": "385:167",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15528,7 +17493,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Essen",
-		"zosaId": "408:531",
+		"zosaId": "405:531",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15585,7 +17550,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Münster",
-		"zosaId": "404:239",
+		"zosaId": "382:239",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15642,7 +17607,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Siegen",
-		"zosaId": "381:166",
+		"zosaId": "403:166",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15699,7 +17664,7 @@
 			}
 		],
 		"title": "WDR Fernsehen Wuppertal",
-		"zosaId": "374:249",
+		"zosaId": "387:249",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15756,7 +17721,7 @@
 			}
 		],
 		"title": "OK4",
-		"zosaId": "385:3045",
+		"zosaId": "54:3045",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15813,7 +17778,7 @@
 			}
 		],
 		"title": "OK54 Trier",
-		"zosaId": "405:663",
+		"zosaId": "392:663",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15870,7 +17835,7 @@
 			}
 		],
 		"title": "OK Weinstraße",
-		"zosaId": "382:3042",
+		"zosaId": "375:3042",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15927,7 +17892,7 @@
 			}
 		],
 		"title": "OK-TV Ludwigshafen",
-		"zosaId": "403:662",
+		"zosaId": "376:662",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -15984,7 +17949,7 @@
 			}
 		],
 		"title": "OK:TV Mainz",
-		"zosaId": "387:3044",
+		"zosaId": "371:3044",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16062,7 +18027,7 @@
 			}
 		],
 		"title": "SAT.1 Rheinland-Pfalz und Hessen",
-		"zosaId": "54:145",
+		"zosaId": "48:145",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16119,7 +18084,7 @@
 			}
 		],
 		"title": "TV Mittelrhein",
-		"zosaId": "392:581",
+		"zosaId": "391:581",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16176,7 +18141,7 @@
 			}
 		],
 		"title": "WWTV",
-		"zosaId": "375:580",
+		"zosaId": "4375:580",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16233,7 +18198,7 @@
 			}
 		],
 		"title": "Chemnitz Fernsehen",
-		"zosaId": "376:2612",
+		"zosaId": "407:2612",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16290,7 +18255,7 @@
 			}
 		],
 		"title": "Dresden Fernsehen",
-		"zosaId": "371:2611",
+		"zosaId": "6050:2611",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16347,7 +18312,7 @@
 			}
 		],
 		"title": "LAUSITZWELLE",
-		"zosaId": "48:4727",
+		"zosaId": "373:4727",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16356,16 +18321,16 @@
 		"cmsId": "KID00847-LeipzigFernsehen",
 		"images": [
 			{
-				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/cde7f7c42829fe07dc3fa09679f8efac35f4dd1d.png",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
 				"serviceProviderImageType": "15",
 				"url": "http://ngiss.t-online.de/cm1s/media/8755b09d6bda3c93b0f2d453cedd0a01372982d3.png",
 				"height": "48",
 				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/cde7f7c42829fe07dc3fa09679f8efac35f4dd1d.png",
+				"height": "1080",
+				"width": "1920"
 			}
 		],
 		"isFavorited": true,
@@ -16404,7 +18369,7 @@
 			}
 		],
 		"title": "Leipzig Fernsehen",
-		"zosaId": "391:3179",
+		"zosaId": "408:3179",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16461,7 +18426,7 @@
 			}
 		],
 		"title": "TV Westsachsen",
-		"zosaId": "4375:2610",
+		"zosaId": "404:2610",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16518,7 +18483,7 @@
 			}
 		],
 		"title": "MDF.1 Fernsehen",
-		"zosaId": "407:4888",
+		"zosaId": "381:4888",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16575,7 +18540,7 @@
 			}
 		],
 		"title": "MDR-Fernsehen Sachsen-Anhalt",
-		"zosaId": "6050:147",
+		"zosaId": "374:147",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16632,7 +18597,7 @@
 			}
 		],
 		"title": "RFH Regionalfernsehen Harz",
-		"zosaId": "373:4723",
+		"zosaId": "385:4723",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16689,7 +18654,7 @@
 			}
 		],
 		"title": "altenburg.tv",
-		"zosaId": "408:3660",
+		"zosaId": "405:3660",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16746,7 +18711,7 @@
 			}
 		],
 		"title": "JenaTV",
-		"zosaId": "404:5744",
+		"zosaId": "382:5744",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16803,7 +18768,7 @@
 			}
 		],
 		"title": "MDR-Fernsehen Thüringen",
-		"zosaId": "381:252",
+		"zosaId": "403:252",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16860,7 +18825,7 @@
 			}
 		],
 		"title": "Rennsteig.TV",
-		"zosaId": "374:2609",
+		"zosaId": "387:2609",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16923,7 +18888,7 @@
 			}
 		],
 		"title": "salve.tv",
-		"zosaId": "385:3073",
+		"zosaId": "54:3073",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -16980,7 +18945,7 @@
 			}
 		],
 		"title": "SRF",
-		"zosaId": "405:5144",
+		"zosaId": "392:5144",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17049,7 +19014,7 @@
 			}
 		],
 		"title": "Sky Showcase",
-		"zosaId": "382:5577",
+		"zosaId": "375:5577",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17133,7 +19098,7 @@
 			}
 		],
 		"title": "Sky One",
-		"zosaId": "403:576",
+		"zosaId": "376:576",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17202,7 +19167,7 @@
 			}
 		],
 		"title": "Sky Krimi",
-		"zosaId": "387:201",
+		"zosaId": "371:201",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17286,7 +19251,7 @@
 			}
 		],
 		"title": "Sky Atlantic",
-		"zosaId": "54:264",
+		"zosaId": "48:264",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17355,7 +19320,7 @@
 			}
 		],
 		"title": "Sky Replay",
-		"zosaId": "392:3756",
+		"zosaId": "391:3756",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17424,7 +19389,7 @@
 			}
 		],
 		"title": "Sky Crime",
-		"zosaId": "375:4924",
+		"zosaId": "4375:4924",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17493,7 +19458,7 @@
 			}
 		],
 		"title": "Sky Documentaries",
-		"zosaId": "376:5143",
+		"zosaId": "407:5143",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17562,7 +19527,7 @@
 			}
 		],
 		"title": "Sky Nature",
-		"zosaId": "371:5142",
+		"zosaId": "6050:5142",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17646,7 +19611,7 @@
 			}
 		],
 		"title": "SYFY (Sky)",
-		"zosaId": "48:465",
+		"zosaId": "373:465",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17730,7 +19695,7 @@
 			}
 		],
 		"title": "13TH STREET (Sky)",
-		"zosaId": "391:471",
+		"zosaId": "408:471",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17799,7 +19764,7 @@
 			}
 		],
 		"title": "Universal TV (Sky)",
-		"zosaId": "4375:462",
+		"zosaId": "404:462",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17883,7 +19848,7 @@
 			}
 		],
 		"title": "Warner TV Serie (Sky)",
-		"zosaId": "407:458",
+		"zosaId": "381:458",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -17952,7 +19917,7 @@
 			}
 		],
 		"title": "Warner TV Comedy (Sky)",
-		"zosaId": "6050:461",
+		"zosaId": "374:461",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18015,7 +19980,7 @@
 			}
 		],
 		"title": "Heimatkanal (Sky)",
-		"zosaId": "373:134",
+		"zosaId": "385:134",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18078,7 +20043,7 @@
 			}
 		],
 		"title": "Romance TV (Sky)",
-		"zosaId": "408:658",
+		"zosaId": "405:658",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18147,7 +20112,7 @@
 			}
 		],
 		"title": "The HISTORY Channel (Sky)",
-		"zosaId": "404:467",
+		"zosaId": "382:467",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18231,7 +20196,7 @@
 			}
 		],
 		"title": "Discovery Channel (Sky)",
-		"zosaId": "381:468",
+		"zosaId": "403:468",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18300,7 +20265,7 @@
 			}
 		],
 		"title": "Crime+Investigation (Sky)",
-		"zosaId": "374:5141",
+		"zosaId": "387:5141",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18369,7 +20334,7 @@
 			}
 		],
 		"title": "Cartoonito (Sky)",
-		"zosaId": "385:3843",
+		"zosaId": "54:3843",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18438,7 +20403,7 @@
 			}
 		],
 		"title": "Nick Jr. (Sky)",
-		"zosaId": "405:4379",
+		"zosaId": "392:4379",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18507,7 +20472,7 @@
 			}
 		],
 		"title": "Nicktoons (Sky)",
-		"zosaId": "382:4405",
+		"zosaId": "375:4405",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18576,7 +20541,7 @@
 			}
 		],
 		"title": "Cartoon Network (Sky)",
-		"zosaId": "403:4512",
+		"zosaId": "376:4512",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18639,7 +20604,7 @@
 			}
 		],
 		"title": "Jukebox (Sky)",
-		"zosaId": "387:132",
+		"zosaId": "371:132",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18717,7 +20682,7 @@
 			}
 		],
 		"title": "Beate-Uhse.TV (Sky)",
-		"zosaId": "54:107",
+		"zosaId": "48:107",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18801,7 +20766,7 @@
 			}
 		],
 		"title": "Sky Cinema Premiere",
-		"zosaId": "392:195",
+		"zosaId": "391:195",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18870,7 +20835,7 @@
 			}
 		],
 		"title": "Sky Cinema Highlights",
-		"zosaId": "375:6210",
+		"zosaId": "4375:6210",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -18954,7 +20919,7 @@
 			}
 		],
 		"title": "Sky Cinema Action",
-		"zosaId": "376:40",
+		"zosaId": "407:40",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19038,7 +21003,7 @@
 			}
 		],
 		"title": "Sky Cinema Family",
-		"zosaId": "371:572",
+		"zosaId": "6050:572",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19122,7 +21087,7 @@
 			}
 		],
 		"title": "Sky Cinema Classics",
-		"zosaId": "48:200",
+		"zosaId": "373:200",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19206,7 +21171,7 @@
 			}
 		],
 		"title": "Warner TV Film (Sky)",
-		"zosaId": "391:540",
+		"zosaId": "408:540",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19290,7 +21255,7 @@
 			}
 		],
 		"title": "Sky Sport News",
-		"zosaId": "4375:190",
+		"zosaId": "404:190",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19374,7 +21339,7 @@
 			}
 		],
 		"title": "Sky Sport Top Event",
-		"zosaId": "407:31",
+		"zosaId": "381:31",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19458,7 +21423,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga",
-		"zosaId": "6050:42",
+		"zosaId": "374:42",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19527,7 +21492,7 @@
 			}
 		],
 		"title": "Sky Sport F1",
-		"zosaId": "373:4889",
+		"zosaId": "385:4889",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19596,7 +21561,7 @@
 			}
 		],
 		"title": "Sky Sport Premier League",
-		"zosaId": "408:5555",
+		"zosaId": "405:5555",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19665,7 +21630,7 @@
 			}
 		],
 		"title": "Sky Sport Mix",
-		"zosaId": "404:5556",
+		"zosaId": "382:5556",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19749,7 +21714,7 @@
 			}
 		],
 		"title": "Sky Sport Tennis",
-		"zosaId": "381:198",
+		"zosaId": "403:198",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19818,7 +21783,7 @@
 			}
 		],
 		"title": "Sky Sport Golf",
-		"zosaId": "374:5558",
+		"zosaId": "387:5558",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19881,7 +21846,7 @@
 			}
 		],
 		"title": "Sky Sport UHD",
-		"zosaId": "385:631",
+		"zosaId": "54:631",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -19944,7 +21909,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga UHD",
-		"zosaId": "405:630",
+		"zosaId": "392:630",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20028,7 +21993,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 1",
-		"zosaId": "382:206",
+		"zosaId": "375:206",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20112,7 +22077,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 2",
-		"zosaId": "403:211",
+		"zosaId": "376:211",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20196,7 +22161,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 3",
-		"zosaId": "387:199",
+		"zosaId": "371:199",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20280,7 +22245,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 4",
-		"zosaId": "54:232",
+		"zosaId": "48:232",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20364,7 +22329,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 5",
-		"zosaId": "392:234",
+		"zosaId": "391:234",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20448,7 +22413,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 6",
-		"zosaId": "375:231",
+		"zosaId": "4375:231",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20532,7 +22497,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 7",
-		"zosaId": "376:258",
+		"zosaId": "407:258",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20616,7 +22581,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 8",
-		"zosaId": "371:219",
+		"zosaId": "6050:219",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20700,7 +22665,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 9",
-		"zosaId": "48:237",
+		"zosaId": "373:237",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20769,7 +22734,7 @@
 			}
 		],
 		"title": "Sky Sport Bundesliga 10",
-		"zosaId": "391:5557",
+		"zosaId": "408:5557",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20853,7 +22818,7 @@
 			}
 		],
 		"title": "Sky Sport 1",
-		"zosaId": "4375:192",
+		"zosaId": "404:192",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -20937,7 +22902,7 @@
 			}
 		],
 		"title": "Sky Sport 2",
-		"zosaId": "407:212",
+		"zosaId": "381:212",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21021,7 +22986,7 @@
 			}
 		],
 		"title": "Sky Sport 3",
-		"zosaId": "6050:189",
+		"zosaId": "374:189",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21105,7 +23070,7 @@
 			}
 		],
 		"title": "Sky Sport 4",
-		"zosaId": "373:111",
+		"zosaId": "385:111",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21189,7 +23154,7 @@
 			}
 		],
 		"title": "Sky Sport 5",
-		"zosaId": "408:114",
+		"zosaId": "405:114",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21273,7 +23238,7 @@
 			}
 		],
 		"title": "Sky Sport 6",
-		"zosaId": "404:113",
+		"zosaId": "382:113",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21357,7 +23322,7 @@
 			}
 		],
 		"title": "Sky Sport 7",
-		"zosaId": "381:127",
+		"zosaId": "403:127",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21441,7 +23406,7 @@
 			}
 		],
 		"title": "Sky Sport 8",
-		"zosaId": "374:261",
+		"zosaId": "387:261",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21525,7 +23490,7 @@
 			}
 		],
 		"title": "Sky Sport 9",
-		"zosaId": "385:187",
+		"zosaId": "54:187",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21594,7 +23559,7 @@
 			}
 		],
 		"title": "Sky Sport 10",
-		"zosaId": "405:5554",
+		"zosaId": "392:5554",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21646,7 +23611,7 @@
 			}
 		],
 		"title": "DAZN",
-		"zosaId": "382:4584",
+		"zosaId": "375:4584",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21698,7 +23663,7 @@
 			}
 		],
 		"title": "Disney+",
-		"zosaId": "403:4887",
+		"zosaId": "376:4887",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21750,7 +23715,7 @@
 			}
 		],
 		"title": "MagentaTV+",
-		"zosaId": "387:812",
+		"zosaId": "371:812",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21802,7 +23767,7 @@
 			}
 		],
 		"title": "Netflix",
-		"zosaId": "54:613",
+		"zosaId": "48:613",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21860,7 +23825,7 @@
 			}
 		],
 		"title": "Prime Video",
-		"zosaId": "392:2921",
+		"zosaId": "391:2921",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -21902,7 +23867,7 @@
 			}
 		],
 		"title": "MagentaTV Info",
-		"zosaId": "375:115",
+		"zosaId": "4375:115",
 		"zosaType": "ChannelItem"
 	}
 ]
