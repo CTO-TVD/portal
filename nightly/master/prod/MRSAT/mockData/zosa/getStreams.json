@@ -2,62 +2,6 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "47062af1",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_1628k_p13v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "4b4f8d56",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_808k_p11v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "71bf818",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_508k_p9v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "71bf818",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_508k_p9v17.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
-				"id": "47062af1",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_1628k_p13v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "4b4f8d56",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_808k_p11v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "71bf818",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_508k_p9v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "71bf818",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_508k_p9v17.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
 				"id": "5ff39830",
 				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/05/240531_0310_sendungpp_spf/1/240531_0310_sendungpp_spf_1628k_p13v15.mp4",
 				"video3dFormat": 0,
@@ -107,62 +51,6 @@
 		"pipStream": {
 			"id": "133b68f9",
 			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/05/240531_0310_sendungpp_spf/1/240531_0310_sendungpp_spf_508k_p9v15.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
-				"id": "d838d836",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/05/220523_2215_sendung_spf/1/220523_2215_sendung_spf_1628k_p13v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "b6407c11",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/05/220523_2215_sendung_spf/1/220523_2215_sendung_spf_808k_p11v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "4afe233f",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/05/220523_2215_sendung_spf/1/220523_2215_sendung_spf_508k_p9v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "4afe233f",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/05/220523_2215_sendung_spf/1/220523_2215_sendung_spf_508k_p9v15.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
-				"id": "d838d836",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/05/220523_2215_sendung_spf/1/220523_2215_sendung_spf_1628k_p13v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "b6407c11",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/05/220523_2215_sendung_spf/1/220523_2215_sendung_spf_808k_p11v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "4afe233f",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/05/220523_2215_sendung_spf/1/220523_2215_sendung_spf_508k_p9v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "4afe233f",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/05/220523_2215_sendung_spf/1/220523_2215_sendung_spf_508k_p9v15.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
@@ -226,27 +114,27 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "f2c96b70",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/16/06/160608_2225_sendung_spf/1/160608_2225_sendung_spf_1628k_p13v17.mp4",
+				"id": "2fbe6438",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2015_sendung_fis/4/201223_2015_sendung_fis_1628k_p13v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "c2c85297",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/16/06/160608_2225_sendung_spf/1/160608_2225_sendung_spf_808k_p11v17.mp4",
+				"id": "e266aa1f",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2015_sendung_fis/4/201223_2015_sendung_fis_808k_p11v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "c15f4139",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/16/06/160608_2225_sendung_spf/1/160608_2225_sendung_spf_508k_p9v17.mp4",
+				"id": "f7a95e71",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2015_sendung_fis/4/201223_2015_sendung_fis_508k_p9v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "c15f4139",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/16/06/160608_2225_sendung_spf/1/160608_2225_sendung_spf_508k_p9v17.mp4",
+			"id": "f7a95e71",
+			"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2015_sendung_fis/4/201223_2015_sendung_fis_508k_p9v15.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
@@ -254,27 +142,139 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "f2c96b70",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/16/06/160608_2225_sendung_spf/1/160608_2225_sendung_spf_1628k_p13v17.mp4",
+				"id": "2fbe6438",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2015_sendung_fis/4/201223_2015_sendung_fis_1628k_p13v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "c2c85297",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/16/06/160608_2225_sendung_spf/1/160608_2225_sendung_spf_808k_p11v17.mp4",
+				"id": "e266aa1f",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2015_sendung_fis/4/201223_2015_sendung_fis_808k_p11v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "c15f4139",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/16/06/160608_2225_sendung_spf/1/160608_2225_sendung_spf_508k_p9v17.mp4",
+				"id": "f7a95e71",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2015_sendung_fis/4/201223_2015_sendung_fis_508k_p9v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "c15f4139",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/16/06/160608_2225_sendung_spf/1/160608_2225_sendung_spf_508k_p9v17.mp4",
+			"id": "f7a95e71",
+			"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2015_sendung_fis/4/201223_2015_sendung_fis_508k_p9v15.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "47062af1",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_1628k_p13v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "4b4f8d56",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_808k_p11v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "71bf818",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_508k_p9v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "71bf818",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_508k_p9v17.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "47062af1",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_1628k_p13v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "4b4f8d56",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_808k_p11v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "71bf818",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_508k_p9v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "71bf818",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_508k_p9v17.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "b0f92678",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2145_sendung_fis/4/201223_2145_sendung_fis_1628k_p13v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "bcfa6a5f",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2145_sendung_fis/4/201223_2145_sendung_fis_808k_p11v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "d44d2931",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2145_sendung_fis/4/201223_2145_sendung_fis_508k_p9v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "d44d2931",
+			"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2145_sendung_fis/4/201223_2145_sendung_fis_508k_p9v15.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "b0f92678",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2145_sendung_fis/4/201223_2145_sendung_fis_1628k_p13v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "bcfa6a5f",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2145_sendung_fis/4/201223_2145_sendung_fis_808k_p11v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "d44d2931",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2145_sendung_fis/4/201223_2145_sendung_fis_508k_p9v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "d44d2931",
+			"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2145_sendung_fis/4/201223_2145_sendung_fis_508k_p9v15.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
