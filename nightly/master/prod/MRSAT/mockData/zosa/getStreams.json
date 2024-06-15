@@ -114,62 +114,6 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "2fbe6438",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2015_sendung_fis/4/201223_2015_sendung_fis_1628k_p13v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "e266aa1f",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2015_sendung_fis/4/201223_2015_sendung_fis_808k_p11v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "f7a95e71",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2015_sendung_fis/4/201223_2015_sendung_fis_508k_p9v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "f7a95e71",
-			"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2015_sendung_fis/4/201223_2015_sendung_fis_508k_p9v15.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
-				"id": "2fbe6438",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2015_sendung_fis/4/201223_2015_sendung_fis_1628k_p13v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "e266aa1f",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2015_sendung_fis/4/201223_2015_sendung_fis_808k_p11v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "f7a95e71",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2015_sendung_fis/4/201223_2015_sendung_fis_508k_p9v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "f7a95e71",
-			"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2015_sendung_fis/4/201223_2015_sendung_fis_508k_p9v15.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
 				"id": "47062af1",
 				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_1628k_p13v17.mp4",
 				"video3dFormat": 0,
@@ -226,27 +170,27 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "b0f92678",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2145_sendung_fis/4/201223_2145_sendung_fis_1628k_p13v15.mp4",
+				"id": "2a87e231",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230107_mittsommerlust_spielfilm/1/230107_mittsommerlust_spielfilm_1628k_p13v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "bcfa6a5f",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2145_sendung_fis/4/201223_2145_sendung_fis_808k_p11v15.mp4",
+				"id": "82ff3d36",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230107_mittsommerlust_spielfilm/1/230107_mittsommerlust_spielfilm_808k_p11v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "d44d2931",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2145_sendung_fis/4/201223_2145_sendung_fis_508k_p9v15.mp4",
+				"id": "94cbd4b8",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230107_mittsommerlust_spielfilm/1/230107_mittsommerlust_spielfilm_508k_p9v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "d44d2931",
-			"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2145_sendung_fis/4/201223_2145_sendung_fis_508k_p9v15.mp4",
+			"id": "94cbd4b8",
+			"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230107_mittsommerlust_spielfilm/1/230107_mittsommerlust_spielfilm_508k_p9v15.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
@@ -254,27 +198,83 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "b0f92678",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2145_sendung_fis/4/201223_2145_sendung_fis_1628k_p13v15.mp4",
+				"id": "2a87e231",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230107_mittsommerlust_spielfilm/1/230107_mittsommerlust_spielfilm_1628k_p13v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "bcfa6a5f",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2145_sendung_fis/4/201223_2145_sendung_fis_808k_p11v15.mp4",
+				"id": "82ff3d36",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230107_mittsommerlust_spielfilm/1/230107_mittsommerlust_spielfilm_808k_p11v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "d44d2931",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2145_sendung_fis/4/201223_2145_sendung_fis_508k_p9v15.mp4",
+				"id": "94cbd4b8",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230107_mittsommerlust_spielfilm/1/230107_mittsommerlust_spielfilm_508k_p9v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "d44d2931",
-			"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2145_sendung_fis/4/201223_2145_sendung_fis_508k_p9v15.mp4",
+			"id": "94cbd4b8",
+			"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230107_mittsommerlust_spielfilm/1/230107_mittsommerlust_spielfilm_508k_p9v15.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "253a9a11",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/02/200217_2215_sendung_spf/1/200217_2215_sendung_spf_1628k_p13v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "cdf9e1f6",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/02/200217_2215_sendung_spf/1/200217_2215_sendung_spf_808k_p11v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "60b89bf8",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/02/200217_2215_sendung_spf/1/200217_2215_sendung_spf_508k_p9v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "60b89bf8",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/02/200217_2215_sendung_spf/1/200217_2215_sendung_spf_508k_p9v17.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "253a9a11",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/02/200217_2215_sendung_spf/1/200217_2215_sendung_spf_1628k_p13v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "cdf9e1f6",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/02/200217_2215_sendung_spf/1/200217_2215_sendung_spf_808k_p11v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "60b89bf8",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/02/200217_2215_sendung_spf/1/200217_2215_sendung_spf_508k_p9v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "60b89bf8",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/02/200217_2215_sendung_spf/1/200217_2215_sendung_spf_508k_p9v17.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
