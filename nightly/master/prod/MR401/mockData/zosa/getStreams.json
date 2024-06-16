@@ -2,6 +2,174 @@
 	{
 		"channelStreams": {
 			"uhd": {
+				"id": "f5b9dcda",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/08/230825_2015_sendung_spf/1/230825_2015_sendung_spf_1628k_p13v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "a1a644fd",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/08/230825_2015_sendung_spf/1/230825_2015_sendung_spf_808k_p11v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "36136ed3",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/08/230825_2015_sendung_spf/1/230825_2015_sendung_spf_508k_p9v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "36136ed3",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/08/230825_2015_sendung_spf/1/230825_2015_sendung_spf_508k_p9v15.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "f5b9dcda",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/08/230825_2015_sendung_spf/1/230825_2015_sendung_spf_1628k_p13v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "a1a644fd",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/08/230825_2015_sendung_spf/1/230825_2015_sendung_spf_808k_p11v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "36136ed3",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/08/230825_2015_sendung_spf/1/230825_2015_sendung_spf_508k_p9v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "36136ed3",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/08/230825_2015_sendung_spf/1/230825_2015_sendung_spf_508k_p9v15.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "1dbf636",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/06/230617_sony_2155_sendung_nsf/1/230617_sony_2155_sendung_nsf_1628k_p13v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "681fd551",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/06/230617_sony_2155_sendung_nsf/1/230617_sony_2155_sendung_nsf_808k_p11v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "dc0ab9bf",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/06/230617_sony_2155_sendung_nsf/1/230617_sony_2155_sendung_nsf_508k_p9v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "dc0ab9bf",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/06/230617_sony_2155_sendung_nsf/1/230617_sony_2155_sendung_nsf_508k_p9v17.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "1dbf636",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/06/230617_sony_2155_sendung_nsf/1/230617_sony_2155_sendung_nsf_1628k_p13v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "681fd551",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/06/230617_sony_2155_sendung_nsf/1/230617_sony_2155_sendung_nsf_808k_p11v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "dc0ab9bf",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/06/230617_sony_2155_sendung_nsf/1/230617_sony_2155_sendung_nsf_508k_p9v17.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "dc0ab9bf",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/06/230617_sony_2155_sendung_nsf/1/230617_sony_2155_sendung_nsf_508k_p9v17.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "b67f27b3",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230103_eine_nacht_in_rom_spielfilm/3/230103_eine_nacht_in_rom_spielfilm_1628k_p13v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "2050a3f4",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230103_eine_nacht_in_rom_spielfilm/3/230103_eine_nacht_in_rom_spielfilm_808k_p11v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "48f7763a",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230103_eine_nacht_in_rom_spielfilm/3/230103_eine_nacht_in_rom_spielfilm_508k_p9v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "48f7763a",
+			"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230103_eine_nacht_in_rom_spielfilm/3/230103_eine_nacht_in_rom_spielfilm_508k_p9v15.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "b67f27b3",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230103_eine_nacht_in_rom_spielfilm/3/230103_eine_nacht_in_rom_spielfilm_1628k_p13v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "2050a3f4",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230103_eine_nacht_in_rom_spielfilm/3/230103_eine_nacht_in_rom_spielfilm_808k_p11v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "48f7763a",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230103_eine_nacht_in_rom_spielfilm/3/230103_eine_nacht_in_rom_spielfilm_508k_p9v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "48f7763a",
+			"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230103_eine_nacht_in_rom_spielfilm/3/230103_eine_nacht_in_rom_spielfilm_508k_p9v15.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
 				"id": "5ff39830",
 				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/05/240531_0310_sendungpp_spf/1/240531_0310_sendungpp_spf_1628k_p13v15.mp4",
 				"video3dFormat": 0,
@@ -107,174 +275,6 @@
 		"pipStream": {
 			"id": "f338449f",
 			"url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/22/08/220811_2325_sendung_dks/3/220811_2325_sendung_dks_508k_p9v15.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
-				"id": "47062af1",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_1628k_p13v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "4b4f8d56",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_808k_p11v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "71bf818",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_508k_p9v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "71bf818",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_508k_p9v17.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
-				"id": "47062af1",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_1628k_p13v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "4b4f8d56",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_808k_p11v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "71bf818",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_508k_p9v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "71bf818",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231022_0150_sendung2_spf/1/231022_0150_sendung2_spf_508k_p9v17.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
-				"id": "2a87e231",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230107_mittsommerlust_spielfilm/1/230107_mittsommerlust_spielfilm_1628k_p13v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "82ff3d36",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230107_mittsommerlust_spielfilm/1/230107_mittsommerlust_spielfilm_808k_p11v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "94cbd4b8",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230107_mittsommerlust_spielfilm/1/230107_mittsommerlust_spielfilm_508k_p9v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "94cbd4b8",
-			"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230107_mittsommerlust_spielfilm/1/230107_mittsommerlust_spielfilm_508k_p9v15.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
-				"id": "2a87e231",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230107_mittsommerlust_spielfilm/1/230107_mittsommerlust_spielfilm_1628k_p13v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "82ff3d36",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230107_mittsommerlust_spielfilm/1/230107_mittsommerlust_spielfilm_808k_p11v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "94cbd4b8",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230107_mittsommerlust_spielfilm/1/230107_mittsommerlust_spielfilm_508k_p9v15.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "94cbd4b8",
-			"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/01/230107_mittsommerlust_spielfilm/1/230107_mittsommerlust_spielfilm_508k_p9v15.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
-				"id": "253a9a11",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/02/200217_2215_sendung_spf/1/200217_2215_sendung_spf_1628k_p13v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "cdf9e1f6",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/02/200217_2215_sendung_spf/1/200217_2215_sendung_spf_808k_p11v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "60b89bf8",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/02/200217_2215_sendung_spf/1/200217_2215_sendung_spf_508k_p9v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "60b89bf8",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/02/200217_2215_sendung_spf/1/200217_2215_sendung_spf_508k_p9v17.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
-				"id": "253a9a11",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/02/200217_2215_sendung_spf/1/200217_2215_sendung_spf_1628k_p13v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "cdf9e1f6",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/02/200217_2215_sendung_spf/1/200217_2215_sendung_spf_808k_p11v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "60b89bf8",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/02/200217_2215_sendung_spf/1/200217_2215_sendung_spf_508k_p9v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "60b89bf8",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/02/200217_2215_sendung_spf/1/200217_2215_sendung_spf_508k_p9v17.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
