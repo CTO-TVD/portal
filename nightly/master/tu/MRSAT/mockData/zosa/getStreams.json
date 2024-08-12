@@ -170,27 +170,55 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "1ce2d715",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/22/04/220410_madame_spielfilm/1/220410_madame_spielfilm_1628k_p13v15.mp4",
+				"id": "ee6c31a1",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240812_2215_sendung_spf/1/240812_2215_sendung_spf_a1a2_1628k_p13v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "fad289d2",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/22/04/220410_madame_spielfilm/1/220410_madame_spielfilm_808k_p11v15.mp4",
+				"id": "c9b2f7e6",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240812_2215_sendung_spf/1/240812_2215_sendung_spf_a1a2_808k_p11v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "68284e1c",
-				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/22/04/220410_madame_spielfilm/1/220410_madame_spielfilm_508k_p9v15.mp4",
+				"id": "2fac8ea8",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240812_2215_sendung_spf/1/240812_2215_sendung_spf_a1a2_508k_p9v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "68284e1c",
-			"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/22/04/220410_madame_spielfilm/1/220410_madame_spielfilm_508k_p9v15.mp4",
+			"id": "2fac8ea8",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240812_2215_sendung_spf/1/240812_2215_sendung_spf_a1a2_508k_p9v15.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "ee6c31a1",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240812_2215_sendung_spf/1/240812_2215_sendung_spf_a1a2_1628k_p13v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "c9b2f7e6",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240812_2215_sendung_spf/1/240812_2215_sendung_spf_a1a2_808k_p11v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "2fac8ea8",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240812_2215_sendung_spf/1/240812_2215_sendung_spf_a1a2_508k_p9v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "2fac8ea8",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240812_2215_sendung_spf/1/240812_2215_sendung_spf_a1a2_508k_p9v15.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
@@ -226,55 +254,27 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "7972225a",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/08/210826_2345_sendung_spf/1/210826_2345_sendung_spf_1628k_p13v17.mp4",
+				"id": "1ce2d715",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/22/04/220410_madame_spielfilm/1/220410_madame_spielfilm_1628k_p13v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "90937fbd",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/08/210826_2345_sendung_spf/1/210826_2345_sendung_spf_808k_p11v17.mp4",
+				"id": "fad289d2",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/22/04/220410_madame_spielfilm/1/220410_madame_spielfilm_808k_p11v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "e71fe9d3",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/08/210826_2345_sendung_spf/1/210826_2345_sendung_spf_508k_p9v17.mp4",
+				"id": "68284e1c",
+				"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/22/04/220410_madame_spielfilm/1/220410_madame_spielfilm_508k_p9v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "e71fe9d3",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/08/210826_2345_sendung_spf/1/210826_2345_sendung_spf_508k_p9v17.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
-				"id": "7972225a",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/08/210826_2345_sendung_spf/1/210826_2345_sendung_spf_1628k_p13v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "90937fbd",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/08/210826_2345_sendung_spf/1/210826_2345_sendung_spf_808k_p11v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "e71fe9d3",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/08/210826_2345_sendung_spf/1/210826_2345_sendung_spf_508k_p9v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "e71fe9d3",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/08/210826_2345_sendung_spf/1/210826_2345_sendung_spf_508k_p9v17.mp4",
+			"id": "68284e1c",
+			"url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/22/04/220410_madame_spielfilm/1/220410_madame_spielfilm_508k_p9v15.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
