@@ -170,62 +170,6 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "c81a7ee3",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240820_0310_sendung_spf/1/240820_0310_sendung_spf_a1a2_1628k_p13v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "af1273e4",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240820_0310_sendung_spf/1/240820_0310_sendung_spf_a1a2_808k_p11v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "fa633e2a",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240820_0310_sendung_spf/1/240820_0310_sendung_spf_a1a2_508k_p9v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "fa633e2a",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240820_0310_sendung_spf/1/240820_0310_sendung_spf_a1a2_508k_p9v17.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
-				"id": "c81a7ee3",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240820_0310_sendung_spf/1/240820_0310_sendung_spf_a1a2_1628k_p13v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "af1273e4",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240820_0310_sendung_spf/1/240820_0310_sendung_spf_a1a2_808k_p11v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "fa633e2a",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240820_0310_sendung_spf/1/240820_0310_sendung_spf_a1a2_508k_p9v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "fa633e2a",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240820_0310_sendung_spf/1/240820_0310_sendung_spf_a1a2_508k_p9v17.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
 				"id": "78ba811f",
 				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240826_2215_sendung_spf/1/240826_2215_sendung_spf_1628k_p13v17.mp4",
 				"video3dFormat": 0,
@@ -275,6 +219,62 @@
 		"pipStream": {
 			"id": "3df36",
 			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240826_2215_sendung_spf/1/240826_2215_sendung_spf_508k_p9v17.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "c7306e49",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/07/230710_2215_sendung_oss/1/230710_2215_sendung_oss_a1a2_1628k_p13v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "c20d5c4e",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/07/230710_2215_sendung_oss/1/230710_2215_sendung_oss_a1a2_808k_p11v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "c2570640",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/07/230710_2215_sendung_oss/1/230710_2215_sendung_oss_a1a2_508k_p9v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "c2570640",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/07/230710_2215_sendung_oss/1/230710_2215_sendung_oss_a1a2_508k_p9v15.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "c7306e49",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/07/230710_2215_sendung_oss/1/230710_2215_sendung_oss_a1a2_1628k_p13v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "c20d5c4e",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/07/230710_2215_sendung_oss/1/230710_2215_sendung_oss_a1a2_808k_p11v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "c2570640",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/07/230710_2215_sendung_oss/1/230710_2215_sendung_oss_a1a2_508k_p9v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "c2570640",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/07/230710_2215_sendung_oss/1/230710_2215_sendung_oss_a1a2_508k_p9v15.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
