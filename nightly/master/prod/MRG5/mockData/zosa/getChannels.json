@@ -2769,16 +2769,16 @@
 		"cmsId": "KID00893-ANIXEHDSerie",
 		"images": [
 			{
-				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/f105ac8c8e8dbede59277c3b2019c65ea1ecfc95.png",
-				"height": "48",
-				"width": "120"
-			},
-			{
 				"serviceProviderImageType": "14",
 				"url": "http://ngiss.t-online.de/cm1s/media/6dad0a5ad793821b149d1fc6bfd4168e6d128a2d.png",
 				"height": "1080",
 				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/f105ac8c8e8dbede59277c3b2019c65ea1ecfc95.png",
+				"height": "48",
+				"width": "120"
 			}
 		],
 		"isFavorited": true,
@@ -4095,12 +4095,6 @@
 		"cmsId": "KID00880-VOXup",
 		"images": [
 			{
-				"serviceProviderImageType": "99",
-				"url": "http://ngiss.t-online.de/cm1s/media/eece51e7d023df59eaba2d666bd7e7ea93ede81d.jpeg",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
 				"serviceProviderImageType": "14",
 				"url": "http://ngiss.t-online.de/cm1s/media/343f563d2dfffc0ef1ef4c10fe83bc88b5dfdad3.png",
 				"height": "1080",
@@ -4111,6 +4105,12 @@
 				"url": "http://ngiss.t-online.de/cm1s/media/7475b5f5fce6df60756901f94904c42d2675c6d9.png",
 				"height": "48",
 				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/eece51e7d023df59eaba2d666bd7e7ea93ede81d.jpeg",
+				"height": "1080",
+				"width": "1920"
 			}
 		],
 		"isFavorited": true,
@@ -7563,16 +7563,16 @@
 				"width": "1920"
 			},
 			{
-				"serviceProviderImageType": "99",
-				"url": "http://ngiss.t-online.de/cm1s/media/b5670cdf511723542767c22cf595f8a48f2be00b.jpeg",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
 				"serviceProviderImageType": "15",
 				"url": "http://ngiss.t-online.de/cm1s/media/c43968e8b52cd562a75352ae94b5be37b1c40f72.png",
 				"height": "48",
 				"width": "120"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/b5670cdf511723542767c22cf595f8a48f2be00b.jpeg",
+				"height": "1080",
+				"width": "1920"
 			}
 		],
 		"isFavorited": true,
@@ -18063,16 +18063,16 @@
 		"cmsId": "KID00847-LeipzigFernsehen",
 		"images": [
 			{
-				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/8755b09d6bda3c93b0f2d453cedd0a01372982d3.png",
-				"height": "48",
-				"width": "120"
-			},
-			{
 				"serviceProviderImageType": "14",
 				"url": "http://ngiss.t-online.de/cm1s/media/cde7f7c42829fe07dc3fa09679f8efac35f4dd1d.png",
 				"height": "1080",
 				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/8755b09d6bda3c93b0f2d453cedd0a01372982d3.png",
+				"height": "48",
+				"width": "120"
 			}
 		],
 		"isFavorited": true,
@@ -20517,12 +20517,6 @@
 		"cmsId": "KID01009-SkyCinemaHighlights",
 		"images": [
 			{
-				"serviceProviderImageType": "99",
-				"url": "http://ngiss.t-online.de/cm1s/media/8fa126c51e3f077f5d6b6f1f4b789d07a2995fdd.jpeg",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
 				"serviceProviderImageType": "14",
 				"url": "http://ngiss.t-online.de/cm1s/media/33e8623f9ca69f1506e27d51d37faba4b1117756.png",
 				"height": "1080",
@@ -20537,6 +20531,12 @@
 			{
 				"serviceProviderImageType": "19",
 				"url": "http://ngiss.t-online.de/cm1s/media/f15c195a659c9105ff27056be3976a70b9b85733.jpeg",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "99",
+				"url": "http://ngiss.t-online.de/cm1s/media/8fa126c51e3f077f5d6b6f1f4b789d07a2995fdd.jpeg",
 				"height": "1080",
 				"width": "1920"
 			}
