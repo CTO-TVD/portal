@@ -20671,13 +20671,13 @@
 		"images": [
 			{
 				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/97652da8fb13e92531ed3eacd719ab0952f494b1.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/9b6940fb2f4b35ab1c0fed028582dede47fa2324.png",
 				"height": "1080",
 				"width": "1920"
 			},
 			{
 				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/4af8c51b0aae80d28cb887cd75fe15508aea515f.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/df94bba56be45518290aeeaa1689847637aed542.png",
 				"height": "48",
 				"width": "120"
 			},
@@ -20744,7 +20744,7 @@
 				"zosaType": "StreamItem"
 			}
 		],
-		"title": "Sky Cinema Family",
+		"title": "Sky Cinema Spooky",
 		"zosaId": "48:572",
 		"zosaType": "ChannelItem"
 	},
