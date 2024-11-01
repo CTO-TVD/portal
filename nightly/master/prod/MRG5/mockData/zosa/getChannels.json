@@ -4371,17 +4371,17 @@
 	{
 		"channelNumber": 82,
 		"channelType": 0,
-		"cmsId": "KID00993-Imearth",
+		"cmsId": "tagesschau24",
 		"images": [
 			{
 				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/cb92f69ef3a151c1438b26bc6234a37f93e36074.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/efb9c4d31b9a35b7c239bbc1ad32379ba8638671.png",
 				"height": "1080",
 				"width": "1920"
 			},
 			{
 				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/1cd2d4871145bbda30e87e87e9d8a01164d0091d.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/2d0ef79c908ad450db7ddc28eaf7076a02e162af.png",
 				"height": "48",
 				"width": "120"
 			}
@@ -4401,7 +4401,7 @@
 			"transmissionType": 12,
 			"video3dFormat": 0,
 			"videoDefinition": 1,
-			"zosaId": "22046",
+			"zosaId": "6706",
 			"zosaType": "StreamItem"
 		},
 		"streams": [
@@ -4417,16 +4417,88 @@
 				"transmissionType": 12,
 				"video3dFormat": 0,
 				"videoDefinition": 2,
-				"zosaId": "22045",
+				"zosaId": "6705",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "6702",
 				"zosaType": "StreamItem"
 			}
 		],
-		"title": "Imearth",
-		"zosaId": "373:5839",
+		"title": "tagesschau24",
+		"zosaId": "373:400",
 		"zosaType": "ChannelItem"
 	},
 	{
 		"channelNumber": 83,
+		"channelType": 0,
+		"cmsId": "euron-d",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/5964362084a4b56ad4c1c242e321816d89707306.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/8ce9f3f5f5960bba793fed99f7e33bafcdde099a.png",
+				"height": "48",
+				"width": "95"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "5463",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "4000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 1,
+				"zosaId": "5462",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Euronews Deutsch",
+		"zosaId": "408:482",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 84,
 		"channelType": 0,
 		"cmsId": "bibel-tv",
 		"images": [
@@ -4494,125 +4566,11 @@
 			}
 		],
 		"title": "Bibel TV",
-		"zosaId": "408:485",
-		"zosaType": "ChannelItem"
-	},
-	{
-		"channelNumber": 85,
-		"channelType": 0,
-		"cmsId": "KID00992-Travelxp",
-		"images": [
-			{
-				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/d0fd05134569eae9c57f089bd5710e2cedfda082.png",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
-				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/4e54ffa4b53324dd029263e304f04d3b0b51e46b.png",
-				"height": "48",
-				"width": "120"
-			}
-		],
-		"isFavorited": true,
-		"isHidden": false,
-		"parentalRating": "-1",
-		"pipStream": {
-			"bitrate": "350",
-			"clientPvrAllowed": true,
-			"clientPvrSupported": false,
-			"hasAlternativeStream": false,
-			"instantRestartAllowed": true,
-			"instantRestartSupported": true,
-			"livePlayAllowed": true,
-			"livePlaySupported": true,
-			"transmissionType": 12,
-			"video3dFormat": 0,
-			"videoDefinition": 1,
-			"zosaId": "22049",
-			"zosaType": "StreamItem"
-		},
-		"streams": [
-			{
-				"bitrate": "9000",
-				"clientPvrAllowed": true,
-				"clientPvrSupported": false,
-				"hasAlternativeStream": false,
-				"instantRestartAllowed": true,
-				"instantRestartSupported": true,
-				"livePlayAllowed": true,
-				"livePlaySupported": true,
-				"transmissionType": 12,
-				"video3dFormat": 0,
-				"videoDefinition": 2,
-				"zosaId": "22047",
-				"zosaType": "StreamItem"
-			}
-		],
-		"title": "Travelxp",
-		"zosaId": "404:5840",
+		"zosaId": "404:485",
 		"zosaType": "ChannelItem"
 	},
 	{
 		"channelNumber": 86,
-		"channelType": 0,
-		"cmsId": "euron-d",
-		"images": [
-			{
-				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/5964362084a4b56ad4c1c242e321816d89707306.png",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
-				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/8ce9f3f5f5960bba793fed99f7e33bafcdde099a.png",
-				"height": "48",
-				"width": "95"
-			}
-		],
-		"isFavorited": true,
-		"isHidden": false,
-		"parentalRating": "-1",
-		"pipStream": {
-			"bitrate": "350",
-			"clientPvrAllowed": true,
-			"clientPvrSupported": false,
-			"hasAlternativeStream": false,
-			"instantRestartAllowed": true,
-			"instantRestartSupported": true,
-			"livePlayAllowed": true,
-			"livePlaySupported": true,
-			"transmissionType": 12,
-			"video3dFormat": 0,
-			"videoDefinition": 1,
-			"zosaId": "5463",
-			"zosaType": "StreamItem"
-		},
-		"streams": [
-			{
-				"bitrate": "4000",
-				"clientPvrAllowed": true,
-				"clientPvrSupported": false,
-				"hasAlternativeStream": false,
-				"instantRestartAllowed": true,
-				"instantRestartSupported": true,
-				"livePlayAllowed": true,
-				"livePlaySupported": true,
-				"transmissionType": 12,
-				"video3dFormat": 0,
-				"videoDefinition": 1,
-				"zosaId": "5462",
-				"zosaType": "StreamItem"
-			}
-		],
-		"title": "Euronews Deutsch",
-		"zosaId": "381:482",
-		"zosaType": "ChannelItem"
-	},
-	{
-		"channelNumber": 88,
 		"channelType": 0,
 		"cmsId": "k-tv",
 		"images": [
@@ -4680,7 +4638,121 @@
 			}
 		],
 		"title": "K-TV",
-		"zosaId": "374:487",
+		"zosaId": "381:487",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 87,
+		"channelType": 0,
+		"cmsId": "KID00993-Imearth",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/cb92f69ef3a151c1438b26bc6234a37f93e36074.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/1cd2d4871145bbda30e87e87e9d8a01164d0091d.png",
+				"height": "48",
+				"width": "120"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "22046",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "22045",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Imearth",
+		"zosaId": "374:5839",
+		"zosaType": "ChannelItem"
+	},
+	{
+		"channelNumber": 88,
+		"channelType": 0,
+		"cmsId": "KID00992-Travelxp",
+		"images": [
+			{
+				"serviceProviderImageType": "14",
+				"url": "http://ngiss.t-online.de/cm1s/media/d0fd05134569eae9c57f089bd5710e2cedfda082.png",
+				"height": "1080",
+				"width": "1920"
+			},
+			{
+				"serviceProviderImageType": "15",
+				"url": "http://ngiss.t-online.de/cm1s/media/4e54ffa4b53324dd029263e304f04d3b0b51e46b.png",
+				"height": "48",
+				"width": "120"
+			}
+		],
+		"isFavorited": true,
+		"isHidden": false,
+		"parentalRating": "-1",
+		"pipStream": {
+			"bitrate": "350",
+			"clientPvrAllowed": true,
+			"clientPvrSupported": false,
+			"hasAlternativeStream": false,
+			"instantRestartAllowed": true,
+			"instantRestartSupported": true,
+			"livePlayAllowed": true,
+			"livePlaySupported": true,
+			"transmissionType": 12,
+			"video3dFormat": 0,
+			"videoDefinition": 1,
+			"zosaId": "22049",
+			"zosaType": "StreamItem"
+		},
+		"streams": [
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "22047",
+				"zosaType": "StreamItem"
+			}
+		],
+		"title": "Travelxp",
+		"zosaId": "385:5840",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4758,7 +4830,7 @@
 			}
 		],
 		"title": "Kabel Eins Doku",
-		"zosaId": "385:573",
+		"zosaId": "405:573",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4830,7 +4902,7 @@
 			}
 		],
 		"title": "Marco Polo TV",
-		"zosaId": "405:5295",
+		"zosaId": "382:5295",
 		"zosaType": "ChannelItem"
 	},
 	{
@@ -4908,83 +4980,11 @@
 			}
 		],
 		"title": "N24 Doku",
-		"zosaId": "382:553",
+		"zosaId": "403:553",
 		"zosaType": "ChannelItem"
 	},
 	{
 		"channelNumber": 92,
-		"channelType": 0,
-		"cmsId": "tagesschau24",
-		"images": [
-			{
-				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/efb9c4d31b9a35b7c239bbc1ad32379ba8638671.png",
-				"height": "1080",
-				"width": "1920"
-			},
-			{
-				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/2d0ef79c908ad450db7ddc28eaf7076a02e162af.png",
-				"height": "48",
-				"width": "120"
-			}
-		],
-		"isFavorited": true,
-		"isHidden": false,
-		"parentalRating": "-1",
-		"pipStream": {
-			"bitrate": "350",
-			"clientPvrAllowed": true,
-			"clientPvrSupported": false,
-			"hasAlternativeStream": false,
-			"instantRestartAllowed": true,
-			"instantRestartSupported": true,
-			"livePlayAllowed": true,
-			"livePlaySupported": true,
-			"transmissionType": 12,
-			"video3dFormat": 0,
-			"videoDefinition": 1,
-			"zosaId": "6706",
-			"zosaType": "StreamItem"
-		},
-		"streams": [
-			{
-				"bitrate": "9000",
-				"clientPvrAllowed": true,
-				"clientPvrSupported": false,
-				"hasAlternativeStream": false,
-				"instantRestartAllowed": true,
-				"instantRestartSupported": true,
-				"livePlayAllowed": true,
-				"livePlaySupported": true,
-				"transmissionType": 12,
-				"video3dFormat": 0,
-				"videoDefinition": 2,
-				"zosaId": "6705",
-				"zosaType": "StreamItem"
-			},
-			{
-				"bitrate": "4000",
-				"clientPvrAllowed": true,
-				"clientPvrSupported": false,
-				"hasAlternativeStream": false,
-				"instantRestartAllowed": true,
-				"instantRestartSupported": true,
-				"livePlayAllowed": true,
-				"livePlaySupported": true,
-				"transmissionType": 12,
-				"video3dFormat": 0,
-				"videoDefinition": 1,
-				"zosaId": "6702",
-				"zosaType": "StreamItem"
-			}
-		],
-		"title": "tagesschau24",
-		"zosaId": "403:400",
-		"zosaType": "ChannelItem"
-	},
-	{
-		"channelNumber": 93,
 		"channelType": 0,
 		"cmsId": "welt-der-wunder",
 		"images": [
@@ -20714,21 +20714,6 @@
 		},
 		"streams": [
 			{
-				"bitrate": "9000",
-				"clientPvrAllowed": true,
-				"clientPvrSupported": false,
-				"hasAlternativeStream": false,
-				"instantRestartAllowed": true,
-				"instantRestartSupported": true,
-				"livePlayAllowed": true,
-				"livePlaySupported": true,
-				"transmissionType": 12,
-				"video3dFormat": 0,
-				"videoDefinition": 2,
-				"zosaId": "7419",
-				"zosaType": "StreamItem"
-			},
-			{
 				"bitrate": "4000",
 				"clientPvrAllowed": true,
 				"clientPvrSupported": false,
@@ -20741,6 +20726,21 @@
 				"video3dFormat": 0,
 				"videoDefinition": 1,
 				"zosaId": "7416",
+				"zosaType": "StreamItem"
+			},
+			{
+				"bitrate": "9000",
+				"clientPvrAllowed": true,
+				"clientPvrSupported": false,
+				"hasAlternativeStream": false,
+				"instantRestartAllowed": true,
+				"instantRestartSupported": true,
+				"livePlayAllowed": true,
+				"livePlaySupported": true,
+				"transmissionType": 12,
+				"video3dFormat": 0,
+				"videoDefinition": 2,
+				"zosaId": "7419",
 				"zosaType": "StreamItem"
 			}
 		],
