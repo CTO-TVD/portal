@@ -2,6 +2,62 @@
 	{
 		"channelStreams": {
 			"uhd": {
+				"id": "e33ec93",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/06/240601_sony_2015_sendung_nsf/1/240601_sony_2015_sendung_nsf_1628k_p13v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "9d3f6eb4",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/06/240601_sony_2015_sendung_nsf/1/240601_sony_2015_sendung_nsf_808k_p11v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "96f5843a",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/06/240601_sony_2015_sendung_nsf/1/240601_sony_2015_sendung_nsf_508k_p9v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "96f5843a",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/06/240601_sony_2015_sendung_nsf/1/240601_sony_2015_sendung_nsf_508k_p9v15.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "e33ec93",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/06/240601_sony_2015_sendung_nsf/1/240601_sony_2015_sendung_nsf_1628k_p13v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "9d3f6eb4",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/06/240601_sony_2015_sendung_nsf/1/240601_sony_2015_sendung_nsf_808k_p11v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "96f5843a",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/06/240601_sony_2015_sendung_nsf/1/240601_sony_2015_sendung_nsf_508k_p9v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "96f5843a",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/06/240601_sony_2015_sendung_nsf/1/240601_sony_2015_sendung_nsf_508k_p9v15.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
 				"id": "e237015",
 				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/05/230520_sony_2015_sendung_nsf/1/230520_sony_2015_sendung_nsf_1628k_p13v17.mp4",
 				"video3dFormat": 0,
@@ -219,62 +275,6 @@
 		"pipStream": {
 			"id": "e4280483",
 			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/10/241028_2215_sendung_spf/1/241028_2215_sendung_spf_a1a2_508k_p9v17.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
-				"id": "efd1d96b",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/07/230706_oss117_erselbst_mitof_oss/1/230706_oss117_erselbst_mitof_oss_a1a2_1628k_p13v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "974ac8ec",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/07/230706_oss117_erselbst_mitof_oss/1/230706_oss117_erselbst_mitof_oss_a1a2_808k_p11v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "f0271e22",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/07/230706_oss117_erselbst_mitof_oss/1/230706_oss117_erselbst_mitof_oss_a1a2_508k_p9v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "f0271e22",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/07/230706_oss117_erselbst_mitof_oss/1/230706_oss117_erselbst_mitof_oss_a1a2_508k_p9v17.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
-				"id": "efd1d96b",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/07/230706_oss117_erselbst_mitof_oss/1/230706_oss117_erselbst_mitof_oss_a1a2_1628k_p13v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "974ac8ec",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/07/230706_oss117_erselbst_mitof_oss/1/230706_oss117_erselbst_mitof_oss_a1a2_808k_p11v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "f0271e22",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/07/230706_oss117_erselbst_mitof_oss/1/230706_oss117_erselbst_mitof_oss_a1a2_508k_p9v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "f0271e22",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/07/230706_oss117_erselbst_mitof_oss/1/230706_oss117_erselbst_mitof_oss_a1a2_508k_p9v17.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
