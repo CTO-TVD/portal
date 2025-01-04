@@ -10690,13 +10690,13 @@
 		"images": [
 			{
 				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/b7c67b15a961323d5c8ff47db7e12d440b7cb6c2.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/1387e929a8dc564c1b47249c58db2087ae0fc93b.png",
 				"height": "1080",
 				"width": "1920"
 			},
 			{
 				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/cf512e0bfc3604249cdb0418e3baa80abaaf492d.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/8d92c45f659e0b72e25f5351783ac37a3c098d0d.png",
 				"height": "48",
 				"width": "120"
 			},
@@ -10763,7 +10763,7 @@
 				"zosaType": "StreamItem"
 			}
 		],
-		"title": "SPORT1+",
+		"title": "Sportdigital1+",
 		"zosaId": "385:44",
 		"zosaType": "ChannelItem"
 	},
@@ -10774,15 +10774,15 @@
 		"images": [
 			{
 				"serviceProviderImageType": "14",
-				"url": "http://ngiss.t-online.de/cm1s/media/54fcaafd99da1033a484325028f9fe33aeeb44c8.png",
-				"height": "1080",
-				"width": "1920"
+				"url": "http://ngiss.t-online.de/cm1s/media/d9eaa902b52b78517f3b47ab210111b9d37a7fa7.png",
+				"height": "153",
+				"width": "272"
 			},
 			{
 				"serviceProviderImageType": "15",
-				"url": "http://ngiss.t-online.de/cm1s/media/db482843563c10f6527e4bd3bc9f3ed68c1603f7.png",
+				"url": "http://ngiss.t-online.de/cm1s/media/e385de53dc816f13fa056fecfa44b102d1f55c04.png",
 				"height": "48",
-				"width": "120"
+				"width": "48"
 			},
 			{
 				"serviceProviderImageType": "19",
@@ -10847,7 +10847,7 @@
 				"zosaType": "StreamItem"
 			}
 		],
-		"title": "eSPORTS1",
+		"title": "eSportsONE",
 		"zosaId": "405:191",
 		"zosaType": "ChannelItem"
 	},
