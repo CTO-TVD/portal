@@ -114,27 +114,55 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "5c5e7789",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250102_0055_sendung_spf/1/250102_0055_sendung_spf_a1a2_1628k_p13v15.mp4",
+				"id": "e33ec93",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/06/240601_sony_2015_sendung_nsf/1/240601_sony_2015_sendung_nsf_1628k_p13v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "ac714f0e",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250102_0055_sendung_spf/1/250102_0055_sendung_spf_a1a2_808k_p11v15.mp4",
+				"id": "9d3f6eb4",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/06/240601_sony_2015_sendung_nsf/1/240601_sony_2015_sendung_nsf_808k_p11v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "5dfa6800",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250102_0055_sendung_spf/1/250102_0055_sendung_spf_a1a2_508k_p9v15.mp4",
+				"id": "96f5843a",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/06/240601_sony_2015_sendung_nsf/1/240601_sony_2015_sendung_nsf_508k_p9v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "5dfa6800",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250102_0055_sendung_spf/1/250102_0055_sendung_spf_a1a2_508k_p9v15.mp4",
+			"id": "96f5843a",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/06/240601_sony_2015_sendung_nsf/1/240601_sony_2015_sendung_nsf_508k_p9v15.mp4",
+			"video3dFormat": 0,
+			"videoDefinition": 1
+		}
+	},
+	{
+		"channelStreams": {
+			"uhd": {
+				"id": "e33ec93",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/06/240601_sony_2015_sendung_nsf/1/240601_sony_2015_sendung_nsf_1628k_p13v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 3
+			},
+			"hd": {
+				"id": "9d3f6eb4",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/06/240601_sony_2015_sendung_nsf/1/240601_sony_2015_sendung_nsf_808k_p11v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 2
+			},
+			"sd": {
+				"id": "96f5843a",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/06/240601_sony_2015_sendung_nsf/1/240601_sony_2015_sendung_nsf_508k_p9v15.mp4",
+				"video3dFormat": 0,
+				"videoDefinition": 1
+			}
+		},
+		"pipStream": {
+			"id": "96f5843a",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/06/240601_sony_2015_sendung_nsf/1/240601_sony_2015_sendung_nsf_508k_p9v15.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
@@ -170,27 +198,27 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "9da330c6",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/09/220919_2215_sendung_spf/1/220919_2215_sendung_spf_a1a2_1628k_p13v15.mp4",
+				"id": "5c5e7789",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250102_0055_sendung_spf/1/250102_0055_sendung_spf_a1a2_1628k_p13v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "5ed6fa41",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/09/220919_2215_sendung_spf/1/220919_2215_sendung_spf_a1a2_808k_p11v15.mp4",
+				"id": "ac714f0e",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250102_0055_sendung_spf/1/250102_0055_sendung_spf_a1a2_808k_p11v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "99f934ef",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/09/220919_2215_sendung_spf/1/220919_2215_sendung_spf_a1a2_508k_p9v15.mp4",
+				"id": "5dfa6800",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250102_0055_sendung_spf/1/250102_0055_sendung_spf_a1a2_508k_p9v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "99f934ef",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/09/220919_2215_sendung_spf/1/220919_2215_sendung_spf_a1a2_508k_p9v15.mp4",
+			"id": "5dfa6800",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250102_0055_sendung_spf/1/250102_0055_sendung_spf_a1a2_508k_p9v15.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
@@ -198,27 +226,27 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "9da330c6",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/09/220919_2215_sendung_spf/1/220919_2215_sendung_spf_a1a2_1628k_p13v15.mp4",
+				"id": "ceb1481a",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/08/230819_kiss_the_cook_spf/1/230819_kiss_the_cook_spf_1628k_p13v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "5ed6fa41",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/09/220919_2215_sendung_spf/1/220919_2215_sendung_spf_a1a2_808k_p11v15.mp4",
+				"id": "6a18513d",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/08/230819_kiss_the_cook_spf/1/230819_kiss_the_cook_spf_808k_p11v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "99f934ef",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/09/220919_2215_sendung_spf/1/220919_2215_sendung_spf_a1a2_508k_p9v15.mp4",
+				"id": "de382893",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/08/230819_kiss_the_cook_spf/1/230819_kiss_the_cook_spf_508k_p9v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "99f934ef",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/09/220919_2215_sendung_spf/1/220919_2215_sendung_spf_a1a2_508k_p9v15.mp4",
+			"id": "de382893",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/08/230819_kiss_the_cook_spf/1/230819_kiss_the_cook_spf_508k_p9v15.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
@@ -226,55 +254,27 @@
 	{
 		"channelStreams": {
 			"uhd": {
-				"id": "9960e73",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/01/210101_2215_sendung_spf/1/210101_2215_sendung_spf_1628k_p13v17.mp4",
+				"id": "ceb1481a",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/08/230819_kiss_the_cook_spf/1/230819_kiss_the_cook_spf_1628k_p13v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 3
 			},
 			"hd": {
-				"id": "146e4214",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/01/210101_2215_sendung_spf/1/210101_2215_sendung_spf_808k_p11v17.mp4",
+				"id": "6a18513d",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/08/230819_kiss_the_cook_spf/1/230819_kiss_the_cook_spf_808k_p11v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 2
 			},
 			"sd": {
-				"id": "2818069a",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/01/210101_2215_sendung_spf/1/210101_2215_sendung_spf_508k_p9v17.mp4",
+				"id": "de382893",
+				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/08/230819_kiss_the_cook_spf/1/230819_kiss_the_cook_spf_508k_p9v15.mp4",
 				"video3dFormat": 0,
 				"videoDefinition": 1
 			}
 		},
 		"pipStream": {
-			"id": "2818069a",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/01/210101_2215_sendung_spf/1/210101_2215_sendung_spf_508k_p9v17.mp4",
-			"video3dFormat": 0,
-			"videoDefinition": 1
-		}
-	},
-	{
-		"channelStreams": {
-			"uhd": {
-				"id": "9960e73",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/01/210101_2215_sendung_spf/1/210101_2215_sendung_spf_1628k_p13v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 3
-			},
-			"hd": {
-				"id": "146e4214",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/01/210101_2215_sendung_spf/1/210101_2215_sendung_spf_808k_p11v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 2
-			},
-			"sd": {
-				"id": "2818069a",
-				"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/01/210101_2215_sendung_spf/1/210101_2215_sendung_spf_508k_p9v17.mp4",
-				"video3dFormat": 0,
-				"videoDefinition": 1
-			}
-		},
-		"pipStream": {
-			"id": "2818069a",
-			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/01/210101_2215_sendung_spf/1/210101_2215_sendung_spf_508k_p9v17.mp4",
+			"id": "de382893",
+			"url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/08/230819_kiss_the_cook_spf/1/230819_kiss_the_cook_spf_508k_p9v15.mp4",
 			"video3dFormat": 0,
 			"videoDefinition": 1
 		}
