@@ -3840,21 +3840,6 @@
 				"videoDefinition": 2,
 				"zosaId": "17791",
 				"zosaType": "StreamItem"
-			},
-			{
-				"bitrate": "4000",
-				"clientPvrAllowed": true,
-				"clientPvrSupported": false,
-				"hasAlternativeStream": false,
-				"instantRestartAllowed": true,
-				"instantRestartSupported": true,
-				"livePlayAllowed": true,
-				"livePlaySupported": true,
-				"transmissionType": 12,
-				"video3dFormat": 0,
-				"videoDefinition": 1,
-				"zosaId": "1286",
-				"zosaType": "StreamItem"
 			}
 		],
 		"title": "DF1",
