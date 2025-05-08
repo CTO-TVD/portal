@@ -45,7 +45,7 @@
             "clientSecret": ""
         }
     },
-    "mock": {
+    "moc5k": {
         "clientID": "10TVL0SAM30000004901NGTVUIDEMO0000000000",
         "endpoint": "https://login.acceptance.p5x.telekom-dienste.de/.well-known/openid-configuration",
         "username": "",
@@ -89,7 +89,7 @@
         "code": "",
         "redirectUri": "https://cto-tvd.github.io/portal/nightly/redirect.tu.html"
     },
-    "mock4": {
+    "mock": {
         "clientID": "10TVL0SAM30000004901NGTVUIDEMO0000000000",
         "endpoint": "https://login.acceptance.p5x.telekom-dienste.de/.well-known/openid-configuration",
         "username": "",
